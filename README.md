@@ -5,7 +5,7 @@
 
 Qun-mk2 is a small synthesizer with powerful sound engine, sequencer and looper.
 
-![qun_mk2_cgi](/Users/ryosukekojima/git/Qun-mk2/manual_images/qun_mk2_cgi.png)
+![qun_mk2_cgi](./manual_images/qun_mk2_cgi.png)
 
 ## Links and Information
 
@@ -137,7 +137,7 @@ SHIFT + LOOPER PLAY + turn dial | Load session when you are not in System mode o
 
 ## LED indicators
 
-![leds](/Users/ryosukekojima/git/Qun-mk2/manual_images/leds.png)
+![leds](./manual_images/leds.png)
 
 The synth has 8 LED indicators on the switch.
 Solid LED shows selected pattern number.
@@ -541,7 +541,7 @@ PK800 | Peak filter at 800Hz.
 
 ## PLAY MODE
 
-![screen_play](/Users/ryosukekojima/git/Qun-mk2/manual_images/screen_play.png)
+![screen_play](./manual_images/screen_play.png)
 
 Disk access indicator is active when system is accessing SD card. Some actions are restricted while writing.
 
