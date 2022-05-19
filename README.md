@@ -64,18 +64,17 @@ Three track looper with 5 scenes, you can swap 3 track x 5 scenes while playing.
   	* Integrated compressor (Fixed parameters: 30ms attack, 100ms release, 1:3)
   	* Stereo output
   	* Mute by track
-  	* Route VCF and effector after the looper (Extra Processing)
   * Micro SD card
   	* Qun mk2 comes with micro SD card.
   	* All looper recordings, preset and granular sample is stored to SD card
 
 ## CONNECTIONS
 
-* Power: Use a good quality USB power supply. Connect the USB cable to `POWER` labeled USB port.
+* Power: Use a good quality USB power supply. Connect the USB cable to `POWER` labeled USB port (Top one).
 * MIDI: Use **TRS A** MIDI adapter to connect MIDI cables. TRS A type adapter is the same as KORG, AKAI and Make Noise's adapter. This is the lowest latency option. The synth comes with MIDI TRS A cable.
 * It has microphones and stereo line input.
-* LINE IN and PHONE OUT is located at right side. Output is not strong, so please use headphone amp or mixer. Looper mixer is stereo. **Please use a stereo cable for the sound input and output**. 
-* It comes with micro SD card. Qun mk2 always needs SD card.
+* LINE IN and PHONE OUT is located at right side. Output is not strong, so please connect to headphone amp or mixer. Looper mixer is stereo. **Please use a stereo cable for the sound input and output**. 
+* It comes with micro SD card. Qun mk2 always needs SD card. SDHC is supported. Class 10 card (Normally it's indicated as Circled 10) or higher is required to satisfy the bandwidth.
 
 ## MAJOR MODES
 
@@ -134,6 +133,7 @@ PARAM + [1-3] | Mute track
 MODE PLAY + [1-8] | Recall preset bucket
 SEQ PLAY + [1-8] | Select Sequencer pattern
 SHIFT + LOOPER PLAY + turn dial | Load session when you are not in System mode or Granular mode. 
+SHIFT + LOOPER PLAY + [1-3] button | Import wav file from import folder to selected track
 
 ## LED indicators
 
@@ -173,11 +173,22 @@ Mixer and Bucket data will be saved quietly when looper is stopped. You can manu
 
 To load session, press SHIFT + LOOPER PLAY when you are not in System mode or Granular mode. Current session number "Session:0001" will be indicated. Turn dial to select the session you want to load.
 
+You can import WAV files to session. Put WAV files under "import" folder. Folder structure is supported so you can make subfolders to organize samples.
+WAV format has to be **16-bit, 48000Hz, Mono**. Otherwise "Format error" message is shown.
+
+To import file, set proper BPM first, then press SHIFT + LOOPER PLAY + [1-3] button. [1-3] button corresponds the destination track.
+If the wav sample is more than the maximum track length (about 25 sec), the data is trimmed to the closest the end of the measure.
+
+If you have existing recordings in the session, WAV file will be cut to the current scene's looper length. You can use empty recorded track just to cut the WAV file to match the loop length.
+
+
 If you want to load older than recent 32 session, you can press NO / OK button to scroll the number.
 
 ## Preset bucket
 
 The synth has 8 preset buckets to recall preset quickly. This is very powerful feature with looper.
+
+Bucket information is automatically saved with Session when looper is stopped. 
 
 Each bucket contains one preset and 8 sequencer pattern.
 In order to switch between bucket, press MODE PLAY + [1-8] buttons.
@@ -777,9 +788,12 @@ Mixer setting will be saved in Session.
 
 ### Extra processing
 
-You can toggle Extra processing mode by PARAM + NO button.
-When it's enabled, the Oscillators and LFO are turned off, but filter and effector becomes stereo, and connected to after Looper.
-You can apply filter and effects on Looper. 
+You can toggle Extra processing mode by PARAM + NO button. 
+
+When it's enabled, the Oscillators are turned off, but filter and effector becomes stereo, and connected to after Looper.
+You can apply filter, filter volume, and effects against Looper recording.
+
+LFO is still available only when the effect type is delay.
 
 ## SETTING MODE
 
@@ -938,7 +952,6 @@ The synth can take 2PPQ, 4PPQ or 24 PPQ signals. Don't supply high voltage to th
 ## SD card folder structure
 
 WAV file can be used by other software. Format is mono, 48kHz, 16 bit.
-You can also read WAV file for Granular. Acceptable format is the same (48kHz, 16bit).
 
 ### LOOPER00
 Session data is stored here. It includes Looper recording data. 
@@ -957,13 +970,19 @@ Filename | Description
 [S_AAAAAA.DAT] | S means sequencer data. One file contains 8 pattern.
 
 ### GRANULAR
-This is the place to export or import Granular record data. You can put your WAV file here to load the file to Granular engine.
+This is the place to export or import Granular record data. You can put your WAV file here to load the file to Granular engine. Format has to be 48000Hz, 16 bit, Mono.
+
 Filename | Description
 -------- | --------
 [G_AAAAAA.WAV] | G means Granular record data. This is saved when You perform save command in Granular mode. If you save in Bank1 to Bank8 mode, Granular recording data is stored under Preset folder. 
 
 ### SSHOTS
 Screnshots is stored here. To take screenshot, press LOOPER STOP + PARAM.
+
+### IMPORT
+
+Import is the folder to import loops to session.
+Format has to be mono, 48kHz, 16 bit. See "Session" section for detail.
 
 
 ## Supported MIDI Control numbers
