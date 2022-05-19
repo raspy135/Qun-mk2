@@ -793,7 +793,7 @@ You can toggle Extra processing mode by PARAM + NO button.
 When it's enabled, the Oscillators are turned off, but filter and effector becomes stereo, and connected to after Looper.
 You can apply filter, filter volume, and effects against Looper recording.
 
-LFO is still available only when the effect type is delay.
+LFO is still available for filter modulation.
 
 ## SETTING MODE
 
