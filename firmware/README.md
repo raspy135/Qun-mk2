@@ -10,3 +10,7 @@ Here are the steps to update the firmware:
 6. "Firmware updater" message will be shown when the updater booted.
 7. After "Updating" message, then "Done" message will be shown.
 8. Reset the board.
+
+# History
+
+- v3.00 Initial firmware is released
