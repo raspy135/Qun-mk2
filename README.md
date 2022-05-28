@@ -75,7 +75,7 @@ Three track looper with 5 scenes, you can swap 3 track x 5 scenes while playing.
 * MIDI: Use **TRS A** MIDI adapter to connect MIDI cables. TRS A type adapter is the same as KORG, AKAI and Make Noise's adapter. This is the lowest latency option. The synth comes with MIDI TRS A cable.
 * It has microphones and stereo line input.
 * LINE IN and PHONE OUT is located at right side. Output is not strong, so please connect to headphone amp or mixer. Looper mixer is stereo. **Please use a stereo cable for the sound input and output**. 
-* It comes with micro SD card. Qun mk2 always needs SD card. SDHC is supported. Class 10 card (Normally it's indicated as Circled 10) or higher is required to satisfy the bandwidth.
+* It comes with micro SD card. Qun mk2 always needs SD card. SDHC is supported. Class 10 card (Normally it's indicated as Circled 10) or higher is required to satisfy the bandwidth. It's safe to remove when the access indicater is not lid, but it's not hot swappable, Please reset the device when you remove SD card.
 
 ## MAJOR MODES
 
@@ -169,18 +169,18 @@ To avoid confusion, this setting won't be saved.
 Session is the biggest data unit of the synth.
 Session includes 8 preset buckets. Each bucket contains one preset with 8 pattern sequencer data.
 Looper recording (5 Scenes * 3 tracks) and Mixer data will be saved in the session.
-Saving session is performed automatically. Looper recording data will be saved immediately after the recording. 
+Saving session is performed half-automatically. Looper recording data will be saved immediately after the recording. 
 Mixer and Bucket data will be saved quietly when looper is stopped. You can manually execute it by pressing LOOPER STOP button.
 
 To load session, press SHIFT + LOOPER PLAY when you are not in System mode or Granular mode. Current session number "Session:0001" will be indicated. Turn dial to select the session you want to load.
 
-If you want to load older than recent 32 session, you can press NO / OK button to scroll the number.
+If you want to load older than recent 32 session, you can press NO / OK button to scroll the page.
 
 You can import WAV files to session. Put WAV files under "import" folder. Folder structure is supported so you can make subfolders to organize samples.
 WAV format has to be **16-bit, 48000Hz, Mono**. Otherwise "Format error" message is shown.
 
 To import file, set proper BPM first, then press SHIFT + LOOPER PLAY + [1-3] button. [1-3] button corresponds the destination track.
-If the wav sample is more than the maximum track length (about 25 sec), the data is trimmed to the closest the end of the measure.
+The data is trimmed to the closest the end of the measure.
 
 If you have existing recordings in the session, WAV file will be cut to the current scene's looper length. You can use empty recorded track just to cut the WAV file to match the loop length. Otherwise it's trimmed to the longest point of the end of the measure.
 
