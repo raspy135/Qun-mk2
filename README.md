@@ -44,6 +44,7 @@ Three track looper with 5 scenes, you can swap 3 track x 5 scenes while playing.
   * MIDI clock sync
 * Player / Sequencer
   * Player (piano mode)
+  * MIDI out to control external synths
   * **8/16 step sequencer has 4 pages, up to 64-step sequencer** will generate inspiring beats for you
     * Note On/Off/Double/Triple
     * Transpose / Note width (Length) / Velocity / Probability
@@ -173,16 +174,15 @@ Mixer and Bucket data will be saved quietly when looper is stopped. You can manu
 
 To load session, press SHIFT + LOOPER PLAY when you are not in System mode or Granular mode. Current session number "Session:0001" will be indicated. Turn dial to select the session you want to load.
 
+If you want to load older than recent 32 session, you can press NO / OK button to scroll the number.
+
 You can import WAV files to session. Put WAV files under "import" folder. Folder structure is supported so you can make subfolders to organize samples.
 WAV format has to be **16-bit, 48000Hz, Mono**. Otherwise "Format error" message is shown.
 
 To import file, set proper BPM first, then press SHIFT + LOOPER PLAY + [1-3] button. [1-3] button corresponds the destination track.
 If the wav sample is more than the maximum track length (about 25 sec), the data is trimmed to the closest the end of the measure.
 
-If you have existing recordings in the session, WAV file will be cut to the current scene's looper length. You can use empty recorded track just to cut the WAV file to match the loop length.
-
-
-If you want to load older than recent 32 session, you can press NO / OK button to scroll the number.
+If you have existing recordings in the session, WAV file will be cut to the current scene's looper length. You can use empty recorded track just to cut the WAV file to match the loop length. Otherwise it's trimmed to the longest point of the end of the measure.
 
 ## Preset bucket
 
@@ -271,7 +271,7 @@ Mix controls mixer and effects.
 
 5. EFFECT TYPE
 
-	Delay, Chorus1, Chorus2, Flanger1, Flanger2
+	Off, Delay, Chorus1, Chorus2, Flanger1, Flanger2. They are reserved for future additional effects
 
 6. EFFECT SPEED
 
@@ -587,6 +587,7 @@ OK | Select next pattern
 SHIFT + LOOPER STOP | Delete all track recordings in the current scene, reset recording length 
 REC + NO | CUT Looper track
 REC + OK | PASTE Looper track
+REC + PARAM | UNDO last recording for the track
 
 ### Sequencer overview
 
@@ -662,6 +663,7 @@ Left-filled circle | One note in the step.
 Right-filled circle | One note in the step but it plays at the second half.
 Fully-filled circle | Two notes in the step (1/16th).
 Striped circle | 3 notes in the step (triplet).
+Striped square | 4 notes in the step (1/32th)
 
 ### PLY:SEQ VELOCITY / WIDTH / PROBABILITY
 Press one of the eight buttons and turn the dial, then it will modify velocity / width / probablity for each step.
@@ -698,7 +700,7 @@ https://www.youtube.com/watch?v=aV2YL0idMHA
 
 Button | Function
 ------------ | -------------
-1 | BPM / SWING. Long pressing the button for Swing. 
+1 | SWING. Long pressing the button for Sequencer MIDI channel out. 
 2 | Key (for scale).
 3 | Scale. Playing note will be quantized by this scale.
 4 | Sequencer loop count. Default is 8.  
@@ -708,6 +710,8 @@ Button | Function
 8 | Velocity Period Offset
 
 Velocity period settings (Button 6 - 8) provide a convenient way to make rythmic velocity.
+
+Sequencer MIDI channel out is useful setting with external synthesizer. When you set it, the sequencer starts to emit MIDI out signal to external synthesizers. Since it's the parameter of sequencer pattern, you can assign different MIDI channel for every single pattern.
 
 ## Ply: Granular
 
@@ -845,7 +849,11 @@ LINE in THRU: If it is off, it is automatically turn on or off LINE IN pass thro
 
 LINE in HPF: On is default. LINE in has two HPFs, one is external, one is internal HPF in the chip. This setting turns internal HPF. Turning this off will reduce HPF effect.
 
-Sync Mode: `STOP, MIDI, 2PPQ, 4PPQ, 24PPQ`. Select clock source for sequencer and LFO. See `Clock synchronization` for detail. This could cause some confusion so this setting will not be saved to flash memory.
+Sync Mode: `STOP, MIDI, 2PPQ, 4PPQ, 24PPQ, MOUT, MOUT2`. Select clock source for sequencer and LFO. See `Clock synchronization` for detail. 
+
+
+
+
 
 ## POLYPHONIC SETUP
 The synth can be used as Mono or Duo tone if you have more than one device. Qun mk1 and mk2 has compatible sound engine.
@@ -928,6 +936,8 @@ If it starts making ground loop noise, use separated power supply and use standa
   * AUX is connected to a lot of modules for CV control, so you can use AUX to control tune/width/LFO and others. However, the LINE in has capacitor in the path, it means the signal is AC. Using it as LFO should work, probably down to 2 to 5Hz. But DC signal, e.g. holding the same voltage 5 seconds, might not work.
 * MIDI is flooding when I connect MIDI out to DAW.
   * MIDI forwarding is ON.
+* Glithes with looper playing
+	* One known issue is looper might get gliches when Granular's grain is high with scene loading. It's because of limitation of RAM bandwidth. 
 
 ## External Audio processing
 
@@ -941,10 +951,12 @@ You can use LINE IN signal for various purposes. LINE IN is stereo input.
 ## Clock synchronization
 
 The synth can take external clock sources from other synthesizers. When the sync is enabled, sequencer BPM / start / stop is synchronized with external synthesizer or sequencer.
-The synth cannot be a master. Setting is available in the System menu. Default is OFF.
+Setting is available in the System menu. Default is OFF. The setting will be saved to internal flash memory.
 
 ### MIDI clock
-Set your DAW to send MIDI clock. We tested Ableton Live and Logic Pro X and KeyStep Pro. It has some latency so please adjust latency setting in your DAW to match the timing.
+When you set sync mode to "MIDI", the synth will be clock slave mode. Set your DAW to send MIDI clock. We tested Ableton Live and Logic Pro X and KeyStep Pro. It has some latency so please adjust latency setting in your DAW to match the timing.
+
+If you set sync mode to "MOUT" or "MOUT2", then the synth will be clock master. It sends MIDI clock as well as play/stop MIDI messages. Try "MOUT2" if you feel slight delay between devices. MOUT2 will send extra clock signal when start playing because some devices start sequencing from the second clock  (Roland MC-101is the example). If you clock another Qun, use MOUT.
 
 ### Sync IN
 The synth can take 2PPQ, 4PPQ or 24 PPQ signals. Don't supply high voltage to the synth, it will break. The signal must be supplied to LEFT channel (tip of TRS connector). Using the tip as a sync signal is compatible with Teenage Engineering's Pocket Operator. Supply voltage needs to be more than 500mV. RIGHT channel (AUXR) still can be used as audio signal or CV in.
@@ -960,6 +972,9 @@ Filename | Description
 [T000_1A.wav] | T means track recording, and next 3 digit is Session number, and 1 is Scene number, and A is track number. "0Z" is clipboard data. 
 [M000_00.dat] | M means mixer data. The first 3 digit means Session number. The second 2 digit is always zero. 
 [B000_00.dat] | B means Bucket data. This contains 8 preset and 64 sequencer pattern. The first 3 digit means Session number. The second 2 digit is always zero. 
+[Z000_00.dat] | Z is for undo buffer.
+
+When the directory has more than 500 files, then "LOOPER01" will be created.
 
 ### PRESET
 Preset (Bank 1 to 8) is stored here.
