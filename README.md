@@ -28,7 +28,8 @@ Three track looper with 5 scenes, you can swap 3 track x 5 scenes while playing.
   * Low latency.
   * All analog modeling engine parameters can be configured through MIDI. 
   * Clean 2 Oscillators. Cheap synthesizers compromise this part sometimes, but QUN has no-alias noise Oscillators. All of the internal calculation is done by floating point for the sound quality.
-  * Oscillators can be used as dual tone.
+  * Oscillators can be used as 1 oscillator per voice, or 2 oscillators per voice.
+  * Voice can be configured as 4 voices (Quad mode) or 2 voices (Dual mono).
   * The sound engine is compatible with Qun mk1. 
   * Multiple QUN synths can be stacked to achieve a **Polyphonic** setup. 
   * **Flexible MOD (CV) routing**. 
@@ -289,7 +290,7 @@ The Delay can be set very short. Very short delay can be used to create an inter
 
 ### PRM:ENV1/2
 The synth has four Envelope generators. ENV1 and ENV2 are both independently and fully configurable. ENV3 and ENV4 shares the parameter. Also ENV3 / ENV4 is connected to FM operators.
-ENV1 and ENV2 are grouped to first voice with Duo mode. ENV3 and ENV4 are grouped to second voice with Duo mode.
+ENV1 and ENV2 are grouped to first voice with Quad mode. ENV3 and ENV4 are grouped to second voice with Quad mode.
 
 ![diagram_eg](manual_images/diagram_eg.jpg)
 
@@ -409,7 +410,7 @@ The synth has one filter. LPF / BPF/ HPF / Notch can be selected. It also has a 
 8. VCF KEY SYNC
 
 	When it is not zero, VCF’s cutoff will follows the playing note. Higher value is more sensitive.
-	Great with Mono, but not working well with Duo tone because it has only one VCF.
+	Great with Mono, but not working well with Quad tone because it has only one VCF.
 
 ### PRM:KEY/OTHER
 Configures other parameters.
@@ -441,25 +442,25 @@ Configures other parameters.
 
 	Envelope generators become velocity sensitive when it’s ON.
 
-7. MONO/DUO/POLY
+7. MONO/QUAD/POLY
 
-	One synthesizer can be used as Monophonic or Duophonic.
+	One synthesizer can be used as Monophonic or Quadphonic.
 	
 	* Mono = Mono (2 OSCs per voice)
-	* Duo = Duo Tone (1 OSC per voice)
+	* Quad = Quad Tone (1 OSC per voice, and the engine has total 4 oscillators for the extra voices)
 	
-   When the mode is Duo or Poly Duo, MIX  and "OSC2 Env Sel" are ignored. MIX is always set to middle, and OSC2 Env Sel is always set to EG2.
-    Most of cases you want to use the same parameters between Osc1 and Osc2 with Duo mode. To copy the parameter from OSC1 to OSC2 (and EG1 and EG2), long press button 7. "OSCs synched" message will be shown. 
+   When the mode is Quad or Poly Quad, MIX  and "OSC2 Env Sel" are ignored. MIX is always set to middle, and OSC2 Env Sel is always set to EG2.
+    Most of cases you want to use the same parameters between Osc1 and Osc2 with Quad mode. To copy the parameter from OSC1 to OSC2 (and EG1 and EG2), long press button 7. "OSCs synched" message will be shown. 
 	
-	Here is an example to set up Duo mode
+	Here is an example to set up Quad mode
 	1. Initialize tone.
     2. Configure OSC1 as you like.
-	3. Set this parameter to "Duo" mode by pressing button 7.
+	3. Set this parameter to "Quad" mode by pressing button 7.
     4. If you want to copy OSC1 parameters to OSC2, in the same submode, long press button 7 until "OSCs synched" message shown.
 	5. Play two notes by external MIDI keyboard. You will hear two voices.
 	
 
-    Poly Mono and Poly Duo is for multiple device stacked configuration. You can use multiple Qun Synthesizers to build polyphonic synth.
+    Poly Mono and Poly Quad is for multiple device stacked configuration. You can use multiple Qun Synthesizers to build polyphonic synth.
 	Please see “Polyphonic setup” for detail.
 
 8. LFO SYNC SW
@@ -675,9 +676,9 @@ Index number | Meaning
 0 | Main value, it will be used for the first-half note and other notes when other Index number is off
 1 | 2nd half of the note (Used with 1/16th note)
 2 | 3rd of the note (Used with triplet)
-+0 | Main value for the second voice. Useful with Duo mode
-+1 | 2nd half value for the second voice. Useful with Duo mode
-+2 | 3rd value for the second voice. Useful with Duo mode
++0 | Main value for the second voice. Useful with Quad mode
++1 | 2nd half value for the second voice. Useful with Quad mode
++2 | 3rd value for the second voice. Useful with Quad mode
 
 ### PLY:SEQ TUNE
 Press one of the eight buttons and turn the dial, then it will modify tune offset for each step.
@@ -689,9 +690,9 @@ Index number | Meaning
 0 | Main value, it will be used for the first-half note and other notes when other Index number is off
 1 | 2nd half of the note (Used with 1/16th note)
 2 | 3rd of the note (Used with triplet)
-+0 | Main value for the second voice. Useful with Duo mode
-+1 | 2nd half value for the second voice. Useful with Duo mode
-+2 | 3rd value for the second voice. Useful with Duo mode
++0 | Main value for the second voice. Useful with Quad mode
++1 | 2nd half value for the second voice. Useful with Quad mode
++2 | 3rd value for the second voice. Useful with Quad mode
 
 Alternatevely, you can step record notes by external MIDI keyboard. Play note by MIDI keyboard while you are pressing one of the eight buttons, the note will be recorded as the tune for the step.
 https://www.youtube.com/watch?v=aV2YL0idMHA
@@ -726,6 +727,7 @@ The synth features a Granular synthesis recorder.
 - With One shot mode, you can route the signal to OSC1 AUX L and OSC2 AUX L. 
 - Parameters can be controlled via MIDI CC. See the parameter start with GRN.
 - With initialized state of oscillator, C4 is the original pitch of the audio.
+- The number of voice is limited up to 2 voice with Granular mode.
 
 This is a simple setup to use the granular engine:
 
@@ -814,7 +816,7 @@ Sequencer data will be store when saving with preset.
 Granular record data will be saved when granular mode is not OFF.
 
 
-### SET:SYSTEM
+### SYS:SYSTEM
 System Setting is the setting that is not included in the patch setting. To change the parameter, press the one of 8 buttons and rotate the dial.
 
 
@@ -843,7 +845,7 @@ Device Index: Device Index. Set 1 if you don’t have multiple devices. It will 
 
 RECV MIDI Ch: Configure receiving MIDI channel. Default is ALL. If you use it with Polyphonic setup, set the same channel or ALL for all devices.
 
-MIDI Forwarding: MIDI message forwarding for standalone polyphonic configuration. When the option is ON, the message forwarding is active with PolyMono or PolyDuo configuration. It's not for generic MIDI forwarding like MIDI THRU. Do not turn this option with DAW configuration. Most of DAW will echo received MIDI message, it will cause an infinite MIDI message loop. 
+MIDI Forwarding: MIDI message forwarding for standalone polyphonic configuration. When the option is ON, the message forwarding is active with PolyMono or PolyQuad configuration. It's not for generic MIDI forwarding like MIDI THRU. Do not turn this option with DAW configuration. Most of DAW will echo received MIDI message, it will cause an infinite MIDI message loop. 
 
 LINE in THRU: If it is off, it is automatically turn on or off LINE IN pass through by mono / poly setting. If it is on, the synth always passes the signal to looper. This setting will be stored in the flash memory. Gain is fixed to 1.
 
@@ -852,12 +854,23 @@ LINE in HPF: On is default. LINE in has two HPFs, one is external, one is intern
 Sync Mode: `STOP, MIDI, 2PPQ, 4PPQ, 24PPQ, MOUT, MOUT2`. Select clock source for sequencer and LFO. See `Clock synchronization` for detail. 
 
 
+### SYS:SYSTEM2
+
+System2 is page 2 of system menu.
+In System major mode, SHIFT + [OK] to go System2 menu.
+
+Button | Function
+------------ | -------------
+1 | Quad mode On/Off
+
+Quad mode enables quad voice (4 voices, 1 oscillator per voice) or dual-mono (2 voices, 2 oscillators per voice)
+When the mode is off, voice will be Duo (2 voices, 1 oscillator per voice) or mono. Setting this mode will help to reduce system load.
 
 
 
 ## POLYPHONIC SETUP
-The synth can be used as Mono or Duo tone if you have more than one device. Qun mk1 and mk2 has compatible sound engine.
-The voice number can be increased up to 8 (with Duo mode), by stacking up the synths.
+The synth can be used as Mono or Quad tone if you have more than one device. Qun mk1 and mk2 has compatible sound engine.
+The voice number can be increased up to 16 (with Quad mode), by stacking up the synths.
 
 _Tested well with two devices, using more than 2 devices is experimental at this stage._
 
@@ -883,7 +896,7 @@ Minimum setup to achieve PolyMono (2 Oscillators per voice) will be the followin
 1. In System menu, "Num of devices" should be 2 for all devices. Set Dev Index=1 for Master device, 2 for Slave device. This will be saved to flash memory.
 2. Initialize a preset (SHIFT + PARAM) on Master device.
 3. Make sure it plays initial SAW wave sound.
-4. Go Key / Other sub-menu and set MonoDuoPolyMode to "PolyMono"
+4. Go Key / Other sub-menu and set MonoQuadPolyMode to "PolyMono"
 5. SHIFT + MODE PLAY button to dump all preset parameters as MIDI CC messages. After the dump, all preset state should be in sync between devices.
 6. Play multiple notes. You should hear two voices.
 
@@ -892,7 +905,7 @@ Minimum setup to achieve PolyDuo (1 Oscillator per voice) will be the following 
 1. In System menu, "Num of devices" should be 2 for all devices. Set Dev Index=1 for Master device, 2 for Slave device.
 2. Initialize a preset (SHIFT + PARAM) on Master device.
 3. Make sure it can play initial SAW wave sound.
-4. Go Key / Other sub-menu and set MonoDuoPolyMode to "PolyDuo"
+4. Go Key / Other sub-menu and set MonoDuoPolyMode to "PolyQuad"
 5. SHIFT + MODE PLAY button to dump all preset commands. After the dump, all preset state should be in sync between devices.
 6. Play multiple notes. You should hear four voices.
 
@@ -900,7 +913,7 @@ Minimum setup to achieve PolyDuo (1 Oscillator per voice) will be the following 
 
 To synchronize all parameters one more time, press SHIFT + MODE PLAY to dump all parameters. It will be sent to slave devices. If you still see issues like out of tune in slave device, try MIDI RECV toggle switch (SHIFT + SYSTEM). It will reset pitch bend or other controller values.
 
-Long press in Modo/Duo/Poly param (Long-press button 6 in Key/Other menu) to synchronize parameters between ocillators.
+Long press in Modo/Quad/Poly param (Long-press button 6 in Key/Other menu) to synchronize parameters between ocillators.
 
 If it starts making ground loop noise, use separated power supply and use standalone setup or use separated MIDI cable to avoid MIDI signal noise.
 

@@ -14,4 +14,5 @@ Here are the steps to update the firmware:
 
 # History
 
+- v3.10 : Number of voice was doubled, now it supports up to 4 voices. Bit crusher effect added.
 - v3.00 Initial firmware is released
