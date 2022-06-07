@@ -14,6 +14,6 @@ Here are the steps to update the firmware:
 
 # History
 
-- v3.11: Improved processing time when deliting all tracks in the scene
+- v3.11: Improved processing time when deleting all tracks in the scene
 - v3.10 : Number of voice was doubled, now it supports up to 4 voices. Bit crusher effect added.
 - v3.00 Initial firmware is released
