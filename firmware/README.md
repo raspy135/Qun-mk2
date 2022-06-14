@@ -14,6 +14,9 @@ Here are the steps to update the firmware:
 
 # History
 
+- v3.13
+	- Bug fix:  OSC1 bypass was not working properly
+	- Performance improvement
 - v3.12
 	- Improved processing time when deleting all tracks in the scene,
 	- A bug fix with probability for second note
