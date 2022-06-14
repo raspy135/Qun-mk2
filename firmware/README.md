@@ -14,6 +14,11 @@ Here are the steps to update the firmware:
 
 # History
 
+- v3.15
+	- Bug fix: FM (Mix, button 2, FM between Osc1 and Osc2) was not working properly	
+	- Bug fix: Note off was sent to MIDI OUT even if the ext sequencer midi channel is off
+- v3.14
+	- Startup screen added
 - v3.13
 	- Bug fix:  OSC1 bypass was not working properly
 	- Performance improvement
