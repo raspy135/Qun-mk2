@@ -14,6 +14,8 @@ Here are the steps to update the firmware:
 
 # History
 
+- v3.16
+	- Bug fix: Loading scene issue with mixed length of recordings
 - v3.15
 	- Bug fix: FM (Mix, button 2, FM between Osc1 and Osc2) was not working properly	
 	- Bug fix: Note off was sent to MIDI OUT even if the ext sequencer midi channel is off
