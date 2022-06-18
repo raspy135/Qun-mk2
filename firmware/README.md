@@ -14,6 +14,10 @@ Here are the steps to update the firmware:
 
 # History
 
+- v3.17
+	- Performance improvement
+	- Longer time to activate long press
+	- Softer clipping at the end of the signal
 - v3.16
 	- Bug fix: Loading scene issue with mixed length of recordings
 - v3.15
