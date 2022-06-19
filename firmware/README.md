@@ -14,6 +14,8 @@ Here are the steps to update the firmware:
 
 # History
 
+- v3.18
+	- Bug fix: Some modulation sources (OSC2, OSC2EG) were not working properly
 - v3.17
 	- Performance improvement
 	- Longer time to activate long press
