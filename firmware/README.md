@@ -14,6 +14,9 @@ Here are the steps to update the firmware:
 
 # History
 
+- v3.19
+	- Bug fix: System crush when long sample is imported
+	- Better WAV file compatibility (WAV file with JUNK chunk supported) 
 - v3.18
 	- Bug fix: Some modulation sources (OSC2, OSC2EG) were not working properly
 - v3.17
