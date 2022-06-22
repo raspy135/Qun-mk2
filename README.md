@@ -210,7 +210,7 @@ When you save the preset or load the preset from bank 1 to 8, the name is used t
 
 ## Signal diagram
 
-![qun2_signal_diagram](/Users/ryosukekojima/git/Qun-mk2/manual_images/qun2_signal_diagram.png)
+![qun2_signal_diagram](./manual_images/qun2_signal_diagram.png)
 
 ## Parameter Mode
 
