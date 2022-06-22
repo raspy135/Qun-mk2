@@ -181,6 +181,8 @@ Looper recording (5 Scenes * 3 tracks) and Mixer data will be saved in the sessi
 Saving session is performed half-automatically. Looper recording data will be saved immediately after the recording. 
 Mixer and Bucket data will be saved quietly when looper is stopped. You can manually execute it by pressing LOOPER STOP button.
 
+There is no "new session" function. The synth always create a new session when booting.
+
 To load session, press SHIFT + LOOPER PLAY when you are not in System mode or Granular mode. Current session number "Session:0001" will be indicated. Turn dial to select the session you want to load.
 
 If you want to load older than recent 32 session, you can press NO / OK button to scroll the page.
@@ -205,6 +207,10 @@ Solid LED indicates current bucket you are in when pressing MODE PLAY button.
 
 There is no copy function between bucket, but you can use preset bank 1 to bank 8 as a copy buffer.
 When you save the preset or load the preset from bank 1 to 8, the name is used to indicate the bucket, so always to recommend to set name by saving or loding preset.
+
+## Signal diagram
+
+![qun2_signal_diagram](/Users/ryosukekojima/git/Qun-mk2/manual_images/qun2_signal_diagram.png)
 
 ## Parameter Mode
 
@@ -797,8 +803,11 @@ Button | Function
 
 This mixer has a compressor. Ratio, attack time and release time are fixed (1:3, attack 30ms, release 100ms).
 
-See clipping incidator if you want to avoid clipping.
-Mixer setting will be saved in Session.
+To turn off compressor, set Compressor threshold to zero.
+
+See clipping incidator if you want to avoid clipping. The synth does soft clipping, so the clipped sound is preferrable sometimes.
+
+Mixer setting will be saved when Session is saved.
 
 ### Extra processing
 
