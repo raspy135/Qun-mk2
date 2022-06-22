@@ -70,6 +70,14 @@ Three track looper with 5 scenes, you can swap 3 track x 5 scenes while playing.
   	* Qun mk2 comes with micro SD card.
   	* All looper recordings, preset and granular sample is stored to SD card
 
+## QUICK START
+
+https://www.youtube.com/watch?v=yVATR95V4To
+
+is the good video to get started.
+
+Factory presets are installed in bank 7 and bank 8. You can alwasy download the presets from this site, under preset folder.
+
 ## CONNECTIONS
 
 * Power: Use a good quality USB power supply. Connect the USB cable to `POWER` labeled USB port (Top one).
