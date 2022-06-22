@@ -76,7 +76,7 @@ https://www.youtube.com/watch?v=yVATR95V4To
 
 is the good video to get started.
 
-Factory presets are installed in bank 7 and bank 8. You can alwasy download the presets from this site, under preset folder.
+Factory presets are installed in bank 7 and bank 8. You can always download the presets from this site, under preset folder.
 
 ## CONNECTIONS
 
