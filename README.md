@@ -10,7 +10,7 @@ Qun-mk2 is a small synthesizer with powerful sound engine, sequencer and looper.
 ## Links and Information
 
 * [Online Shop](https://shop.nunomo.net/products/): Purchase your own one from our website.
-* [Presets](./preset) for tone presets.
+* [Presets](./sd_template/preset/) for tone presets.
 * [Issues](https://github.com/raspy135/Qun-synthesizer/issues): Report issues when you have problems or questions.
 * [Firmware](./firmware): For firmware updates.
 
@@ -207,6 +207,8 @@ Solid LED indicates current bucket you are in when pressing MODE PLAY button.
 
 There is no copy function between bucket, but you can use preset bank 1 to bank 8 as a copy buffer.
 When you save the preset or load the preset from bank 1 to 8, the name is used to indicate the bucket, so always to recommend to set name by saving or loding preset.
+
+Bucket doesn't contain Granular's sample data, however, bucket tries to find a sample from preset folder when the bucket has a name. So if you save the tone preset to bank1 to bank8, Granular's sample will be loaded automatically when the bucket is selected.
 
 ## Signal diagram
 
@@ -707,8 +709,16 @@ Index number | Meaning
 +0 | Main value for the second voice. Useful with Quad mode
 +1 | 2nd half value for the second voice. Useful with Quad mode
 +2 | 3rd value for the second voice. Useful with Quad mode
+++0 | Main value for the 3rd voice. Useful with Quad mode
+++1 | 2nd half value for the 3rd voice. Useful with Quad mode
+++2 | 3rd value for the second voice. Useful with Quad mode
++++0 | Main value for the 4th voice. Useful with Quad mode
++++1 | 2nd half value for the 4th voice. Useful with Quad mode
++++2 | 3rd value for the 4th voice. Useful with Quad mode
 
-Alternatevely, you can step record notes by external MIDI keyboard. Play note by MIDI keyboard while you are pressing one of the eight buttons, the note will be recorded as the tune for the step.
+#### Playing note capturing from external MIDI keyboard
+
+Alternatevely, you can step record notes by external MIDI keyboard. Play note by MIDI keyboard while you are pressing one of the eight buttons, the note will be recorded as the tune for the step. Chord playing can be captured as well.
 https://www.youtube.com/watch?v=aV2YL0idMHA
 
 ### PLY:SEQ CONFIG

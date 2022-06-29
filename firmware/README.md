@@ -14,6 +14,11 @@ Here are the steps to update the firmware:
 
 # History
 
+- v3.21
+	- Bug fix: Granular's out of tune issue
+	- Now Sequencer tune supports up to 4 voices
+	- In Play:Tune, chord play from external MIDI keyboard can be captured
+	- Bug fix: Granular's automatic sample loading when bucket is switched (System tries to find a sample when bucket is named,
 - v3.20
 	- Bug fix: System crush when long sample is imported
 	- Better WAV file compatibility (WAV file with JUNK chunk supported) 
