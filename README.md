@@ -610,6 +610,8 @@ REC + PARAM | UNDO last recording for the track
 
 The sequencer is an 8/16 step based 64 step sequencer. One page has 16 steps and it can have up to 4 pages.
 
+The sequencer UI is influenced by analog 8 step pattern based sequencer. You can on and off pattern and change parameters for the steps. 
+
 Sequencer data will be saved when you save tone preset, and with the Session. Each preset can have 8 sequencer patterns.
 
 ### Looper overview
@@ -654,20 +656,26 @@ Button | Function
 3 | Width Offset (note length). / Long press for playing Pattern shuffle
 4 | Note Randomness
 5 | Arpeggiator
-6 | N/A 
-7 | N/A 
+6 | Rewind Period 
+7 | Rewind Steps 
 8 | Apply modifiers to the current sequence page 
 
-This sub mode has a lot of features to play sequencer with fun.
-Transpose, Width Offset, Pattern shuffle, Randomness, Arpeggiator are pattern modifier. It will be applied to current pattern without breaking the pattern.
+The Modifier is powerful feature, it will give algorithmic effects to the pattern. Those effects will be applied to current pattern without breaking the pattern data.  Also you can apply modifiers to the pattern to make the effect as permanent.
 
 - Transpose will add offset to the pattern. Scale quantize (SEQ Config button 3) will help to keep the result musical.
 - Width Offset will change the note length.
 - Randomness will add some randomness to playing notes.  Scale quantize (SEQ Config button 3) will help to keep the result musical.
 - Arpeggiator will add note offset. Scale quantize (SEQ Config button 3) is important to generate usable Arpeggiator result.
 - Pattern Shuffle will shuffle the playing order of the pattern. It is not random shuffle, so you can make creative and unexpected result without randomness.
+- Rewind period and Rewind steps define the periodical rewind of the sequencer. However, the step goes back to 1 when playing count reaches the length of the pattern.
 
-Also, you can permanently apply the modifiers by pressing button 8. The result will be stored to selected sequence page. If you want to apply only partial steps of the page, you can press [1-8] buttons to unselect steps. Press OK to apply the modifiers while pressing [1-8] buttons. After you applied the modifiers, the modifier values would be reset. Apply is very powerful tool to create generative pattern.
+You can permanently apply the modifiers by pressing button 8. The result will be stored to selected sequence page. If you want to apply only partial steps of the page, you can press [1-8] buttons to unselect steps. Press OK to apply the modifiers while pressing [1-8] buttons. 
+
+You will be asked resetting the modifiers or not resetting the modifiers. If you don't reset modifiers, then the modifiers will be reapplied to the result, so resetting modifiers is recommended to avoid confusions.
+
+If the pattern has more than 8 steps, the modifier will be applied to only the current page. If you want to apply the modifiers to all pages, you don't want to reset modifiers.
+
+After you applied the modifiers, the modifier values would be reset. Apply is very powerful tool to create generative pattern.
 
 
 ### PLY:SEQ ON/OFF

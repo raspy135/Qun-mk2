@@ -14,6 +14,9 @@ Here are the steps to update the firmware:
 
 # History
 
+- v3.22
+	- Rewind period and Rewind steps modifier are added.
+	- When applying the modifier, you can choose resetting or not resetting the modifiers
 - v3.21
 	- Bug fix: Granular's out of tune issue
 	- Now Sequencer tune supports up to 4 voices
