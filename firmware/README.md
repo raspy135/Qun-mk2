@@ -14,6 +14,8 @@ Here are the steps to update the firmware:
 
 # History
 
+- v3.23
+	- Performance improvement
 - v3.22
 	- Rewind period and Rewind steps modifier are added.
 	- When applying the modifier, you can choose resetting or not resetting the modifiers
