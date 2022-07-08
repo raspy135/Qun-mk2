@@ -13,7 +13,8 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
-
+- v3.24
+	- Added a dialog to confirm initializing tone 
 - v3.23
 	- Performance improvement
 - v3.22
