@@ -17,9 +17,9 @@ Qun-mk2 is a small synthesizer with powerful sound engine, sequencer and looper.
 **We are looking for your feedback! For general impressions and feedback, please email them to info@nunomo.net.**
 
 ## Overview of the QUN mk2
-Qun mk2 has two-oscillator virtual analog, FM, granular sound engine. 2 oscillators can be used as 1 or 2 voices.
+Qun mk2 has two-oscillator virtual analog, FM, granular sound engine. 2 oscillators can be used separately.
 
-A sequencer has 16-steps. You can store 8 patterns for each preset. It has 8 preset and sequencer pattern buckets. You can switch 8 presets and 64 patterns quickly.
+A sequencer is 8-step based sequencer, supports up to 32/64 steps. You can store 8 patterns for each preset. It has 8 preset and sequencer pattern buckets. You can switch 8 presets and 64 patterns quickly.
 
 Three track looper with 5 scenes, you can swap 3 track x 5 scenes while playing. 
 
@@ -76,7 +76,7 @@ https://www.youtube.com/watch?v=yVATR95V4To
 
 is the good video to get started.
 
-Factory presets are installed in bank 7 and bank 8. You can always download the presets from this site, under preset folder.
+Factory presets are installed in bank 7 and bank 8. You can always download the presets from this site, under preset folder, or download sd_template.zip.
 
 ## CONNECTIONS
 
@@ -88,7 +88,7 @@ Factory presets are installed in bank 7 and bank 8. You can always download the 
 
 ## MAJOR MODES
 
- The synth has three major modes. Parameter mode is the main mode of the synthesizer:
+ The synth has three major modes. 
 
 Button | Function
 ------------ | -------------
@@ -151,11 +151,12 @@ SHIFT + LOOPER PLAY + [1-3] button | Import wav file from import folder to selec
 
 The synth has 8 LED indicators on the switch.
 Solid LED shows selected pattern number.
-When playing, another LED shows current position of the sequencer.
-When trying to switch Scene (When pressing LOOPER PLAY) shows current selected Scene.
-When trying to switch Track (When pressing LOOPER REC) shows current selected Track.
-When trying to mute Track (When pressing PARAM) shows current mute status of the Tracks.
-When trying to switch bucket (When pressing MODE PLAY) shows current selected Bucket.
+
+- When playing, another LED shows current position of the sequencer.
+- When trying to switch Scene (When pressing LOOPER PLAY) shows current selected Scene.
+- When trying to switch Track (When pressing LOOPER REC) shows current selected Track
+- When trying to mute Track (When pressing PARAM) shows current mute status of the Tracks.
+- When trying to switch bucket (When pressing MODE PLAY) shows current selected Bucket.
 
 
 ## MIDI learning
@@ -197,7 +198,7 @@ If you have existing recordings in the session, WAV file will be cut to the curr
 
 ## Preset bucket
 
-The synth has 8 preset buckets to recall preset quickly. This is very powerful feature with looper.
+The synth has 8 preset buckets to recall preset quickly. This is powerful feature with looper.
 
 Bucket information is automatically saved with Session when looper is stopped. 
 
@@ -612,7 +613,7 @@ REC + PARAM | UNDO last recording for the track
 
 ### Sequencer overview
 
-The sequencer is an 8/16 step based 64 step sequencer. One page has 16 steps and it can have up to 4 pages.
+The sequencer is an 8/16 step sequencer. One page has 8/16 steps and it can have up to 4 pages.
 
 The sequencer UI is influenced by analog 8 step pattern based sequencer. You can on and off pattern and change parameters for the steps. 
 
@@ -638,7 +639,7 @@ All recorded data, Preset bucket and Mixer data will be saved as a Session autom
 
 ### Looper live playing / Partial scene switch
 
-Scene is very powerful feature. You can play looper like Ableton Live's Session view. 
+Scene is powerful feature. You can play looper like Ableton Live's Session view. 
 Play sequencer and looper, then LOOPER PLAY + [1-5] to select scene. Scene will be switched at the end of the measure. Synchronized switching works only when sequencer is playing.
 You can switch Scene even if it's not the end of the recording. Changing point is the end of sequencer's measure.
 Normally all tracks moves to new Scene, however, you can partially switch scene as well. Press LOOPER PLAY + [6-8] + [1-5]. [6-8] buttons tells which tracks you want to switch, and [1-5] is the scene number. Looper length can be different.
@@ -648,7 +649,7 @@ Use Preset Bucket to keep preset settings. You can recall tone preset and patter
 
 
 ### PLY:PLAY PIANO
-The mode is simple piano playing mode. Default is chromatic scale, but the scale can be changed by the scale setting in SEQ Config mode. Turn dial to translpose.
+The mode is simple piano playing mode. Default is chromatic scale, but the scale can be changed by the scale setting in SEQ Config mode. Turn dial to transpose.
 
 ### PLY:SEQ MODIFY
 This controls modifier of the sequencer pattern.
@@ -679,7 +680,7 @@ You will be asked resetting the modifiers or not resetting the modifiers. If you
 
 If the pattern has more than 8 steps, the modifier will be applied to only the current page. If you want to apply the modifiers to all pages, you don't want to reset modifiers.
 
-After you applied the modifiers, the modifier values would be reset. Apply is very powerful tool to create generative pattern.
+After you applied the modifiers, the modifier values would be reset. Apply is powerful tool to create generative pattern.
 
 
 ### PLY:SEQ ON/OFF
@@ -836,7 +837,7 @@ Mixer setting will be saved when Session is saved.
 You can toggle Extra processing mode by PARAM + NO button. 
 
 When it's enabled, the Oscillators are turned off, but filter and effector becomes stereo, and connected to after Looper.
-You can apply filter, filter volume, and effects against Looper recording.
+You can apply filter, filter volume, and effects against Looper recording. See the signal diagram to understand how it works.
 
 LFO is still available for filter modulation.
 
@@ -844,7 +845,7 @@ LFO is still available for filter modulation.
 
 ### Bank (1 to 8)
 
-Load or save preset. Each bank can store up to 32 preset.
+Load or save preset. Each bank can store up to 32 preset. Bank 7 and 8 is used for factory install preset, but you can edit it.
 
 Button | Function
 -------- | --------
