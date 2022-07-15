@@ -92,7 +92,7 @@ Factory presets are installed in bank 7 and bank 8. You can always download the 
 
 Button | Function
 ------------ | -------------
-MODE Play | Play Mode. It’s for sequencer / looper. 
+Play | Play Mode. It’s for sequencer / looper. 
 System | Setting. For load / save / system setting.
 Param | Parameter Mode. Change synthesizer’s parameters.
 
