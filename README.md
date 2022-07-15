@@ -458,26 +458,30 @@ Configures other parameters.
 
 	Envelope generators become velocity sensitive when it’s ON.
 
-7. MONO/QUAD/POLY
+7. MONO/QUAD/POLY (Voice mode)
 
-	One synthesizer can be used as Monophonic or Quadphonic.
-	
-	* Mono = Mono (2 OSCs per voice)
-	* Quad = Quad Tone (1 OSC per voice, and the engine has total 4 oscillators for the extra voices)
-	
-   When the mode is Quad or Poly Quad, MIX  and "OSC2 Env Sel" are ignored. MIX is always set to middle, and OSC2 Env Sel is always set to EG2.
-    Most of cases you want to use the same parameters between Osc1 and Osc2 with Quad mode. To copy the parameter from OSC1 to OSC2 (and EG1 and EG2), long press button 7. "OSCs synched" message will be shown. 
-	
-	Here is an example to set up Quad mode
-	1. Initialize tone.
-    2. Configure OSC1 as you like.
-	3. Set this parameter to "Quad" mode by pressing button 7.
-    4. If you want to copy OSC1 parameters to OSC2, in the same submode, long press button 7 until "OSCs synched" message shown.
-	5. Play two notes by external MIDI keyboard. You will hear two voices.
-	
+  One synthesizer can be used as Monophonic or Quadphonic.
 
-    Poly Mono and Poly Quad is for multiple device stacked configuration. You can use multiple Qun Synthesizers to build polyphonic synth.
-	Please see “Polyphonic setup” for detail.
+  * Mono = Mono (2 OSCs per voice)
+  * Quad = Quad Tone (1 OSC per voice, and the engine has total 4 oscillators for the extra voices)
+  * PolyMono = 2 OSCs per voice, but you can get 2 voices
+
+  When the mode is Quad or Poly Quad, MIX  and "OSC2 Env Sel" are ignored. MIX is always set to middle, and OSC2 Env Sel is always set to EG2.
+   Most of cases you want to use the same parameters between Osc1 and Osc2 with Quad mode. 
+
+  To copy the parameter from OSC1 to OSC2 (and EG1 and EG2), long press button 7. "OSCs synched" message will be shown. 
+
+  Here is an example to set up Quad mode
+  1. Initialize tone.
+   2. Configure OSC1 as you like.
+  3. Set this parameter to "Quad" mode by pressing button 7.
+   4. If you want to copy OSC1 parameters to OSC2, in the same submode, long press button 7 until "OSCs synched" message shown.
+  5. Play two notes by external MIDI keyboard. You will hear four voices.
+
+   Poly Mono can be used when you want 2 voices with 2Oscs per voice configuration.
+
+   Poly Quad is for multiple device stacked configuration. You can use multiple Qun Synthesizers to build polyphonic synth.
+  Please see “Polyphonic setup” for detail.
 
 8. LFO SYNC SW
 
@@ -904,8 +908,9 @@ When the mode is off, voice will be Duo (2 voices, 1 oscillator per voice) or mo
 
 
 ## POLYPHONIC SETUP
-The synth can be used as Mono or Quad tone if you have more than one device. Qun mk1 and mk2 has compatible sound engine.
-The voice number can be increased up to 16 (with Quad mode), by stacking up the synths.
+The synth can be used as Mono or Quad(4) voice if you have one device.  Please see "MONO/QUAD/POLY (Voice mode)" section for detail.
+
+The number of the voice can be increased if you have more than one device. Qun mk1 and mk2 has compatible sound engine. The voice number can be increased up to 16 (with Quad mode), by stacking up the synths.
 
 _Tested well with two devices, using more than 2 devices is experimental at this stage._
 
@@ -920,7 +925,7 @@ There are two ways for audio setup:
 
 Use TRS cable to connect Master's MIDI out to Slave's MIDI IN.
 
-Turn on MIDI Forwarding in System menu. All received MIDI signal will be forwarded to Slave device. This is more reliable than DAW setup since it's not relying on DAW's MIDI routing, but you will lose MIDI out function to DAW. (You may still be able to use Slave's MIDI out though)
+Turn on MIDI Forwarding in System menu. All received MIDI signal will be forwarded to Slave device. 
 
 Please make sure you turn off MIDI forwarding when you connect MIDI OUT to DAW next time. Normally DAW echoes the received MIDI packet, so MIDI forwarding setting will cause MIDI message flood.
 
@@ -946,13 +951,9 @@ Minimum setup to achieve PolyDuo (1 Oscillator per voice) will be the following 
 
 ### Polyphonic tips
 
-To synchronize all parameters one more time, press SHIFT + MODE PLAY to dump all parameters. It will be sent to slave devices. If you still see issues like out of tune in slave device, try MIDI RECV toggle switch (SHIFT + SYSTEM). It will reset pitch bend or other controller values.
-
 Long press in Modo/Quad/Poly param (Long-press button 6 in Key/Other menu) to synchronize parameters between ocillators.
 
-If it starts making ground loop noise, use separated power supply and use standalone setup or use separated MIDI cable to avoid MIDI signal noise.
-
-
+To synchronize all parameters between multiple Qun synthesizers, press SHIFT + MODE PLAY to dump all parameters. It will be sent to slave devices. If you still see issues like out of tune in slave device, try MIDI RECV toggle switch (SHIFT + SYSTEM). It will reset pitch bend or other controller values.
 
 
 ## TIPS/TROUBLESHOOTING
