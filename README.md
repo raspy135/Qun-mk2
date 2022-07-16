@@ -841,6 +841,8 @@ You can apply filter, filter volume, and effects against Looper recording. See t
 
 LFO is still available for filter modulation.
 
+When Extra processing is on, display will be inverted.
+
 ## SETTING MODE
 
 ### Bank (1 to 8)
