@@ -176,6 +176,9 @@ To avoid confusion, this setting won't be saved.
 
 ## Session
 
+
+![data_structure](./manual_images/data_structure.002.png)
+
 Session is the biggest data unit of the synth.
 Session includes 8 preset buckets. Each bucket contains one preset with 8 pattern sequencer data.
 Looper recording (5 Scenes * 3 tracks) and Mixer data will be saved in the session.
@@ -200,16 +203,31 @@ If you have existing recordings in the session, WAV file will be cut to the curr
 
 The synth has 8 preset buckets to recall preset quickly. This is powerful feature with looper.
 
+![data_structure](./manual_images/data_structure.001.png)
+
 Bucket information is automatically saved with Session when looper is stopped. 
 
 Each bucket contains one preset and 8 sequencer pattern.
 In order to switch between bucket, press MODE PLAY + [1-8] buttons.
 Solid LED indicates current bucket you are in when pressing MODE PLAY button.
 
+To understand how bucket works, try the following steps:
+
+1. Reset the board
+2. Change some parameter to configure the sound, let's set it to Sine wave.
+3. Press Recall(Mode/Play) + Button 2 to switch Bucket 2
+4. Then the sound should be changed to the default SAW wave.
+5. Change some parameters to program, let's set it to White noise.
+5. Press Recall + Button 1 to switch back to Bucket 1
+6. The first sound you configured should be recalled.
+7. Press Recall + Button 2 to switch to Bucket 2 again
+8. White noise should be recalled.
+
 There is no copy function between bucket, but you can use preset bank 1 to bank 8 as a copy buffer.
 When you save the preset or load the preset from bank 1 to 8, the name is used to indicate the bucket, so always to recommend to set name by saving or loding preset.
 
 Bucket doesn't contain Granular's sample data, however, bucket tries to find a sample from preset folder when the bucket has a name. So if you save the tone preset to bank1 to bank8, Granular's sample will be loaded automatically when the bucket is selected.
+
 
 ## Signal diagram
 
