@@ -631,6 +631,8 @@ REC + PARAM | UNDO last recording for the track
 
 ### Sequencer overview
 
+Tutorial video (https://www.youtube.com/watch?v=vZqdzkTQ1Mg)
+
 The sequencer is an 8/16 step sequencer. One page has 8/16 steps and it can have up to 4 pages.
 
 The sequencer UI is influenced by analog 8 step pattern based sequencer. You can on and off pattern and change parameters for the steps. 
@@ -639,12 +641,17 @@ Sequencer data will be saved when you save tone preset, and with the Session. Ea
 
 ### Looper overview
 
+Tutorial video (https://www.youtube.com/watch?v=iD4WpX3tHUE)
+
 The looper is designed to work with sequencer. The looper always tries to sync with sequencer play. Looper won't start playing when sequencer is not running. Use blank sequencer pattern when you don't want to make sound from sequencer.
 
-To start looper recording, hit LOOPER REC + LOOPER PLAY. First recorded track will define the length of the loop.
+To start looper recording, hit LOOPER REC + LOOPER PLAY. If the sequencer is not running, it will not start recording but it's stand by for recording. In this case, press SEQ PLAY to start recording. When the sequencer is playing, the recording will be start at the beginning of the next measure.
 
-Press LOOPER STOP when you finished the recording.
-Looper keeps playing the recorded sound. All recorded data will be saved to SD card.
+First recorded track will define the length of the loop.
+
+Press LOOPER STOP when you finished the recording. You don't need to press the stop button precisely, you can press earlier, then recording will be finished at the end of the measure.
+
+Looper keeps playing the recorded sound. All recorded data will be saved to SD card immediately.
 
 Looper has 3 Tracks. REC + [1-3] button to select recording track.
 Looper has 5 Scenes. LOOPER PLAY + [1-5] to select scene.
@@ -870,7 +877,7 @@ Button | Function
 SHIFT + LOOPER REC | Save
 SHIFT + LOOPER PLAY | Load
 
-Sequencer data will be store when saving with preset.
+Sequencer data will be stored with preset.
 Granular record data will be saved when granular mode is not OFF.
 
 
