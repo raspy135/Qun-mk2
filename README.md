@@ -653,8 +653,11 @@ Press LOOPER STOP when you finished the recording. You don't need to press the s
 
 Looper keeps playing the recorded sound. All recorded data will be saved to SD card immediately.
 
-Looper has 3 Tracks. REC + [1-3] button to select recording track.
-Looper has 5 Scenes. LOOPER PLAY + [1-5] to select scene.
+Looper has 3 Tracks. REC + [1-3] button to select recording track. Each recording can go up to about 25 seconds.
+
+One set of recordings is called Scene. Looper has 5 Scenes. LOOPER PLAY + [1-5] to select scene.
+
+![looper_scene](./manual_images/looper_scene.png)
 
 Reduce record volume (-3.0dB or more) in Mixer to avoid clipping. MODE PLAY + turn dial to change the value.
 
