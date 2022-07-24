@@ -645,7 +645,7 @@ Tutorial video (https://www.youtube.com/watch?v=iD4WpX3tHUE)
 
 The looper is designed to work with sequencer. The looper always tries to sync with sequencer play. Looper won't start playing when sequencer is not running. Use blank sequencer pattern when you don't want to make sound from sequencer.
 
-To start looper recording, hit LOOPER REC + LOOPER PLAY. If the sequencer is not running, it will not start recording but it's stand by for recording. In this case, press SEQ PLAY to start recording. When the sequencer is playing, the recording will be start at the beginning of the next measure.
+To start looper recording, hit LOOPER REC + LOOPER PLAY. If the sequencer is not running, it will not start recording but it's stand by for recording. In this case, press SEQ PLAY to start recording. When the sequencer is playing, the recording will be started at the beginning of the next measure.
 
 First recorded track will define the length of the loop.
 
