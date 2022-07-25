@@ -41,7 +41,7 @@ Three track looper with 5 scenes, you can swap 3 track x 5 scenes while playing.
   * 1 Organic sounding VCF
     * 2/4 Poles, Low-pass, Band-pass, High-pass, Notch)
     * Key sync
-  * 1 Effect (Delay, Chorus, Flanger)
+  * 1 Effect (Delay, Chorus, Flanger, BitCrusher)
   * MIDI clock sync
 * Player / Sequencer
   * Player (piano mode)
@@ -224,9 +224,9 @@ To understand how bucket works, try the following steps:
 8. White noise should be recalled.
 
 There is no copy function between bucket, but you can use preset bank 1 to bank 8 as a copy buffer.
-When you save the preset or load the preset from bank 1 to 8, the name is used to indicate the bucket, so always to recommend to set name by saving or loding preset.
+When you save the preset or load the preset from bank 1 to 8, the name is used to indicate the bucket, so always recommending to set name by saving or loding preset.
 
-Bucket doesn't contain Granular's sample data, however, bucket tries to find a sample from preset folder when the bucket has a name. So if you save the tone preset to bank1 to bank8, Granular's sample will be loaded automatically when the bucket is selected.
+Bucket doesn't contain Granular's sample data, however, bucket tries to find a sample from preset folder when the bucket has a name. So if you save the tone preset in bank1 to bank8, Granular's sample will be loaded automatically when the bucket is selected.
 
 
 ## Signal diagram
@@ -307,11 +307,11 @@ Mix controls mixer and effects.
 
 5. EFFECT TYPE
 
-	Off, Delay, Chorus1, Chorus2, Flanger1, Flanger2. They are reserved for future additional effects
+  Off, Delay, Chorus1, Chorus2, Flanger1, Flanger2, Crusher (Bit crusher), MDelay(Mono delay), RSVD(Reserved for the future update)
 
 6. EFFECT SPEED
 
-	Controls Effect LFO rate
+	Controls Effect LFO rate or delay time
 
 7. EFFECT DEPTH
 
@@ -321,7 +321,14 @@ Mix controls mixer and effects.
 
 	Feedback for Delay
 
-The Delay can be set very short. Very short delay can be used to create an interesting simulation of flute or violin. 
+#### Effector tips
+- Effector became stereo since the firmware v3.30
+- The Delay speed can be set very short. Very short delay can be used to create an interesting simulation of flute or violin. Mono Delay will work better for the use delay as a resonator.
+- You can widen stereo image by short delay. 
+  - Effector Type : Delay
+  - Speed : Around 30
+  - Depth : Around 30
+  - Feedback : 0
 
 ### PRM:ENV1/2
 The synth has four Envelope generators. ENV1 and ENV2 are both independently and fully configurable. ENV3 and ENV4 shares the parameter. Also ENV3 / ENV4 is connected to FM operators.
@@ -862,14 +869,24 @@ Mixer setting will be saved when Session is saved.
 
 ### Extra processing
 
-You can toggle Extra processing mode by PARAM + NO button. 
+You can toggle Extra processing mode by **PARAM + NO** button. 
 
 When it's enabled, the Oscillators are turned off, but filter and effector becomes stereo, and connected to after Looper.
-You can apply filter, filter volume, and effects against Looper recording. See the signal diagram to understand how it works.
+You can apply filter, filter volume, and effects against Looper recording. **See the signal diagram to understand how it works.**
 
 LFO is still available for filter modulation.
 
-## SETTING MODE
+The following parameters are still available with Extra processing:
+
+- All parameters in VCF sub-mode
+- VCF Mod Sel
+- VCF Volume
+- 2 / 4 pole
+- 2nd Filter (When VCF is 2 pole)
+- All parameters in LFO submode
+-  Effector parameters (Type, Speed, Depth and Feedback)
+
+## SYSTEM MODE
 
 ### Bank (1 to 8)
 
