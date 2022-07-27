@@ -1,6 +1,6 @@
 # Demo description
 This demo is made to demonstrate using Qun mk2 as an effector.
-Youtube video link is ***.
+Youtube video link is https://youtu.be/WFIFb5T4T00
 
 ## Usage
 1. Require v3.30 firmware or later.
