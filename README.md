@@ -13,7 +13,7 @@ Qun-mk2 is a small synthesizer with powerful sound engine, sequencer and looper.
 * [Presets](https://github.com/raspy135/Qun-mk2/blob/main/sd_template.zip) for tone presets. We constantly update the tone presets.
 * [Issues](https://github.com/raspy135/Qun-synthesizer/issues): Report issues when you have problems or questions.
 * [Firmware](./firmware): For firmware updates.
-* [CheetSheet](./cheetsheet.pdf) : For cheet sheet.
+* [CheatSheet](./cheatsheet.pdf) : For cheat sheet.
 
 **We are looking for your feedback! For general impressions and feedback, please email them to info@nunomo.net.**
 
