@@ -1,4 +1,12 @@
-#### ** Please send email to info@nunomo.net , or open issues for inquiries. **
+# Contact
+
+- Email: info@nunomo.net
+- Github : Open an issue if you have GitHub account. It's the best place to submit bugs.
+- [Discord](https://discord.gg/kcvVTPkZVQ) : Nunomo's Discord server to have a chat, an announcement, and events.
+- Social media links:
+  - Instagram : @nunomo1
+  - Twitter (Japanese) : @nunomo1
+  - Youtube : https://www.youtube.com/channel/UCqRm00_gIZP4mkpSQbJN8oA
 
 
 # Qun-mk2
