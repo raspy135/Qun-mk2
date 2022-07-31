@@ -636,8 +636,8 @@ PARAM + NO | Toggle Extra processing
 MODE PLAY + [1-8] | Recall preset bucket
 SEQ PLAY + [1-8] | Select Sequencer pattern
 SEQ PLAY + NO / OK | Move to previous / next Sequencer page
+SHIFT + SEQ PLAY +  NO / OK | Copy Sequencer page to previous / next Sequencer page
 SEQ PLAY + [1-8] + turn dial | Copy sequencer pattern to other bank. It's useful when you want to make a new bank by using existing data. If you want to cancel the operation, turn to the end, then "CANCEL" will be indicated as the destination. To initialize the bank data, turn the dial to "CLEAR". 
-SEQ PLAY + [1-8] + NO / OK | Copy Sequencer page to previous / next Sequencer page
 NO | Select previous pattern
 OK | Select next pattern
 SHIFT + LOOPER STOP | Delete all track recordings in the current scene, reset recording length 

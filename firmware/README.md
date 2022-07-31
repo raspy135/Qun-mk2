@@ -13,14 +13,19 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v3.34
+	
+	- Bug fix : Sequencer page copy can perform by Shift + Seq Play + (YES or NO). Previous method is still working but not recommended.
+	
 - v3.33
-	- Performance improvement
-	- Bug fix: Sequencer behavior with chord
-	- Bug fix: Line in channel balance and matching level with polyphonic setup
-	- Add an ability to select old LOOPER folder (https://github.com/raspy135/Qun-mk2#looper00) 
+
+  - Performance improvement
+  - Bug fix: Sequencer behavior with chord
+  - Bug fix: Line in channel balance and matching level with polyphonic setup
+  - Add an ability to select old LOOPER folder (https://github.com/raspy135/Qun-mk2#looper00) 
 
 - v3.32		
-	- Bug fix: Looper playback was mixed between channels, the bug introduced by recent firmware.
+  - Bug fix: Looper playback was mixed between channels, the bug introduced by recent firmware.
 - v3.31 (deleted)
 - v3.30
   - Effector output is now stereo. Preset was updated to get the benefit of stereo effector, so please download and install preset as well. To download preset, download ../sd_template.zip and expand it, copy them to sd card.
