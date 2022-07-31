@@ -963,9 +963,9 @@ When the mode is off, voice will be Duo (2 voices, 1 oscillator per voice) or mo
 
 
 ## POLYPHONIC SETUP
-The synth can be used as Mono or Quad(4) voice if you have one device.  Please see "MONO/QUAD/POLY (Voice mode)" section for detail.
+The synth can be used as Mono, dual Mono or Quad(4) voice if you have one device.  Please see "MONO/QUAD/POLY (Voice mode)" section for detail.
 
-The number of the voice can be increased if you have more than one device. Qun mk1 and mk2 has compatible sound engine. The voice number can be increased up to 16 (with Quad mode), by stacking up the synths.
+The number of the voice can be increased if you have more than one device. The voice number can be increased up to 16 (with Quad mode), by stacking up the synths.
 
 _Tested well with two devices, using more than 2 devices is experimental at this stage._
 
@@ -980,9 +980,7 @@ There are two ways for audio setup:
 
 Use TRS cable to connect Master's MIDI out to Slave's MIDI IN.
 
-Turn on MIDI Forwarding in System menu. All received MIDI signal will be forwarded to Slave device. 
-
-Please make sure you turn off MIDI forwarding when you connect MIDI OUT to DAW next time. Normally DAW echoes the received MIDI packet, so MIDI forwarding setting will cause MIDI message flood.
+On the master device, turn on MIDI Forwarding in System menu. All received MIDI signal will be forwarded to the slave device. 
 
 ### Preset setup for Polyphonic
 
@@ -993,16 +991,18 @@ Minimum setup to achieve PolyMono (2 Oscillators per voice) will be the followin
 3. Make sure it plays initial SAW wave sound.
 4. Go Key / Other sub-menu and set MonoQuadPolyMode to "PolyMono"
 5. SHIFT + MODE PLAY button to dump all preset parameters as MIDI CC messages. After the dump, all preset state should be in sync between devices.
-6. Play multiple notes. You should hear two voices.
+6. Play multiple notes. You should hear four voices.
+7. Turn off Compressor of the Slave device (Play:Mixer:Comp threshold to 0.0dB) to match volume
 
-Minimum setup to achieve PolyDuo (1 Oscillator per voice) will be the following with 2 devices setup:
+Minimum setup to achieve PolyQuad (1 Oscillator per voice) will be the following with 2 devices setup:
 
 1. In System menu, "Num of devices" should be 2 for all devices. Set Dev Index=1 for Master device, 2 for Slave device.
 2. Initialize a preset (SHIFT + PARAM) on Master device.
 3. Make sure it can play initial SAW wave sound.
 4. Go Key / Other sub-menu and set MonoDuoPolyMode to "PolyQuad"
 5. SHIFT + MODE PLAY button to dump all preset commands. After the dump, all preset state should be in sync between devices.
-6. Play multiple notes. You should hear four voices.
+6. Play multiple notes. You should hear 8 voices.
+7. Turn off Compressor of the Slave device (Play:Mixer:Comp threshold to 0.0dB) to match volume
 
 ### Polyphonic tips
 
@@ -1078,7 +1078,9 @@ Filename | Description
 [B000_00.dat] | B means Bucket data. This contains 8 preset and 64 sequencer pattern. The first 3 digit means Session number. The second 2 digit is always zero. 
 [Z000_00.dat] | Z is for undo buffer.
 
-When the directory has more than 500 files, then "LOOPER01" will be created.
+#### File number limit and accessing to the old folder
+
+When the directory has more than 500 files, then "LOOPER01" will be created to avoid performance issue. Once a new folder created, the new folder is always selected. Only one LOOPERXX folder is accessible, however, you can specify old folder by pressing Button 1 to 8 when booting. (Button1 means LOOPER00, Button 2 means LOOPER01, and so on)
 
 ### PRESET
 Preset (Bank 1 to 8) is stored here.
