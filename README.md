@@ -809,7 +809,7 @@ Select "R0" for normal parallel run.
 If you select R1 to R8, the second (or third) pattern will run as relative pitch to the primary pattern.
 In this setting, C5 is the center (zero). The sequencer will update the transpose every configured period (R1 to R8) by looking at the current pitch in the primary pattern.
 
-![relative_sequencing](/Users/ryosukekojima/git/Qun-mk2/manual_images/relative_sequencing.png)
+![relative_sequencing](./manual_images/relative_sequencing.png)
 
 Let's say the above figure shows the primary pattern.
 
