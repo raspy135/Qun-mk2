@@ -13,10 +13,17 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v3.40
+	
+	- BPM factor supports 0.125 and 0.25.
+	- Ext MIDI scale quantize is added. Setting is available in System2 mode.
+	- Bug fix: Note indication in Tune mode
+	- New feature: Parallel sequencer pattern running. See "Running multiple sequence patterns" section in the manual for detail.
+	
 - v3.34
-	
-	- Bug fix : Sequencer page copy can perform by Shift + Seq Play + (YES or NO). Previous method is still working but not recommended.
-	
+
+  - Bug fix : Sequencer page copy can perform by Shift + Seq Play + (YES or NO). Previous method is still working but not recommended.
+
 - v3.33
 
   - Performance improvement
@@ -26,7 +33,9 @@ Here are the steps to update the firmware:
 
 - v3.32		
   - Bug fix: Looper playback was mixed between channels, the bug introduced by recent firmware.
+
 - v3.31 (deleted)
+
 - v3.30
   - Effector output is now stereo. Preset was updated to get the benefit of stereo effector, so please download and install preset as well. To download preset, download ../sd_template.zip and expand it, copy them to sd card.
   - MDelay(Mono delay) is added to keep backward compatibility, and use it as a resonator.

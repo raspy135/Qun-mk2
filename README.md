@@ -655,6 +655,8 @@ The sequencer UI is influenced by analog 8 step pattern based sequencer. You can
 
 Sequencer data will be saved when you save tone preset, and with the Session. Each preset can have 8 sequencer patterns.
 
+You can run multiple sequencer at the same time, up to three patterns, as normal parallel running or relative running. See PLY:SEQ CONFIG for detail.
+
 ### Looper overview
 
 Tutorial video (https://www.youtube.com/watch?v=iD4WpX3tHUE)
@@ -692,10 +694,10 @@ PARAM + [1-3] to mute tracks.
 Use Preset Bucket to keep preset settings. You can recall tone preset and patterns in a sec by using Preset Bucket.
 
 
-### PLY:PLAY PIANO
+## PLY:PLAY PIANO
 The mode is simple piano playing mode. Default is chromatic scale, but the scale can be changed by the scale setting in SEQ Config mode. Turn dial to transpose.
 
-### PLY:SEQ MODIFY
+## PLY:SEQ MODIFY
 This controls modifier of the sequencer pattern.
 
 Button | Function
@@ -727,7 +729,7 @@ If the pattern has more than 8 steps, the modifier will be applied to only the c
 After you applied the modifiers, the modifier values would be reset. Apply is powerful tool to create generative pattern.
 
 
-### PLY:SEQ ON/OFF
+## PLY:SEQ ON/OFF
 The sequencer has 8 steps per page, but it has more modes than ON/OFF.
 You can set different type of notes by turning dial while you press the button.
 
@@ -739,7 +741,7 @@ Fully-filled circle | Two notes in the step (1/16th).
 Striped circle | 3 notes in the step (triplet).
 Striped square | 4 notes in the step (1/32th)
 
-### PLY:SEQ VELOCITY / WIDTH / PROBABILITY
+## PLY:SEQ VELOCITY / WIDTH / PROBABILITY
 Press one of the eight buttons and turn the dial, then it will modify velocity / width / probablity for each step.
 
 If you press NO or OK while pressing [1-8] button, you can edit subdivision's parameter.
@@ -753,7 +755,7 @@ Index number | Meaning
 +1 | 2nd half value for the second voice. Useful with Quad mode
 +2 | 3rd value for the second voice. Useful with Quad mode
 
-### PLY:SEQ TUNE
+## PLY:SEQ TUNE
 Press one of the eight buttons and turn the dial, then it will modify tune offset for each step.
 
 If you press NO or OK while pressing [1-8] button, you can edit subdivision's parameter.
@@ -778,13 +780,13 @@ Index number | Meaning
 Alternatevely, you can step record notes by external MIDI keyboard. Play note by MIDI keyboard while you are pressing one of the eight buttons, the note will be recorded as the tune for the step. Chord playing can be captured as well.
 https://www.youtube.com/watch?v=aV2YL0idMHA
 
-### PLY:SEQ CONFIG
+## PLY:SEQ CONFIG
 
 Button | Function
 ------------ | -------------
-1 | SWING. Long pressing the button for Sequencer MIDI channel out. 
-2 | Key (for scale).
-3 | Scale. Playing note will be quantized by this scale.
+1 | SWING / Long press for Sequencer MIDI channel out. 
+2 | Key (for scale). / Long press for 2nd pattern 
+3 | Scale. Playing note will be quantized by this scale. / Log press for 3rd pattern 
 4 | Sequencer loop count. Default is 8.  
 5 | BPM factor. Playing speed can be double or half.
 6 | Velocity period (steps). You can play different velocity notes. Make sure you set Velocity Period Volume parameter and Velocity SW is ON
@@ -795,7 +797,29 @@ Velocity period settings (Button 6 - 8) provide a convenient way to make rythmic
 
 Sequencer MIDI channel out is useful setting with external synthesizer. When you set it, the sequencer starts to emit MIDI out signal to external synthesizers. Since it's the parameter of sequencer pattern, you can assign different MIDI channel for every single pattern.
 
-## Ply: Granular
+### Running multiple sequence patterns
+You can run multiple sequeence patterns at the same time, up to 3 patterns by setting "2nd pattern" (Long press button 2) or/and "3rd pattern" (Long press button 3).  The status is shown like this:
+
+`2nd Pt : 2 R 4`
+
+The first number is the sequence pattern number you want to run (1 to 8).
+The second number after "R" means period length for relative pattern run.
+Select "R0" for normal parallel run.
+
+If you select R1 to R8, the second (or third) pattern will run as relative pitch to the primary pattern.
+In this setting, C5 is the center (zero). The sequencer will update the transpose every configured period (R1 to R8) by looking at the current pitch in the primary pattern.
+
+![relative_sequencing](/Users/ryosukekojima/git/Qun-mk2/manual_images/relative_sequencing.png)
+
+Let's say the above figure shows the primary pattern.
+
+If you set "R4" for the second pattern, the transpose for the pattern will be updated every 4 steps. In this figure, 0-0-0-0 then 2-2-2-2 (The number is half steps).
+
+If you set "R2" for the pattern, the transpose for the pattern will be updated every 2 steps. In this figure, 0-0 then 7-7, 2-2, 9-9 and so on.
+
+In relative run mode, the second/third pattern's scale will be ignored, and primary pattern's scale quantize will be applied.
+
+## PLY: Granular
 
 ### Overview
 
@@ -854,7 +878,7 @@ When granular mode is not OFF, the recording data will be save when you save pre
 - If you slice the audio to very short range with Repeat mode, the wave shape could be very simple and generic.
 - With Repeat mode, set length to about 0.5 sec and changing Pulse Width makes unique sound.
 
-### PLY:MIXER
+## PLY:MIXER
 
 Three track Mixer. At the last stage, signal can be **stereo** by panning tracks.
 
@@ -956,10 +980,12 @@ In System major mode, SHIFT + [OK] to go System2 menu.
 Button | Function
 ------------ | -------------
 1 | Quad mode On/Off
+2 | Ext MIDI Scale Quantize
 
 Quad mode enables quad voice (4 voices, 1 oscillator per voice) or dual-mono (2 voices, 2 oscillators per voice)
 When the mode is off, voice will be Duo (2 voices, 1 oscillator per voice) or mono. Setting this mode will help to reduce system load.
 
+Ext MIDI Scale Quantize : When it's on, sequencer's scale and key will be applied to external MIDI keyboard input. Default is off.
 
 
 ## POLYPHONIC SETUP
