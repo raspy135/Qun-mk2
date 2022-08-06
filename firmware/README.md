@@ -13,7 +13,7 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
-- v3.40
+- v3.41
 	
 	- BPM factor supports 0.125 and 0.25.
 	- Ext MIDI scale quantize is added. Setting is available in System2 mode.
