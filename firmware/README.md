@@ -13,13 +13,21 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v3.42
+	
+	- Granular engine's grain cross fade period set shorter when the length is less than 30. It's good when using granular engine as (kind of) wavetable. Set the following value to do unpredictable wavetable:
+	  - granular mode to RPT
+	  - Grain to 1
+	  - Very short GRN Length (Less than 30) 
+	- Bug fix: Performance issue with heavy load
+	
 - v3.41
-	
-	- BPM factor supports 0.125 and 0.25.
-	- Ext MIDI scale quantize is added. Setting is available in System2 mode.
-	- Bug fix: Note indication in Tune mode
-	- New feature: Parallel sequencer pattern running. See "Running multiple sequence patterns" section in the manual for detail.
-	
+
+  - BPM factor supports 0.125 and 0.25.
+  - Ext MIDI scale quantize is added. Setting is available in System2 mode.
+  - Bug fix: Note indication in Tune mode
+  - New feature: Parallel sequencer pattern running. See "Running multiple sequence patterns" section in the manual for detail.
+
 - v3.34
 
   - Bug fix : Sequencer page copy can perform by Shift + Seq Play + (YES or NO). Previous method is still working but not recommended.

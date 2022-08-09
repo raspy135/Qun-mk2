@@ -804,7 +804,7 @@ You can run multiple sequeence patterns at the same time, up to 3 patterns by se
 
 The first number is the sequence pattern number you want to run (1 to 8).
 The second number after "R" means period length for relative pattern run.
-Select "R0" for normal parallel run.
+Select "R0" for the normal parallel run.
 
 If you select R1 to R8, the second (or third) pattern will run as relative pitch to the primary pattern.
 In this setting, C5 is the center (zero). The sequencer will update the transpose every configured period (R1 to R8) by looking at the current pitch in the primary pattern.
@@ -875,7 +875,10 @@ When granular mode is not OFF, the recording data will be save when you save pre
 - PWM (Width) will change sample starting point, it will generate interesting result.
 - Glide parameter is fun parameter with Granular.
 - Speed can go negative.
-- If you slice the audio to very short range with Repeat mode, the wave shape could be very simple and generic.
+- Set the following to do unpredictable wavetable. Change start position or Pulse width for fun.
+	- granular mode to RPT
+	- Grain to 1
+	- Short GRN Length (Less than 30) 
 - With Repeat mode, set length to about 0.5 sec and changing Pulse Width makes unique sound.
 
 ## PLY:MIXER
