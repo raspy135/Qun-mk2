@@ -13,7 +13,7 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
-- v3.43
+- v3.44
 	
 	- Bug fix: Swing behavior with BPM factor
 	- Bug fix: MIDI clock out with parallel pattern play
