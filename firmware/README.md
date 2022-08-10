@@ -13,14 +13,19 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v3.43
+	
+	- Bug fix: Swing behavior with BPM factor
+	- Bug fix: MIDI clock out with parallel pattern play
+	- Bug fix: Sending MIDI signal from external keyboard when it SEQ MIDI channel is set.
+	
 - v3.42
-	
-	- Granular engine's grain cross fade period set shorter when the length is less than 30. It's good when using granular engine as (kind of) wavetable. Set the following value to do unpredictable wavetable:
-	  - granular mode to RPT
-	  - Grain to 1
-	  - Very short GRN Length (Less than 30) 
-	- Bug fix: Performance issue with heavy load
-	
+  - Granular engine's grain cross fade period set shorter when the length is less than 30. It's good when using granular engine as (kind of) wavetable. Set the following value to do unpredictable wavetable:
+    - granular mode to RPT
+    - Grain to 1
+    - Very short GRN Length (Less than 30) 
+  - Bug fix: Performance issue with heavy load
+
 - v3.41
 
   - BPM factor supports 0.125 and 0.25.
