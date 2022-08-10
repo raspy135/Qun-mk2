@@ -190,13 +190,15 @@ To avoid confusion, this setting won't be saved.
 
 Session is the biggest data unit of the synth.
 Session includes 8 preset buckets. Each bucket contains one preset with 8 pattern sequencer data.
-Looper recording (5 Scenes * 3 tracks) and Mixer data will be saved in the session.
-Saving session is performed half-automatically. Looper recording data will be saved immediately after the recording. 
-Mixer and Bucket data will be saved quietly when looper is stopped. You can manually execute it by pressing LOOPER STOP button.
 
 There is no "new session" function. The synth always create a new session when booting.
 
 To load session, press SHIFT + LOOPER PLAY when you are not in System mode or Granular mode. Current session number "Session:0001" will be indicated. Turn dial to select the session you want to load.
+
+Saving session is semi-automated.
+Looper recording data will be saved immediately after the recording. 
+Mixer and Bucket data will be saved when looper is stopped.
+You can manually execute it by pressing LOOPER STOP button, or Shift+Looper REC.
 
 If you want to load older than recent 32 session, you can press NO / OK button to scroll the page.
 

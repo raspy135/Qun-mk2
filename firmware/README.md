@@ -13,12 +13,16 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v3.45
+	
+	- UI improvement: Session save can be performaed by S+REC. Pressing Looper stop will save Sesssion as well, but this is a bit easier to guess. "Ses saved" message is added when you press Looper stop.
+	
 - v3.44
-	
-	- Bug fix: Swing behavior with BPM factor
-	- Bug fix: MIDI clock out with parallel pattern play
-	- Bug fix: Sending MIDI signal from external keyboard when it SEQ MIDI channel is set.
-	
+
+  - Bug fix: Swing behavior with BPM factor
+  - Bug fix: MIDI clock out with parallel pattern play
+  - Bug fix: Sending MIDI signal from external keyboard when it SEQ MIDI channel is set.
+
 - v3.42
   - Granular engine's grain cross fade period set shorter when the length is less than 30. It's good when using granular engine as (kind of) wavetable. Set the following value to do unpredictable wavetable:
     - granular mode to RPT
