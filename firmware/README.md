@@ -13,10 +13,16 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v3.46
+	
+	- Change compressor's default threshold to 0.0dB (OFF) to avoid clipping.
+	- Now you can load looper record data to granular. The recording will be listed at the end of the file list.
+	- Slight sound improvement on Sine and FM.
+	
 - v3.45
-	
-	- UI improvement: Session save can be performaed by S+REC. Pressing Looper stop will save Sesssion as well, but this is a bit easier to guess. "Ses saved" message is added when you press Looper stop.
-	
+
+  - UI improvement: Session save can be performaed by S+REC. Pressing Looper stop will save Sesssion as well, but this is a bit easier to guess. "Ses saved" message is added when you press Looper stop.
+
 - v3.44
 
   - Bug fix: Swing behavior with BPM factor

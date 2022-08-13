@@ -867,8 +867,14 @@ SHIFT + LOOPER PLAY | Load Recording data
 
 LOOPER buttons acts for granular in granular mode.
 
-You can import WAV file if you put WAV file under /granular folder in SD card.
-When granular mode is not OFF, the recording data will be save when you save preset, so normally you don't need to save recording data here. It's designed to export recording data.
+
+### Import wav file from SD card
+
+You can import WAV file if you put WAV file under /granular folder in SD card. And the looper record files will be shown at the end of the list, so you can load looper recorded data to granular as well.
+
+Shift + Looper Play to import WAV file, Shift + Looper REC to export WAV file.
+
+When granular mode is not OFF, the recording data will be saved when you save preset, so normally you don't need to save recording data here. It's designed to export recording data.
 
 
 ### Granular synth tips
