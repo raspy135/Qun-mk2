@@ -13,7 +13,7 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
-- v3.50
+- v3.50 (Beta)
 	
 	- Introducing new UI for the parameter mode
 	- Some parameter button assignment changed due to UI change in Parameter mode.
