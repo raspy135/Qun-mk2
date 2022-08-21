@@ -46,7 +46,7 @@ Three track looper with 5 scenes, you can swap 3 track x 5 scenes while playing.
   * 4 Envelope Generators
   * FM (4 Operators x 2)
   * **Granular / Sampler engine**
-  * 1 LFO
+  * 1 LFO, rate can be controlled by MIDI notes
   * 1 Organic sounding VCF
     * 2/4 Poles, Low-pass, Band-pass, High-pass, Notch)
     * Key sync
@@ -56,11 +56,12 @@ Three track looper with 5 scenes, you can swap 3 track x 5 scenes while playing.
   * Player (piano mode)
   * MIDI out to control external synths
   * **8/16 step sequencer has 4 pages, up to 64-step sequencer** will generate inspiring beats for you
-    * Note On/Off/Double/Triple/4th
-    * Modifiers (Transpose, shuffle, repeat steps and more)
-    * Parallel pattern running up to 3 patterns
+    * Note On/Off/Double/Triple
+    * Transpose / Note width (Length) / Velocity / Probability
+    * Randomness
     * Scale quantize
-    * Live recording
+    * Arpeggiate steps
+    * Shuffle
   * Looper
     * Sequencer synchronized, internal or externally clocked.
     * Looper can record the sound up to around 30 sec for each recording.
@@ -117,7 +118,6 @@ NO | Select previous sequencer pattern
 OK | Select next sequencer pattern
 Dial | change parameters
 SEQ PLAY | Start / Stop sequencer
-REC + SEQ PLAY | Start sequencer live recording
 MODE PLAY | Select Play mode
 SYSTEM | Select System mode
 PARAM | Select Param mode
@@ -134,7 +134,7 @@ SHIFT + MODE PLAY | Dumping current preset to MIDI OUT. This is useful to transf
 SHIFT + SYSTEM | All notes off
 SHIFT + PARAM | Initialize the preset
 SHIFT + SEQ PLAY + turn dial | Set BPM
-MODE PLAY + turn dial | Record volume 
+MODE PLAY + turn dial | Record volume
 SYSTEM + turn dial | VCF volume
 PARAM + turn dial | VCF cutoff
 REC + turn dial | LFO tune
@@ -284,7 +284,7 @@ Button | Description
   - Feedback : 0
 
 ### PRM:ENV1/2
-The synth has four Envelope generators. ENV1 and ENV2 are both independently and fully configurable. ENV3 and ENV4 shares the parameter. ENV3 / ENV4 is connected to FM operators when it's configured (FM ENV3 CONN).
+The synth has four Envelope generators. ENV1 and ENV2 are both independently and fully configurable. ENV3 and ENV4 shares the parameter. Also ENV3 / ENV4 is connected to FM operators.
 
 ![diagram_eg](manual_images/env12.png)
 
@@ -300,7 +300,7 @@ Button | Description
 8 | ENV2 Release
 
 ### PRM:OSC Switches
-Switches and modulation routing.
+OSC has many switches to change its behavior.
 
 ![switches](./manual_images/switches.png)
 
@@ -365,9 +365,9 @@ One synthesizer can be used as Monophonic or Quadphonic.
 - Mono = Mono (2 OSCs per voice)
 - Quad = Quad Tone (1 OSC per voice, and the engine has total 4 oscillators for the extra voices)
 - PolyMono = 2 OSCs per voice, but you can get 2 voices
-- PolyQuad = 1 OSC per voice. It's for Polyphonic setup when you have multiple Qun synthesizers.
+- PolyQuad = 1 OSC per voice. It's for Polyphonic setup when you have multiple Qun synthesizer.
 
-When the mode is Quad or Poly Quad, MIX  and "OSC2 Env Src" are ignored. MIX is always set to middle, and OSC2 Env Src is always set to EG2. Most of cases you want to use the same parameters between Osc1 and Osc2 with Quad mode. 
+When the mode is Quad or Poly Quad, MIX  and "OSC2 Env Src" are ignored. MIX is always set to middle, and OSC2 Env Sel is always set to EG2.Most of cases you want to use the same parameters between Osc1 and Osc2 with Quad mode. 
 To copy the parameter from OSC1 to OSC2 (and EG1 and EG2), long press button 7. "OSCs synched" message will be shown. 
 	
 Here is an example to set up Quad mode
@@ -482,7 +482,6 @@ Most of action works in any major mode, not limited to Play mode.
 Button | function
 -------|-------
 SEQ PLAY | Start / Stop Sequencer
-REC + SEQ PLAY | Start Sequencer live recording
 LOOPER PLAY | Start Looper
 LOOPER STOP | Stop Looper
 LOOPER REC + LOOPER PLAY | Start looper recording
@@ -495,7 +494,7 @@ MODE PLAY + [1-8] | Recall preset bucket
 SEQ PLAY + [1-8] | Select Sequencer pattern
 SEQ PLAY + NO / OK | Move to previous / next Sequencer page
 SHIFT + SEQ PLAY +  NO / OK | Copy Sequencer page to previous / next Sequencer page
-SEQ PLAY + [1-8] + turn dial | Copy sequencer pattern to other pattern. If you want to cancel the operation, turn to the end, then "CANCEL" will be indicated as the destination. To initialize the bank data, turn the dial to "CLEAR". 
+SEQ PLAY + [1-8] + turn dial | Copy sequencer pattern to other bank. It's useful when you want to make a new bank by using existing data. If you want to cancel the operation, turn to the end, then "CANCEL" will be indicated as the destination. To initialize the bank data, turn the dial to "CLEAR". 
 NO | Select previous pattern
 OK | Select next pattern
 SHIFT + LOOPER STOP | Delete all track recordings in the current scene, reset recording length 
@@ -514,20 +513,6 @@ The sequencer UI is influenced by analog 8 step pattern based sequencer. You can
 Sequencer data will be saved when you save tone preset, and with the Session. Each preset can have 8 sequencer patterns.
 
 You can run multiple sequencer at the same time, up to three patterns, as normal parallel running or relative running. See PLY:SEQ CONFIG for detail.
-
-#### Sequencer live recording
-
-You can record live playing to the sequencer. Rec + SEQ PLAY to start recording. Play on Piano mode or play with external MIDI keyboard to record notes. It's always overdubbing.  Note, Width(length) and velocity will be recorded.
-Sequencer playing position indicator changes when live recording.
-	Normal:
-	![seq_normal](./manual_images/seq_normal.png)
-	Live recording:
-	![seq_live](./manual_images/seq_live.png)
-Press SEQ PLAY to exit recording mode, sequencer will keep playing. Press SEQ PLAY again to stop sequencer.
-
-You can (re)enter recording mode while playing. Press Rec + SEQ Play to enter recording mode.
-
-Click sound (metronome) plays when live recording is ongoing.
 
 ### Looper overview
 
@@ -570,8 +555,6 @@ Use Preset Bucket to keep preset settings. You can recall tone preset and patter
 The mode is simple piano playing mode. Default is chromatic scale, but the scale can be changed by the scale setting in SEQ Config mode. Turn dial to transpose.
 
 ## PLY:SEQ MODIFY
-![mod](./manual_images/mod.png)
-
 This controls modifier of the sequencer pattern.
 
 Button | Function
@@ -656,18 +639,16 @@ https://www.youtube.com/watch?v=aV2YL0idMHA
 
 ## PLY:SEQ CONFIG
 
-![conf](./manual_images/conf.png)
-
 Button | Function
 ------------ | -------------
 1 | SWING / Long press for Sequencer MIDI channel out. 
 2 | Key (for scale). / Long press for 2nd pattern 
 3 | Scale. Playing note will be quantized by this scale. / Log press for 3rd pattern 
 4 | Sequencer loop count. Default is 8.  
-5 | BPM factor. Playing speed can be double, normal, 1/2, 1/4 or 1/8 
-6 | Velocity accent period (steps). 
-7 | Velocity for the non-accent notes. 
-8 | Velocity accent Period Offset 
+5 | BPM factor. Playing speed can be double or half.
+6 | Velocity period (steps). You can play different velocity notes. Make sure you set Velocity Period Volume parameter and Velocity SW is ON
+7 | Velocity Period Volume for off-beat note.
+8 | Velocity Period Offset
 
 Velocity period settings (Button 6 - 8) provide a convenient way to make rythmic velocity.
 
@@ -766,14 +747,14 @@ Three track Mixer. At the last stage, signal can be **stereo** by panning tracks
 
 Button | Function
 ------------ | -------------
-1 | Track A volume 
-2 | Track A Pan
-3 | Track B volume
-4 | Track B Pan
-5 | Track C volume
-6 | Track C Pan
-7 | Compressor threshold 
-8 | Compressor makeup 
+1 | Track A volume / Long press for Pan
+2 | Track B volume / Long press for Pan
+3 | Track C volume / Long press for Pan
+4 | Record volume (After the clipper) / Long press for Pan
+5 | Compressor threshold 
+6 | Compressor makeup 
+7 | Toggle extra processing (PARAM + NO is the shortcut)
+8 | Looper volume
 
 This mixer has a compressor. Ratio, attack time and release time are fixed (1:3, attack 30ms, release 100ms).
 
@@ -784,8 +765,6 @@ See clipping incidator if you want to avoid clipping. The synth does soft clippi
 Mixer setting will be saved when Session is saved.
 
 ### Extra processing
-
-This is the mode to use the sound engine to use as an effector.
 
 You can toggle Extra processing mode by **PARAM + NO** button. 
 
@@ -970,9 +949,9 @@ The synth can take external clock sources from other synthesizers. When the sync
 Setting is available in the System menu. Default is OFF. The setting will be saved to internal flash memory.
 
 ### MIDI clock
-When you set sync mode to "MIDI", the synth will be clock slave mode. Set your DAW to send MIDI clock. We tested Ableton Live, Logic Pro X and KeyStep Pro. It has some latency so please adjust latency setting in your DAW to match the timing.
+When you set sync mode to "MIDI", the synth will be clock slave mode. Set your DAW to send MIDI clock. We tested Ableton Live and Logic Pro X and KeyStep Pro. It has some latency so please adjust latency setting in your DAW to match the timing.
 
-If you set sync mode to "MOUT" or "MOUT2", then the synth will be clock master. It sends MIDI clock as well as play/stop MIDI messages. Try "MOUT2" if you feel slight delay between devices. MOUT2 will send extra clock signal when start playing because some devices start sequencing from the second clock  (Roland MC-101 is the example). If you clock another Qun, use MOUT.
+If you set sync mode to "MOUT" or "MOUT2", then the synth will be clock master. It sends MIDI clock as well as play/stop MIDI messages. Try "MOUT2" if you feel slight delay between devices. MOUT2 will send extra clock signal when start playing because some devices start sequencing from the second clock  (Roland MC-101is the example). If you clock another Qun, use MOUT.
 
 ### Sync IN
 The synth can take 2PPQ, 4PPQ or 24 PPQ signals. Don't supply high voltage to the synth, it will break. The signal must be supplied to LEFT channel (tip of TRS connector). Using the tip as a sync signal is compatible with Teenage Engineering's Pocket Operator. Supply voltage needs to be more than 500mV. RIGHT channel (AUXR) still can be used as audio signal or CV in.
