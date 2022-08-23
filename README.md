@@ -104,7 +104,8 @@ Each major mode has sub modes. Select sub mode. For example, `OSC1` is a sub mod
 	After you enter the sub mode you want, press 1-8 button to select parameter.
 * Press one of 8 buttons + rotate dial = Change parameter
 * Rotate the dial = Change the current parameter.
-* Long press the button to show the parameter name.
+* Long press the button to show the parameter full name and value.
+* For initial training, cheatsheet(./cheatsheet.pdf) would be useful. Also you can turn on parameter caption mode in System2 menu, button 3.
 
 
 * If you want to do fine value adjustment, you can use NO/OK buttons to change the value by 1. To do this, keep pressing one of 8 buttons and press NO or OK button.
@@ -165,7 +166,7 @@ Solid LED shows selected pattern number.
 Assigning proper MIDI CC to your MIDI keyboard is recommended for frequently used parameters, however, you can override MIDI CC temporary by the following operation:
 
 1. In parameter mode, press corresponding parameter long time (about 3 sec). For example, OSC1's Pulse Width is button 2 in OSC1 sub mode.
-2. Then the parameter name and value will be shown in the screen. Keep pressing the button.
+2. Then the parameter name and value will be shown in the screen. Keep pressing the button about 3 sec.
 3. Send MIDI CC signal from your MIDI keyboard (Turn the knob or move fader). The sent MIDI CC# will control the assigned parameter.
 
 Once the parameter is assigned, then "*" mark is indicated before the CC number. Original CC assignment is still working. It won't be affected with MIDI dumping.
@@ -866,12 +867,15 @@ Button | Function
 ------------ | -------------
 1 | Quad mode On/Off
 2 | Ext MIDI Scale Quantize
+3 | Parameter caption On/Off
 8 | Screen Contrast
 
 Quad mode enables quad voice (4 voices, 1 oscillator per voice) or dual-mono (2 voices, 2 oscillators per voice)
 When the mode is off, voice will be Duo (2 voices, 1 oscillator per voice) or mono. Setting this mode will help to reduce system load.
 
 Ext MIDI Scale Quantize : When it's on, sequencer's scale and key will be applied to external MIDI keyboard input. Default is off.
+
+When the parameter caption is On, the parameter name will be shown when you press the button. It's a good option for initial training.
 
 
 ## POLYPHONIC SETUP

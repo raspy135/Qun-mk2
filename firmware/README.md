@@ -13,13 +13,16 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- V3.51(Beta)
+	- Parameter caption mode is added in System2 menu. It's a good option for training.
+	
 - v3.50 (Beta)
-	
-	- Introducing new UI for the parameter mode
-	- Some parameter button assignment changed due to UI change in Parameter mode.
-	- Screen contrast adjustment in system2 menu
-	- Sequence live recording is added. Rec + Seq play to record. Play with external MIDI keyboard or internal piano mode. See manual for detail.
-	
+
+  - Introducing new UI for the parameter mode
+  - Some parameter button assignment changed due to UI change in Parameter mode.
+  - Screen contrast adjustment in system2 menu
+  - Sequence live recording is added. Rec + Seq play to record. Play with external MIDI keyboard or internal piano mode. See manual for detail.
+
 - v3.46
 
   - Change compressor's default threshold to 0.0dB (OFF) to avoid clipping.
