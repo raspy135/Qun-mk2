@@ -6,16 +6,21 @@ Here are the steps to update the firmware:
 2. Insert micro SD card to your computer.
 3. Unzip and copy "qunmk2.bin" to the root folder of micro SD card.
 4. Unmount and insert the micro SD card to Qun mk2
-5. Disconnect all cables other than USB for power.
+5. Disconnect all cables other than USB for power. **DO NOT USE USB BATTERY WHEN UPGRADING THE FIRMWARE. Underpowered USB battery might break flash memory**
 6. Keep pressing "REC" button on the bottom base board (Located at bottom-left side of the base board, under SEQ PLAY button), and connect USB cable, or press "RST" button on base board.
 7. "Firmware updater" message will be shown when the updater booted.
 8. After "Updating" message, then "Done" message will be shown.
 9. Reset the board.
 
 # History
-- V3.51(Beta)
-	- Parameter caption mode is added in System2 menu. It's a good option for training.
+- v3.52
 	
+	- Small behavior improvement when you long press a button to show the full parameter name.
+	
+- V3.51(Beta)
+
+  - Parameter caption mode is added in System2 menu. It's a good option for training.
+
 - v3.50 (Beta)
 
   - Introducing new UI for the parameter mode
