@@ -190,8 +190,9 @@ To load session, press SHIFT + LOOPER PLAY when you are not in System mode or Gr
 
 Saving session is semi-automated.
 Looper recording data will be saved immediately after the recording. 
-Mixer and Bucket data will be saved when looper is stopped.
-You can manually execute it by pressing LOOPER STOP button, or Shift+Looper REC.
+Mixer and Bucket data will be saved when LOOPER STOP button is pressed.
+This can be turned off in System2 menu.
+You can save the session manually by pressing Shift+Looper REC.
 
 If you want to load older than recent 32 session, you can press NO / OK button to scroll the page.
 
@@ -868,6 +869,7 @@ Button | Function
 1 | Quad mode On/Off
 2 | Ext MIDI Scale Quantize
 3 | Parameter caption On/Off
+4 | Session Autosave On/Off
 8 | Screen Contrast
 
 Quad mode enables quad voice (4 voices, 1 oscillator per voice) or dual-mono (2 voices, 2 oscillators per voice)
