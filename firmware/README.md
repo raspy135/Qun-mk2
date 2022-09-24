@@ -13,12 +13,16 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v3.54
+	
+	- Bug fix: Some UI issues
+	
 - v3.53
-	
-	- Bug fix: Delay has an issue with long delay time.
-	
-	- Session Autosave can be turned off in System2 menu. SHIFT + Rec to execute manual saving.
-	
+
+  - Bug fix: Delay has an issue with long delay time.
+
+  - Session Autosave can be turned off in System2 menu. SHIFT + Rec to execute manual saving.
+
 - v3.52
 
   - Small behavior improvement when you long press a button to show the full parameter name.
