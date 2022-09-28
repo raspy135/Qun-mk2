@@ -13,7 +13,7 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
-- v3.55
+- v3.56
 	
 	- Looper volume is added : MODE PLAY + SYSTEM + turn dial
 	
