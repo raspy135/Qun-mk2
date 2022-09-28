@@ -136,6 +136,7 @@ SHIFT + SYSTEM | All notes off
 SHIFT + PARAM | Initialize the preset
 SHIFT + SEQ PLAY + turn dial | Set BPM
 MODE PLAY + turn dial | Record volume 
+MODE PLAY + SYSTEM + turn dial | looper master volume 
 SYSTEM + turn dial | VCF volume
 PARAM + turn dial | VCF cutoff
 REC + turn dial | LFO tune
@@ -776,6 +777,11 @@ Button | Function
 6 | Track C Pan
 7 | Compressor threshold 
 8 | Compressor makeup 
+MODE PLAY + turn dial | Record volume 
+MODE PLAY + SYSTEM + turn dial | Looper master volume 
+SYSTEM + PARAM + turn dial | Cross fade between Record volume and Looper volume
+
+
 
 This mixer has a compressor. Ratio, attack time and release time are fixed (1:3, attack 30ms, release 100ms).
 

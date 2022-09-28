@@ -13,10 +13,20 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v3.55
+	
+	- Looper volume is added : MODE PLAY + SYSTEM + turn dial
+	
+	- Cross fade between Rec Volume and Looper Volume : SYSTEM + PARAM + turn dial
+	
+	- Behavior change: Buttons has to be pressed to change parameter in Play mode 
+	
+	- Bug fix: Sometime autosave is executed even when autosave setting is off.
+	
 - v3.54
-	
-	- Bug fix: Some UI issues
-	
+
+  - Bug fix: Some UI issues
+
 - v3.53
 
   - Bug fix: Delay has an issue with long delay time.
