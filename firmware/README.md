@@ -15,7 +15,7 @@ Here are the steps to update the firmware:
 # History
 - v3.60 (Beta)
 	
-	- Stereo recording is now supported.  When selecting track, button 6 = Track A(Left)+B(Right), button 7 = Track B+C. You may want to set pan to left and right for the selected stereo tracks.
+	- Stereo recording is now supported.  When selecting track, button 7 = Track A(Left)+B(Right), button 8 = Track B+C. You may want to set pan to left and right for the selected stereo tracks.
 	
 	- Looper will start and stop with sequencer when external MIDI sequencer is started or stopped in MIDI clock slave mode.
 	
