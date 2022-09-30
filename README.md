@@ -141,7 +141,7 @@ SYSTEM + turn dial | VCF volume
 PARAM + turn dial | VCF cutoff
 REC + turn dial | LFO tune
 LOOPER PLAY + [1-5] | Select Scene
-REC + [1-3] | Select Track
+REC + [1-3, 7,8] | Select recording track. A,B,C are mono tracks. Press 7, 8 for stereo recording. 7=A+B, 8 = B+C. When you do stereo recording, you may want to set pan to left and right for the selected stereo tracks. 
 PARAM + [1-3] | Mute track
 MODE PLAY + [1-8] | Recall preset bucket
 SEQ PLAY + [1-8] | Select Sequencer pattern
@@ -491,7 +491,7 @@ LOOPER STOP | Stop Looper
 LOOPER REC + LOOPER PLAY | Start looper recording
 SHIFT + SEQ PLAY + turn dial | Set BPM
 LOOPER PLAY + [1-5] | Select Scene
-REC + [1-3] | Select Track
+REC + [1-3, 7,8] | Select recording track. A,B,C are mono tracks. Press 7, 8 for stereo recording. 7=A+B, 8 = B+C. When you do stereo recording, you may want to set pan to left and right for the selected stereo tracks. 
 PARAM + [1-3] | Mute track
 PARAM + NO | Toggle Extra processing
 MODE PLAY + [1-8] | Recall preset bucket
@@ -546,7 +546,7 @@ Press LOOPER STOP when you finished the recording. You don't need to press the s
 
 Looper keeps playing the recorded sound. All recorded data will be saved to SD card immediately.
 
-Looper has 3 Tracks. REC + [1-3] button to select recording track. Each recording can go up to about 25 seconds.
+Looper has 3 mono tracks. REC + [1-3] button to select recording track. Each recording can go up to about 25 seconds. You can record track as stereo by pressing REC +[7 or 8]. A+B or B+C will be selected. With stereo recording, you may want to set pan to left and right for the selected stereo tracks.
 
 One set of recordings is called Scene. Looper has 5 Scenes. LOOPER PLAY + [1-5] to select scene.
 
