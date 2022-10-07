@@ -325,7 +325,7 @@ Button | Description
 Button | Description
 -------|-------
 1 | LFO SHAPE.  `Saw, Sine, RevSaw, S&H, Square, Triangle, AUX, OSC2, OSC2EG`. OSC2EG is the signal from OSC after Envelope Generator processing.
-2 | LFO PULSE WIDTH
+2 | LFO PULSE WIDTH. When it's applied to SAW wave or SINE wave, it will affect to phase offset, it's useful with BPM sync and retrigger. 
 3 | LFO TUNE
 4 | KEYSPLIT. This is a unique feature of the synth. When it is not zero, then note number above the parameter becomes LFO rate controller. If you set 60, then C4 or higher note becomes LFO controller.Higher notes will generate higher LFO rate. If you press multiple notes, it doubles and triples the rate, great for live performance.
 5 | LFO MOD TUNE. MOD modulation to tune.
