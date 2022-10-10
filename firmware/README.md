@@ -13,16 +13,21 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v3.63
+	
+	- Bug fix: Looper sample import was broken.
+	- Glanular accepts wider PWM range.
+	
 - v3.62
-	
-	- Metronome sound is now much easier to hear.
-	
-	- Bug fix: LFO BPM sync was broken.
-	
-	- LFO's BPM sync behaves better, now the phase will be reset when the sequencer rewinds.
-	
-	- In LFO mode, PWM can be applied to SAW, REVERSED SAW and SINE wave. It will affect as phase offset.
-	
+
+  - Metronome sound is now much easier to hear.
+
+  - Bug fix: LFO BPM sync was broken.
+
+  - LFO's BPM sync behaves better, now the phase will be reset when the sequencer rewinds.
+
+  - In LFO mode, PWM can be applied to SAW, REVERSED SAW and SINE wave. It will affect as phase offset.
+
 - v3.61
 
   - Bug fix : Fix an issue with stereo recording
