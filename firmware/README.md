@@ -13,11 +13,17 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v3.64
+	
+	- Granular import supports folder structure
+	- Small UI improvements
+	- You can import sample without exiting file list mode by pressing SHIFT + OK.
+	
 - v3.63
-	
-	- Bug fix: Looper sample import was broken.
-	- Glanular accepts wider PWM range.
-	
+
+  - Bug fix: Looper sample import was broken.
+  - Glanular accepts wider PWM range.
+
 - v3.62
 
   - Metronome sound is now much easier to hear.

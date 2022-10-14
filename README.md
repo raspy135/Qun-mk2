@@ -203,6 +203,8 @@ WAV format has to be **16-bit, 48000Hz, Mono**. Otherwise "Format error" message
 To import file, set proper BPM first, then press SHIFT + LOOPER PLAY + [1-3] button. [1-3] button corresponds the destination track.
 The data is trimmed to the closest the end of the measure.
 
+To load the file without exiting file selection, press SHIFT+OK instead of OK. You can control looper and sequencer while you are in the file selection mode. Play the loop by pressing LOOPER PLAY and SEQ PLAY to start looper playing. 
+
 If you have existing recordings in the session, WAV file will be cut to the current scene's looper length. You can use empty recorded track just to cut the WAV file to match the loop length. Otherwise it's trimmed to the longest point of the end of the measure.
 
 ## Preset bucket
@@ -747,6 +749,8 @@ LOOPER buttons acts for granular in granular mode.
 You can import WAV file if you put WAV file under /granular folder in SD card. And the looper record files will be shown at the end of the list, so you can load looper recorded data to granular as well.
 
 Shift + Looper Play to import WAV file, Shift + Looper REC to export WAV file.
+
+You can load the sample without exiting filelist mode. Press [SHIFT] + [OK] instead of [OK]. Press Looper Play to listen the loaded sample.
 
 When granular mode is not OFF, the recording data will be saved when you save preset, so normally you don't need to save recording data here. It's designed to export recording data.
 
