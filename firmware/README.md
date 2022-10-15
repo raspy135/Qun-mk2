@@ -13,7 +13,7 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
-- v3.64
+- v3.65
 	
 	- Granular import supports folder structure
 	- Small UI improvements
