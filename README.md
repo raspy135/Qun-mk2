@@ -540,7 +540,7 @@ Parameter lock is the term used in Elektron sequencers, which is temporary param
 
 Here is the steps to set Parameter Lock:
 
-1. In Play mode, you should one of the following modes: ON/OFF, Tune, Width, Velocity, or Probability, press button 1-8 to select the step that you want to set Parameter Lock
+1. In Play mode, you should be one of the following modes: ON/OFF, Tune, Width, Velocity, or Probability, press button 1-8 to select the step that you want to set Parameter Lock
 2. Keep pressing the button, and press [PARAM]. Mode switches to Parameter Lock mode.  White frame indicates you are in Parameter Lock mode.
 3. Change the parameters that you want to change. Once the parameter changed, the parameter area will be inverted, indicating the step is modified.
 ![pl_mark](./manual_images/pl_2.png)
