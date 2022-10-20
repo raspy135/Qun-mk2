@@ -13,12 +13,22 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v3.70
+	
+	- Performance improvement
+	
+	- Bug fix: MDelay was not enabled with Extra processing
+	
+	- You can set "OFF" to voice index 0 in Seq tune mode. The note won't be triggered with this setting.
+	
+	- New feature: Parameter lock
+	
 - v3.65
-	
-	- Granular import supports folder structure
-	- Small UI improvements
-	- You can import sample without exiting file list mode by pressing SHIFT + OK.
-	
+
+  - Granular import supports folder structure
+  - Small UI improvements
+  - You can import sample without exiting file list mode by pressing SHIFT + OK.
+
 - v3.63
 
   - Bug fix: Looper sample import was broken.
@@ -195,4 +205,4 @@ Here are the steps to update the firmware:
 
 - v3.10 : Number of voice was doubled, now it supports up to 4 voices. Bit crusher effect added.
 
-- v3.00 Initial firmware is released
+- ### v3.00 Initial firmware is released

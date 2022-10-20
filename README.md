@@ -534,6 +534,24 @@ You can (re)enter recording mode while playing. Press Rec + SEQ Play to enter re
 
 Click sound (metronome) plays when live recording is ongoing.
 
+### Parameter Lock
+
+Parameter lock is the term used in Elektron sequencers, which is temporary parameter change available only in the specific sequencer step. The parameter change appears only when the sequencer is playing the step. 
+
+Here is the steps to set Parameter Lock:
+
+1. In Play mode, you should one of the following modes: ON/OFF, Tune, Width, Velocity, or Probability, press button 1-8 to select the step that you want to set Parameter Lock
+2. Keep pressing the button, and press [PARAM]. Mode switches to Parameter Lock mode.  White frame indicates you are in Parameter Lock mode.
+3. Change the parameters that you want to change. Once the parameter changed, the parameter area will be inverted, indicating the step is modified.
+![pl_mark](./manual_images/pl_2.png)
+4. You can set up to three parameters to modify.
+5. To finish the editing, press [PLAY] to go back the sequencer page.
+6. You will see [""] mark at the top of the step when the step has Parameter Lock.
+![pl_mark](./manual_images/pl_1.png)
+7. To reset the modification, long press Button 1-8 + [PARAM] when entering Parameter Lock mode, or long press [PARAM] when in Parameter Lock mode.
+
+Shift + turn dial is a useful way to sweep between submodes to find out modified parameters.
+
 ### Looper overview
 
 Tutorial video (https://www.youtube.com/watch?v=iD4WpX3tHUE)
@@ -569,6 +587,8 @@ Normally all tracks moves to new Scene, however, you can partially switch scene 
 PARAM + [1-3] to mute tracks. 
 
 Use Preset Bucket to keep preset settings. You can recall tone preset and patterns in a sec by using Preset Bucket.
+
+
 
 
 ## PLY:PLAY PIANO
