@@ -13,16 +13,20 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v3.71
+	
+	- Some parameter's transition speed is increased for Parameter Lock
+	
 - v3.70
-	
-	- Performance improvement
-	
-	- Bug fix: MDelay was not enabled with Extra processing
-	
-	- You can set "OFF" to voice index 0 in Seq tune mode. The note won't be triggered with this setting.
-	
-	- New feature: Parameter lock
-	
+
+  - Performance improvement
+
+  - Bug fix: MDelay was not enabled with Extra processing
+
+  - You can set "OFF" to voice index 0 in Seq tune mode. The note won't be triggered with this setting.
+
+  - New feature: Parameter lock
+
 - v3.65
 
   - Granular import supports folder structure
