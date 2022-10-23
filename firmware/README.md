@@ -13,10 +13,14 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v3.72
+	
+	- Slight UI improvement
+	
 - v3.71
-	
-	- Some parameter's transition speed is increased for Parameter Lock
-	
+
+  - Some parameter's transition speed is increased for Parameter Lock
+
 - v3.70
 
   - Performance improvement

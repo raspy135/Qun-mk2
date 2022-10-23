@@ -22,6 +22,7 @@ Qun-mk2 is a small synthesizer with powerful sound engine, sequencer and looper.
 * [Issues](https://github.com/raspy135/Qun-synthesizer/issues): Report issues when you have problems or questions.
 * [Firmware](./firmware): For firmware updates.
 * [CheatSheet](./cheatsheet.pdf) : For cheat sheet.
+* [Battery Operation](./battery_operation.pdf) : Lipo battery mod.
 
 **We are looking for your feedback! For general impressions and feedback, please email them to info@nunomo.net, or join Discord server!**
 
@@ -84,7 +85,7 @@ Three track looper with 5 scenes, you can swap 3 track x 5 scenes while playing.
 * MIDI: Use **TRS A** MIDI adapter to connect MIDI cables. TRS A type adapter is the same as KORG, AKAI and Make Noise's adapter. This is the lowest latency option. The synth comes with MIDI TRS A cable.
 * It has microphones and stereo line input.
 * LINE IN and PHONE OUT is located at right side. Output is not strong, so please connect to headphone amp or mixer. Looper mixer is stereo. **Please use a stereo cable for the sound input and output**. 
-* It comes with micro SD card. Qun mk2 always needs SD card. SDHC is supported. Class 10 card (Normally it's indicated as Circled 10) or higher is required to satisfy the bandwidth. It's safe to remove when the access indicater is not lid, but it's not hot swappable, Please reset the device when you remove SD card.
+* It comes with micro SD card. Qun mk2 always needs SD card. SDHC is supported (SDXC is NOT supported, so the disk size is up to 32GB). Class 10 card (Normally it's indicated as Circled 10) or higher is required to satisfy the bandwidth. It's safe to remove when the access indicater is not lid, but it's not hot swappable, Please reset the device when you remove SD card.
 
 ## MAJOR MODES
 
