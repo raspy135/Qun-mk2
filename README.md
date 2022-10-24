@@ -148,6 +148,7 @@ MODE PLAY + [1-8] | Recall preset bucket
 SEQ PLAY + [1-8] | Select Sequencer pattern
 SHIFT + LOOPER PLAY + turn dial | Load session when you are not in System mode or Granular mode. 
 SHIFT + LOOPER PLAY + [1-3] button | Import wav file from import folder to selected track
+SYSTEM + [1-8] : Temporary piano mode
 
 ## LED indicators
 
@@ -594,6 +595,10 @@ Use Preset Bucket to keep preset settings. You can recall tone preset and patter
 
 ## PLY:PLAY PIANO
 The mode is simple piano playing mode. Default is chromatic scale, but the scale can be changed by the scale setting in SEQ Config mode. Turn dial to transpose.
+### Temporary piano mode
+You can activate Piano mode anytime by keep pressing SYSTEM + button 1-8. You can change transpose by turning dial once piano mode is activated.
+
+
 
 ## PLY:SEQ MODIFY
 ![mod](./manual_images/mod.png)
@@ -850,6 +855,8 @@ SHIFT + LOOPER PLAY | Load
 
 Sequencer data will be stored with preset.
 Granular record data will be saved when granular mode is not OFF.
+
+You can delete preset by pressing SHIFT + STOP (delete) while you are selecting preset.
 
 
 ### SYS:SYSTEM

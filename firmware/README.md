@@ -17,6 +17,12 @@ Here are the steps to update the firmware:
 	
 	- Slight UI improvement
 	
+	- Piano mode can be activated anytime temporary, by keep pressing SYSTEM + 1-8 button. 
+	
+	- You can delete preset by pressing SHIFT + STOP (delete) while selecting preset
+	
+	- Bug fix / sound engine behavior change : Effect depth was doubled.
+	
 - v3.71
 
   - Some parameter's transition speed is increased for Parameter Lock
