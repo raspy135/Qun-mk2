@@ -13,7 +13,7 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
-- v3.72
+- v3.73
 	
 	- Slight UI improvement
 	
