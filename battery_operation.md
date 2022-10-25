@@ -6,7 +6,7 @@ This is for advanced users who is familiar with soldering. No warranty when the 
 
 ## Summary:
 
-The base board (ESP32 Lyrat) has a Lipo charger circuit and the JST XH connector for Lipo battery. Thus you can connect Lipo to the base board for the battery operations. There are some limitations such as no battery status information.
+The base board (ESP32 Lyrat) has a Lipo charger circuit and the JST PH connector for Lipo battery. Thus you can connect Lipo to the base board for the battery operations. There are some limitations such as no battery status information.
 
 ## Parts list:
 
