@@ -277,7 +277,7 @@ Button | Description
 2 | FM modulation OSC2 to OSC1
 3 | VCF Volume.  Input gain to VCF 
 4 | Line In / Mic gain
-5 | Effect type . Off, Delay, Chorus1, Chorus2, Flanger1, Flanger2, Crusher (Bit crusher), MDelay(Mono delay), RSVD(Reserved for the future update)
+5 | Effect type . Off, Delay, Chorus1, Chorus2, Flanger1, Flanger2, Crusher (Bit crusher), MDelay(Mono delay), DDelay(BPM Synchronized digital delay), RSVD(Reserved for the future update) 
 6 | Effect Speed. Controls Effect LFO rate or delay time. 
 7 | Effect Depth
 8 | Effect Feedback
@@ -289,6 +289,7 @@ Button | Description
   - Speed : Around 30
   - Depth : Around 30
   - Feedback : 0
+- Digital delay is BPM synchronized. It also can be used as beat repeat by setting 100% of feedback, and 100% of depth.
 
 ### PRM:ENV1/2
 The synth has four Envelope generators. ENV1 and ENV2 are both independently and fully configurable. ENV3 and ENV4 shares the parameter. ENV3 / ENV4 is connected to FM operators when it's configured (FM ENV3 CONN).
@@ -509,6 +510,7 @@ SHIFT + LOOPER STOP | Delete all track recordings in the current scene, reset re
 REC + NO | CUT Looper track
 REC + OK | PASTE Looper track
 REC + PARAM | UNDO last recording for the track
+MODE PLAY + PARAM + Turn Dial | Parameter Lock Morphing
 
 ### Sequencer overview
 
@@ -545,14 +547,30 @@ Here is the steps to set Parameter Lock:
 1. In Play mode, you should be one of the following modes: ON/OFF, Tune, Width, Velocity, or Probability, press button 1-8 to select the step that you want to set Parameter Lock
 2. Keep pressing the button, and press [PARAM]. Mode switches to Parameter Lock mode.  White frame indicates you are in Parameter Lock mode.
 3. Change the parameters that you want to change. Once the parameter changed, the parameter area will be inverted, indicating the step is modified.
-![pl_mark](./manual_images/pl_2.png)
+    ![pl_mark](./manual_images/pl_2.png)
 4. You can set up to three parameters to modify.
 5. To finish the editing, press [PLAY] to go back the sequencer page.
 6. You will see [""] mark at the top of the step when the step has Parameter Lock.
-![pl_mark](./manual_images/pl_1.png)
+    ![pl_mark](./manual_images/pl_1.png)
 7. To reset the modification, long press Button 1-8 + [PARAM] when entering Parameter Lock mode, or long press [PARAM] when in Parameter Lock mode.
+8. Once you changed one parameter, you can change the last edited Locking parameter by pressing [1-8] + [PARAM] + Turning dial without re-selecting the parameter.
+
+Parameter lock will be triggered only when the step is turned on.
 
 Shift + turn dial is a useful way to sweep between submodes to find out modified parameters.
+
+
+
+### Parameter Lock morphing
+
+You can morph Parameter Locking between two patterns.
+
+1. Let's say you are in pattern 1. Set Morph Pattern in Sequencer configuration menu. Set the Morph pattern to 2. (Long press button 4)
+2. Copy pattern 1 to 2 by SEQ PLAY + [1-8] + Turn dial
+3. Move to pattern 2
+4. Modify the Parameter Locking in pattern 2
+5. Go back to pattern 1
+6. Morph can be done by pressing [MODE PLAY] + [PARAM] + Turn dial
 
 ### Looper overview
 
@@ -693,8 +711,8 @@ Button | Function
 ------------ | -------------
 1 | SWING / Long press for Sequencer MIDI channel out. 
 2 | Key (for scale). / Long press for 2nd pattern 
-3 | Scale. Playing note will be quantized by this scale. / Log press for 3rd pattern 
-4 | Sequencer loop count. Default is 8.  
+3 | Scale. Playing note will be quantized by this scale. / Long press for 3rd pattern 
+4 | Sequencer loop count. Default is 8.  / Long press for Morph pattern.
 5 | BPM factor. Playing speed can be double, normal, 1/2, 1/4 or 1/8 
 6 | Velocity accent period (steps). 
 7 | Velocity for the non-accent notes. 
@@ -703,6 +721,8 @@ Button | Function
 Velocity period settings (Button 6 - 8) provide a convenient way to make rythmic velocity.
 
 Sequencer MIDI channel out is useful setting with external synthesizer. When you set it, the sequencer starts to emit MIDI out signal to external synthesizers. Since it's the parameter of sequencer pattern, you can assign different MIDI channel for every single pattern.
+
+Morph pattern is used for Parameter Lock Morphing. Please refer "Parameter Lock Morphing" section in this manual.
 
 ### Running multiple sequence patterns
 You can run multiple sequeence patterns at the same time, up to 3 patterns by setting "2nd pattern" (Long press button 2) or/and "3rd pattern" (Long press button 3).  The status is shown like this:

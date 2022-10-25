@@ -13,16 +13,26 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v3.74
+	
+	- New effect: BPM synchronized Digital Delay. It can be used as beat repeat by setting feedback and depth to 100%. Useful with Parameter Locking.
+	
+	- Bug fix: Precise value adjustment didn't work in Parameter Locking mode.
+	
+	- New shortcut: The last edited Parameter locking parameter can be modified just by pressing [1-8] + PARAM + Turn dial
+	
+	- New Feature: Morphing Parameter Locking between two patterns.
+	
 - v3.73
-	
-	- Slight UI improvement
-	
-	- Piano mode can be activated anytime temporary, by keep pressing SYSTEM + 1-8 button. 
-	
-	- You can delete preset by pressing SHIFT + STOP (delete) while selecting preset
-	
-	- Bug fix / sound engine behavior change : Effect depth was doubled.
-	
+
+  - Slight UI improvement
+
+  - Piano mode can be activated anytime temporary, by keep pressing SYSTEM + 1-8 button. 
+
+  - You can delete preset by pressing SHIFT + STOP (delete) while selecting preset
+
+  - Bug fix / sound engine behavior change : Effect depth was doubled.
+
 - v3.71
 
   - Some parameter's transition speed is increased for Parameter Lock
