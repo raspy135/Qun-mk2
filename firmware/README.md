@@ -13,16 +13,28 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v3.75
+	
+	- Performance improvement
+	
+	- When you load sample for granular from SD, the file will be loaded at the beginning of the loop set by File Pos, not the beginning of the buffer.
+	
+	- Bug fix: Sequence and Granular wav file were not deleted when preset was deleted.
+	
+	- New feature: You can set preroll for Click(Metronome). The setting is avaiable under system2 menu.
+	
+	- System: LINE IN THRU parameter has three setting. AUTO(Default), Off and On.
+	
 - v3.74
-	
-	- New effect: BPM synchronized Digital Delay. It can be used as beat repeat by setting feedback and depth to 100%. Useful with Parameter Locking.
-	
-	- Bug fix: Precise value adjustment didn't work in Parameter Locking mode.
-	
-	- New shortcut: The last edited Parameter locking parameter can be modified just by pressing [1-8] + PARAM + Turn dial
-	
-	- New Feature: Morphing Parameter Locking between two patterns.
-	
+
+  - New effect: BPM synchronized Digital Delay. It can be used as beat repeat by setting feedback and depth to 100%. Useful with Parameter Locking.
+
+  - Bug fix: Precise value adjustment didn't work in Parameter Locking mode.
+
+  - New shortcut: The last edited Parameter locking parameter can be modified just by pressing [1-8] + PARAM + Turn dial
+
+  - New Feature: Morphing Parameter Locking between two patterns.
+
 - v3.73
 
   - Slight UI improvement

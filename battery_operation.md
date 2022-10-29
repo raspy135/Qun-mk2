@@ -1,8 +1,10 @@
 # Battery operation
 
-## WARNING:
+## WARNING: 
 
 This is for advanced users who is familiar with soldering. No warranty when the unit is broken by the modification. (I can answer questions on Discord)
+
+Also, this is experimental state. I'm seeing unstability when the battery goes low state.
 
 ## Summary:
 

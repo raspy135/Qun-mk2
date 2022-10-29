@@ -6,7 +6,7 @@
 - Social media links:
   - Instagram : @nunomo1
   - Twitter (Japanese) : @nunomo1
-  - Youtube : https://www.youtube.com/channel/UCqRm00_gIZP4mkpSQbJN8oA
+  - Youtube : https://youtube.com/@nunomollc
 
 
 # Qun-mk2
@@ -22,7 +22,6 @@ Qun-mk2 is a small synthesizer with powerful sound engine, sequencer and looper.
 * [Issues](https://github.com/raspy135/Qun-synthesizer/issues): Report issues when you have problems or questions.
 * [Firmware](./firmware): For firmware updates.
 * [CheatSheet](./cheatsheet.pdf) : For cheat sheet.
-* [Battery Operation](./battery_operation.pdf) : Lipo battery mod.
 
 **We are looking for your feedback! For general impressions and feedback, please email them to info@nunomo.net, or join Discord server!**
 
@@ -885,7 +884,7 @@ System Setting is the setting that is not included in the patch setting. To chan
 
 Button | Function
 ------------ | -------------
-1 | Input source select / Long press for Send And Return
+1 | Input source (AUX) select / Long press for Send And Return
 2 | Number of devices
 3 | Device Index
 4 | Receive MIDI Channel
@@ -910,7 +909,7 @@ RECV MIDI Ch: Configure receiving MIDI channel. Default is ALL. If you use it wi
 
 MIDI Forwarding: MIDI message forwarding for standalone polyphonic configuration. When the option is ON, the message forwarding is active with PolyMono or PolyQuad configuration. It's not for generic MIDI forwarding like MIDI THRU. Do not turn this option with DAW configuration. Most of DAW will echo received MIDI message, it will cause an infinite MIDI message loop. 
 
-LINE in THRU: If it is off, it is automatically turn on or off LINE IN pass through by mono / poly setting. If it is on, the synth always passes the signal to looper. This setting will be stored in the flash memory. Gain is fixed to 1.
+LINE in THRU: If it is AUTO, it is automatically turn on or off LINE IN pass through by mono / poly setting. If it is on, the synth always passes the signal to looper. If it is off, then line in through is always off. The gain is fixed to 1.
 
 LINE in HPF: On is default. LINE in has two HPFs, one is external, one is internal HPF in the chip. This setting turns internal HPF. Turning this off will reduce HPF effect.
 
@@ -928,6 +927,7 @@ Button | Function
 2 | Ext MIDI Scale Quantize
 3 | Parameter caption On/Off
 4 | Session Autosave On/Off
+5 | Preroll for Click(Metronome)
 8 | Screen Contrast
 
 Quad mode enables quad voice (4 voices, 1 oscillator per voice) or dual-mono (2 voices, 2 oscillators per voice)
