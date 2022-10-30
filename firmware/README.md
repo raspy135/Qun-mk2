@@ -13,7 +13,7 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
-- v3.76
+- v3.77
 	
 	- Master volume is added in system2 menu. It's hardware volume. Normally Max(Default) is recommended. It's useful when your effector or recorder doesn't expect line level input.
 	- Change default Rec Volume to -6dB to avoid unintended clipping.
