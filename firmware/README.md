@@ -13,18 +13,23 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v3.76
+	
+	- Master volume is added in system2 menu. It's hardware volume. Normally Max(Default) is recommended. It's useful when your effector or recorder doesn't expect line level input.
+	- Change default Rec Volume to -6dB to avoid unintended clipping.
+	
 - v3.75
-	
-	- Performance improvement
-	
-	- When you load sample for granular from SD, the file will be loaded at the beginning of the loop set by File Pos, not the beginning of the buffer.
-	
-	- Bug fix: Sequence and Granular wav file were not deleted when preset was deleted.
-	
-	- New feature: You can set preroll for Click(Metronome). The setting is avaiable under system2 menu.
-	
-	- System: LINE IN THRU parameter has three setting. AUTO(Default), Off and On.
-	
+
+  - Performance improvement
+
+  - When you load sample for granular from SD, the file will be loaded at the beginning of the loop set by File Pos, not the beginning of the buffer.
+
+  - Bug fix: Sequence and Granular wav file were not deleted when preset was deleted.
+
+  - New feature: You can set preroll for Click(Metronome). The setting is avaiable under system2 menu.
+
+  - System: LINE IN THRU parameter has three setting. AUTO(Default), Off and On.
+
 - v3.74
 
   - New effect: BPM synchronized Digital Delay. It can be used as beat repeat by setting feedback and depth to 100%. Useful with Parameter Locking.

@@ -135,7 +135,7 @@ SHIFT + MODE PLAY | Dumping current preset to MIDI OUT. This is useful to transf
 SHIFT + SYSTEM | All notes off
 SHIFT + PARAM | Initialize the preset
 SHIFT + SEQ PLAY + turn dial | Set BPM
-MODE PLAY + turn dial | Record volume 
+MODE PLAY + turn dial | Record volume (Stay -6.0dB or lower to avoid clipping) 
 MODE PLAY + SYSTEM + turn dial | looper master volume 
 SYSTEM + turn dial | VCF volume
 PARAM + turn dial | VCF cutoff
@@ -147,7 +147,7 @@ MODE PLAY + [1-8] | Recall preset bucket
 SEQ PLAY + [1-8] | Select Sequencer pattern
 SHIFT + LOOPER PLAY + turn dial | Load session when you are not in System mode or Granular mode. 
 SHIFT + LOOPER PLAY + [1-3] button | Import wav file from import folder to selected track
-SYSTEM + [1-8] : Temporary piano mode
+SYSTEM + [1-8] : Temporary piano mode|
 
 ## LED indicators
 
@@ -928,6 +928,7 @@ Button | Function
 3 | Parameter caption On/Off
 4 | Session Autosave On/Off
 5 | Preroll for Click(Metronome)
+6 | Master volume
 8 | Screen Contrast
 
 Quad mode enables quad voice (4 voices, 1 oscillator per voice) or dual-mono (2 voices, 2 oscillators per voice)
@@ -937,6 +938,7 @@ Ext MIDI Scale Quantize : When it's on, sequencer's scale and key will be applie
 
 When the parameter caption is On, the parameter name will be shown when you press the button. It's a good option for initial training.
 
+Master Volume controls hardware volume of the audio chip. Normally MAX(Default) is recommended. This is useful when your effector or recorder doesn't expect line level input.
 
 ## POLYPHONIC SETUP
 The synth can be used as Mono, dual Mono or Quad(4) voice if you have one device.  Please see "MONO/QUAD/POLY (Voice mode)" section for detail.
