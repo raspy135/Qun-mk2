@@ -13,12 +13,16 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v3.79
+	
+	- Even smoother and faster response for VCF Volume, Cutoff and Oscillator Tune (Ocatave, tune and pitch wheel) Response
+	
 - v3.78
-	
-	- MIDI, SD, clipping indicator is always shown regardless the looper status
-	- In Play Modify, Config and Mixer mode, sequencer indicator moved to bottom and it has more space.
-	- Smoother MIDI CC response for Cutoff and VCF Volume.
-	
+
+  - MIDI, SD, clipping indicator is always shown regardless the looper status
+  - In Play Modify, Config and Mixer mode, sequencer indicator moved to bottom and it has more space.
+  - Smoother MIDI CC response for Cutoff and VCF Volume.
+
 - v3.77
 
   - Master volume is added in system2 menu. It's hardware volume. Normally Max(Default) is recommended. It's useful when your effector or recorder doesn't expect line level input.
