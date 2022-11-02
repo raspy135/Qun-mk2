@@ -585,6 +585,8 @@ Press LOOPER STOP when you finished the recording. You don't need to press the s
 
 Looper keeps playing the recorded sound. All recorded data will be saved to SD card immediately.
 
+When you press REC + LOOPER PLAY twice (or shift + REC + Looper play), the recording mode will be REC mode. In REC mode, it will overwrite existing recording. It will change loop length when the new recording is longer than the existing one.
+
 Looper has 3 mono tracks. REC + [1-3] button to select recording track. Each recording can go up to about 25 seconds. You can record track as stereo by pressing REC +[7 or 8]. A(Left)+B(Right) or B+C will be selected. With stereo recording, you may want to set pan to left and right for the selected stereo tracks.
 
 One set of recordings is called Scene. Looper has 5 Scenes. LOOPER PLAY + [1-5] to select scene.
@@ -851,6 +853,15 @@ You can apply filter, filter volume, and effects against Looper recording. **See
 
 LFO is still available for filter modulation.
 
+Extra processing can be recorded back to looper. 
+
+	1. Stop the sequencer.
+	1. Select the recording track.
+	1. Turn on Extra Processing (PARAM + NO)
+	1. Set OVERDUB (REC+Looper Play) or REC (Rec+ Looper Play twice) 
+	1. Start the sequencer, looper start recording
+	1. Hit looper stop button to stop recording
+
 The following parameters are still available with Extra processing:
 
 - All parameters in VCF sub-mode
@@ -884,7 +895,7 @@ System Setting is the setting that is not included in the patch setting. To chan
 
 Button | Function
 ------------ | -------------
-1 | Input source (AUX) select / Long press for Send And Return
+1 | Input source (AUX) select 
 2 | Number of devices
 3 | Device Index
 4 | Receive MIDI Channel
@@ -895,10 +906,6 @@ Button | Function
 
 
 AUX: Input source select. Select Mic (the board has two onboard microphones) or Line in. The setting will be stored in the flash memory. When you use LINE IN, set this setting to "LINE IN(2CH)". You can record the source to granular engine.
-
-Send And Return : OSC1 output before Envelope generator is coonnected to right channel. You need stereo channel separator to do this. Connection should the following:
-
-     Qun's stereo output ->(stereo channel breakout cable, right channel)--(mono cable)--> effectors --(mono_cable)-> Qun's line in
 
 
 Number of devices: Number of devices for poly mode. Set 1 if you don’t have multiple devices. It will be stored in the flash memory.
