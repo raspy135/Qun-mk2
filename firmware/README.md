@@ -13,7 +13,7 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
-- v3.81
+- v3.82
 	
 	- Bug fix: Relative parallel pattern run calculation
 	- Bug fix: With specific conditions, bucket change won't resume LFO properly
