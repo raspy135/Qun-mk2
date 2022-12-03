@@ -13,14 +13,20 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v3.84
+	
+	- Bug fix: Real time recording isue with LFO Keysplit
+	- Bug fix: Parameter lock is disabled for sub patterns
+	- Behavior change: 16th swing becomes default.
+	
 - v3.82
-	
-	- Bug fix: Relative parallel pattern run calculation
-	- Bug fix: With specific conditions, bucket change won't resume LFO properly
-	- Mode button won't switch major mode when the button was pressed longer than about 0.5 seconds, to prevent unwanted Major mode change
-	- Bug fix: All note off doesn't work sometimes
-	- Button response improvement
-	
+
+  - Bug fix: Relative parallel pattern run calculation
+  - Bug fix: With specific conditions, bucket change won't resume LFO properly
+  - Mode button won't switch major mode when the button was pressed longer than about 0.5 seconds, to prevent unwanted Major mode change
+  - Bug fix: All note off doesn't work sometimes
+  - Button response improvement
+
 - v3.80
 
   - REC mode is supported for the looper. Unlike Overdub, REC will overwrite existing recording, and it also overwrite loop record length if the new recording is longer than the existing recording. To enable REC mode, press REC+Looper Play twice.
