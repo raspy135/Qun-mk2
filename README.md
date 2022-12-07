@@ -240,7 +240,7 @@ Bucket doesn't contain Granular's sample data, however, bucket tries to find a s
 
 ## Signal diagram
 
-![qun2_signal_diagram](./manual_images/qun2_signal_diagram.png)
+![qun2_signal_diagram](./manual_images/qun2_diagram.png)
 
 ## Parameter Mode
 
@@ -358,7 +358,7 @@ Configures other parameters.
 Button | Description
 ------ | ------
 1 | VCF 4/2 POLE / NoLinear. Select VCF number of poles and linear or no linear. 2P/4P/2PNL/4PNL.
-2 | OSC1 Bypass. OSC1 can skip VCF. HALF means 1st half of 4-pole filter.
+2 | VCF ENV Src. Applying Envelopes to the signal after VCF. You might want to set OSC1/2's Env sel to "ON" to utilize this parameter. This is useful only with Mono mode. 
 3 | GLIDE. Smooth transition between notes. Works with Mono.
 4 | BEND RANGE. Pitch bend range.
 5 | OSC1/2 Keysync. This is a switch to connect MIDI input note and oscillators. Y = Follow MIDI note pitch. N =Ignore MIDI note. You can still use freq1 freq2 for modulation to use MIDI note pitch.

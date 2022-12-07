@@ -13,12 +13,16 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v3.85
+	
+	- Behavior change: OSC1 Bypass deleted. VCF ENV src is added instead.
+	
 - v3.84
-	
-	- Bug fix: Real time recording isue with LFO Keysplit
-	- Bug fix: Parameter lock is disabled for sub patterns
-	- Behavior change: 16th swing becomes default.
-	
+
+  - Bug fix: Real time recording isue with LFO Keysplit
+  - Bug fix: Parameter lock is disabled for sub patterns
+  - Behavior change: 16th swing becomes default.
+
 - v3.82
 
   - Bug fix: Relative parallel pattern run calculation
