@@ -13,10 +13,14 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v3.86
+	
+	- Bug fix: Preset loading position was shifted when GRN File pos is not zero. 
+	
 - v3.85
-	
-	- Behavior change: OSC1 Bypass deleted. VCF ENV src is added instead.
-	
+
+  - Behavior change: OSC1 Bypass deleted. VCF ENV src is added instead.
+
 - v3.84
 
   - Bug fix: Real time recording isue with LFO Keysplit
