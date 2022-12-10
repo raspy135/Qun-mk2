@@ -235,8 +235,6 @@ To understand how bucket works, try the following steps:
 There is no copy function between bucket, but you can use preset bank 1 to bank 8 as a copy buffer.
 When you save the preset or load the preset from bank 1 to 8, the name is used to indicate the bucket, so always recommending to set name by saving or loding preset.
 
-Bucket doesn't contain Granular's sample data, however, bucket tries to find a sample from preset folder when the bucket has a name. So if you save the tone preset in bank1 to bank8, Granular's sample will be loaded automatically when the bucket is selected.
-
 
 ## Signal diagram
 
@@ -1059,6 +1057,7 @@ Session data is stored here. It includes Looper recording data.
 Filename | Description
 -------- | --------
 [T000_1A.wav] | T means track recording, and next 3 digit is Session number, and 1 is Scene number, and A is track number. "0Z" is clipboard data. 
+[G000_01.wav] | G is for Granular data. The last 2 digits incidates the bucket index.
 [M000_00.dat] | M means mixer data. The first 3 digit means Session number. The second 2 digit is always zero. 
 [B000_00.dat] | B means Bucket data. This contains 8 preset and 64 sequencer pattern. The first 3 digit means Session number. The second 2 digit is always zero. 
 [Z000_00.dat] | Z is for undo buffer.

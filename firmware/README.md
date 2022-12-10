@@ -13,10 +13,15 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v3.88
+	
+	- Now Granular sample data will be saved when the session is saved as G000_00.wav in session folder. You don't need to save the preset to save the granular sample anymore.
+	- Bug fix: Granular engine clipping logic was not correct.
+	
 - v3.87
-	
-	- Bug fix: Clock sync through line in was broken.
-	
+
+  - Bug fix: Clock sync through line in was broken.
+
 - v3.86
 
   - Bug fix: Preset loading position was shifted when GRN File pos is not zero. 
