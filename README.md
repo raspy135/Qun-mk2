@@ -188,7 +188,7 @@ Session includes 8 preset buckets. Each bucket contains one preset with 8 patter
 
 There is no "new session" function. The synth always create a new session when booting.
 
-To load session, press SHIFT + LOOPER PLAY when you are not in System mode or Granular mode. Current session number "Session:0001" will be indicated. Turn dial to select the session you want to load.
+To load session, press SHIFT + LOOPER PLAY when you are not in System mode or Granular mode. Current session number "Looper00:0001" will be indicated. Turn dial to select the session you want to load.
 
 Saving session is semi-automated.
 Looper recording data will be saved immediately after the recording. 
@@ -802,6 +802,7 @@ When granular mode is not OFF, the recording data will be saved when you save pr
 
 ### Granular synth tips
 
+- You can use Granular synth engine as sampler. Check our Youtube videos and drum kit presets for detail.
 - Play note slur with One-shot mode. It works very well. You can keep the tempo with One shot with time stretch mode.
 - PWM (Width) will change sample starting point, it will generate interesting result.
 - Glide parameter is fun parameter with Granular.

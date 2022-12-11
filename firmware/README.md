@@ -13,12 +13,16 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v3.90
+	
+	- Bug fix: Granular engine's playing position at the center of PWM was slightly shifted
+	
 - v3.89
-	
-	- The number of file in one folder limit extended to 48
-	- Now Granular sample data will be saved when the session is saved as G000_00.wav in session folder. You don't need to save the preset to save the granular sample anymore.
-	- Bug fix: Granular engine clipping logic was not correct.
-	
+
+  - The number of file in one folder limit extended to 48
+  - Now Granular sample data will be saved when the session is saved as G000_00.wav in session folder. You don't need to save the preset to save the granular sample anymore.
+  - Bug fix: Granular engine clipping logic was not correct.
+
 - v3.88
 
   - (Deleted)
