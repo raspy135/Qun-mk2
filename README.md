@@ -747,6 +747,10 @@ In relative run mode, the second/third pattern's scale will be ignored, and prim
 
 ## PLY: Granular
 
+
+
+![granular](./manual_images/granular.png)
+
 ### Overview
 
 The synth features a Granular synthesis recorder.
@@ -754,7 +758,8 @@ The synth features a Granular synthesis recorder.
 - You can record audio from LINE IN or MIC. Input sensitivity can be modified by "AUX In Gain" parameter.
 - You can load audio from SD card.
 - Pulse Width modulation will change File position (starting position) of the audio. That means the File position can be modulated by LFO and others.
-- 4 Modes are available. **One shot, One shot with time stretch, Repeat, Repeat with time stretch**. When you are in One shot mode and play note slur, then the playing position won't be reset. 
+- 4 Modes are available. **One shot, One shot with time stretch, Repeat, Repeat with time stretch**. 
+- Time stretch result will be improved when you process "Analyze" on the sample (Button 1 and select "Analyze"). "A" mark will be indicated when it's done.
 - With One shot mode, you can route the signal to OSC1 AUX L and OSC2 AUX L. 
 - With initialized state of oscillator, C4 is the original pitch of the audio.
 - The number of voice is limited up to 2 voice with Granular mode.
@@ -772,7 +777,7 @@ This is a simple setup to use the granular engine:
 
 Button | Function
 ------------ | -------------
-1 | N/A 
+1 | Process samples. Options are Analyze, Normalize and reverse. Analyze will give better result with Time stretch. 
 2 | AUX Gain (This is the same parameter in Parameter mode, button 4 in Mix mode) 
 3 | File position (Starting point).
 4 | Length
@@ -802,6 +807,7 @@ When granular mode is not OFF, the recording data will be saved when you save pr
 
 ### Granular synth tips
 
+- Execute Analyze for better result of time stretch
 - You can use Granular synth engine as sampler. Check our Youtube videos and drum kit presets for detail.
 - Play note slur with One-shot mode. It works very well. You can keep the tempo with One shot with time stretch mode.
 - PWM (Width) will change sample starting point, it will generate interesting result.
@@ -811,7 +817,6 @@ When granular mode is not OFF, the recording data will be saved when you save pr
 	- granular mode to RPT
 	- Grain to 1
 	- Short GRN Length (Less than 30) 
-- With Repeat mode, set length to about 0.5 sec and changing Pulse Width makes unique sound.
 
 ## PLY:MIXER
 
@@ -1072,6 +1077,7 @@ Preset (Bank 1 to 8) is stored here.
 Filename | Description
 -------- | --------
 [G_AAAAAA.WAV] | G means Granular record data. This is saved when Granular mode is not OFF.
+[G_AAAAAA.DAT] | G means Granular, it stores analyzed result
 [P_AAAAAA.DAT] | P means preset data.
 [S_AAAAAA.DAT] | S means sequencer data. One file contains 8 pattern.
 

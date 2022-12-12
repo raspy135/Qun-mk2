@@ -13,10 +13,14 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v3.91
+	
+	- Granular processes (Analyze, Normalize, Reverse) are added (Button1 in Granular mode). Analyze gives much better result with Time stretch (One_TS and Rpt_ts). 
+	
 - v3.90
-	
-	- Bug fix: Granular engine's playing position at the center of PWM was slightly shifted
-	
+
+  - Bug fix: Granular engine's playing position at the center of PWM was slightly shifted
+
 - v3.89
 
   - The number of file in one folder limit extended to 48
