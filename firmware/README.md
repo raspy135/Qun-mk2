@@ -13,14 +13,20 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v3.93
+	
+	- Bug fix: Pop noise with Granular introduced v3.91, including some small improvements.
+	- Hide hidden files (The files start with ".") 
+	- In granular preview with One shot, the sound play won't be repeated.
+	
 - v3.92
-	
-	- Small improvement of Time stretching algorithm
-	
-	- File index indicator is back (Only for the first line).
-	
-	- Bug fix: Sample loading with offset
-	
+
+  - Small improvement of Time stretching algorithm
+
+  - File index indicator is back (Only for the first line).
+
+  - Bug fix: Sample loading with offset
+
 - v3.91
 
   - Granular processes (Analyze, Normalize, Reverse) are added (Button1 in Granular mode). Analyze gives much better result with Time stretch (One_TS and Rpt_ts). 
