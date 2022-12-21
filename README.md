@@ -777,7 +777,7 @@ This is a simple setup to use the granular engine:
 
 Button | Function
 ------------ | -------------
-1 | Process samples. Options are Analyze, Normalize and reverse. Analyze will give better result with Time stretch. 
+1 | Process samples. Options are Analyze, Normalize, Reverse and Trim to head. Analyze will give better result with Time stretch. 
 2 | AUX Gain (This is the same parameter in Parameter mode, button 4 in Mix mode) 
 3 | File position (Starting point).
 4 | Length
