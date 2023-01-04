@@ -13,13 +13,19 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v3.95
+	
+	- Number of voice with Oneshot mode increased to 3 with Quad mode.
+	
+	- Bug fix: Performance degrade introduced at v3.94
+	
 - v3.94
-	
-	- Small behavior fix, performance improvements
-	- "Trim to head" is added into granular's edit menu
-	- Bug fix: The operation explained in Parameter Lock #8 was broken.
-	  *--Once you changed one parameter, you can change the last edited Locking parameter by pressing [1-8] + [PARAM] + Turning dial without re-selecting the parameter.--*
-	
+
+  - Small behavior fix, performance improvements
+  - "Trim to head" is added into granular's edit menu
+  - Bug fix: The operation explained in Parameter Lock #8 was broken.
+    *--Once you changed one parameter, you can change the last edited Locking parameter by pressing [1-8] + [PARAM] + Turning dial without re-selecting the parameter.--*
+
 - v3.93
 
   - Bug fix: Pop noise with Granular introduced v3.91, including some small improvements.

@@ -708,11 +708,11 @@ https://www.youtube.com/watch?v=aV2YL0idMHA
 
 Button | Function
 ------------ | -------------
-1 | SWING / Long press for Sequencer MIDI channel out. 
+1 | 16th Swing / Long press for Sequencer MIDI channel out. 
 2 | Key (for scale). / Long press for 2nd pattern 
 3 | Scale. Playing note will be quantized by this scale. / Long press for 3rd pattern 
 4 | Sequencer loop count. Default is 8.  / Long press for Morph pattern.
-5 | BPM factor. Playing speed can be double, normal, 1/2, 1/4 or 1/8 
+5 | BPM factor. Playing speed can be double, normal, 1/2, 1/4 or 1/8. Long press for 8th Swing 
 6 | Velocity accent period (steps). 
 7 | Velocity for the non-accent notes. 
 8 | Velocity accent Period Offset 
