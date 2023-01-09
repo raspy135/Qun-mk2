@@ -611,7 +611,11 @@ Use Preset Bucket to keep preset settings. You can recall tone preset and patter
 
 
 ## PLY:PLAY PIANO
-The mode is simple piano playing mode. Default is chromatic scale, but the scale can be changed by the scale setting in SEQ Config mode. Turn dial to transpose.
+
+![piano](./manual_images/piano.png)
+
+The mode is simple piano playing mode. Default is chromatic scale, but the scale and key can be changed by the scale setting in SEQ Config mode. Turn dial to transpose.
+
 ### Temporary piano mode
 You can activate Piano mode anytime by keep pressing SYSTEM + button 1-8. You can change transpose by turning dial once piano mode is activated.
 
@@ -747,22 +751,21 @@ In relative run mode, the second/third pattern's scale will be ignored, and prim
 
 ## PLY: Granular
 
-
-
 ![granular](./manual_images/granular.png)
+
 
 ### Overview
 
 The synth features a Granular synthesis recorder.
 - When GRN mode is set, ths Granular engine's signal is connected to AUX L channel. It means **Granular engine can be used as one of Oscillator shape**. You can assign Granular engine to Oscillator 1, and you still have Oscillator 2.
-- You can record audio from LINE IN or MIC. Input sensitivity can be modified by "AUX In Gain" parameter.
-- You can load audio from SD card.
+- You can make up to 8 slices when Slice Spread is not zero.
+- You can record audio from LINE IN or MIC. Input sensitivity can be modified by "AUX In Gain" parameter in PARAM Mix menu.
 - Pulse Width modulation will change File position (starting position) of the audio. That means the File position can be modulated by LFO and others.
 - 4 Modes are available. **One shot, One shot with time stretch, Repeat, Repeat with time stretch**. 
 - Time stretch result will be improved when you process "Analyze" on the sample (Button 1 and select "Analyze"). "A" mark will be indicated when it's done.
 - With One shot mode, you can route the signal to OSC1 AUX L and OSC2 AUX L. 
-- With initialized state of oscillator, C4 is the original pitch of the audio.
-- The number of voice is limited up to 2 voice with Granular mode.
+- With initialized state of oscillator, +1 octave then C4 is the original pitch of the audio.
+- The number of voice is limited in some Granular modes.
 
 This is a simple setup to use the granular engine:
 
@@ -770,7 +773,7 @@ This is a simple setup to use the granular engine:
 2. Adjust parameters in Granular mode
 3. Change GRN mode from OFF to something else. It overrides AUX L channel to Granular engine's output.
 4. Go Oscillator parameter page, and select OSC shape to "AUX L"
-5. Play notes
+5. Play notes, set Octave +1 if needed.
 
 ### Operation
 
@@ -778,20 +781,47 @@ This is a simple setup to use the granular engine:
 Button | Function
 ------------ | -------------
 1 | Process samples. Options are Analyze, Normalize, Reverse and Trim to head. Analyze will give better result with Time stretch. 
-2 | AUX Gain (This is the same parameter in Parameter mode, button 4 in Mix mode) 
+2 | Slice spread, half-steps. Please see below section for detail. 
 3 | File position (Starting point).
 4 | Length
 5 | Speed. It won't work with non-time stretch modes.
 6 | Number of Grain. It won't work with One-shot modes.
 7 | Detune. (Octave highs and lows)
 8 | GRN Mode. OFF, ONE(One shot), ONE_TS(One shot with time stretch), RPT(Repeat), RPT_TS(Repeat with time stretch). When the mode is not OFF, It will override AUX L signal to granular output when you use AUX L as Oscillator shape. With time stretch, playing speed will be preserved. Without it, pitch and speed are linked like an analog tape. Execute Analyze(Button 1) for time streching modes. 
+NO (<) | Previous slice
+OK (>) | Next slice
 LOOPER REC + LOOPER PLAY | Start recording granular sample
-LOOPER PLAY | Start playing 
+LOOPER PLAY | Start playing (Preview) 
 LOOPER STOP | Stop playing
 SHIFT + LOOPER REC | Save Recording data
 SHIFT + LOOPER PLAY | Load Recording data
 
-LOOPER buttons acts for granular in granular mode.
+LOOPER buttons acts as sample player in granular mode.
+
+### Having multiple slices (Slice Spread)
+
+You can have multiple slices. To edit current slice, button 3 (Start point) and button 4(Length). NO or OK to switch between slices. If the slice length is zero then the following numbers of slices will be ignored.
+
+When Slice Spread (Button 2) is set to more than zero, each slice 1-8 will be applied from the C4(60) note. One spread means half step.
+
+Setting the Slice Spread to 1 is the most common use. Then the mapping will be the following:
+
+	- C4 : Slice 1
+	- C#4 : Slice 2
+	- D4 : Slice 3
+
+And so on. This is useful for drum kit, or simple sample slicing.
+
+Let's have another example. If you have piano sample of C4 and F#4, then you want to set Slice Spread to 5. The mapping will be the following:
+
+	- C4 : Slice 1 (Original pitch)
+	- C#4, D4 : Slice 1 with pitch shifting
+	- E4, F4 : Slice 2 with pitch shifting
+	- F#4 : Slice 2 (Original pitch)
+
+And so on. As you see C4 and F#4 has 5 half-tone distance. It can be used for melodic instrument with multiple sampling points.
+
+Slice Spread works on Repeat modes as well.
 
 
 ### Import wav file from SD card
@@ -808,7 +838,6 @@ When granular mode is not OFF, the recording data will be saved when you save pr
 ### Granular synth tips
 
 - Execute Analyze for better result of time stretch
-- You can use Granular synth engine as sampler. Check our Youtube videos and drum kit presets for detail.
 - Play note slur with One-shot mode. It works very well. You can keep the tempo with One shot with time stretch mode.
 - PWM (Width) will change sample starting point, it will generate interesting result.
 - Glide parameter is fun parameter with Granular.
@@ -1142,8 +1171,8 @@ Suggested MIDI CC parameters to be assigned if your MIDI keyboard has some knobs
 16                            "", //0x0
 17                            "", //1
 18                            "", //2
-19                            "", //3
-20                            "", //4
+19                            "Slice Spread", //3
+20                            "VCF Env Src", //4
 21                            "OSC1 Tune(MSB)", //5
 22                            "VCF Cutoff(MSB)", //6
 23                            "OSC2 Tune(MSB)", //7

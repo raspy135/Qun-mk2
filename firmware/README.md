@@ -13,15 +13,26 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v4.00 (Beta)
+	
+	- Multiple slicing points up to 8 are now supported with Slice Spread
+	- Slice Spread (Button2 in granular mode) is added to granular engine, now you can easily slice samples. Please check granular section of the manual for detail.
+	- Saving data and Bucket data was updated to support slice spread. Newer version of the firmware can read previous data but older version will not be able to read the data made by v4.00 and later.
+	- Number of voice with Oneshot mode increased to 4 with Quad mode (most of cases)
+	- Bug fix: Piano mode scale quantize with transpose was wrong.
+	- Bug fix: Bug fixes related to granular
+	- Some of drum kits were rebuild to use multiple slicing points. It's available in bank6, under sd_template folder, or download sd_template.zip.
+	- New Piano mode GUI
+	
 - v3.96
-	
-	- Bug fix: Detune behavior
-	
-	
-	- Number of voice with Oneshot mode increased to 3 with Quad mode.
-	
-	- Bug fix: Performance degrade introduced at v3.94
-	
+
+  - Bug fix: Detune behavior
+
+
+  - Number of voice with Oneshot mode increased to 3 with Quad mode.
+
+  - Bug fix: Performance degrade introduced at v3.94
+
 - v3.94
 
   - Small behavior fix, performance improvements
