@@ -126,6 +126,7 @@ LOOPER REC + LOOPER PLAY | Start looper recording
 LOOPER PLAY | Start looper playing
 LOOPER STOP | Stop looper playing
 RST button on the base board | Reset the device
+4 touch buttons at the bottom board | This can be used as a touch slider. See Touch slider section for detail. 
 
 ## BASIC SHORTCUTS
 
@@ -969,6 +970,7 @@ Button | Function
 4 | Session Autosave On/Off
 5 | Preroll for Click(Metronome)
 6 | Master volume
+7 | Slider assignment. See Touch Slider section for detail. 
 8 | Screen Contrast
 
 Quad mode enables quad voice (4 voices, 1 oscillator per voice) or dual-mono (2 voices, 2 oscillators per voice)
@@ -979,6 +981,23 @@ Ext MIDI Scale Quantize : When it's on, sequencer's scale and key will be applie
 When the parameter caption is On, the parameter name will be shown when you press the button. It's a good option for initial training.
 
 Master Volume controls hardware volume of the audio chip. Normally MAX(Default) is recommended. This is useful when your effector or recorder doesn't expect line level input.
+
+### Touch Slider
+
+The four buttons located at the bottom board (Play, Set, Vol-, Vol+) can be used as a touch slider. Place your finger on the Bottons and slide.
+
+Configure Slider assignment (System2, button 7) to activate the slider. 
+
+If you want to assign the slider to other than pre-defined ones, assign it to Mod wheel (or other MIDI CC parameters), and you can use MIDI learning to assign Mod wheel to any available synth parameters. See MIDI learning section for detail.
+
+### Touch Slider DIP switch configration
+
+If you received Qun mk2 synth before firmware v4.02, you need to change DIP switch setting. DIP switch is located at the bottom board, you need to unscrew bottom board to access the DIP switch. If the current setting is `Up, Up, Down, Down, Down, Down, Down, Down`, then turn the first two switches to Down. 
+
+All switches should be Down to activate Touch slider.
+
+![dipswitch](./manual_images/dipswitch.jpg)
+
 
 ## POLYPHONIC SETUP
 The synth can be used as Mono, dual Mono or Quad(4) voice if you have one device.  Please see "MONO/QUAD/POLY (Voice mode)" section for detail.

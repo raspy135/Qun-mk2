@@ -13,10 +13,14 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v4.02 (Beta)
+	
+	- Added touch slider. It needs DIP switch setting change. See Touch Slider section, and Touch Slider DIP switch configuration for detail.
+	
 - v4.01 (Beta)
-	
-	- Bug fix: Subtle behavior degrade fix
-	
+
+  - Bug fix: Subtle behavior degrade fix
+
 - v4.00 (Beta)
 
   - Multiple slicing points up to 8 are now supported with Slice Spread
