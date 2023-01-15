@@ -13,10 +13,17 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v4.03 (Beta)
+	
+	- Filter type 2PNL and 4PNL has more taste and juice.(Subtle change)
+	- Bug fix: Behavior with flooded MIDI traffic
+	- Bug fix: MIDI NOTE OFF was not working
+	- When the voice mode is set to QUAD, OSC2 always used EG2 as Evelope source. But now you can set other sources. It still uses EG2/EG4 when you set it to EG1/EG3.
+	
 - v4.02 (Beta)
-	
-	- Added touch slider. It needs DIP switch setting change. See Touch Slider section, and Touch Slider DIP switch configuration for detail.
-	
+
+  - Added touch slider. It needs DIP switch setting change. See Touch Slider section, and Touch Slider DIP switch configuration for detail.
+
 - v4.01 (Beta)
 
   - Bug fix: Subtle behavior degrade fix
