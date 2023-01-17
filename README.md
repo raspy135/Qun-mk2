@@ -127,6 +127,7 @@ LOOPER PLAY | Start looper playing
 LOOPER STOP | Stop looper playing
 RST button on the base board | Reset the device
 4 touch buttons at the bottom board | This can be used as a touch slider. See Touch slider section for detail. 
+SHIFT + NO + OK | Sleep (Shutdown) the device. It will turn off most of power consuming components like main CPU and the screen. Press RST button to restart the device.
 
 ## BASIC SHORTCUTS
 
@@ -181,13 +182,22 @@ To avoid confusion, this setting won't be saved.
 
 ## Session
 
-
-![data_structure](./manual_images/data_structure.002.png)
-
 Session is the biggest data unit of the synth.
 Session includes 8 preset buckets. Each bucket contains one preset with 8 pattern sequencer data.
 
-There is no "new session" function. The synth always create a new session when booting.
+There is no "new session" function. The synth always create a new session when booting. Reboot the device for new sesion.
+
+Session button operations work in Parameter mode or Play mode
+
+Button | Function
+------------ | -------------
+SHIFT + LOOPER PLAY | Show current session number
+SHIFT + LOOPER PLAY + Turn Dial | Load session
+NO or OK button while you selecting session | Scroll session page when you have more than 32 sessions 
+SHIFT + REC | Save session (Looper stop will perform session save when autosave is on)
+SHIFT + REC (Long press) | Name session
+SHIFT + REC + B[1-3] | Load wav file to looper track A, B or C
+Press B[1-8] while booting | Load previous LOOPER folder.  (Button1 means LOOPER00, Button 2 means LOOPER01, and so on) 
 
 To load session, press SHIFT + LOOPER PLAY when you are not in System mode or Granular mode. Current session number "Looper00:0001" will be indicated. Turn dial to select the session you want to load.
 
@@ -195,9 +205,6 @@ Saving session is semi-automated.
 Looper recording data will be saved immediately after the recording. 
 Mixer and Bucket data will be saved when LOOPER STOP button is pressed.
 This can be turned off in System2 menu.
-You can save the session manually by pressing Shift+Looper REC.
-
-If you want to load older than recent 32 session, you can press NO / OK button to scroll the page.
 
 You can import WAV files to session. Put WAV files under "import" folder. Folder structure is supported so you can make subfolders to organize samples.
 WAV format has to be **16-bit, 48000Hz, Mono**. Otherwise "Format error" message is shown.
@@ -1115,7 +1122,7 @@ Filename | Description
 [T000_1A.wav] | T means track recording, and next 3 digit is Session number, and 1 is Scene number, and A is track number. "0Z" is clipboard data. 
 [G000_01.wav] | G is for Granular data. The last 2 digits incidates the bucket index.
 [M000_00.dat] | M means mixer data. The first 3 digit means Session number. The second 2 digit is always zero. 
-[B000_00.dat] | B means Bucket data. This contains 8 preset and 64 sequencer pattern. The first 3 digit means Session number. The second 2 digit is always zero. 
+[B000_00_***.dat] | B means Bucket data. This contains 8 preset and 64 sequencer pattern. The first 3 digit means Session number. The second 2 digit is always zero. When session has a name, *** indicates the name of the session. 
 [Z000_00.dat] | Z is for undo buffer.
 
 #### File number limit and accessing to the old folder

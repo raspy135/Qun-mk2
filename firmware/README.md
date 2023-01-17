@@ -13,13 +13,20 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v4.04 (Beta)
+	
+	- Deep sleep is added. SHIFT + NO + OK to sleep. To restart device, press RST button on the bottom board.
+	- Bug fix: Autosave was unintendly performed sometimes even when autosave is off. The bug was introduced at v4.00. 
+	- Now you can name session by long pressing SHIFT + REC.
+	- Tiny "R" or "O" is indicated at the top right of the screen when you are recording(Record or Overdub) in some modes like Parameter modes or Play Modifier.
+	
 - v4.03 (Beta)
-	
-	- Filter type 2PNL and 4PNL has more taste and juice.(Subtle change)
-	- Bug fix: Behavior with flooded MIDI traffic
-	- Bug fix: MIDI NOTE OFF was not working
-	- When the voice mode is set to QUAD, OSC2 always used EG2 as Evelope source. But now you can set other sources. It still uses EG2/EG4 when you set it to EG1/EG3.
-	
+
+  - Filter type 2PNL and 4PNL has more taste and juice.(Subtle change)
+  - Bug fix: Behavior with flooded MIDI traffic
+  - Bug fix: MIDI NOTE OFF was not working
+  - When the voice mode is set to QUAD, OSC2 always used EG2 as Evelope source. But now you can set other sources. It still uses EG2/EG4 when you set it to EG1/EG3.
+
 - v4.02 (Beta)
 
   - Added touch slider. It needs DIP switch setting change. See Touch Slider section, and Touch Slider DIP switch configuration for detail.
