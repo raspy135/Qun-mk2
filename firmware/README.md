@@ -15,10 +15,10 @@ Here are the steps to update the firmware:
 # History
 - v4.04 (Beta)
 	
-	- Deep sleep is added. SHIFT + NO + OK to sleep. To restart device, press RST button on the bottom board.
+	- Sleep is added. SHIFT + NO + OK to sleep. To restart device, press RST button on the bottom board.
 	- Bug fix: Autosave was unintendly performed sometimes even when autosave is off. The bug was introduced at v4.00. 
 	- Now you can name session by long pressing SHIFT + REC.
-	- Tiny "R" or "O" is indicated at the top right of the screen when you are recording(Record or Overdub) in some modes like Parameter modes or Play Modifier.
+	- Tiny "R" or "O" is indicated at the top left of the screen when you are recording(Record or Overdub) in some modes like Parameter modes or Play Modifier.
 	
 - v4.03 (Beta)
 
