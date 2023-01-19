@@ -13,13 +13,17 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v4.05
+	
+	- Looper was not rewind properly when sequencer is clocked by other sources.
+	
 - v4.04 (Beta)
-	
-	- Sleep is added. SHIFT + NO + OK to sleep. To restart device, press RST button on the bottom board.
-	- Bug fix: Autosave was unintendly performed sometimes even when autosave is off. The bug was introduced at v4.00. 
-	- Now you can name session by long pressing SHIFT + REC.
-	- Tiny "R" or "O" is indicated at the top left of the screen when you are recording(Record or Overdub) in some modes like Parameter modes or Play Modifier.
-	
+
+  - Sleep is added. SHIFT + NO + OK to sleep. To restart device, press RST button on the bottom board.
+  - Bug fix: Autosave was unintendly performed sometimes even when autosave is off. The bug was introduced at v4.00. 
+  - Now you can name session by long pressing SHIFT + REC.
+  - Tiny "R" or "O" is indicated at the top left of the screen when you are recording(Record or Overdub) in some modes like Parameter modes or Play Modifier.
+
 - v4.03 (Beta)
 
   - Filter type 2PNL and 4PNL has more taste and juice.(Subtle change)
