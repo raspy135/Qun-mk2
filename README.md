@@ -41,7 +41,7 @@ Three track looper with 5 scenes, you can swap 3 track x 5 scenes while playing.
   * Voice can be configured as 4 voices (Quad mode) or 2 voices (Dual mono).
   * The sound engine is compatible with Qun mk1. 
   * Multiple QUN synths can be stacked to achieve a **Polyphonic** setup. 
-  * **Flexible MOD (CV) routing**. 
+  * Flexible MOD  routing. 
   * 2 inputs can be used for **external audio signal**, or **external CV inputs**
   * 4 Envelope Generators
   * FM (4 Operators x 2)
@@ -182,6 +182,8 @@ To avoid confusion, this setting won't be saved.
 
 ## Session
 
+![session_diagram](/Users/ryosukekojima/Desktop/session_diagram.png)
+
 Session is the biggest data unit of the synth.
 Session includes 8 preset buckets. Each bucket contains one preset with 8 pattern sequencer data.
 
@@ -218,15 +220,18 @@ If you have existing recordings in the session, WAV file will be cut to the curr
 
 ## Preset bucket
 
-The synth has 8 preset buckets to recall preset quickly. This is powerful feature with looper.
+The synth has 8 preset buckets to recall preset quickly. Each bucket contains one preset and 8 sequencer pattern.
 
-![data_structure](./manual_images/data_structure.001.png)
+![data_structure](./manual_images/bucket_diagram.png)
 
-Bucket information is automatically saved with Session when looper is stopped. 
+Buttons | Description
+-------|-------
+MODE PLAY + B[1-8] | Switch Bucket
 
-Each bucket contains one preset and 8 sequencer pattern.
-In order to switch between bucket, press MODE PLAY + [1-8] buttons.
 Solid LED indicates current bucket you are in when pressing MODE PLAY button.
+
+Bucket information is automatically saved with Session. 
+
 
 To understand how bucket works, try the following steps:
 
@@ -917,7 +922,7 @@ The following parameters are still available with Extra processing:
 
 ### Bank (1 to 8)
 
-Load or save preset. Each bank can store up to 32 preset. Bank 7 and 8 is used for factory install preset, but you can edit it.
+Load or save preset. Each bank can store up to 40 preset. Bank 6, 7 and 8 is used for factory install preset, but you can edit it.
 
 Button | Function
 -------- | --------
