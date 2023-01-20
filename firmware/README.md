@@ -13,7 +13,9 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
-- v4.05
+- v4.06
+	
+	- Bug fix: UI bug fix introduced in v4.04 (UI goes old style after saving)
 	
 	- Looper was not rewind properly when sequencer is clocked by other sources.
 	
