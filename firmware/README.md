@@ -13,12 +13,16 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v4.07
+	- Bug fix: Extra processed data recording was not great when the signal was clipped.
+	
+	- Bug fix: Unwanted pop when LFO's shape Sine or Saw and tune moves suddenly
+	
 - v4.06
-	
-	- Bug fix: UI bug fix introduced in v4.04 (UI goes old style after saving)
-	
-	- Looper was not rewind properly when sequencer is clocked by other sources.
-	
+  - Bug fix: UI bug fix introduced in v4.04 (UI goes old style after saving)
+
+  - Looper was not rewind properly when sequencer is clocked by other sources.
+
 - v4.04 (Beta)
 
   - Sleep is added. SHIFT + NO + OK to sleep. To restart device, press RST button on the bottom board.

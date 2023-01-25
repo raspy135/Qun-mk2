@@ -1010,6 +1010,8 @@ If you received Qun mk2 synth before firmware v4.02, you need to change DIP swit
 
 All switches should be Down to activate Touch slider.
 
+[Instruction video](./manual-images/qunmk2dips.mp4)
+
 ![dipswitch](./manual_images/dipswitch.jpg)
 
 
