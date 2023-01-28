@@ -875,9 +875,10 @@ Button | Function
 7 | Compressor threshold 
 8 | Compressor makeup 
 MODE PLAY + turn dial | Record volume 
+SHIFT + MODE PLAY + turn dial | Record pan
 MODE PLAY + SYSTEM + turn dial | Looper master volume 
 SYSTEM + PARAM + turn dial | Cross fade between Record volume and Looper volume
-
+SHIFT + NO | Toggle Monitor mode 
 
 
 This mixer has a compressor. Ratio, attack time and release time are fixed (1:3, attack 30ms, release 100ms).
@@ -887,6 +888,15 @@ To turn off compressor, set Compressor threshold to zero.
 See clipping incidator if you want to avoid clipping. The synth does soft clipping, so the clipped sound is preferrable sometimes.
 
 Mixer setting will be saved when Session is saved.
+
+### Monitor mode
+
+![granular](./manual_images/monitor.png)
+
+You can monitor the output.
+
+When you are in mixer mode, press SHIFT + NO again, or shift + turn dial to the end, you can enter to the monitor mode.
+
 
 ### Extra processing
 

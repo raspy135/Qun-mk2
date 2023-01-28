@@ -13,11 +13,16 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v4.08
+	- Record pan is added (SHIFT + PLAY + Turn Dial), you can pan synth engine's output.
+	
+	- Monitor mode is added. It's a bit hidden, press SHIFT + No one more time in mixer mode then enter to monitor mode, or SHIFT + turn dial and turn dial to the end in play mode.
+	
 - v4.07
-	- Bug fix: Extra processed data recording was not great when the signal was clipped.
-	
-	- Bug fix: Unwanted pop when LFO's shape Sine or Saw and tune moves suddenly
-	
+  - Bug fix: Extra processed data loopback recording was not great when the signal was clipped.
+
+  - Bug fix: Unwanted pop when LFO's shape Sine or Saw and tune moves suddenly
+
 - v4.06
   - Bug fix: UI bug fix introduced in v4.04 (UI goes old style after saving)
 
