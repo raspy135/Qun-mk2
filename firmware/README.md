@@ -13,7 +13,7 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
-- v4.10 (Beta)
+- v4.11 (Beta)
 	
 	- Record scratch mode is added. Press SHIFT + Button 1 one more time in piano mode to enter Record scratch mode. See manual for detail.
 	- Behavior change: Envelope invert behavior will be affected to amp src. 
