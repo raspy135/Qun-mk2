@@ -13,14 +13,24 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v4.10 (Beta)
+	
+	- Record scratch mode is added. Press SHIFT + Button 1 one more time in piano mode to enter Record scratch mode. See manual for detail.
+	- Behavior change: Envelope invert behavior will be affected to amp src. 
+	- Envelope generators (EG1 to EG4) is available in Extra processing mode.
+	- Bug fix: Multiple slicing parameter values might have wrong value at initialization.
+	- Granular can read stereo track(It will be downmix to mono)
+	- Other bug fixes, performance improvements
+	- Relative adjustment mode is added. To enable relative mode, double click the corresponding parameter and turn dial in Param mode, or Play modifier, mixer, seq config or granular.
+	
 - v4.09
-	
-	- Some performance optimizations
-	
-	- Record pan is added (SHIFT + PLAY + Turn Dial), you can pan synth engine's output.
-	
-	- Monitor mode is added. It's a bit hidden, press SHIFT + No one more time in mixer mode then enter to monitor mode, or SHIFT + turn dial and turn dial to the end in play mode.
-	
+
+  - Some performance optimizations
+
+  - Record pan is added (SHIFT + PLAY + Turn Dial), you can pan synth engine's output.
+
+  - Monitor mode is added. It's a bit hidden, press SHIFT + No one more time in mixer mode then enter to monitor mode, or SHIFT + turn dial and turn dial to the end in play mode.
+
 - v4.07
 
   - Bug fix: Extra processed data loopback recording was not great when the signal was clipped.

@@ -46,6 +46,7 @@ Three track looper with 5 scenes, you can swap 3 track x 5 scenes while playing.
   * 4 Envelope Generators
   * FM (4 Operators x 2)
   * **Granular / Sampler engine**
+  * Vinyl record scratch mode
   * 1 LFO
   * 1 Organic sounding VCF
     * 2/4 Poles, Low-pass, Band-pass, High-pass, Notch)
@@ -105,9 +106,8 @@ Each major mode has sub modes. Select sub mode. For example, `OSC1` is a sub mod
 * Press one of 8 buttons + rotate dial = Change parameter
 * Rotate the dial = Change the current parameter.
 * Long press the button to show the parameter full name and value.
+* Double click the button to enter relative mode. The value adjustment will be relative.
 * For initial training, cheatsheet(./cheatsheet.pdf) would be useful. Also you can turn on parameter caption mode in System2 menu, button 3.
-
-
 * If you want to do fine value adjustment, you can use NO/OK buttons to change the value by 1. To do this, keep pressing one of 8 buttons and press NO or OK button.
 
 Button | Primary function
@@ -327,7 +327,7 @@ Button | Description
 1 | OSC1 Env(VCA) source
 2 | OSC1 Wide tune switch. When it's on, OSC1's tune reacts much more sensitive.
 3 | OSC1 Modulation source
-4 | Env1 invert switch. It's useful when you use it as modulation source.
+4 | Env1 invert switch. Modulation will be affected to the opposite way, and amp gain will be (1.0 - Envelope). 
 5 | OSC2 Env(VCA) source
 6 | OSC2 Wide tune switch
 7 | OSC2 Modulation source
@@ -633,7 +633,6 @@ The mode is simple piano playing mode. Default is chromatic scale, but the scale
 You can activate Piano mode anytime by keep pressing SYSTEM + button 1-8. You can change transpose by turning dial once piano mode is activated.
 
 
-
 ## PLY:SEQ MODIFY
 ![mod](./manual_images/mod.png)
 
@@ -836,6 +835,43 @@ And so on. As you see C4 and F#4 has 5 half-tone distance. It can be used for me
 
 Slice Spread works on Repeat modes as well.
 
+### Vinyl record scratch mode
+
+![granular](./manual_images/scratch.png)
+
+Press SHIFT + Button 1 in piano mode one more time to enter record scratch mode.(Or SHIFT + turn dial in play mode)
+Record scratch mode is an emulation of analog record scratching by using granular's sample buffer.
+
+To use record scratch mode, you need to set the following settings:
+1. Granular mode set to ONE
+2. Select OSC1's shape to AUX L
+3. Set OSC1's octave to +1
+4. OSC1 Env Sel to "ON" (Param mode, Switch menu, button 1) to disable envelope. Or you can set it to other sources to automate crossfade slider.
+
+
+
+
+Button | Function
+------------ | -------------
+Turn dial | Scratch record
+Button 8 | Mute while pressing and unmute when released 
+Button 7 | The same as button 8 
+Button 6 | Release. Record start playing at the configured tune. 
+Button 5 | Unmute while pressing and mute when released 
+Button 4 | The same as button 5 
+Button 3 | Rewind to slice 1 
+Button 2 | Rewind to slice 2 
+Button 1 | Rewind to slice 3 
+
+#### Tips for record scratching
+
+- Practice might be needed. Some real scratching technique is applicable until crossfader(=mute button) movement goes very fast. 
+- Button 7,8 is useful for chopping, button 4,5 is useful for flare scratch.
+- If muting is hard, you can automate muting by configuring envelope(EG's invert is on) or VCF volume. Set sequencer pattern for the automation and scratch on top of muting pattern.
+- RPM is 33 1/2.
+- The record icon and wave shape is helpful to figure out the playing position.
+- Record rotates while you are pressing Release. If you keep turning dial to clockwise while pressing the button, the position will be kept. 
+
 
 ### Import wav file from SD card
 
@@ -907,7 +943,7 @@ You can toggle Extra processing mode by **PARAM + NO** button.
 When it's enabled, the Oscillators are turned off, but filter and effector becomes stereo, and connected to after Looper.
 You can apply filter, filter volume, and effects against Looper recording. **See the signal diagram to understand how it works.**
 
-LFO is still available for filter modulation.
+LFO and Envelopes(EG1 to EG4) is still available for filter modulation.
 
 Extra processing can be recorded back to looper. 
 
@@ -927,6 +963,7 @@ The following parameters are still available with Extra processing:
 - 2nd Filter (When VCF is 2 pole)
 - All parameters in LFO submode
 -  Effector parameters (Type, Speed, Depth and Feedback)
+-  VCF ENV Src
 
 ## SYSTEM MODE
 
