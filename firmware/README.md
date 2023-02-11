@@ -13,16 +13,24 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v4.12
+	
+	- Little tuning on scratch engine
+	- Behavior change : Now 4NL filter mode uses Stilson code from https://github.com/ddiakopoulos/MoogLadders. It has smoother resonance response.
+	  Only Low-pass and high-pass filter works. High-pass filter is done by substructing so the result won't be perfect.
+	- Behavior change : Granular's Repeat(RPT) mode will use multiple slicing point when the length is more than zero.
+	- 8th swing is back, it's at long press button 5 in Seq config.
+	
 - v4.11 (Beta)
-	
-	- Record scratch mode is added. Press SHIFT + Button 1 one more time in piano mode to enter Record scratch mode. See manual for detail.
-	- Behavior change: Envelope invert behavior will be affected to amp src. 
-	- Envelope generators (EG1 to EG4) is available in Extra processing mode.
-	- Bug fix: Multiple slicing parameter values might have wrong value at initialization.
-	- Granular can read stereo track(It will be downmix to mono)
-	- Other bug fixes, performance improvements
-	- Relative adjustment mode is added. To enable relative mode, double click the corresponding parameter and turn dial in Param mode, or Play modifier, mixer, seq config or granular.
-	
+
+  - Record scratch mode is added. Press SHIFT + Button 1 one more time in piano mode to enter Record scratch mode. See manual for detail.
+  - Behavior change: Envelope invert behavior will be affected to amp src. 
+  - Envelope generators (EG1 to EG4) is available in Extra processing mode.
+  - Bug fix: Multiple slicing parameter values might have wrong value at initialization.
+  - Granular can read stereo track(It will be downmix to mono)
+  - Other bug fixes, performance improvements
+  - Relative adjustment mode is added. To enable relative mode, double click the corresponding parameter and turn dial in Param mode, or Play modifier, mixer, seq config or granular.
+
 - v4.09
 
   - Some performance optimizations

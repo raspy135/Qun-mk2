@@ -368,7 +368,7 @@ Configures other parameters.
 
 Button | Description
 ------ | ------
-1 | VCF 4/2 POLE / NoLinear. Select VCF number of poles and linear or no linear. 2P/4P/2PNL/4PNL.
+1 | VCF 4/2 POLE / NoLinear. Select VCF number of poles and linear or no linear. 2P/4P/2PNL/4PNL. Ladder filter algorithm will use used only when 4NL with Lowpass or Highpass filter. 
 2 | VCF ENV Src. Applying Envelopes to the signal after VCF. You might want to set OSC1/2's Env sel to "ON" to utilize this parameter. This is useful only with Mono mode. 
 3 | GLIDE. Smooth transition between notes. Works with Mono.
 4 | BEND RANGE. Pitch bend range.
@@ -812,7 +812,9 @@ LOOPER buttons acts as sample player in granular mode.
 
 ### Having multiple slices (Slice Spread)
 
-You can have multiple slices. To edit current slice, button 3 (Start point) and button 4(Length). NO or OK to switch between slices. If the slice length is zero then the following numbers of slices will be ignored.
+You can have multiple slices. 
+
+ To edit current slice, button 3 (Start point) and button 4(Length). NO or OK to switch between slices. If the slice length is zero then the following numbers of slices will be ignored.
 
 When Slice Spread (Button 2) is set to more than zero, each slice 1-8 will be applied from the C4(60) note. One spread means half step.
 
@@ -833,7 +835,7 @@ Let's have another example. If you have piano sample of C4 and F#4, then you wan
 
 And so on. As you see C4 and F#4 has 5 half-tone distance. It can be used for melodic instrument with multiple sampling points.
 
-Slice Spread works on Repeat modes as well.
+In Repeat modes, multiple slicing points are randomly selected when the length is not zero.
 
 ### Vinyl record scratch mode
 
