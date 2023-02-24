@@ -728,16 +728,18 @@ Button | Function
 2 | Key (for scale). / Long press for 2nd pattern 
 3 | Scale. Playing note will be quantized by this scale. / Long press for 3rd pattern 
 4 | Sequencer loop count. Default is 8.  / Long press for Morph pattern.
-5 | BPM factor. Playing speed can be double, normal, 1/2, 1/4 or 1/8. 
+5 | BPM factor. Playing speed can be double, normal, 1/2, 1/4 or 1/8.  / Long press for note Lower Limit 
 6 | Velocity accent period (steps). 
-7 | Velocity for the non-accent notes. 
+7 | Velocity for the non-accent notes. / Long presso for note Upper Limit 
 8 | Velocity accent Period Offset 
 
 Velocity period settings (Button 6 - 8) provide a convenient way to make rythmic velocity.
 
-Sequencer MIDI channel out is useful setting with external synthesizer. When you set it, the sequencer starts to emit MIDI out signal to external synthesizers. Since it's the parameter of sequencer pattern, you can assign different MIDI channel for every single pattern.
+Sequencer MIDI channel out is useful setting with external synthesizer. When you set it, the sequencer starts to emit MIDI out signal to external synthesizers. If you set Channel + "N" such as "1N", it won't trigger internal sound engine.
 
 Morph pattern is used for Parameter Lock Morphing. Please refer "Parameter Lock Morphing" section in this manual.
+
+Note lower and upper limit will limit the range of note. When the sequencer received a note that is out of the range, it will shift octave to fit within the range. It is useful to prevent to go too high note with randomization. It's also will do automated chord inversion.
 
 ### Running multiple sequence patterns
 You can run multiple sequeence patterns at the same time, up to 3 patterns by setting "2nd pattern" (Long press button 2) or/and "3rd pattern" (Long press button 3).  The status is shown like this:
