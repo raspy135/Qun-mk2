@@ -13,11 +13,16 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v4.15
+	
+	- Bug fix : 4NL filter will oscillate when it sets to non-supported type of filters
+	- Bug fix: Messages to MIDI channel 1 was always picked up. 
+	
 - v4.14
-	
-	- You can turn off internal sound engine to set "1N" to "16N" in  Seq MIDI channel (Long press button1 in Seq config menu) 
-	- Note Lower limit (Long press button 5 in Seq config) and Note upper limit(Long press button 7 in Seq config) is added. It will limit note range. When the note is out of range, the note will be shifted octave lower or highter to fit the range. It's useful with random modifier, transpose. It will be affected like automated chord inversion.
-	
+
+  - You can turn off internal sound engine to set "1N" to "16N" in  Seq MIDI channel (Long press button1 in Seq config menu) 
+  - Note Lower limit (Long press button 5 in Seq config) and Note upper limit(Long press button 7 in Seq config) is added. It will limit note range. When the note is out of range, the note will be shifted octave lower or highter to fit the range. It's useful with random modifier, transpose. It will be affected like automated chord inversion.
+
 - v4.13
 
   - Some priority adjustment for stability
