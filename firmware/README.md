@@ -13,11 +13,15 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v4.16
+	
+	- Bug fix: Sometimes patch loading stuck with looper play
+	
 - v4.15
-	
-	- Bug fix : 4NL filter will oscillate when it sets to non-supported type of filters
-	- Bug fix: Messages to MIDI channel 1 was always picked up. 
-	
+
+  - Bug fix : 4NL filter will oscillate when it sets to non-supported type of filters
+  - Bug fix: Messages to MIDI channel 1 was always picked up. 
+
 - v4.14
 
   - You can turn off internal sound engine to set "1N" to "16N" in  Seq MIDI channel (Long press button1 in Seq config menu) 
