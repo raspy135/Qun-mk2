@@ -13,7 +13,9 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
-- v4.16
+- v4.17
+	
+	- Some performance improvement
 	
 	- Bug fix: Sometimes patch loading stuck with looper play
 	
