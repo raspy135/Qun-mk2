@@ -501,6 +501,7 @@ Button | function
 -------|-------
 SEQ PLAY | Start / Stop Sequencer
 REC + SEQ PLAY | Start Sequencer live recording
+REC + SEQ PLAY + turn dial | Metronome volume
 LOOPER PLAY | Start Looper
 LOOPER STOP | Stop Looper
 LOOPER REC + LOOPER PLAY | Start looper recording
@@ -546,7 +547,7 @@ Press SEQ PLAY to exit recording mode, sequencer will keep playing. Press SEQ PL
 
 You can (re)enter recording mode while playing. Press Rec + SEQ Play to enter recording mode.
 
-Click sound (metronome) plays when live recording is ongoing.
+Click sound (metronome) plays when live recording is ongoing. Metronome volume can be adjusted by REC+SEQ PLAY+Turn dial. Chained pattern will be reset when you change to other pattern(s).
 
 ### Parameter Lock
 

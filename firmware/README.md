@@ -13,12 +13,20 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v4.18
+	
+	- Metronome volume can be adjusted by REC+SEQ PLAY + Turn dial
+	
+	- You can chain pattern by pressing SEQ PLAY + B[1-8], then keep pressing SEQ PLAY and pressing B[1-8]. Up to 16 patterns can be chained.
+	
+	- # Performance improvement
+	
 - v4.17
-	
-	- Some performance improvement
-	
-	- Bug fix: Sometimes patch loading stuck with looper play
-	
+
+  - Some performance improvement
+
+  - Bug fix: Sometimes patch loading stuck with looper play
+
 - v4.15
 
   - Bug fix : 4NL filter will oscillate when it sets to non-supported type of filters
