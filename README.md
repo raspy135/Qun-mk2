@@ -512,6 +512,7 @@ PARAM + [1-3] | Mute track
 PARAM + NO | Toggle Extra processing
 MODE PLAY + [1-8] | Recall preset bucket
 SEQ PLAY + [1-8] | Select Sequencer pattern
+SEQ PLAY + [1-8] , [1-8]...| Chain sequencer pattern. Keep pressing SEQ PLAY.
 SEQ PLAY + NO / OK | Move to previous / next Sequencer page
 SHIFT + SEQ PLAY +  NO / OK | Copy Sequencer page to previous / next Sequencer page
 SEQ PLAY + [1-8] + turn dial | Copy sequencer pattern to other pattern. If you want to cancel the operation, turn to the end, then "CANCEL" will be indicated as the destination. To initialize the bank data, turn the dial to "CLEAR". 
