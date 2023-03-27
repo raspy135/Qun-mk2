@@ -13,7 +13,7 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
-- v4.18
+- v4.19
 	
 	- Metronome volume can be adjusted by REC+SEQ PLAY + Turn dial
 	- You can chain pattern by pressing SEQ PLAY + B[1-8], then press B[1-8] while keep pressing SEQ PLAY. Up to 16 patterns can be chained.
