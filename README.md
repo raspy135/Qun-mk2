@@ -1029,7 +1029,7 @@ In System major mode, SHIFT + [OK] to go System2 menu.
 
 Button | Function
 ------------ | -------------
-1 | Quad mode On/Off
+1 | BPM behavior. Per session or per sequence pattern. 
 2 | Ext MIDI Scale Quantize
 3 | Parameter caption On/Off
 4 | Session Autosave On/Off
@@ -1037,9 +1037,6 @@ Button | Function
 6 | Master volume
 7 | Slider assignment. See Touch Slider section for detail. 
 8 | Screen Contrast
-
-Quad mode enables quad voice (4 voices, 1 oscillator per voice) or dual-mono (2 voices, 2 oscillators per voice)
-When the mode is off, voice will be Duo (2 voices, 1 oscillator per voice) or mono. Setting this mode will help to reduce system load.
 
 Ext MIDI Scale Quantize : When it's on, sequencer's scale and key will be applied to external MIDI keyboard input. Default is off.
 
