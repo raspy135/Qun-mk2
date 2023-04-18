@@ -13,7 +13,7 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
-- v4.20
+- v4.21
 	- BPM behavior (Per session or per pattern) can be changed in System2, button 1.
 	
 - v4.19
