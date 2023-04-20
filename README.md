@@ -763,7 +763,9 @@ If you set "R4" for the second pattern, the transpose for the pattern will be up
 
 If you set "R2" for the pattern, the transpose for the pattern will be updated every 2 steps. In this figure, 0-0 then 7-7, 2-2, 9-9 and so on.
 
-In relative run mode, the second/third pattern's scale will be ignored, and primary pattern's scale quantize will be applied.
+**In relative run mode,  you need to specify tune for all steps, even for untriggered steps to tell the second/third pattern the transposing.**
+
+the second/third pattern's scale will be ignored, and primary pattern's scale quantize will be applied.
 
 ## PLY: Granular
 
