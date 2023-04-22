@@ -13,35 +13,34 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
-- v4.21
-	- BPM behavior (Per session or per pattern) can be changed in System2, button 1.
+- v4.22
+	- Bug fix: Sequencer sometimes pauses when BPM is changed by changing bucket.
+	- Alignment improvement with clock synchronization
 	
+- v4.21
+  - BPM behavior (Per session or per pattern) can be changed in System2, button 1.
+
 - v4.19
   - Metronome volume can be adjusted by REC+SEQ PLAY + Turn dial
   - You can chain pattern by pressing SEQ PLAY + B[1-8], then press B[1-8] while keep pressing SEQ PLAY. Up to 16 patterns can be chained.
   - Performance improvement
-
 - v4.17
 
   - Some performance improvement
 
   - Bug fix: Sometimes patch loading stuck with looper play
-
 - v4.15
 
   - Bug fix : 4NL filter will oscillate when it sets to non-supported type of filters
   - Bug fix: Messages to MIDI channel 1 was always picked up. 
-
 - v4.14
 
   - You can turn off internal sound engine to set "1N" to "16N" in  Seq MIDI channel (Long press button1 in Seq config menu) 
   - Note Lower limit (Long press button 5 in Seq config) and Note upper limit(Long press button 7 in Seq config) is added. It will limit note range. When the note is out of range, the note will be shifted octave lower or highter to fit the range. It's useful with random modifier, transpose. It will be affected like automated chord inversion.
-
 - v4.13
 
   - Some priority adjustment for stability
   - Removed 8th swing due for stability
-
 - v4.12
 
   - Little tuning on scratch engine
@@ -49,7 +48,6 @@ Here are the steps to update the firmware:
     Only Low-pass and high-pass filter works. High-pass filter is done by substructing so the result won't be perfect.
   - Behavior change : Granular's Repeat(RPT) mode will use multiple slicing point when the length is more than zero.
   - 8th swing is back, it's at long press button 5 in Seq config.
-
 - v4.11 (Beta)
 
   - Record scratch mode is added. Press SHIFT + Button 1 one more time in piano mode to enter Record scratch mode. See manual for detail.
@@ -59,7 +57,6 @@ Here are the steps to update the firmware:
   - Granular can read stereo track(It will be downmix to mono)
   - Other bug fixes, performance improvements
   - Relative adjustment mode is added. To enable relative mode, double click the corresponding parameter and turn dial in Param mode, or Play modifier, mixer, seq config or granular.
-
 - v4.09
 
   - Some performance optimizations
@@ -67,41 +64,34 @@ Here are the steps to update the firmware:
   - Record pan is added (SHIFT + PLAY + Turn Dial), you can pan synth engine's output.
 
   - Monitor mode is added. It's a bit hidden, press SHIFT + No one more time in mixer mode then enter to monitor mode, or SHIFT + turn dial and turn dial to the end in play mode.
-
 - v4.07
 
   - Bug fix: Extra processed data loopback recording was not great when the signal was clipped.
 
   - Bug fix: Unwanted pop when LFO's shape Sine or Saw and tune moves suddenly
-
 - v4.06
 
   - Bug fix: UI bug fix introduced in v4.04 (UI goes old style after saving)
 
   - Looper was not rewind properly when sequencer is clocked by other sources.
-
 - v4.04 (Beta)
 
   - Sleep is added. SHIFT + NO + OK to sleep. To restart device, press RST button on the bottom board.
   - Bug fix: Autosave was unintendly performed sometimes even when autosave is off. The bug was introduced at v4.00. 
   - Now you can name session by long pressing SHIFT + REC.
   - Tiny "R" or "O" is indicated at the top left of the screen when you are recording(Record or Overdub) in some modes like Parameter modes or Play Modifier.
-
 - v4.03 (Beta)
 
   - Filter type 2PNL and 4PNL has more taste and juice.(Subtle change)
   - Bug fix: Behavior with flooded MIDI traffic
   - Bug fix: MIDI NOTE OFF was not working
   - When the voice mode is set to QUAD, OSC2 always used EG2 as Evelope source. But now you can set other sources. It still uses EG2/EG4 when you set it to EG1/EG3.
-
 - v4.02 (Beta)
 
   - Added touch slider. It needs DIP switch setting change. See Touch Slider section, and Touch Slider DIP switch configuration for detail.
-
 - v4.01 (Beta)
 
   - Bug fix: Subtle behavior degrade fix
-
 - v4.00 (Beta)
 
   - Multiple slicing points up to 8 are now supported with Slice Spread
@@ -112,7 +102,6 @@ Here are the steps to update the firmware:
   - Bug fix: Bug fixes related to granular
   - Some of drum kits were rebuild to use multiple slicing points. It's available in bank6, under sd_template folder, or download sd_template.zip.
   - New Piano mode GUI
-
 - v3.96
 
   - Bug fix: Detune behavior
