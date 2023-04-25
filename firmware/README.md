@@ -13,10 +13,15 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
-- v4.22
-	- Bug fix: Sequencer sometimes pauses when BPM is changed by changing bucket.
-	- Alignment improvement with clock synchronization
+- v4.23
+	- Bug fix: Sync problem with MIDI and clock. Now it has much better tracking with tempo change and alignment.
 	
+	- Some performance improvement
+	
+- v4.22
+  - Bug fix: Sequencer sometimes pauses when BPM is changed by changing bucket.
+  - Alignment improvement with clock synchronization
+
 - v4.21
   - BPM behavior (Per session or per pattern) can be changed in System2, button 1.
 
