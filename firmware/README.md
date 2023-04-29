@@ -13,7 +13,7 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
-- v4.26
+- v4.27
 	- Performance improvement
 	
 - v4.25
