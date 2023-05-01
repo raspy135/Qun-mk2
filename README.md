@@ -198,7 +198,7 @@ SHIFT + LOOPER PLAY + Turn Dial | Load session
 NO or OK button while you selecting session | Scroll session page when you have more than 32 sessions 
 SHIFT + REC | Save session (Looper stop will perform session save when autosave is on)
 SHIFT + REC (Long press) | Name session
-SHIFT + REC + B[1-3] | Load wav file to looper track A, B or C
+SHIFT + REC + B[1-3] | Load wav file to looper track A, B or C (See looper section for detail)
 Press B[1-8] while booting | Load previous LOOPER folder.  (Button1 means LOOPER00, Button 2 means LOOPER01, and so on) 
 
 To load session, press SHIFT + LOOPER PLAY when you are not in System mode or Granular mode. Current session number "Looper00:0001" will be indicated. Turn dial to select the session you want to load.
@@ -207,16 +207,6 @@ Saving session is semi-automated.
 Looper recording data will be saved immediately after the recording. 
 Mixer and Bucket data will be saved when LOOPER STOP button is pressed.
 This can be turned off in System2 menu.
-
-You can import WAV files to session. Put WAV files under "import" folder. Folder structure is supported so you can make subfolders to organize samples.
-WAV format has to be **16-bit, 48000Hz, Mono**. Otherwise "Format error" message is shown.
-
-To import file, set proper BPM first, then press SHIFT + LOOPER PLAY + [1-3] button. [1-3] button corresponds the destination track.
-The data is trimmed to the closest the end of the measure.
-
-To load the file without exiting file selection, press SHIFT+OK instead of OK. You can control looper and sequencer while you are in the file selection mode. Play the loop by pressing LOOPER PLAY and SEQ PLAY to start looper playing. 
-
-If you have existing recordings in the session, WAV file will be cut to the current scene's looper length. You can use empty recorded track just to cut the WAV file to match the loop length. Otherwise it's trimmed to the longest point of the end of the measure.
 
 ## Preset bucket
 
@@ -227,6 +217,7 @@ The synth has 8 preset buckets to recall preset quickly. Each bucket contains on
 Buttons | Description
 -------|-------
 MODE PLAY + B[1-8] | Switch Bucket
+MODE PLAY + B[1-8] + turn dial | Copy Bucket
 
 Solid LED indicates current bucket you are in when pressing MODE PLAY button.
 
@@ -508,6 +499,7 @@ LOOPER REC + LOOPER PLAY | Start looper recording
 SHIFT + SEQ PLAY + turn dial | Set BPM
 LOOPER PLAY + [1-5] | Select Scene
 REC + [1-3, 7,8] | Select recording track. A,B,C are mono tracks. Press 7, 8 for stereo recording. 7=A(Left)+B(Right), 8 = B+C. When you do stereo recording, you may want to set pan to left and right for the selected stereo tracks. 
+SHIFT + REC + B[1-3] | Load wav file to looper track A, B or C 
 PARAM + [1-3] | Mute track
 PARAM + NO | Toggle Extra processing
 MODE PLAY + [1-8] | Recall preset bucket
@@ -611,6 +603,29 @@ Reduce record volume (-3.0dB or more) in Mixer to avoid clipping. MODE PLAY + tu
 Cut / Paste can be used for temporary saved area or delete the track. REC + NO to Cut, REC + OK to Paste.
 
 All recorded data, Preset bucket and Mixer data will be saved as a Session automatically. Recording data save immediately and other data will be saved when looper playing is stopped. Recording data is standard WAV file so you can import them to DAW.
+
+### Importing wav file to the looper
+
+You can import WAV files to session. Put WAV files under "import" folder. Folder structure is supported so you can make subfolders to organize samples.
+WAV format has to be **16-bit, 48000Hz, Mono**. Otherwise "Format error" message is shown.
+
+Steps to import file:
+
+1. Set BPM that you want
+2. **SHIFT + LOOPER PLAY + B[1-3]**. [1-3] buttons correspond the destination track.
+3. Select file, **OK** to import. **SHIFT + OK** to preview the sound.
+
+The data is trimmed to the closest the end of the measure.
+
+You can control looper and sequencer while you are in the file selection mode. 
+
+BPM can be matched when BPM is detected from the filename. Here are some samples that Qun can detect:
+	- `drumloop_120.wav`  (120BPM)
+	- `guitar_120_01.wav` (120BPM)
+	- `01_vocal_loop_160BPM_e5.wav` (160BPM)
+
+If you have existing recordings in the session, WAV file will be cut to the current scene's looper length. You can use empty recorded track just to cut the WAV file to match the loop length. Otherwise it's trimmed to the longest point of the end of the measure.
+
 
 ### Looper live playing / Partial scene switch
 
@@ -812,7 +827,7 @@ LOOPER REC + LOOPER PLAY | Start recording granular sample
 LOOPER PLAY | Start playing (Preview) 
 LOOPER STOP | Stop playing
 SHIFT + LOOPER REC | Save Recording data
-SHIFT + LOOPER PLAY | Load Recording data
+SHIFT + LOOPER PLAY | Load Recording data from SD card. **SHIFT + OK** to preview the sound. 
 
 LOOPER buttons acts as sample player in granular mode.
 
@@ -887,7 +902,7 @@ You can import WAV file if you put WAV file under /granular folder in SD card. A
 
 Shift + Looper Play to import WAV file, Shift + Looper REC to export WAV file.
 
-You can load the sample without exiting filelist mode. Press [SHIFT] + [OK] instead of [OK]. Press Looper Play to listen the loaded sample.
+Press [SHIFT] + [OK] to preview the sound.
 
 When granular mode is not OFF, the recording data will be saved when you save preset, so normally you don't need to save recording data here. It's designed to export recording data.
 
