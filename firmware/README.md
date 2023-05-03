@@ -13,19 +13,24 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v4.30(Beta)
+	- Bug fix: SHIFT + Dial submenu switch was broken.
+	
+	- Bug fix: Looper files are not listed in Granular's loading page.
+	
 - v4.29(Beta)
-	- Better file browsing UI with folders. Now the last visited folder is remembered, and NO button goes parent folder instead of canceling the operation. If you are at the root folder it will cancel the operation.
-	
-	- Wav file preview now becomes real preview without loading. Press SHIFT + OK to preview wav file.
-	
-	- BPM matching option when wav file imported to looper (SHIFT + LOOPER STOP + B[1-3]). BPM is detected from the filename.
-	
-	- Copy bucket can be done by MODE PLAY(RECALL) + B[1-8] + Turn Dial
-	
-	- Bug fix: Width modulation (starting point) issues with oneshot granular mode
-	
-	- Sequencer width (note length) adjustment range is widened to 105.
-	
+  - Better file browsing UI with folders. Now the last visited folder is remembered, and NO button goes parent folder instead of canceling the operation. If you are at the root folder it will cancel the operation.
+
+  - Wav file preview now becomes real preview without loading. Press SHIFT + OK to preview wav file.
+
+  - BPM matching option when wav file imported to looper (SHIFT + LOOPER STOP + B[1-3]). BPM is detected from the filename.
+
+  - Copy bucket can be done by MODE PLAY(RECALL) + B[1-8] + Turn Dial
+
+  - Bug fix: Width modulation (starting point) issues with oneshot granular mode
+
+  - Sequencer width (note length) adjustment range is widened to 105.
+
 - v4.28
   - Performance improvement
 
