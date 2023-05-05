@@ -13,11 +13,14 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v4.31(Beta)
+	- Bug fix : Occasional no-sound issue with Oneshot granular.
+	
 - v4.30(Beta)
-	- Bug fix: SHIFT + Dial submenu switch was broken.
-	
-	- Bug fix: Looper files are not listed in Granular's loading page.
-	
+  - Bug fix: SHIFT + Dial submenu switch was broken.
+
+  - Bug fix: Looper files are not listed in Granular's loading page.
+
 - v4.29(Beta)
   - Better file browsing UI with folders. Now the last visited folder is remembered, and NO button goes parent folder instead of canceling the operation. If you are at the root folder it will cancel the operation.
 
