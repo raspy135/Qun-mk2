@@ -13,9 +13,12 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
-- v4.31(Beta)
-	- Bug fix : Occasional no-sound issue with Oneshot granular.
+- v4.32
+	- Slight performance improvement
 	
+- v4.31(Beta)
+  - Bug fix : Occasional no-sound issue with Oneshot granular.
+
 - v4.30(Beta)
   - Bug fix: SHIFT + Dial submenu switch was broken.
 
