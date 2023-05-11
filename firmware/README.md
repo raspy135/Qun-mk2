@@ -13,9 +13,14 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
-- v4.32
-	- Slight performance improvement
+- v4.33
+	- Snappier envelope response when attack or release is zero. Set attack/release to 1 or 2 to get the behavior of previous versions.
 	
+	- (It's not firmware update) sd_template.zip has been updated
+	
+- v4.32
+  - Slight performance improvement
+
 - v4.31(Beta)
   - Bug fix : Occasional no-sound issue with Oneshot granular.
 
