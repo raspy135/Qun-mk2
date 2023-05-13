@@ -13,11 +13,18 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v4.34
+  - Slightly better clipping handling
+
+  - Bug fix: BPM changed to 92 when pattern is cleared
+
+  - Improved scale quantize algorithm, more chance to get full scale only with white keys.
+
 - v4.33
-	- Snappier envelope response when attack or release is zero. Set attack/release to 1 or 2 to get the behavior of previous versions.
-	
-	- (It's not firmware update) sd_template.zip has been updated
-	
+  - Snappier envelope response when attack or release is zero. Set attack/release to 1 or 2 to get the behavior of previous versions.
+
+  - (It's not firmware update) sd_template.zip has been updated
+
 - v4.32
   - Slight performance improvement
 
