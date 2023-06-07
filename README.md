@@ -802,11 +802,12 @@ The synth features a Granular synthesis recorder.
 
 This is a simple setup to use the granular engine:
 
-1. Move to Granular sub mode, and record or import audio.
-2. Adjust parameters in Granular mode
-3. Change GRN mode from OFF to something else. It overrides AUX L channel to Granular engine's output.
-4. Go Oscillator parameter page, and select OSC shape to "AUX L"
-5. Play notes, set Octave +1 if needed.
+1. Move to Granular sub mode
+2. Change GRN mode from OFF to something else, for example "ONE" for oneshot. It overrides AUX L channel to Granular engine's output.
+3. Record (REC + LOOPER PLAY) or import audio (SHIFT + LOOPER PLAY) for SD card.
+4. Adjust parameters in Granular mode.
+5. Go Oscillator parameter page, and select OSC shape to "AUX L"
+6. Play notes, set Octave +1 if needed.
 
 ### Operation
 

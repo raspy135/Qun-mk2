@@ -13,6 +13,11 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v4.35
+  - Sequencer chain pattern limit is increased up to 32
+
+  - Bug fix: Realtime recording width recorded wrong when BPM factor is not 1
+
 - v4.34
   - Slightly better clipping handling
 
