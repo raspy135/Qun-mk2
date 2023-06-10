@@ -13,6 +13,9 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v4.36
+  - Bug Fix: BPM is preserved when preset was loaded
+
 - v4.35
   - Sequencer chain pattern limit is increased up to 32
 
