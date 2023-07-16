@@ -1018,7 +1018,7 @@ Button | Function
 4 | Receive MIDI Channel
 5 | MIDI forwarding
 6 | Line in through
-7 | Line in HPF
+7 | Seq Ctl MIDI 
 8 | Sync mode
 
 
@@ -1035,7 +1035,7 @@ MIDI Forwarding: MIDI message forwarding for standalone polyphonic configuration
 
 LINE in THRU: If it is AUTO, it is automatically turn on or off LINE IN pass through by mono / poly setting. If it is on, the synth always passes the signal to looper. If it is off, then line in through is always off. The gain is fixed to 1.
 
-LINE in HPF: On is default. LINE in has two HPFs, one is external, one is internal HPF in the chip. This setting turns internal HPF. Turning this off will reduce HPF effect.
+Seq Ctl MIDI: Assign Sequencer/Looper control MIDI channel. Default is off. See "Sequencer/Looper Control MIDI specification" for detail.
 
 Sync Mode: `STOP, MIDI, 2PPQ, 4PPQ, 24PPQ, MOUT, MOUT2`. Select clock source for sequencer and LFO. See `Clock synchronization` for detail. 
 
@@ -1390,6 +1390,30 @@ Suggested MIDI CC parameters to be assigned if your MIDI keyboard has some knobs
 126                            "", //e
 127                            "" //f
 ```
+
+## Sequencer / Looper Control MIDI specification
+
+Some sequencer/looper parameters can be adjusted through Seq Ctl MIDI channel (System mode, button 7).
+
+Note ON messages:
+
+Note | Function
+-----|------
+C1 to G1 | Select sequener pattern
+A#1 | Sequencer Play
+B1 | Sequencer Stop
+C2 to E2 | Select looper scene
+A#2 | Looper Play
+B2 | Looper Stop
+C3 to G3 | Select Bucket
+
+MIDI CC messages
+CC# | Function
+-----|------
+80, 81, 82 | Mute or unmute looper track . 80 is for Track A, 81 is for Track B, 82 is for Track C. If the value is less than 64, the track will be muted. 
+83 | Extra Processing. If the value is more than 64, Extra Processing turns on.
+84 | Morph
+
 ## Quick Setup with Third-party Software & Hardware
 The QUN synth can be setup quickly for use with third-party software and hardware by downloading the appropriate configuration file from [Configurations](./configurations). The following configurations files are currently available:
 

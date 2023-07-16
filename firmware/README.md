@@ -13,37 +13,44 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v4.37
+  - "Seq Ctl MIDI" (System, button 7) is added, it enables to control Sequencer and Looper via MIDI. See "Sequencer / Looper Control MIDI specification" for detail in the manual.
+    - Pattern change
+    - Bucket change
+    - Scene change
+    - Seq play/stop
+    - Looper play/stop
+    - Extra Processing on/off
+    - Mute looper track
+    - Morph
+  - In PARAM mode and with relative mode, the parameter will be unassigned when button is released to reposition the dial.
+  - Bank 6 becomes the default system sub mode after boot.
+  - Better double click detection
+  
 - v4.36
   - Bug Fix: BPM is preserved when preset was loaded
-
 - v4.35
   - Sequencer chain pattern limit is increased up to 32
 
   - Bug fix: Realtime recording width recorded wrong when BPM factor is not 1
-
 - v4.34
   - Slightly better clipping handling
 
   - Bug fix: BPM changed to 92 when pattern is cleared
 
   - Improved scale quantize algorithm, more chance to get full scale only with white keys.
-
 - v4.33
   - Snappier envelope response when attack or release is zero. Set attack/release to 1 or 2 to get the behavior of previous versions.
 
   - (It's not firmware update) sd_template.zip has been updated
-
 - v4.32
   - Slight performance improvement
-
 - v4.31(Beta)
   - Bug fix : Occasional no-sound issue with Oneshot granular.
-
 - v4.30(Beta)
   - Bug fix: SHIFT + Dial submenu switch was broken.
 
   - Bug fix: Looper files are not listed in Granular's loading page.
-
 - v4.29(Beta)
   - Better file browsing UI with folders. Now the last visited folder is remembered, and NO button goes parent folder instead of canceling the operation. If you are at the root folder it will cancel the operation.
 
@@ -56,24 +63,19 @@ Here are the steps to update the firmware:
   - Bug fix: Width modulation (starting point) issues with oneshot granular mode
 
   - Sequencer width (note length) adjustment range is widened to 105.
-
 - v4.28
   - Performance improvement
 
   - Bug fix: Occasional no-sound with Granular
-
 - v4.25
   - Bug fix: Sync problem with MIDI and clock. Now it has much better tracking with tempo change and alignment.
 
   - Some performance improvement
-
 - v4.22
   - Bug fix: Sequencer sometimes pauses when BPM is changed by changing bucket.
   - Alignment improvement with clock synchronization
-
 - v4.21
   - BPM behavior (Per session or per pattern) can be changed in System2, button 1.
-
 - v4.19
   - Metronome volume can be adjusted by REC+SEQ PLAY + Turn dial
   - You can chain pattern by pressing SEQ PLAY + B[1-8], then press B[1-8] while keep pressing SEQ PLAY. Up to 16 patterns can be chained.
