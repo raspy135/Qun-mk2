@@ -13,6 +13,11 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v4.38
+  - Bug fix: Double click detection
+  
+  - 
+  
 - v4.37
   - "Seq Ctl MIDI" (System, button 7) is added, it enables to control Sequencer and Looper via MIDI. See "Sequencer / Looper Control MIDI specification" for detail in the manual.
     - Pattern change
@@ -26,7 +31,7 @@ Here are the steps to update the firmware:
   - In PARAM mode and with relative mode, the parameter will be unassigned when button is released to reposition the dial.
   - Bank 6 becomes the default system sub mode after boot.
   - Better double click detection
-  
+
 - v4.36
   - Bug Fix: BPM is preserved when preset was loaded
 - v4.35
