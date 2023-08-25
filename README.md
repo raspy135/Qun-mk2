@@ -135,7 +135,7 @@ Button | Function
 ------------ | -------------
 SHIFT + MODE PLAY | Dumping current preset to MIDI OUT. This is useful to transfer current preset to another Qun / Qun mk2 synthesizer.
 SHIFT + SYSTEM | All notes off
-SHIFT + PARAM | Initialize the preset
+SHIFT + PARAM | Initialize the preset. You can choose some templates (Blank, sampler, evenslice). Sampler is good for oneshot sample. EvenSlice is good for drum slice. Adjust slice length by OSC1 mod width (OSC1 menu, button 6) 
 SHIFT + SEQ PLAY + turn dial | Set BPM
 MODE PLAY + turn dial | Record volume (Stay -6.0dB or lower to avoid clipping) 
 MODE PLAY + SYSTEM + turn dial | looper master volume 
@@ -613,7 +613,8 @@ Steps to import file:
 
 1. Set BPM that you want
 2. **SHIFT + LOOPER PLAY + B[1-3]**. [1-3] buttons correspond the destination track.
-3. Select file, **OK** to import. **SHIFT + OK** to preview the sound.
+3. Dial or button 7 or button 8 to select file.
+4. Select file, **OK** to import. **SHIFT + OK** to preview the sound.
 
 The data is trimmed to the closest the end of the measure.
 
@@ -765,7 +766,9 @@ You can run multiple sequeence patterns at the same time, up to 3 patterns by se
 
 The first number is the sequence pattern number you want to run (1 to 8).
 The second number after "R" means period length for relative pattern run.
-Select "R0" for the normal parallel run.
+**Select "R0" for the normal parallel run.**
+
+**You can edit the second/third pattern while playing.** To do this, just select second or third pattern while playing. The primary pattern won't be changed.
 
 If you select R1 to R8, the second (or third) pattern will run as relative pitch to the primary pattern.
 In this setting, C5 is the center (zero). The sequencer will update the transpose every configured period (R1 to R8) by looking at the current pitch in the primary pattern.
@@ -828,7 +831,7 @@ LOOPER REC + LOOPER PLAY | Start recording granular sample
 LOOPER PLAY | Start playing (Preview) 
 LOOPER STOP | Stop playing
 SHIFT + LOOPER REC | Save Recording data
-SHIFT + LOOPER PLAY | Load Recording data from SD card. **SHIFT + OK** to preview the sound. 
+SHIFT + LOOPER PLAY | Load Recording data from SD card.   Dial or button 7 or button 8 to select file.  **SHIFT + OK** to preview the sound. 
 
 LOOPER buttons acts as sample player in granular mode.
 
@@ -897,13 +900,16 @@ Button 1 | Rewind to slice 3
 - Record rotates while you are pressing Release. If you keep turning dial to clockwise while pressing the button, the position will be kept. 
 
 
-### Import wav file from SD card
+### Import wav file to granular engine from SD card
 
-You can import WAV file if you put WAV file under /granular folder in SD card. And the looper record files will be shown at the end of the list, so you can load looper recorded data to granular as well.
+You can import WAV file if you put WAV file under **/granular** folder in SD card. 
 
-Shift + Looper Play to import WAV file, Shift + Looper REC to export WAV file.
+**The looper record data can be imported** as well. This will be shown at the end of the list at the root folder, so you can load looper recorded data to granular as well.
 
-Press [SHIFT] + [OK] to preview the sound.
+**Shift + Looper Play to import WAV file**, **Shift + Looper REC to export WAV file**.
+
+1. Dial or button 7 or button 8 to select file.
+2.  **[SHIFT] + [OK] to preview the sound**.
 
 When granular mode is not OFF, the recording data will be saved when you save preset, so normally you don't need to save recording data here. It's designed to export recording data.
 
@@ -969,7 +975,7 @@ You can apply filter, filter volume, and effects against Looper recording. **See
 
 LFO and Envelopes(EG1 to EG4) is still available for filter modulation.
 
-Extra processing can be recorded back to looper. 
+Extra processing can be recorded back to looper and this is powerful feature, you can bounce back looper recording with effects.
 
 	1. Stop the sequencer.
 	1. Select the recording track.

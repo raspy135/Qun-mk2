@@ -13,11 +13,21 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v4.40(Beta)
+  - Bug fix: Sequencer play/stop was broken when it's triggered by Seq MIDI channel.
+  - Bug fix: Occasional MIDI note stack (Not 100% validated)
+  - Bug fix: Extra process recording clipping fix
+  - When you are playing multiple sequence patterns (second or/and third pattern), you can edit second / third pattern while running sequencer. To do this, just select the second or third pattern. In this case primary pattern won't change. If you select unrelated pattern, the primary pattern will be changed as normal operation.
+  - You can use button 7 or 8 to scroll cursor when you are in file selection modes such as preset loading or sample loading.
+  - Initialize preset has three templates (Blank, sampler and evenslice)
+  - Overclocking SD card for the better performance (It might introduce instability?)
+  - Deleting highpass filter from Delay(stereo) to reduce load
+  
 - v4.38
   - Bug fix: Double click detection
-  
+
   - 
-  
+
 - v4.37
   - "Seq Ctl MIDI" (System, button 7) is added, it enables to control Sequencer and Looper via MIDI. See "Sequencer / Looper Control MIDI specification" for detail in the manual.
     - Pattern change
