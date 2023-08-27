@@ -13,21 +13,28 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v4.41
+  - Now granular's PWM(which affects to starting position) will be quantized by 64th note.
+  - "Scratch" initial template is added.
+  - File selection improvements:
+    - Button 7/8 to scroll (from v4.40), Shift + B7/8 for page scroll
+    - Button 5/6 for horizontal scroll to see long filename
+    - Folder icon for better visility.
+    - Shift + NO to go back root folder
+  
 - v4.40(Beta)
   - Bug fix: Sequencer play/stop was broken when it's triggered by Seq MIDI channel.
   - Bug fix: Occasional MIDI note stack (Not 100% validated)
   - Bug fix: Extra process recording clipping fix
   - When you are playing multiple sequence patterns (second or/and third pattern), you can edit second / third pattern while running sequencer. To do this, just select the second or third pattern. In this case primary pattern won't change. If you select unrelated pattern, the primary pattern will be changed as normal operation.
   - You can use button 7 or 8 to scroll cursor when you are in file selection modes such as preset loading or sample loading.
-  - Initialize preset has three templates (Blank, sampler and evenslice)
+  - Initialize preset has three templates (Blank, sampler, evenslice)
   - Overclocking SD card for the better performance (It might introduce instability?)
   - Deleting highpass filter from Delay(stereo) to reduce load
-  
 - v4.38
   - Bug fix: Double click detection
 
   - 
-
 - v4.37
   - "Seq Ctl MIDI" (System, button 7) is added, it enables to control Sequencer and Looper via MIDI. See "Sequencer / Looper Control MIDI specification" for detail in the manual.
     - Pattern change
@@ -41,7 +48,6 @@ Here are the steps to update the firmware:
   - In PARAM mode and with relative mode, the parameter will be unassigned when button is released to reposition the dial.
   - Bank 6 becomes the default system sub mode after boot.
   - Better double click detection
-
 - v4.36
   - Bug Fix: BPM is preserved when preset was loaded
 - v4.35

@@ -135,7 +135,7 @@ Button | Function
 ------------ | -------------
 SHIFT + MODE PLAY | Dumping current preset to MIDI OUT. This is useful to transfer current preset to another Qun / Qun mk2 synthesizer.
 SHIFT + SYSTEM | All notes off
-SHIFT + PARAM | Initialize the preset. You can choose some templates (Blank, sampler, evenslice). Sampler is good for oneshot sample. EvenSlice is good for drum slice. Adjust slice length by OSC1 mod width (OSC1 menu, button 6) 
+SHIFT + PARAM | Initialize the preset. You can choose some templates (Blank, sampler, evenslice, scratch). Sampler is good for oneshot sample. EvenSlice is good for drum slice. Adjust slice length by OSC1 mod width (OSC1 menu, button 6). Scratch is good start for Vinyl record scratch mode(See the section in the doc). 
 SHIFT + SEQ PLAY + turn dial | Set BPM
 MODE PLAY + turn dial | Record volume (Stay -6.0dB or lower to avoid clipping) 
 MODE PLAY + SYSTEM + turn dial | looper master volume 
@@ -614,7 +614,8 @@ Steps to import file:
 1. Set BPM that you want
 2. **SHIFT + LOOPER PLAY + B[1-3]**. [1-3] buttons correspond the destination track.
 3. Dial or button 7 or button 8 to select file.
-4. Select file, **OK** to import. **SHIFT + OK** to preview the sound.
+4. Button 5/6 for horizontal scroll for long filename
+5. Select file, **OK** to import. **SHIFT + OK** to preview the sound.
 
 The data is trimmed to the closest the end of the measure.
 
@@ -909,7 +910,8 @@ You can import WAV file if you put WAV file under **/granular** folder in SD car
 **Shift + Looper Play to import WAV file**, **Shift + Looper REC to export WAV file**.
 
 1. Dial or button 7 or button 8 to select file.
-2.  **[SHIFT] + [OK] to preview the sound**.
+2. Button 5/6 for horizontal scroll for long filename.
+3.  **[SHIFT] + [OK] to preview the sound**.
 
 When granular mode is not OFF, the recording data will be saved when you save preset, so normally you don't need to save recording data here. It's designed to export recording data.
 
