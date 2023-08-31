@@ -13,15 +13,21 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v4.42
+  - Performance improvement
+  - Sample will be loaded to the selected trim beginning position when you load WAV file to granular. It is useful to build drum kit (or collection of one-shot samples) from one-shot WAV files.
+  - Erase slice, Cut slice, +3dB slice, -3dB slice are added in granular's processing menu (button1). Reverse is replaced to reverse slice. Trim to head was replaced to Cut slice.
+  - Preset can be loaded without exiting menu by pressing SHIFT + OK. You can check the sound by pressing SYSTEM + B1-8 (temp piano mode) or external MIDI keyboard.
+  
 - v4.41
   - Now granular's PWM(which affects to starting position) will be quantized by 64th note.
   - "Scratch" initial template is added.
   - File selection improvements:
     - Button 7/8 to scroll (from v4.40), Shift + B7/8 for page scroll
     - Button 5/6 for horizontal scroll to see long filename
-    - Folder icon for better visility.
+    - Folder icon for better visual.
     - Shift + NO to go back root folder
-  
+
 - v4.40(Beta)
   - Bug fix: Sequencer play/stop was broken when it's triggered by Seq MIDI channel.
   - Bug fix: Occasional MIDI note stack (Not 100% validated)

@@ -818,7 +818,7 @@ This is a simple setup to use the granular engine:
 
 Button | Function
 ------------ | -------------
-1 | Process samples. Options are Analyze, Normalize, Reverse and Trim to head. Analyze will give better result with Time stretch. 
+1 | Process samples.  Analyze will give better result with Time stretch. See below list for processing  detail 
 2 | Slice spread, half-steps. Please see below section for detail. 
 3 | File position (Starting point).
 4 | Length
@@ -835,6 +835,21 @@ SHIFT + LOOPER REC | Save Recording data
 SHIFT + LOOPER PLAY | Load Recording data from SD card.   Dial or button 7 or button 8 to select file.  **SHIFT + OK** to preview the sound. 
 
 LOOPER buttons acts as sample player in granular mode.
+
+#### sample processing
+
+You can process samples.
+
+Name | Description
+------------ | -------------
+Analyze | This will analyze sample, this will give better time stretch result.
+Normalize | Normalize sample's volume
+Reverse slice | Reverse current slice
+Erase slice | Erase current slice (Filled with silence)
+Cut slice | Cut current slice (Cut the region). It's useful to trim sample 
++3dB slice | +3dB current slice
+-3dB slice | -3dB current slice
+
 
 ### Having multiple slices (Slice Spread)
 
@@ -912,6 +927,7 @@ You can import WAV file if you put WAV file under **/granular** folder in SD car
 1. Dial or button 7 or button 8 to select file.
 2. Button 5/6 for horizontal scroll for long filename.
 3.  **[SHIFT] + [OK] to preview the sound**.
+4. The sample will be loaded to **the position of current region**
 
 When granular mode is not OFF, the recording data will be saved when you save preset, so normally you don't need to save recording data here. It's designed to export recording data.
 
@@ -1010,6 +1026,16 @@ SHIFT + LOOPER PLAY | Load
 
 Sequencer data will be stored with preset.
 Granular record data will be saved when granular mode is not OFF.
+
+Here is the operation in preset select menu:
+Button | Function
+-------- | --------
+Dial | Move cursor
+Button 7 | Move up cursor, SHIFT + button 7 for page scroll
+Button 8 | Move down cursor, SHIFT + button 8 for page scroll
+OK | Load preset
+SHIFT + OK | Load preset without exiting this page. You can check the sound by external MIDI keyboard or SYSTEM + B1-8 to play internal piano
+NO | Cancel loading
 
 You can delete preset by pressing SHIFT + STOP (delete) while you are selecting preset.
 
