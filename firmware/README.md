@@ -13,12 +13,21 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v4.43
+  - In Tune sub-mode, preview the sound when you press B1-8 buttons, or when you selecting sub-steps.
+  
+  - Sequencer page won't be reset when you start playing
+  
+  - Sequencer sub-step selection is held when you press the same button
+  
+  - Better graphic to indicate the current sub-step you are editing.
+  
 - v4.42
   - Performance improvement
   - Sample will be loaded to the selected trim beginning position when you load WAV file to granular. It is useful to build drum kit (or collection of one-shot samples) from one-shot WAV files.
   - Erase slice, Cut slice, +3dB slice, -3dB slice are added in granular's processing menu (button1). Reverse is replaced to reverse slice. Trim to head was replaced to Cut slice.
   - Preset can be loaded without exiting menu by pressing SHIFT + OK. You can check the sound by pressing SYSTEM + B1-8 (temp piano mode) or external MIDI keyboard.
-  
+
 - v4.41
   - Now granular's PWM(which affects to starting position) will be quantized by 64th note.
   - "Scratch" initial template is added.

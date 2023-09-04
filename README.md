@@ -701,36 +701,31 @@ Striped square | 4 notes in the step (1/32th)
 ## PLY:SEQ VELOCITY / WIDTH / PROBABILITY
 Press one of the eight buttons and turn the dial, then it will modify velocity / width / probablity for each step.
 
-If you press NO or OK while pressing [1-8] button, you can edit subdivision's parameter.
+If you press NO or OK while pressing [1-8] button, you can edit sub-step parameter.
 
-Index number | Meaning 
--------- | --------
-0 | Main value, it will be used for the first-half note and other notes when other Index number is off
-1 | 2nd half of the note (Used with 1/16th note)
-2 | 3rd of the note (Used with triplet)
-+0 | Main value for the second voice. Useful with Quad mode
-+1 | 2nd half value for the second voice. Useful with Quad mode
-+2 | 3rd value for the second voice. Useful with Quad mode
+Please check Seq Tune section about sub-step. 
+
+Only tune has 3rd and 4th voice index. Other parameters will share the parameter for 3rd and 4th voices.
+
 
 ## PLY:SEQ TUNE
 Press one of the eight buttons and turn the dial, then it will modify tune offset for each step.
 
-If you press NO or OK while pressing [1-8] button, you can edit subdivision's parameter.
+If you press NO or OK while pressing [1-8] button, you can edit sub-step's parameter.
 
-Index number | Meaning 
+![tune1](./manual_images/tune1.png)
+
+While you are pressing B[1-8] button, three tiles indidates sub-step position you are editing. The number above tiles means the index of the voice.
+2 and more voice index works with Quad voice mode. For example, the following picture means you are editing 2nd position of the sub-step, and 2nd voice.
+
+![tune1](./manual_images/tune2_crop.png)
+
+
+sub-step position | Meaning 
 -------- | --------
-0 | Main value, it will be used for the first-half note and other notes when other Index number is off
-1 | 2nd half of the note (Used with 1/16th note)
-2 | 3rd of the note (Used with triplet)
-+0 | Main value for the second voice. Useful with Quad mode
-+1 | 2nd half value for the second voice. Useful with Quad mode
-+2 | 3rd value for the second voice. Useful with Quad mode
-++0 | Main value for the 3rd voice. Useful with Quad mode
-++1 | 2nd half value for the 3rd voice. Useful with Quad mode
-++2 | 3rd value for the second voice. Useful with Quad mode
-+++0 | Main value for the 4th voice. Useful with Quad mode
-+++1 | 2nd half value for the 4th voice. Useful with Quad mode
-+++2 | 3rd value for the 4th voice. Useful with Quad mode
+Left | Main value, it will be used for the first-half note and other notes when other Index number is off
+Middle | 2nd half of the note (Used with 1/16th note)
+Right | 3rd of the note (Used with triplet)
 
 #### Playing note capturing from external MIDI keyboard
 
