@@ -135,7 +135,7 @@ Button | Function
 ------------ | -------------
 SHIFT + MODE PLAY | Dumping current preset to MIDI OUT. This is useful to transfer current preset to another Qun / Qun mk2 synthesizer.
 SHIFT + SYSTEM | All notes off
-SHIFT + PARAM | Initialize the preset. You can choose some templates (Blank, sampler, evenslice, scratch). Sampler is good for oneshot sample. EvenSlice is good for drum slice. Adjust slice length by OSC1 mod width (OSC1 menu, button 6). Scratch is good start for Vinyl record scratch mode(See the section in the doc). 
+SHIFT + PARAM | Initialize the preset. You can choose some templates (Blank, sampler, evenslice, scratch). Please see "Initialize preset" section for detail. 
 SHIFT + SEQ PLAY + turn dial | Set BPM
 MODE PLAY + turn dial | Record volume (Stay -6.0dB or lower to avoid clipping) 
 MODE PLAY + SYSTEM + turn dial | looper master volume 
@@ -207,6 +207,39 @@ Saving session is semi-automated.
 Looper recording data will be saved immediately after the recording. 
 Mixer and Bucket data will be saved when LOOPER STOP button is pressed.
 This can be turned off in System2 menu.
+
+## Initialize Preset
+
+You can initialize a preset by pressing SHIFT + PARAM.
+Blank,  Sampler, EvenSlice, Scratch are available for preset.
+
+Blank is the base preset for all.
+The following parameters will be set when you select other templates:
+
+Sampler : Sampler is for basic sampler setup.
+
+- OSC1 type = AUX L
+- OSC Octave = +1
+- Granular mode = ONE
+- Env1 Release to 58 for gentle release
+
+EvenSlice : Evenslice is for sampler with even sliced samples.
+- OSC1 type = AUX L
+- OSC Octave = +1
+- Granular mode = ONE
+- Env1 Release to 58 for gentle release
+- OSC1 mod src = FREQ1 to modulate PWM by MIDI note
+- OSC2 mod src = FREQ2 to modulate PWM by MIDI note
+- Keysync = 1N2N to disable pitch control by MIDI note
+
+*EvenSlice expects to change OSC1 MOD WIDTH to control the size of slice.*
+
+Scratch : Scratch is for scratching mode. 
+- OSC1 type = AUX L
+- OSC Octave = +1
+- Granular mode = ONE
+- Env1 Release to 58 for gentle release
+- Env1 Src = ON
 
 ## Preset bucket
 
@@ -880,7 +913,7 @@ In Repeat modes, multiple slicing points are randomly selected when the length i
 Press SHIFT + Button 1 in piano mode one more time to enter record scratch mode.(Or SHIFT + turn dial in play mode)
 Record scratch mode is an emulation of analog record scratching by using granular's sample buffer.
 
-To use record scratch mode, you need to set the following settings:
+To use record scratch mode, you need to set the following settings, or using "Scratch" template from preset initialize menu:
 1. Granular mode set to ONE
 2. Select OSC1's shape to AUX L
 3. Set OSC1's octave to +1
