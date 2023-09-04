@@ -182,7 +182,7 @@ To avoid confusion, this setting won't be saved.
 
 ## Session
 
-![session_diagram](/Users/ryosukekojima/Desktop/session_diagram.png)
+![session_diagram](./manual_images/session_diagram.png)
 
 Session is the biggest data unit of the synth.
 Session includes 8 preset buckets. Each bucket contains one preset with 8 pattern sequencer data.
