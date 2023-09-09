@@ -156,9 +156,11 @@ SYSTEM + [1-8] : Temporary piano mode|
 ![leds](./manual_images/leds.png)
 
 The synth has 8 LED indicators on the switch.
-Solid LED shows selected pattern number.
+Solid LED shows current sequencer pattern number.
 
-- When playing, another LED shows current position of the sequencer.
+And the LED shows other information when:
+
+- When sequencer is running, another LED shows current position of the sequencer.
 - When trying to switch Scene (When pressing LOOPER PLAY) shows current selected Scene.
 - When trying to switch Track (When pressing LOOPER REC) shows current selected Track
 - When trying to mute Track (When pressing PARAM) shows current mute status of the Tracks.
@@ -269,7 +271,6 @@ To understand how bucket works, try the following steps:
 7. Press Recall + Button 2 to switch to Bucket 2 again
 8. White noise should be recalled.
 
-There is no copy function between bucket, but you can use preset bank 1 to bank 8 as a copy buffer.
 When you save the preset or load the preset from bank 1 to 8, the name is used to indicate the bucket, so always recommending to set name by saving or loding preset.
 
 
@@ -1075,7 +1076,7 @@ System Setting is the setting that is not included in the patch setting. To chan
 Button | Function
 ------------ | -------------
 1 | Input source (AUX) select 
-2 | Number of devices
+2 | Sample rate (State) 
 3 | Device Index
 4 | Receive MIDI Channel
 5 | MIDI forwarding
@@ -1083,23 +1084,31 @@ Button | Function
 7 | Seq Ctl MIDI 
 8 | Sync mode
 
+**AUX**: Input source select. Select Mic (the board has two onboard microphones) or Line in. The setting will be stored in the flash memory. When you use LINE IN, set this setting to "LINE IN(2CH)". You can record the source to granular engine.
 
-AUX: Input source select. Select Mic (the board has two onboard microphones) or Line in. The setting will be stored in the flash memory. When you use LINE IN, set this setting to "LINE IN(2CH)". You can record the source to granular engine.
+**Sample Rate** : Select 48kHz for most of situation. 24kHz is to recreate Lo-Fi sampler feeling from 90's. A/D and D/A is configured 24kHz so everything is operated by 24kHz including synth engine.
+
+- Pros:
+    - 90's low-fi digital sound, dark and punchy
+    - Double looper buffer length (45+ sec)
+- Cons:
+     - Cutoff acts differently so it need to be adjusted
+     - Looper recording (Session) won't be compatible.
+     - Sample data will be saved as 24kHz.
+     - You will hear alias noise, feels the sound degraded (But this is the point of 24kHz mode)
 
 
-Number of devices: Number of devices for poly mode. Set 1 if you don’t have multiple devices. It will be stored in the flash memory.
+**Device Index**: Device Index. Set 1 if you don’t have multiple devices. It will be stored in the flash memory. Set 1 unless you have multiple Qun mk2.
 
-Device Index: Device Index. Set 1 if you don’t have multiple devices. It will be stored in the flash memory.
+**RECV MIDI Ch**: Configure receiving MIDI channel. Default is ALL. If you use it with Polyphonic setup, set the same channel or ALL for all devices.
 
-RECV MIDI Ch: Configure receiving MIDI channel. Default is ALL. If you use it with Polyphonic setup, set the same channel or ALL for all devices.
+**MIDI Forwarding** : MIDI message forwarding for standalone polyphonic configuration. When the option is ON, the message forwarding is active with PolyMono or PolyQuad configuration. It's not for generic MIDI forwarding like MIDI THRU. Do not turn this option with DAW configuration. Most of DAW will echo received MIDI message, it will cause an infinite MIDI message loop. 
 
-MIDI Forwarding: MIDI message forwarding for standalone polyphonic configuration. When the option is ON, the message forwarding is active with PolyMono or PolyQuad configuration. It's not for generic MIDI forwarding like MIDI THRU. Do not turn this option with DAW configuration. Most of DAW will echo received MIDI message, it will cause an infinite MIDI message loop. 
+**LINE in THRU**: If it is AUTO, it is automatically turn on or off LINE IN pass through by mono / poly setting. If it is on, the synth always passes the signal to looper. If it is off, then line in through is always off. The gain is fixed to 1.
 
-LINE in THRU: If it is AUTO, it is automatically turn on or off LINE IN pass through by mono / poly setting. If it is on, the synth always passes the signal to looper. If it is off, then line in through is always off. The gain is fixed to 1.
+**Seq Ctl MIDI**: Assign Sequencer/Looper control MIDI channel. Default is off. See "Sequencer/Looper Control MIDI specification" for detail.
 
-Seq Ctl MIDI: Assign Sequencer/Looper control MIDI channel. Default is off. See "Sequencer/Looper Control MIDI specification" for detail.
-
-Sync Mode: `STOP, MIDI, 2PPQ, 4PPQ, 24PPQ, MOUT, MOUT2`. Select clock source for sequencer and LFO. See `Clock synchronization` for detail. 
+**Sync Mode**: `STOP, MIDI, 2PPQ, 4PPQ, 24PPQ, MOUT, MOUT2`. Select clock source for sequencer and LFO. See `Clock synchronization` for detail. 
 
 
 ### SYS:SYSTEM2
@@ -1118,11 +1127,11 @@ Button | Function
 7 | Slider assignment. See Touch Slider section for detail. 
 8 | Screen Contrast
 
-Ext MIDI Scale Quantize : When it's on, sequencer's scale and key will be applied to external MIDI keyboard input. Default is off.
+**Ext MIDI Scale Quantize** : When it's on, sequencer's scale and key will be applied to external MIDI keyboard input. Default is off.
 
-When the parameter caption is On, the parameter name will be shown when you press the button. It's a good option for initial training.
+When the **Parameter Caption** is On, the parameter name will be shown when you press the button. It's a good option for initial training.
 
-Master Volume controls hardware volume of the audio chip. Normally MAX(Default) is recommended. This is useful when your effector or recorder doesn't expect line level input.
+**Master Volume** controls hardware volume of the audio chip. Normally MAX(Default) is recommended. This is useful when your effector or recorder doesn't expect line level input.
 
 ### Touch Slider
 

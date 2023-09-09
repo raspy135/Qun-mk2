@@ -13,21 +13,35 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v4.50
+  - 24kHz mode is added. (System, button2, reboot is needed to reflect the change). This brings the following:
+    - Benefit:
+      - 90's low-fi digital sound
+      - Double looper buffer length (45+ sec)
+  
+    - Compatibility issues:
+      - Cutoff acts differently so it need to be adjusted
+      - Looper recording (Session) won't be compatible.
+      - You might feel the sound degraded
+	- Bug fix: LFO's S&H oscillator won't reset the value when retriggered
+	- Bug fix: Scratch initial template was broken
+	- Accordion patch in bank7 (accord) was updated. Overwrite P_ACCORD.DAT in sd_template/preset/bank7 or use sd_template.zip to update all of patches.
+	- Bug fix: MIDI note stack issue (probably it's solved)
+  
 - v4.43
   - In Tune sub-mode, preview the sound when you press B1-8 buttons, or when you selecting sub-steps.
-  
+
   - Sequencer page won't be reset when you start playing
-  
+
   - Sequencer sub-step selection is held when you press the same button
-  
+
   - Better graphic to indicate the current sub-step you are editing.
-  
+
 - v4.42
   - Performance improvement
   - Sample will be loaded to the selected trim beginning position when you load WAV file to granular. It is useful to build drum kit (or collection of one-shot samples) from one-shot WAV files.
   - Erase slice, Cut slice, +3dB slice, -3dB slice are added in granular's processing menu (button1). Reverse is replaced to reverse slice. Trim to head was replaced to Cut slice.
   - Preset can be loaded without exiting menu by pressing SHIFT + OK. You can check the sound by pressing SYSTEM + B1-8 (temp piano mode) or external MIDI keyboard.
-
 - v4.41
   - Now granular's PWM(which affects to starting position) will be quantized by 64th note.
   - "Scratch" initial template is added.
@@ -36,7 +50,6 @@ Here are the steps to update the firmware:
     - Button 5/6 for horizontal scroll to see long filename
     - Folder icon for better visual.
     - Shift + NO to go back root folder
-
 - v4.40(Beta)
   - Bug fix: Sequencer play/stop was broken when it's triggered by Seq MIDI channel.
   - Bug fix: Occasional MIDI note stack (Not 100% validated)
