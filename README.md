@@ -1086,7 +1086,7 @@ Button | Function
 
 **AUX**: Input source select. Select Mic (the board has two onboard microphones) or Line in. The setting will be stored in the flash memory. When you use LINE IN, set this setting to "LINE IN(2CH)". You can record the source to granular engine.
 
-**Sample Rate** : Select 48kHz for most of situation. 24kHz is to recreate Lo-Fi sampler feeling from 90's. A/D and D/A is configured 24kHz so everything is operated by 24kHz including synth engine.
+**Sample Rate** : Select 48kHz for most of situation. 24kHz is to recreate Lo-Fi sampler feeling from 90's. A/D and D/A is configured 24kHz so everything is operated by 24kHz including synth engine. **You need to reboot the device to reflect the change.**
 
 - Pros:
     - 90's low-fi digital sound, dark and punchy

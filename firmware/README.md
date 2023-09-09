@@ -18,7 +18,6 @@ Here are the steps to update the firmware:
     - Benefit:
       - 90's low-fi digital sound
       - Double looper buffer length (45+ sec)
-  
     - Compatibility issues:
       - Cutoff acts differently so it need to be adjusted
       - Looper recording (Session) won't be compatible.
