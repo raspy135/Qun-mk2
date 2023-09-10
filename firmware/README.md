@@ -13,6 +13,11 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v4.51
+  - Bug fix: Looper overdub didn't work at the first of recording of the track, when you keep recording to the second loop.
+  
+  - Tap tempo is added. To do tap tempo, SHIFT + SEQ PLAY, and tap SEQ PLAY 4 or more time while you are pressing SHIFT.
+  
 - v4.50
   - 24kHz mode is added. (System, button2, reboot is needed to reflect the change). This brings the following:
     - Benefit:
@@ -22,11 +27,11 @@ Here are the steps to update the firmware:
       - Cutoff acts differently so it need to be adjusted
       - Looper recording (Session) won't be compatible.
       - You might feel the sound degraded
-	- Bug fix: LFO's S&H oscillator won't reset the value when retriggered
-	- Bug fix: Scratch initial template was broken
-	- Accordion patch in bank7 (accord) was updated. Overwrite P_ACCORD.DAT in sd_template/preset/bank7 or use sd_template.zip to update all of patches.
-	- Bug fix: MIDI note stack issue (probably it's solved)
-  
+  - Bug fix: LFO's S&H oscillator won't reset the value when retriggered
+  - Bug fix: Scratch initial template was broken
+  - Accordion patch in bank7 (accord) was updated. Overwrite P_ACCORD.DAT in sd_template/preset/bank7 or use sd_template.zip to update all of patches.
+  - Bug fix: MIDI note stack issue (probably it's solved)
+
 - v4.43
   - In Tune sub-mode, preview the sound when you press B1-8 buttons, or when you selecting sub-steps.
 

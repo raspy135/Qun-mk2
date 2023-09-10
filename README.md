@@ -136,7 +136,7 @@ Button | Function
 SHIFT + MODE PLAY | Dumping current preset to MIDI OUT. This is useful to transfer current preset to another Qun / Qun mk2 synthesizer.
 SHIFT + SYSTEM | All notes off
 SHIFT + PARAM | Initialize the preset. You can choose some templates (Blank, sampler, evenslice, scratch). Please see "Initialize preset" section for detail. 
-SHIFT + SEQ PLAY + turn dial | Set BPM
+SHIFT + SEQ PLAY + turn dial | Set BPM. Tap tempo by pressing SEQ PLAY 4 or more times while you keep pressing SHIFT. 
 MODE PLAY + turn dial | Record volume (Stay -6.0dB or lower to avoid clipping) 
 MODE PLAY + SYSTEM + turn dial | looper master volume 
 SYSTEM + turn dial | VCF volume
@@ -276,7 +276,9 @@ When you save the preset or load the preset from bank 1 to 8, the name is used t
 
 ## Signal diagram
 
-![qun2_signal_diagram](./manual_images/qun2_diagram.png)
+Signal diagram helps to understand how Qun mk2 works.
+
+![‎qun2_diagram](./manual_images/‎qun2_diagram.png)
 
 ## Parameter Mode
 
@@ -530,7 +532,7 @@ REC + SEQ PLAY + turn dial | Metronome volume
 LOOPER PLAY | Start Looper
 LOOPER STOP | Stop Looper
 LOOPER REC + LOOPER PLAY | Start looper recording
-SHIFT + SEQ PLAY + turn dial | Set BPM
+SHIFT + SEQ PLAY + turn dial | Set BPM. Tap tempo by pressing SEQ PLAY 4 or more times while you keep pressing SHIFT. 
 LOOPER PLAY + [1-5] | Select Scene
 REC + [1-3, 7,8] | Select recording track. A,B,C are mono tracks. Press 7, 8 for stereo recording. 7=A(Left)+B(Right), 8 = B+C. When you do stereo recording, you may want to set pan to left and right for the selected stereo tracks. 
 SHIFT + REC + B[1-3] | Load wav file to looper track A, B or C 
