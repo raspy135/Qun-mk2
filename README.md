@@ -1046,14 +1046,26 @@ The following parameters are still available with Extra processing:
 
 ## SYSTEM MODE
 
-### Bank (1 to 8)
+(**UI changed since v4.52**) System mode will show the following menu. Turn dial or button 7/8 to move cursor, OK to select:
 
-Load or save preset. Each bank can store up to 40 preset. Bank 6, 7 and 8 is used for factory install preset, but you can edit it.
 
-Button | Function
+Menu | Function
 -------- | --------
-SHIFT + LOOPER REC | Save
-SHIFT + LOOPER PLAY | Load
+Load Preset | Load preset
+Save Preset | Save preset
+System | Enter system sub-mode 
+System2 | Enter system2 sub-mode 
+
+### Load preset
+
+**If you are older than v4.52, please update to match this document.**
+
+ Each folder can store up to 40 preset. There is no difference between factory preset and user preset.
+
+Factory presets are stored under bank6,7,8(Legacy folder structure)  or under category names. 
+**SD card temlate is updated with firmware v4.52 and later, it has improved preset load/save UI. If you see category names like Bass or Drums but nothing inside, you need to download sd_template.zip and extract the folders and files. Copy folders and presets under /preset.**
+
+If you edit SD card, you can create your own folders. Only 1 depth folder is supported.
 
 Sequencer data will be stored with preset.
 Granular record data will be saved when granular mode is not OFF.
@@ -1065,10 +1077,15 @@ Dial | Move cursor
 Button 7 | Move up cursor, SHIFT + button 7 for page scroll
 Button 8 | Move down cursor, SHIFT + button 8 for page scroll
 OK | Load preset
-SHIFT + OK | Load preset without exiting this page. You can check the sound by external MIDI keyboard or SYSTEM + B1-8 to play internal piano
+SHIFT + OK | Load preset without asking about sequence data(It won't load sequencer data). It's convenient for quick preset sound checking. 
 NO | Cancel loading
+SHIFT + Looper Stop | Delete the selected preset
 
-You can delete preset by pressing SHIFT + STOP (delete) while you are selecting preset.
+You can play sound by SYSTEM + B[1-8] (Temporary piano mode) or play note by external MIDI keyboard.
+
+### Save preset
+
+Select folder to save, and use B[1-8] and dial to select letters, OK to save.
 
 
 ### SYS:SYSTEM
@@ -1278,7 +1295,7 @@ Filename | Description
 When the directory has more than 500 files, then "LOOPER01" will be created to avoid performance issue. Once a new folder created, the new folder is always selected. Only one LOOPERXX folder is accessible, however, you can specify old folder by pressing Button 1 to 8 when booting. (Button1 means LOOPER00, Button 2 means LOOPER01, and so on)
 
 ### PRESET
-Preset (Bank 1 to 8) is stored here.
+Preset is stored here.
 Filename | Description
 -------- | --------
 [G_AAAAAA.WAV] | G means Granular record data. This is saved when Granular mode is not OFF.
