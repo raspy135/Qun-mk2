@@ -13,16 +13,18 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
-- v4.52
+- v4.53
+  - Bug fix: Realtime sequencer recording was broken (introduced at v4.52)
   
+- v4.52
   - Input volume meter is added to granular
   - Improved wave shape indication in granular mode
   - Granular's starting positions resolution increased from 128 to 256 levels.
   - System major mode and preset Loading/Saving UI is updated. Now it's using the same interface as sample loading, preset is categorized by interument type (Like Bass, Drums, Keys..) , not banks. Banks are still available for backward compatibility. It requires to update SD card preset structure. Please download sd_template.zip, expand it on your PC, and copy files and folders under /preset.
-  
+
   - Bucket name (preset name) indicated when you select the current bucket
   - (Not firmware update) : Factory presets reviewed and revised, added some new presets.
-	
+
 - v4.51
 
   - Bug fix: Looper overdub didn't work at the first of recording of the track, when you keep recording to the second loop.
