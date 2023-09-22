@@ -14,7 +14,7 @@ Here are the steps to update the firmware:
 
 # History
 - v4.54
-  - Buf fix: Reverse Slice processing was broken.
+  - Bug fix: Reverse Slice processing was broken.
   - "Slice" initial template is added for multiple slicing point preset. It will setup basic config for sampler and set GRN spread to 1 and disable KEYSYNC (1N2N)
   - Live slicing in Granular mode has been added (Only works with "ONE" granular mode)
     1. Initialize preset with "Slice" template. (Shift + PARAM and select "Slice")
