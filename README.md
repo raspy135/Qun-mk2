@@ -219,11 +219,18 @@ Blank is the base preset for all.
 The following parameters will be set when you select other templates:
 
 Sampler : Sampler is for basic sampler setup.
-
 - OSC1 type = AUX L
 - OSC Octave = +1
 - Granular mode = ONE
 - Env1 Release to 58 for gentle release
+
+Slice: Slice is good for one-shot multiple slicing.
+- OSC1 type = AUX L
+- OSC Octave = +1
+- Granular mode = ONE
+- Env1 Release to 58 for gentle release
+- OSC1/2 Keysync is disabled (1N2N)
+- Slicespread is set to 1 (Each semitone from C4 will play different slices)
 
 EvenSlice : Evenslice is for sampler with even sliced samples.
 - OSC1 type = AUX L
@@ -826,7 +833,7 @@ the second/third pattern's scale will be ignored, and primary pattern's scale qu
 
 The synth features a Granular synthesis recorder.
 - When GRN mode is set, ths Granular engine's signal is connected to AUX L channel. It means **Granular engine can be used as one of Oscillator shape**. You can assign Granular engine to Oscillator 1, and you still have Oscillator 2.
-- You can make up to 8 slices when Slice Spread is not zero.
+- You can have up to 8 slices when Slice Spread is not zero.
 - You can record audio from LINE IN or MIC. Input sensitivity can be modified by "AUX In Gain" parameter in PARAM Mix menu.
 - Pulse Width modulation will change File position (starting position) of the audio. That means the File position can be modulated by LFO and others.
 - 4 Modes are available. **One shot, One shot with time stretch, Repeat, Repeat with time stretch**. 
@@ -835,7 +842,7 @@ The synth features a Granular synthesis recorder.
 - With initialized state of oscillator, +1 octave then C4 is the original pitch of the audio.
 - The number of voice is limited in some Granular modes.
 
-This is a simple setup to use the granular engine:
+This is a simple setup to use the granular engine(You can skip those steps by initializing preset with "sample" or other template):
 
 1. Move to Granular sub mode
 2. Change GRN mode from OFF to something else, for example "ONE" for oneshot. It overrides AUX L channel to Granular engine's output.
@@ -890,7 +897,7 @@ You can have multiple slices.
 
 When Slice Spread (Button 2) is set to more than zero, each slice 1-8 will be applied from the C4(60) note. One spread means half step.
 
-Setting the Slice Spread to 1 is the most common use. Then the mapping will be the following:
+**Setting the Slice Spread to 1 is the most common use**. Then the mapping will be the following:
 
 	- C4 : Slice 1
 	- C#4 : Slice 2
@@ -908,6 +915,16 @@ Let's have another example. If you have piano sample of C4 and F#4, then you wan
 And so on. As you see C4 and F#4 has 5 half-tone distance. It can be used for melodic instrument with multiple sampling points.
 
 In Repeat modes, multiple slicing points are randomly selected when the length is not zero.
+
+### Live slicing
+
+Live slicing (Making slices by pressing buttons while you are playing sample) can be done when you set GRN mode to ONE mode. Here is the steps to do live slicing:
+1. Initialize a preset with "Slice" template. (Shift + PARAM and select "Slice"). Or setup the parameters by yourself. Make sure GRN mode is ONE.
+2. Go Granular mode and load sample or record sample
+3. Set the first slicing point to the head of playing piont and set length to 127(max), which is the default values.(We want to play the entire sample)
+4. Press play button and **keep pressing the play button**. Loaded sample will play.
+5. Press **B[1-8]** button to slice **while you keep pressing the play button**. B1 will set Slice 1, B2 will set Slice 2 and so on.
+6. Length is set to 90 when the length is short. Adjust length and fine tune starting points as needed.
 
 ### Vinyl record scratch mode
 
