@@ -15,7 +15,7 @@ Here are the steps to update the firmware:
 # History
 - v4.55
   - Looper status view is added. To switch looper status, simply press REC.
-  - Relative 2nd/3rd pattern was broken since 4.40 (Period was not working properly)
+  - Bug fix: Relative 2nd/3rd pattern was broken since 4.40 (Period was not working properly)
   
 - v4.54
   - Bug fix: Reverse Slice processing was broken.

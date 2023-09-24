@@ -657,7 +657,7 @@ You can check looper status such as playing position and Looper length by pressi
 Label | Description
 ------------ | -------------
 Small dot on left bottom | Ready to play, waiting for sequencer, or already playing
-Another circle line in the tape | Extra processing is on (PARAM + OK)
+Another circle line in the tape | Extra processing is on (PARAM + NO) 
 P | Position (steps) 
 L | Loop length (steps) 
 SC | Current Scene
