@@ -122,7 +122,8 @@ REC + SEQ PLAY | Start sequencer live recording
 MODE PLAY | Select Play mode
 SYSTEM | Select System mode
 PARAM | Select Param mode
-LOOPER REC + LOOPER PLAY | Start looper recording
+REC | Looper status page
+REC + LOOPER PLAY | Start looper recording
 LOOPER PLAY | Start looper playing
 LOOPER STOP | Stop looper playing
 RST button on the base board | Reset the device
@@ -646,6 +647,21 @@ Reduce record volume (-3.0dB or more) in Mixer to avoid clipping. MODE PLAY + tu
 Cut / Paste can be used for temporary saved area or delete the track. REC + NO to Cut, REC + OK to Paste.
 
 All recorded data, Preset bucket and Mixer data will be saved as a Session automatically. Recording data save immediately and other data will be saved when looper playing is stopped. Recording data is standard WAV file so you can import them to DAW.
+
+### Looper status page
+
+![looper](./manual_images/looper.png)
+
+You can check looper status such as playing position and Looper length by pressing REC button.
+
+Label | Description
+------------ | -------------
+Small dot on left bottom | Ready to play, waiting for sequencer, or already playing
+Another circle line in the tape | Extra processing is on (PARAM + OK)
+P | Position (steps) 
+L | Loop length (steps) 
+SC | Current Scene
+TR | Current Track
 
 ### Importing wav file to the looper
 

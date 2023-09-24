@@ -13,6 +13,10 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v4.55
+  - Looper status view is added. To switch looper status, simply press REC.
+  - Relative 2nd/3rd pattern was broken since 4.40 (Period was not working properly)
+  
 - v4.54
   - Bug fix: Reverse Slice processing was broken.
   - "Slice" initial template is added for multiple slicing point preset. It will setup basic config for sampler and set slice spread to 1 and disable KEYSYNC (1N2N)
@@ -22,8 +26,8 @@ Here are the steps to update the firmware:
     3. Set the first slicing point to the head of playing point and set length to 127(max), which is the default values.
     4. Press play button and **keep pressing the play button**. Loaded sample will play.
     5. Press B[1-8] button to slice while you keep pressing the play button. B1 will set Slice 1, B2 will set Slice 2 and so on.
-	  6. Length is set to 90 when the length is short. Fine tune length and starting points.
-	
+    6. Length is set to 90 when the length is short. Fine tune length and starting points.
+
 - v4.53
   - Bug fix: Realtime sequencer recording was broken (introduced at v4.52)
 
