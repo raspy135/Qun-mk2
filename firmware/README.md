@@ -14,17 +14,28 @@ Here are the steps to update the firmware:
 
 # History
 - v4.56
-  - Performance improvement
-  - Scratch mode was broken since v4.55
-  - Some modulation routing bug fix
-  - Now Sine wave shape takes Width modulation and it works as Wavefolding. When you set width to sine wave, it will be modified, it can be used like fixed wavetable.
-  - Bug fix: Sometimes unrelated parameter changed when you edit parameters.
   
+  - Performance improvement
+  
+  - Scratch mode was broken since v4.55
+  
+  - Some modulation routing bug fix
+  
+  - Now Sine wave shape takes Width modulation and it works as Wavefolding. When you set width to sine wave, it will be modified, it can be used like fixed wavetable.
+	
+	  - The preset patches sd_template/preset/Guitars/P_OUTTU2.DAT, sd_template/preset/Guitars/P_OUTTUN.DAT sd_template/preset/Keys/P_EPIAN3.DAT, sd_template/preset/Keys/P_EPIAN4.DAT has been added. The patches uses the new feature.
+	
+	- Bug fix: Sometimes unrelated parameter changed when you edit parameters.
+	
+	  
+	
 - v4.55
+
   - Looper status view is added. To switch looper status, simply press REC.
   - Bug fix: Relative 2nd/3rd pattern was broken since 4.40 (Period was not working properly)
 
 - v4.54
+
   - Bug fix: Reverse Slice processing was broken.
   - "Slice" initial template is added for multiple slicing point preset. It will setup basic config for sampler and set slice spread to 1 and disable KEYSYNC (1N2N)
   - Live slicing in Granular mode has been added (Only works with "ONE" granular mode)
@@ -36,9 +47,11 @@ Here are the steps to update the firmware:
     6. Length is set to 90 when the length is short. Fine tune length and starting points.
 
 - v4.53
+
   - Bug fix: Realtime sequencer recording was broken (introduced at v4.52)
 
 - v4.52
+
   - Input volume meter is added to granular
   - Improved wave shape indication in granular mode
   - Granular's starting positions resolution increased from 128 to 256 levels.
@@ -46,11 +59,13 @@ Here are the steps to update the firmware:
 
   - Bucket name (preset name) indicated when you select the current bucket
   - (Not firmware update) : Factory presets reviewed and revised, added some new presets.
+
 - v4.51
 
   - Bug fix: Looper overdub didn't work at the first of recording of the track, when you keep recording to the second loop.
 
   - Tap tempo is added. To do tap tempo, SHIFT + SEQ PLAY, and tap SEQ PLAY 4 or more time while you are pressing SHIFT.
+
 - v4.50
 
   - 24kHz mode is added. (System, button2, reboot is needed to reflect the change). This brings the following:
@@ -65,6 +80,7 @@ Here are the steps to update the firmware:
   - Bug fix: Scratch initial template was broken
   - Accordion patch in bank7 (accord) was updated. Overwrite P_ACCORD.DAT in sd_template/preset/bank7 or use sd_template.zip to update all of patches.
   - Bug fix: MIDI note stack issue (probably it's solved)
+
 - v4.43
   - In Tune sub-mode, preview the sound when you press B1-8 buttons, or when you selecting sub-steps.
 
@@ -73,11 +89,13 @@ Here are the steps to update the firmware:
   - Sequencer sub-step selection is held when you press the same button
 
   - Better graphic to indicate the current sub-step you are editing.
+
 - v4.42
   - Performance improvement
   - Sample will be loaded to the selected trim beginning position when you load WAV file to granular. It is useful to build drum kit (or collection of one-shot samples) from one-shot WAV files.
   - Erase slice, Cut slice, +3dB slice, -3dB slice are added in granular's processing menu (button1). Reverse is replaced to reverse slice. Trim to head was replaced to Cut slice.
   - Preset can be loaded without exiting menu by pressing SHIFT + OK. You can check the sound by pressing SYSTEM + B1-8 (temp piano mode) or external MIDI keyboard.
+
 - v4.41
   - Now granular's PWM(which affects to starting position) will be quantized by 64th note.
   - "Scratch" initial template is added.
@@ -86,6 +104,7 @@ Here are the steps to update the firmware:
     - Button 5/6 for horizontal scroll to see long filename
     - Folder icon for better visual.
     - Shift + NO to go back root folder
+
 - v4.40(Beta)
   - Bug fix: Sequencer play/stop was broken when it's triggered by Seq MIDI channel.
   - Bug fix: Occasional MIDI note stack (Not 100% validated)
@@ -95,10 +114,12 @@ Here are the steps to update the firmware:
   - Initialize preset has three templates (Blank, sampler, evenslice)
   - Overclocking SD card for the better performance (It might introduce instability?)
   - Deleting highpass filter from Delay(stereo) to reduce load
+
 - v4.38
   - Bug fix: Double click detection
 
   - 
+
 - v4.37
   - "Seq Ctl MIDI" (System, button 7) is added, it enables to control Sequencer and Looper via MIDI. See "Sequencer / Looper Control MIDI specification" for detail in the manual.
     - Pattern change
@@ -112,30 +133,38 @@ Here are the steps to update the firmware:
   - In PARAM mode and with relative mode, the parameter will be unassigned when button is released to reposition the dial.
   - Bank 6 becomes the default system sub mode after boot.
   - Better double click detection
+
 - v4.36
   - Bug Fix: BPM is preserved when preset was loaded
+
 - v4.35
   - Sequencer chain pattern limit is increased up to 32
 
   - Bug fix: Realtime recording width recorded wrong when BPM factor is not 1
+
 - v4.34
   - Slightly better clipping handling
 
   - Bug fix: BPM changed to 92 when pattern is cleared
 
   - Improved scale quantize algorithm, more chance to get full scale only with white keys.
+
 - v4.33
   - Snappier envelope response when attack or release is zero. Set attack/release to 1 or 2 to get the behavior of previous versions.
 
   - (It's not firmware update) sd_template.zip has been updated
+
 - v4.32
   - Slight performance improvement
+
 - v4.31(Beta)
   - Bug fix : Occasional no-sound issue with Oneshot granular.
+
 - v4.30(Beta)
   - Bug fix: SHIFT + Dial submenu switch was broken.
 
   - Bug fix: Looper files are not listed in Granular's loading page.
+
 - v4.29(Beta)
   - Better file browsing UI with folders. Now the last visited folder is remembered, and NO button goes parent folder instead of canceling the operation. If you are at the root folder it will cancel the operation.
 
@@ -148,40 +177,50 @@ Here are the steps to update the firmware:
   - Bug fix: Width modulation (starting point) issues with oneshot granular mode
 
   - Sequencer width (note length) adjustment range is widened to 105.
+
 - v4.28
   - Performance improvement
 
   - Bug fix: Occasional no-sound with Granular
+
 - v4.25
   - Bug fix: Sync problem with MIDI and clock. Now it has much better tracking with tempo change and alignment.
 
   - Some performance improvement
+
 - v4.22
   - Bug fix: Sequencer sometimes pauses when BPM is changed by changing bucket.
   - Alignment improvement with clock synchronization
+
 - v4.21
   - BPM behavior (Per session or per pattern) can be changed in System2, button 1.
+
 - v4.19
   - Metronome volume can be adjusted by REC+SEQ PLAY + Turn dial
   - You can chain pattern by pressing SEQ PLAY + B[1-8], then press B[1-8] while keep pressing SEQ PLAY. Up to 16 patterns can be chained.
   - Performance improvement
+
 - v4.17
 
   - Some performance improvement
 
   - Bug fix: Sometimes patch loading stuck with looper play
+
 - v4.15
 
   - Bug fix : 4NL filter will oscillate when it sets to non-supported type of filters
   - Bug fix: Messages to MIDI channel 1 was always picked up. 
+
 - v4.14
 
   - You can turn off internal sound engine to set "1N" to "16N" in  Seq MIDI channel (Long press button1 in Seq config menu) 
   - Note Lower limit (Long press button 5 in Seq config) and Note upper limit(Long press button 7 in Seq config) is added. It will limit note range. When the note is out of range, the note will be shifted octave lower or highter to fit the range. It's useful with random modifier, transpose. It will be affected like automated chord inversion.
+
 - v4.13
 
   - Some priority adjustment for stability
   - Removed 8th swing due for stability
+
 - v4.12
 
   - Little tuning on scratch engine
@@ -189,6 +228,7 @@ Here are the steps to update the firmware:
     Only Low-pass and high-pass filter works. High-pass filter is done by substructing so the result won't be perfect.
   - Behavior change : Granular's Repeat(RPT) mode will use multiple slicing point when the length is more than zero.
   - 8th swing is back, it's at long press button 5 in Seq config.
+
 - v4.11 (Beta)
 
   - Record scratch mode is added. Press SHIFT + Button 1 one more time in piano mode to enter Record scratch mode. See manual for detail.
@@ -198,6 +238,7 @@ Here are the steps to update the firmware:
   - Granular can read stereo track(It will be downmix to mono)
   - Other bug fixes, performance improvements
   - Relative adjustment mode is added. To enable relative mode, double click the corresponding parameter and turn dial in Param mode, or Play modifier, mixer, seq config or granular.
+
 - v4.09
 
   - Some performance optimizations
@@ -205,34 +246,41 @@ Here are the steps to update the firmware:
   - Record pan is added (SHIFT + PLAY + Turn Dial), you can pan synth engine's output.
 
   - Monitor mode is added. It's a bit hidden, press SHIFT + No one more time in mixer mode then enter to monitor mode, or SHIFT + turn dial and turn dial to the end in play mode.
+
 - v4.07
 
   - Bug fix: Extra processed data loopback recording was not great when the signal was clipped.
 
   - Bug fix: Unwanted pop when LFO's shape Sine or Saw and tune moves suddenly
+
 - v4.06
 
   - Bug fix: UI bug fix introduced in v4.04 (UI goes old style after saving)
 
   - Looper was not rewind properly when sequencer is clocked by other sources.
+
 - v4.04 (Beta)
 
   - Sleep is added. SHIFT + NO + OK to sleep. To restart device, press RST button on the bottom board.
   - Bug fix: Autosave was unintendly performed sometimes even when autosave is off. The bug was introduced at v4.00. 
   - Now you can name session by long pressing SHIFT + REC.
   - Tiny "R" or "O" is indicated at the top left of the screen when you are recording(Record or Overdub) in some modes like Parameter modes or Play Modifier.
+
 - v4.03 (Beta)
 
   - Filter type 2PNL and 4PNL has more taste and juice.(Subtle change)
   - Bug fix: Behavior with flooded MIDI traffic
   - Bug fix: MIDI NOTE OFF was not working
   - When the voice mode is set to QUAD, OSC2 always used EG2 as Evelope source. But now you can set other sources. It still uses EG2/EG4 when you set it to EG1/EG3.
+
 - v4.02 (Beta)
 
   - Added touch slider. It needs DIP switch setting change. See Touch Slider section, and Touch Slider DIP switch configuration for detail.
+
 - v4.01 (Beta)
 
   - Bug fix: Subtle behavior degrade fix
+
 - v4.00 (Beta)
 
   - Multiple slicing points up to 8 are now supported with Slice Spread
@@ -243,6 +291,7 @@ Here are the steps to update the firmware:
   - Bug fix: Bug fixes related to granular
   - Some of drum kits were rebuild to use multiple slicing points. It's available in bank6, under sd_template folder, or download sd_template.zip.
   - New Piano mode GUI
+
 - v3.96
 
   - Bug fix: Detune behavior
