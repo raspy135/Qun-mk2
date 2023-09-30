@@ -13,22 +13,26 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v4.57
+  
+  - Bug fix: VCF mod cutoff was broken (Introduced by v4.56)
+  
 - v4.56
-  
+
   - Performance improvement
-  
+
   - Scratch mode was broken since v4.55
-  
+
   - Some modulation routing bug fix
-  
+
   - Now Sine wave shape takes Width modulation and it works as Wavefolding. When you set width to sine wave, it will be modified, it can be used like fixed wavetable.
-	
-	  - The preset patches sd_template/preset/Guitars/P_OUTTU2.DAT, sd_template/preset/Guitars/P_OUTTUN.DAT sd_template/preset/Keys/P_EPIAN3.DAT, sd_template/preset/Keys/P_EPIAN4.DAT has been added. The patches uses the new feature.
-	
-	- Bug fix: Sometimes unrelated parameter changed when you edit parameters.
-	
-	  
-	
+
+    - The preset patches sd_template/preset/Guitars/P_OUTTU2.DAT, sd_template/preset/Guitars/P_OUTTUN.DAT sd_template/preset/Keys/P_EPIAN3.DAT, sd_template/preset/Keys/P_EPIAN4.DAT has been added. The patches uses the new feature.
+
+  - Bug fix: Sometimes unrelated parameter changed when you edit parameters.
+
+    
+
 - v4.55
 
   - Looper status view is added. To switch looper status, simply press REC.
