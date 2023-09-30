@@ -311,6 +311,14 @@ Buttons | Description
 7 | LFO TUNE. LFO modulation to tune.
 8 | LFO WIDTH. LFO modulation to pulse width.
 
+#### PWM (Pulse width modulation)
+
+Qun supports PWM modulation, and it reacts normally for Square wave, and it affects to other waveshapes as well. 
+- Triangle: Add harmonics as well as DC bias
+- Granular: Playing position changed
+- Sine: Wavefolding for harmonics
+
+
 ### PRM:MIX
 Mix controls mixer and effects.
 

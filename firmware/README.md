@@ -13,10 +13,17 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v4.56
+  - Performance improvement
+  - Scratch mode was broken since v4.55
+  - Some modulation routing bug fix
+  - Now Sine wave shape takes Width modulation and it works as Wavefolding. When you set width to sine wave, it will be modified, it can be used like fixed wavetable.
+  - Bug fix: Sometimes unrelated parameter changed when you edit parameters.
+  
 - v4.55
   - Looper status view is added. To switch looper status, simply press REC.
   - Bug fix: Relative 2nd/3rd pattern was broken since 4.40 (Period was not working properly)
-  
+
 - v4.54
   - Bug fix: Reverse Slice processing was broken.
   - "Slice" initial template is added for multiple slicing point preset. It will setup basic config for sampler and set slice spread to 1 and disable KEYSYNC (1N2N)
