@@ -13,10 +13,16 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v4.58
+  
+  - Bug fix: Sine wave change caused volume down for normal sine wave.
+  - Preset adjustment due to the first item bug fix, recommend to update under /presets/Leads and /presets/Keys folder.
+  - Battery sensing is added to support battery mod, see battery_operation.pdf for detail.
+  
 - v4.57
-  
+
   - Bug fix: VCF mod cutoff was broken (Introduced by v4.56)
-  
+
 - v4.56
 
   - Performance improvement
