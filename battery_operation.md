@@ -25,7 +25,7 @@ Problem is there is no good point to capture battery voltage so you need to make
 
 1. Remove bottom board.
 
-2. Trim spiky button legs to protect Lipo.  Optionally you want to cut the switch on the board to make a room for Lipo(You don't need the main switch of the base board, it's always ON).
+2. Trim spiky button legs to protect Lipo.  Optionally you want to cut the switch on the board to make a room for Lipo(You don't need the main switch of the base board, it's always ON). **Cover the bottom by electric tape** to avoid unexpected button malfunction (Lipo film is conductive).
 
 3. Check the polarity of Lipo battery.  ***There is no standard Polarity for Lipo battery!!!***  . Check the polarity signs (+ and -) on the base board. If you purchase the lipo that has wrong polarity, just remove the plastic piece on the board and flip it. The part is flippable.
 
