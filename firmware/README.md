@@ -13,11 +13,15 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
-- v4.59
+- v4.60
   
+  - Disable SD card overclocking, I see some SD card doesn't take the option.
+  
+- v4.59
+
   - Performance improvement
   - Experimental: Battery sensing logic improvement
-  
+
 - v4.58
 
   - Bug fix: Sine wave change caused volume down for normal sine wave.
