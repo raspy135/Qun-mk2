@@ -144,6 +144,7 @@ SYSTEM + turn dial | VCF volume
 PARAM + turn dial | VCF cutoff
 REC + turn dial | LFO tune
 LOOPER PLAY + [1-5] | Select Scene
+LOOPER PLAY + [1-5] + Dial | Copy Scene
 REC + [1-3, 7,8] | Select recording track. A,B,C are mono tracks. Press 7, 8 for stereo recording. 7=A(Left)+B(Right), 8 = B+C. When you do stereo recording, you may want to set pan to left and right for the selected stereo tracks. 
 PARAM + [1-3] | Mute track
 MODE PLAY + [1-8] | Recall preset bucket

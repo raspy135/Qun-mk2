@@ -13,10 +13,16 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v4.61
+  
+  - Bug fix: Modulation bug fix (Envelope invert was not applied to voice 3,4)
+  - Buf fix: Occasional sticky midi note issue (I'm still not sure it's 100% fixed because of low likelihood)
+  - Copy Scene added. LPLAY + B[1-5] + Dial. (Just like Pattern copy or Bucket copy)
+  
 - v4.60
-  
+
   - Disable SD card overclocking, I see some SD card doesn't take the option.
-  
+
 - v4.59
 
   - Performance improvement
