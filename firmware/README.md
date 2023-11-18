@@ -13,11 +13,16 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
-- v4.62
+- v4.63
   
+  - Bug fix: Compressor quality was degraded.
+  - Preset bug fix: Drum/Snare2 was broken. (Sd_template/preset/Drums/p_snare2.dat)
+  
+- v4.62
+
   - Performance improvement 
   - Sequencer's Tune preview velocity changed to 90
-  
+
 - v4.61
 
   - Bug fix: Modulation bug fix (Envelope invert was not applied to voice 3,4)
