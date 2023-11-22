@@ -1532,12 +1532,15 @@ Note ON messages:
 Note | Function
 -----|------
 C1 to G1 | Select sequener pattern
+A1 | Sequencer live rec (Equivalent to REC + SEQ PLAY)
 A#1 | Sequencer Play
 B1 | Sequencer Stop
 C2 to E2 | Select looper scene
+A2 | Looper Rec (Equivalent to REC+ LOOPER PLAY)
 A#2 | Looper Play
 B2 | Looper Stop
 C3 to G3 | Select Bucket
+C4, C#4, D4, F#4 or G4 | Select looper track for recording (A,B,C, A+B and B+C)
 
 MIDI CC messages
 CC# | Function

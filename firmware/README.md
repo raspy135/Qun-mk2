@@ -13,11 +13,16 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
-- v4.63
+- v4.64
   
+  - Looper recording, sequencer live recording and looper track select can be triggered via MIDI. See Sequencer / Looper Control MIDI specification section in the manual for detail.
+  - Undo (REC + PARAM) works on stereo tracks as well.
+  
+- v4.63
+
   - Bug fix: Compressor quality was degraded.
   - Preset bug fix: Drum/Snare2 was broken. (Sd_template/preset/Drums/p_snare2.dat)
-  
+
 - v4.62
 
   - Performance improvement 
