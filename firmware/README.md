@@ -13,11 +13,15 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
-- v4.64
+- v4.65
   
+  - Sample recording in Granular mode will wait for signal.
+  
+- v4.64
+
   - Looper recording, sequencer live recording and looper track select can be triggered via MIDI. See Sequencer / Looper Control MIDI specification section in the manual for detail.
   - Undo (REC + PARAM) works on stereo tracks as well.
-  
+
 - v4.63
 
   - Bug fix: Compressor quality was degraded.
