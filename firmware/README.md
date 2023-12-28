@@ -13,10 +13,18 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v4.67
+  
+  - BPM detection logic from filename was improved (When you load WAV files to the Looper)
+  
+  - In QUAD voice mode, the oldest voice will be stealed when it receives more than 4 voices.
+  
+  - New shortcut: 2nd pattern and 3rd pattern for parallel pattern run can be set by pressing SPLAY + B[1-8] (Primary pattern) + B[1-8] (2nd pattern), if you press another button while you keep pressing the primary pattern button, then it will be for the 3rd pattern. Assign the same pattern one more time to erase the assignment. (If you release the primary pattern, chain pattern shortcut will be activated.)
+  
 - v4.66
-  
+
   - Critical bug fix: Synth might crash when the sample is played before BPM is changed or session is loaded.
-  
+
 - v4.65
 
   - Sample recording in Granular mode will wait for signal.

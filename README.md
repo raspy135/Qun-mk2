@@ -557,7 +557,7 @@ PARAM + [1-3] | Mute track
 PARAM + NO | Toggle Extra processing
 MODE PLAY + [1-8] | Recall preset bucket
 SEQ PLAY + [1-8] | Select Sequencer pattern
-SEQ PLAY + [1-8] , [1-8]...| Chain sequencer pattern. Keep pressing SEQ PLAY.
+SEQ PLAY + [1-8] , [1-8]...| Chain sequencer pattern(Pattern chaining). Keep pressing SEQ PLAY. 
 SEQ PLAY + NO / OK | Move to previous / next Sequencer page
 SHIFT + SEQ PLAY +  NO / OK | Copy Sequencer page to previous / next Sequencer page
 SEQ PLAY + [1-8] + turn dial | Copy sequencer pattern to other pattern. If you want to cancel the operation, turn to the end, then "CANCEL" will be indicated as the destination. To initialize the bank data, turn the dial to "CLEAR". 
@@ -824,7 +824,15 @@ Morph pattern is used for Parameter Lock Morphing. Please refer "Parameter Lock 
 Note lower and upper limit will limit the range of note. When the sequencer received a note that is out of the range, it will shift octave to fit within the range. It is useful to prevent to go too high note with randomization. It's also will do automated chord inversion.
 
 ### Running multiple sequence patterns
-You can run multiple sequeence patterns at the same time, up to 3 patterns by setting "2nd pattern" (Long press button 2) or/and "3rd pattern" (Long press button 3).  The status is shown like this:
+You can run multiple sequeence patterns at the same time, up to 3 patterns by setting "2nd pattern" (Long press button 2) or/and "3rd pattern" (Long press button 3), or using the shortcut shown below.
+
+Button | Function
+------------ | -------------
+2 in SEQ CFG submode | Long press for 2nd pattern 
+3 in SEQ CFG submode | Long press for 3rd pattern 
+SEQ PLAY + B[1-8] (Primary pattern) + B[1-8] (2nd pattern) in any submode | This is a shortcut to select parallel pattern select. If you press another button while you keep pressing the primary pattern button, then it will be for the 3rd pattern(If you release the primary pattern button, it will become **Pattern chaining**). Assign the same pattern one more time to erase the assignment. Only normal parallel pattern ("R0") can be selected. 
+
+The status is shown like this:
 
 `2nd Pt : 2 R 4`
 
