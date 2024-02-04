@@ -589,15 +589,25 @@ Sequencer playing position indicator changes when live recording.
 	![seq_normal](./manual_images/seq_normal.png)
 	Live recording:
 	![seq_live](./manual_images/seq_live.png)
+Also, All LEDs are on on the even steps while live recording.
 Press SEQ PLAY to exit recording mode, sequencer will keep playing. Press SEQ PLAY again to stop sequencer.
 
 You can (re)enter recording mode while playing. Press Rec + SEQ Play to enter recording mode.
 
 Click sound (metronome) plays when live recording is ongoing. Metronome volume can be adjusted by REC+SEQ PLAY+Turn dial. Chained pattern will be reset when you change to other pattern(s).
 
-### Parameter Lock
+When you are in sequencer live recording, changing sound engine parameters will be recorded as Parameter Locking.
 
-Parameter lock is the term used in Elektron sequencers, which is temporary parameter change available only in the specific sequencer step. The parameter change appears only when the sequencer is playing the step. 
+#### Edit the current step while Sequencer live recording
+
+When you are in Tune, Width, Velocity or Prob mode, and you are also in sequencer live recording, pressing B7 + B8 to specify current step. ("Current" message will be shown)
+
+While you are pressing B7+B8, the dial position will be recorded to the current playing position.
+
+
+### Parameter Locking
+
+Parameter locking is the term used in Elektron sequencers, which is temporary parameter change available only in the specific sequencer step. The parameter change appears only when the sequencer is playing the step. 
 
 Here is the steps to set Parameter Lock:
 

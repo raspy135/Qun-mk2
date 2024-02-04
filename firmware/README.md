@@ -13,10 +13,24 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v4.69
+  
+  - Bug fix: VU meter shows incorrect channels
+  
+  - Bug fix: BPM information was not informed to Granular engine when preset is loaded, and BPM mode is pattern.
+  
+  - Behavior change: Finer Granular engine's starting point granularity.
+  
+  - New feature: All LEDs are on on the even steps when sequencer live recording.
+  
+  - New feature: Real-time Parameter Lock recording: In sequencer live recording, sound engine parameter change will be recorded as Parameter Lock.
+  
+  - New feature: Editing current step: In sequencer live recording, current step can be spedified by B7 + B8. "Edit the current step while Sequencer live recording" section in the manual for detail.
+  
 - v4.68
-  
+
   - Bug fix: Voice steal logic was incorrect.
-  
+
 - v4.67
 
   - BPM detection logic from filename was improved (When you load WAV files to the Looper)
