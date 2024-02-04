@@ -21,7 +21,7 @@ Here are the steps to update the firmware:
   
   - Behavior change: Finer Granular engine's starting point granularity.
   
-  - New feature: All LEDs are on on the even steps when sequencer live recording.
+  - New feature: All LEDs are on on the even steps when sequencer live recording is on.
   
   - New feature: Real-time Parameter Lock recording: In sequencer live recording, sound engine parameter change will be recorded as Parameter Lock.
   
