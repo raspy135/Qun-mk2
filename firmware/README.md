@@ -13,20 +13,30 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v4.70
+  
+  - Bug fix: Sequencer status(On/Off) was not updated when real-time parameter lock is recorded.
+  
+  - Bug fix: Occasionally PL lock was not restored properly
+  
+  - Bug fix: Pattern chain was broken
+  
+  - Faster bucket switching 
+  
 - v4.69
-  
+
   - Bug fix: VU meter shows incorrect channels
-  
+
   - Bug fix: BPM information was not informed to Granular engine when preset is loaded, and BPM mode is pattern.
-  
+
   - Behavior change: Finer Granular engine's starting point granularity.
-  
+
   - New feature: All LEDs are on on the even steps when sequencer live recording is on.
-  
+
   - New feature: Real-time Parameter Lock recording: In sequencer live recording, sound engine parameter change will be recorded as Parameter Lock.
-  
+
   - New feature: Editing current step: In sequencer live recording, current step can be spedified by B7 + B8. "Edit the current step while Sequencer live recording" section in the manual for detail.
-  
+
 - v4.68
 
   - Bug fix: Voice steal logic was incorrect.
