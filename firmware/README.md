@@ -13,16 +13,22 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v4.71
+  
+  - Now filelist(Preset, granular and import) can support up to 128 files per folder. Navigate with B7, B8 (SHIFT for Page scroll) to access more than the 48th file.
+  
+  - Bug fix: Sometimes live PL locking consume 2 slots for 1 parameter.
+  
 - v4.70
-  
+
   - Bug fix: Sequencer status(On/Off) was not updated when real-time parameter lock is recorded.
-  
+
   - Bug fix: Occasionally PL lock was not restored properly
-  
+
   - Bug fix: Pattern chain was broken
-  
+
   - Faster bucket switching 
-  
+
 - v4.69
 
   - Bug fix: VU meter shows incorrect channels
