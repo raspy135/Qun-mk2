@@ -19,9 +19,9 @@ Here are the steps to update the firmware:
   
   - 9999 depth Almost unlimited undo list is added for looper. REC+PARAM to open the list. H0000_1A_0000.wav is the file for undo history. Select the first item will behave as the original undo feature. You can load any history of any track here. SHIFT + OK to preview the sound.
   
-  - Looper fade in/out lenth is shortened to 1/4.
+  - Looper fade in/out length is shortened to 1/4.
   
-  - Bug fix: LFO width was not refrected when Extra processing is on.
+  - Bug fix: LFO width was not reflected when Extra processing is on.
   
   - Bug fix: Granular's repeat (RPT) and repeat timestretch (RPT_TS) mode didn't behave as expected for long time. Now it behaves more like granular.
   
