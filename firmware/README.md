@@ -29,6 +29,8 @@ Here are the steps to update the firmware:
   
   - Preset update: DR-606, RX21 (Some gliches removed)
   
+  - Updated cheat sheet (Typo fixed)
+  
 - v4.71
 
   - Now filelist(Preset, granular and import) can support up to 128 files per folder. Navigate with B7, B8 (SHIFT for Page scroll) to access more than the 48th file.
