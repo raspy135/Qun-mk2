@@ -566,7 +566,7 @@ OK | Select next pattern
 SHIFT + LOOPER STOP | Delete all track recordings in the current scene, reset recording length 
 REC + NO | CUT Looper track
 REC + OK | PASTE Looper track
-REC + PARAM | UNDO last recording for the track
+REC + PARAM | Open UNDO list. Select the top item to undo last recording for the track. Shift + OK to preview the sound. 
 MODE PLAY + PARAM + Turn Dial | Parameter Lock Morphing
 
 ### Sequencer overview
@@ -619,8 +619,9 @@ Here is the steps to set Parameter Lock:
 5. To finish the editing, press [PLAY] to go back the sequencer page.
 6. You will see [""] mark at the top of the step when the step has Parameter Lock.
     ![pl_mark](./manual_images/pl_1.png)
-7. To reset the modification, long press Button 1-8 + [PARAM] when entering Parameter Lock mode, or long press [PARAM] when in Parameter Lock mode.
+7. To reset the modification, long press Button 1-8 + [PARAM] when entering Parameter Lock mode, or long press [PARAM] when in Parameter Lock mode. If you press multiple buttons for the steps, multiple steps will be cleared.
 8. Once you changed one parameter, you can change the last edited Locking parameter by pressing [1-8] + [PARAM] + Turning dial without re-selecting the parameter.
+9. When you are in sequencer live recording, changing sound engine parameters will be recorded as Parameter Locking.
 
 Parameter lock will be triggered only when the step is turned on.
 
@@ -1348,7 +1349,7 @@ Filename | Description
 [G000_01.wav] | G is for Granular data. The last 2 digits incidates the bucket index.
 [M000_00.dat] | M means mixer data. The first 3 digit means Session number. The second 2 digit is always zero. 
 [B000_00_***.dat] | B means Bucket data. This contains 8 preset and 64 sequencer pattern. The first 3 digit means Session number. The second 2 digit is always zero. When session has a name, *** indicates the name of the session. 
-[Z000_00.dat] | Z is for undo buffer.
+[H000_00_0000.wav] | H is for undo history. 
 
 #### File number limit and accessing to the old folder
 
