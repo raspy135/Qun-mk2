@@ -13,24 +13,30 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v4.73
+  
+  - Slightly better MIDI clock latency
+  
+  - Better behavior with receiving external MIDI clock
+  
 - v4.72
-  
+
   - Clearing Parameter Locking supports multiple button press (B[1-8] + PARAM)
-  
+
   - 9999 depth Almost unlimited undo list is added for looper. REC+PARAM to open the list. H0000_1A_0000.wav is the file for undo history. Select the first item will behave as the original undo feature. You can load any history of any track here. SHIFT + OK to preview the sound.
-  
+
   - Looper fade in/out length is shortened to 1/4.
-  
+
   - Bug fix: LFO width was not reflected when Extra processing is on.
-  
+
   - Bug fix: Granular's repeat (RPT) and repeat timestretch (RPT_TS) mode didn't behave as expected for long time. Now it behaves more like granular.
-  
+
   - Behavior change: Voice steal disabled when it looks like a drum kit. (Spread >0 and <2)
-  
+
   - Preset update: DR-606, RX21 (Some gliches removed)
-  
+
   - Updated cheat sheet (Typo fixed)
-  
+
 - v4.71
 
   - Now filelist(Preset, granular and import) can support up to 128 files per folder. Navigate with B7, B8 (SHIFT for Page scroll) to access more than the 48th file.
