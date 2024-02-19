@@ -257,7 +257,7 @@ The following parameters will be set when you select other templates:
 
 ## Preset Bucket
 
-The synth has eight preset buckets to quickly recall presets. Each bucket contains one preset and eight sequencer patterns.
+The synth has 8 preset buckets to quickly recall presets. Each bucket contains one preset and 8 sequencer patterns.
 
 ![data_structure](./manual_images/bucket_diagram.png)
 
@@ -1132,7 +1132,7 @@ Each folder can store up to 40 presets. There is no difference between factory p
 Factory presets are stored under under category names or a legacy folder structure, e.g. `bank1`, `bank2`, ... `bank8`.
 **SD card temlate is updated with firmware v4.52 and later, it has improved preset load/save UI. If you see category names like Bass or Drums but nothing inside, you need to download sd_template.zip (see under Links and Information) and extract the folders and files. Copy folders and presets under the `/preset` folder.**
 
-If you edit SD card, you can create your own folders. Only 1 depth folder is supported.
+If you edit SD card, you can create your own folders. Only one depth folder is supported.
 
 Sequencer data will be stored with preset.
 Granular record data will be saved when granular mode is not OFF.
@@ -1272,7 +1272,7 @@ Minimum setup to achieve PolyMono (2 Oscillators per voice) will be the followin
 6. Play multiple notes. You should hear four voices.
 7. Turn off Compressor of the Slave device (Play:Mixer:Comp threshold to 0.0dB) to match volume
 
-Minimum setup to achieve PolyQuad (1 Oscillator per voice) will be the following with 2 devices setup:
+Minimum setup to achieve PolyQuad (one Oscillator per voice) will be the following with 2 devices setup:
 
 1. In System menu, "Num of devices" should be 2 for all devices. Set Dev Index=1 for Master device, 2 for Slave device.
 2. Initialize a preset (SHIFT + PARAM) on Master device.
