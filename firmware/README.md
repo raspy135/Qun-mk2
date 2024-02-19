@@ -13,12 +13,16 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v4.74
+  
+  - Bug fix: Performance gliches with stereo recording to the looper
+  
 - v4.73
-  
+
   - Slightly better MIDI clock latency
-  
+
   - Better behavior with receiving external MIDI clock
-  
+
 - v4.72
 
   - Clearing Parameter Locking supports multiple button press (B[1-8] + PARAM)
