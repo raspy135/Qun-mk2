@@ -227,13 +227,13 @@ The following parameters will be set when you select other templates:
 - OSC1 type = AUX L
 - OSC Octave = +1
 - Granular mode = ONE
-- ENV1 Release to 58 for gentle release
+- Env1 Release to 58 for gentle release
 
 **Slice**: Slice is good for one-shot multiple slicing.
 - OSC1 type = AUX L
 - OSC Octave = +1
 - Granular mode = ONE
-- ENV1 Release to 58 for gentle release
+- Env1 Release to 58 for gentle release
 - OSC1/2 Keysync is disabled (1N2N)
 - Slice Spread is set to 1 (Each semitone from C4 will play different slices)
 
@@ -241,7 +241,7 @@ The following parameters will be set when you select other templates:
 - OSC1 type = AUX L
 - OSC Octave = +1
 - Granular mode = ONE
-- ENV1 Release to 58 for gentle release
+- Env1 Release to 58 for gentle release
 - OSC1 mod src = FREQ1 to modulate PWM by MIDI note
 - OSC2 mod src = FREQ2 to modulate PWM by MIDI note
 - Keysync = 1N2N to disable pitch control by MIDI note
@@ -252,8 +252,8 @@ The following parameters will be set when you select other templates:
 - OSC1 type = AUX L
 - OSC Octave = +1
 - Granular mode = ONE
-- ENV1 Release to 58 for gentle release
-- ENV1 Src = ON
+- Env1 Release to 58 for gentle release
+- Env1 Src = ON
 
 ## Preset Bucket
 
@@ -377,7 +377,7 @@ Button | Description
 1 | OSC1 Env(VCA) source
 2 | OSC1 Wide tune switch. When it's on, OSC1's tune reacts much more sensitive.
 3 | OSC1 Modulation source
-4 | ENV1 invert switch. Modulation will be affected to the opposite way, and amp gain will be (1.0 - Envelope). 
+4 | Env1 invert switch. Modulation will be affected to the opposite way, and amp gain will be (1.0 - Envelope). 
 5 | OSC2 Env(VCA) source
 6 | OSC2 Wide tune switch
 7 | OSC2 Modulation source
