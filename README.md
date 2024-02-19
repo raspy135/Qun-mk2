@@ -1,47 +1,49 @@
 # Contact
 
 - Email: info@nunomo.net
-- Github : Open an issue if you have GitHub account. It's the best place to submit bugs.
-- [Discord](https://discord.gg/kcvVTPkZVQ) : Nunomo's Discord server to have a chat, an announcement, and events.
+- Github: Open an issue if you have a GitHub account. It's the best place to submit bugs.
+- [Discord](https://discord.gg/kcvVTPkZVQ): Nunomo's Discord server to have a chat, read an announcement, and talk about events.
 - Social media links:
-  - Instagram : @nunomo1
-  - Twitter (Japanese) : @nunomo1
-  - Youtube : https://youtube.com/@nunomollc
+  - Instagram: @nunomo1
+  - Twitter (Japanese): @nunomo1
+  - YouTube: https://youtube.com/@nunomollc
 
 
-# Qun-mk2
+# QUN mk2
 
-Qun-mk2 is a small synthesizer with powerful sound engine, sequencer and looper.
+*Qun mk2* is a small synthesizer with a powerful sound engine, sequencer, and looper.
 
 ![qun_mk2_cgi](./manual_images/qun_mk2_cgi.png)
 
 ## Links and Information
 
-* [Online Shop](https://shop.nunomo.net/products/): Purchase your own one from our website.
-* [Presets](https://github.com/raspy135/Qun-mk2/blob/main/sd_template.zip) for tone presets. We constantly update the tone presets.
+* [Online Shop](https://shop.nunomo.net/products/): Purchase your own from our website.
+* [Presets](https://github.com/raspy135/Qun-mk2/blob/main/sd_template.zip): Download tone presets and install (see under Load Preset). We constantly update the tone presets.
 * [Issues](https://github.com/raspy135/Qun-synthesizer/issues): Report issues when you have problems or questions.
-* [Firmware](./firmware): For firmware updates.
-* [CheatSheet](./cheatsheet.pdf) : For cheat sheet.
+* [Firmware](./firmware): Firmware updates and instructions (see README.md).
+* [CheatSheet](./cheatsheet.pdf): A cheat sheet listing buttons, modes and sub-modes, shortcuts, and synth parameters.
 
 **We are looking for your feedback! For general impressions and feedback, please email them to info@nunomo.net, or join Discord server!**
 
 ## Overview of the QUN mk2
-Qun mk2 has two-oscillator virtual analog, FM, granular sound engine. 2 oscillators can be used separately.
+Qun mk2 has a two-oscillator virtual analog, FM, granular sound engine. 2 oscillators can be used separately.
 
-A sequencer is 8-step based sequencer, supports up to 32/64 steps. You can store 8 patterns for each preset. It has 8 preset and sequencer pattern buckets. You can switch 8 presets and 64 patterns quickly.
+The sequencer is an 8-step based sequencer, supporting up to 32/64 steps. You can store 8 patterns for each preset. It has 8 preset and sequencer pattern buckets. You can quickly switch 8 presets and 64 patterns.
 
 Three track looper with 5 scenes, you can swap 3 track x 5 scenes while playing. 
 
-* **Analog Modeling engine**
-  * The analog modeling engine is **an original, made from scratch**. It uses advanced algorithms for great organic sound. The engine is not a copy of a classic synth, it is designed to make modern sounds.
+Details
+
+* **Analog Modeling Engine**
+  * The analog modeling engine is **original and made from scratch**. It uses advanced algorithms for great organic sound. The engine is not a copy of a classic synth, it is designed to make modern sounds.
   * Low latency.
   * All analog modeling engine parameters can be configured through MIDI. 
-  * Clean 2 Oscillators. Cheap synthesizers compromise this part sometimes, but QUN has no-alias noise Oscillators. All of the internal calculation is done by floating point for the sound quality.
+  * Clean 2 Oscillators. Cheap synthesizers compromise this part sometimes, but QUN has no-alias noise Oscillators. All of the internal calculation is done by floating point for sound quality.
   * Oscillators can be used as 1 oscillator per voice, or 2 oscillators per voice.
   * Voice can be configured as 4 voices (Quad mode) or 2 voices (Dual mono).
   * The sound engine is compatible with Qun mk1. 
   * Multiple QUN synths can be stacked to achieve a **Polyphonic** setup. 
-  * Flexible MOD  routing. 
+  * Flexible MOD routing. 
   * 2 inputs can be used for **external audio signal**, or **external CV inputs**
   * 4 Envelope Generators
   * FM (4 Operators x 2)
@@ -49,12 +51,12 @@ Three track looper with 5 scenes, you can swap 3 track x 5 scenes while playing.
   * Vinyl record scratch mode
   * 1 LFO
   * 1 Organic sounding VCF
-    * 2/4 Poles, Low-pass, Band-pass, High-pass, Notch)
+    * 2/4 Poles, Low-pass, Band-pass, High-pass, Notch
     * Key sync
-  * 1 Effect (Delay, Chorus, Flanger, BitCrusher)
+  * 1 Effect -- Delay, Chorus, Flanger, BitCrusher
   * MIDI clock sync
 * Player / Sequencer
-  * Player (piano mode)
+  * Player -- piano mode
   * MIDI out to control external synths
   * **8/16 step sequencer has 4 pages, up to 64-step sequencer** will generate inspiring beats for you
     * Note On/Off/Double/Triple/4th
@@ -65,44 +67,44 @@ Three track looper with 5 scenes, you can swap 3 track x 5 scenes while playing.
   * Looper
     * Sequencer synchronized, internal or externally clocked.
     * Looper can record the sound up to around 30 sec for each recording.
-    * You can record the sound from sound engine or external audio.
+    * You can record the sound from the sound engine or external audio.
     * **3 tracks**, **5 Scenes**, total 15 recordings in one Session
-    * Scene change while playing (Something like Ableton Live's session view)
+    * Scene change while playing -- something like Ableton Live's session view
     * Cut / Paste
     * Play / Rec / Overdub
   * Mixer
   	* Looper tracks can be panned for stereo
-  	* Integrated compressor (Fixed parameters: 30ms attack, 100ms release, 1:3)
+  	* Integrated compressor -- Fixed parameters: 30ms attack, 100ms release, 1:3
   	* Stereo output
   	* Mute by track
-  * Micro SD card
-  	* Qun mk2 comes with micro SD card.
-  	* All looper recordings, preset and granular sample is stored to SD card
+* Micro SD card
+  * Qun mk2 comes with a micro SD card.
+  * All looper recordings, preset and granular sample is stored to the SD card
 
 ## CONNECTIONS
 
-* Power: Use a good quality USB power supply. Connect the USB cable to `POWER` labeled USB port (Top one).
-* MIDI: Use **TRS A** MIDI adapter to connect MIDI cables. TRS A type adapter is the same as KORG, AKAI and Make Noise's adapter. This is the lowest latency option. The synth comes with MIDI TRS A cable.
-* It has microphones and stereo line input.
-* LINE IN and PHONE OUT is located at right side. Output is not strong, so please connect to headphone amp or mixer. Looper mixer is stereo. **Please use a stereo cable for the sound input and output**. 
-* It comes with micro SD card. Qun mk2 always needs SD card. SDHC is supported (SDXC is NOT supported, so the disk size is up to 32GB). Class 10 card (Normally it's indicated as Circled 10) or higher is required to satisfy the bandwidth. It's safe to remove when the access indicater is not lid, but it's not hot swappable, Please reset the device when you remove SD card.
+* Power: Use a good quality USB power supply. Connect the USB cable to the `POWER` labeled USB port -- the top one.
+* MIDI: Use **TRS A** MIDI adapter to connect MIDI cables. TRS A type adapter is the same as KORG, AKAI, and Make Noise's adapter. This is the lowest latency option. The synth comes with MIDI TRS A cable.
+* Qun has microphones and stereo line input.
+* LINE IN and PHONE OUT are located on the right side. The level of PHONE OUT is not strong, so please connect a headphone amp or mixer. Looper mixer is stereo. **Please use a stereo cable for the sound input and output**. 
+* Qun comes with a micro SD card. Qun mk2 always needs an SD card. It is safe to remove the card when the disk access indicater is not lit (see the illustration under PLAY MODE). However, the SD is not hot swappable. Please reset the device when you remove the SD card. SDHC is supported, and the disk size is up to 32GB. SDXC is NOT supported. Class 10 card or higher is required to satisfy Qun's bandwidth needs. "Class 10" is indicated on SD cards as a circled 10 or "C10".
 
 ## MAJOR MODES
 
- The synth has three major modes. 
+Qun mk2 has three major modes.
 
-Button | Function
+Mode | Description
 ------------ | -------------
-Play | Play Mode. It’s for sequencer / looper. 
-System | Setting. For load / save / system setting.
+Play | Playing from the sequencer and looper. 
+System | Loading and saving data, and changing system settings.
 Param | Parameter Mode. Change synthesizer’s parameters.
 
 ## BASIC OPERATION
 
-Each major mode has sub modes. Select sub mode. For example, `OSC1` is a sub mode for Oscillator 1.
+Each major mode has selectable sub-modes. For example, `OSC1` is a sub-mode for Oscillator 1.
 
-* To switch submode, press SHIFT + 1-8 button or NO/OK buttons to change sub mode.
-	After you enter the sub mode you want, press 1-8 button to select parameter.
+* To switch sub-mode, press SHIFT + [1-8] button or NO/OK buttons to change sub-mode.
+	After you enter the sub-mode you want, press [1-8] button to select a parameter.
 * Press one of 8 buttons + rotate dial = Change parameter
 * Rotate the dial = Change the current parameter.
 * Long press the button to show the parameter full name and value.
@@ -112,8 +114,8 @@ Each major mode has sub modes. Select sub mode. For example, `OSC1` is a sub mod
 
 Button | Primary function
 ------------ | -------------
-SHIFT | Shift + [1-8] button or NO/OK button to select sub mode 
-[1-8] button | Select parameter in selected sub mode
+SHIFT | Shift + [1-8] button or NO/OK button to select sub-mode 
+[1-8] button | Select a parameter in the current sub-mode. Also show information with LEDs (see under LED Indicators).
 NO | Select previous sequencer pattern
 OK | Select next sequencer pattern
 Dial | change parameters
@@ -128,17 +130,17 @@ LOOPER PLAY | Start looper playing
 LOOPER STOP | Stop looper playing
 RST button on the base board | Reset the device
 4 touch buttons at the bottom board | This can be used as a touch slider. See Touch slider section for detail. 
-SHIFT + NO + OK | Sleep (Shutdown) the device. It will turn off most of power consuming components like main CPU and the screen. Press RST button to restart the device.
+SHIFT + NO + OK | Sleep (Shutdown) the device. It will turn off most of the power consuming components like the main CPU and the screen. Press the RST button to restart the device.
 
 ## BASIC SHORTCUTS
 
 Button | Function
 ------------ | -------------
-SHIFT + MODE PLAY | Dumping current preset to MIDI OUT. This is useful to transfer current preset to another Qun / Qun mk2 synthesizer.
+SHIFT + MODE PLAY | Dump current preset to MIDI OUT. This is useful to transfer the current preset to another Qun / Qun mk2 synthesizer.
 SHIFT + SYSTEM | All notes off
-SHIFT + PARAM | Initialize the preset. You can choose some templates (Blank, sampler, evenslice, scratch). Please see "Initialize preset" section for detail. 
+SHIFT + PARAM | Initialize the preset. You can choose some templates: Blank, sampler, evenslice, scratch. Please see the "Initialize preset" section for detail. 
 SHIFT + SEQ PLAY + turn dial | Set BPM. Tap tempo by pressing SEQ PLAY 4 or more times while you keep pressing SHIFT. 
-MODE PLAY + turn dial | Record volume (Stay -6.0dB or lower to avoid clipping) 
+MODE PLAY + turn dial | Record volume -- stay at -6.0dB or lower to avoid clipping.
 MODE PLAY + SYSTEM + turn dial | looper master volume 
 SYSTEM + turn dial | VCF volume
 PARAM + turn dial | VCF cutoff
@@ -147,35 +149,37 @@ LOOPER PLAY + [1-5] | Select Scene
 LOOPER PLAY + [1-5] + Dial | Copy Scene
 REC + [1-3, 7,8] | Select recording track. A,B,C are mono tracks. Press 7, 8 for stereo recording. 7=A(Left)+B(Right), 8 = B+C. When you do stereo recording, you may want to set pan to left and right for the selected stereo tracks. 
 PARAM + [1-3] | Mute track
-MODE PLAY + [1-8] | Recall preset bucket
+MODE PLAY + [1-8] | Recall preset bucket (see under Preset Bucket)
 SEQ PLAY + [1-8] | Select Sequencer pattern
 SHIFT + LOOPER PLAY + turn dial | Load session when you are not in System mode or Granular mode. 
 SHIFT + LOOPER PLAY + [1-3] button | Import wav file from import folder to selected track
-SYSTEM + [1-8] : Temporary piano mode|
+SYSTEM + [1-8] | Temporary piano mode
 
-## LED indicators
+## LED Indicators
 
 ![leds](./manual_images/leds.png)
 
 The synth has 8 LED indicators on the switch.
-Solid LED shows current sequencer pattern number.
+A solid, illuminated LED shows the current sequencer pattern number.
 
-And the LED shows other information when:
+The LEDs may also show other information:
 
-- When sequencer is running, another LED shows current position of the sequencer.
-- When trying to switch Scene (When pressing LOOPER PLAY) shows current selected Scene.
-- When trying to switch Track (When pressing LOOPER REC) shows current selected Track
-- When trying to mute Track (When pressing PARAM) shows current mute status of the Tracks.
-- When trying to switch bucket (When pressing MODE PLAY) shows current selected Bucket.
+When | LED shows
+------------ | -------------
+When the sequencer is running | The current position of the sequencer
+When trying to switch Scene, while pressing LOOPER PLAY | The current selected Scene
+When trying to switch Track, while pressing LOOPER REC | The current selected Track
+When trying to mute Trace, while pressing PARAM | The current mute status of the Tracks
+When trying to switch Bucket, while pressing MODE PLAY | The current selected Bucket
 
 
 ## MIDI learning
 
-Assigning proper MIDI CC to your MIDI keyboard is recommended for frequently used parameters, however, you can override MIDI CC temporary by the following operation:
+Assigning proper MIDI CC to your MIDI keyboard is recommended for frequently used parameters, however, you can override MIDI CC temporarily by the following operation:
 
-1. In parameter mode, press corresponding parameter long time (about 3 sec). For example, OSC1's Pulse Width is button 2 in OSC1 sub mode.
-2. Then the parameter name and value will be shown in the screen. Keep pressing the button about 3 sec.
-3. Send MIDI CC signal from your MIDI keyboard (Turn the knob or move fader). The sent MIDI CC# will control the assigned parameter.
+1. In parameter mode, press and hold the corresponding parameter button for a long time -- about 3 sec. For example, OSC1's Pulse Width which is button 2 in OSC1 sub-mode.
+2. Then the parameter name and value will be shown on the screen. Keep pressing the button another 3 sec.
+3. Send MIDI CC signal from your MIDI keyboard: Turn a knob or move a fader. The sent MIDI CC# will control the assigned parameter.
 
 Once the parameter is assigned, then "*" mark is indicated before the CC number. Original CC assignment is still working. It won't be affected with MIDI dumping.
 MIDI learning will take any MIDI channel. For example, even if you set the device to receive MIDI channel 2, MIDI learning can receive CC# for channel 3, or any other channels.
@@ -252,7 +256,7 @@ Scratch : Scratch is for scratching mode.
 - Env1 Release to 58 for gentle release
 - Env1 Src = ON
 
-## Preset bucket
+## Preset Bucket
 
 The synth has 8 preset buckets to recall preset quickly. Each bucket contains one preset and 8 sequencer pattern.
 
@@ -280,7 +284,7 @@ To understand how bucket works, try the following steps:
 7. Press Recall + Button 2 to switch to Bucket 2 again
 8. White noise should be recalled.
 
-When you save the preset or load the preset from bank 1 to 8, the name is used to indicate the bucket, so always recommending to set name by saving or loding preset.
+When you save the preset or load the preset from bank 1 to 8, its name is used to indicate the bucket, so it is always recommended to set a name by saving or loading the preset.
 
 
 ## Signal diagram
@@ -437,7 +441,7 @@ Here is an example to set up Quad mode
 	1. Initialize tone.
 	2. Configure OSC1 as you like.
 	3. Set this parameter to "Quad" mode by pressing button 7.
-	4. If you want to copy OSC1 parameters to OSC2, in the same submode, long press button 7 until "OSCs synched" message shown.
+	4. If you want to copy OSC1 parameters to OSC2, in the same sub-mode, long press button 7 until "OSCs synched" message shown.
 	5. Play two notes by external MIDI keyboard. You will hear four voices.
 
 
@@ -611,7 +615,7 @@ Parameter locking is the term used in Elektron sequencers, which is temporary pa
 
 Here is the steps to set Parameter Lock:
 
-1. In Play mode, you should be one of the following modes: ON/OFF, Tune, Width, Velocity, or Probability, press button 1-8 to select the step that you want to set Parameter Lock
+1. In Play mode, you should be one of the following modes: ON/OFF, Tune, Width, Velocity, or Probability, press [1-8] button to select the step that you want to set Parameter Lock
 2. Keep pressing the button, and press [PARAM]. Mode switches to Parameter Lock mode.  White frame indicates you are in Parameter Lock mode.
 3. Change the parameters that you want to change. Once the parameter changed, the parameter area will be inverted, indicating the step is modified.
     ![pl_mark](./manual_images/pl_2.png)
@@ -619,13 +623,13 @@ Here is the steps to set Parameter Lock:
 5. To finish the editing, press [PLAY] to go back the sequencer page.
 6. You will see [""] mark at the top of the step when the step has Parameter Lock.
     ![pl_mark](./manual_images/pl_1.png)
-7. To reset the modification, long press Button 1-8 + [PARAM] when entering Parameter Lock mode, or long press [PARAM] when in Parameter Lock mode. If you press multiple buttons for the steps, multiple steps will be cleared.
+7. To reset the modification, long press [1-8] button + [PARAM] when entering Parameter Lock mode, or long press [PARAM] when in Parameter Lock mode. If you press multiple buttons for the steps, multiple steps will be cleared.
 8. Once you changed one parameter, you can change the last edited Locking parameter by pressing [1-8] + [PARAM] + Turning dial without re-selecting the parameter.
 9. When you are in sequencer live recording, changing sound engine parameters will be recorded as Parameter Locking.
 
 Parameter lock will be triggered only when the step is turned on.
 
-Shift + turn dial is a useful way to sweep between submodes to find out modified parameters.
+Shift + turn dial is a useful way to sweep between sub-modes to find out modified parameters.
 
 
 
@@ -728,7 +732,7 @@ Use Preset Bucket to keep preset settings. You can recall tone preset and patter
 The mode is simple piano playing mode. Default is chromatic scale, but the scale and key can be changed by the scale setting in SEQ Config mode. Turn dial to transpose.
 
 ### Temporary piano mode
-You can activate Piano mode anytime by keep pressing SYSTEM + button 1-8. You can change transpose by turning dial once piano mode is activated.
+You can activate Piano mode anytime by keep pressing SYSTEM + [1-8] button. You can change transpose by turning dial once piano mode is activated.
 
 
 ## PLY:SEQ MODIFY
@@ -839,9 +843,9 @@ You can run multiple sequeence patterns at the same time, up to 3 patterns by se
 
 Button | Function
 ------------ | -------------
-2 in SEQ CFG submode | Long press for 2nd pattern 
-3 in SEQ CFG submode | Long press for 3rd pattern 
-SEQ PLAY + B[1-8] (Primary pattern) + B[1-8] (2nd pattern) in any submode | This is a shortcut to select parallel pattern select. If you press another button while you keep pressing the primary pattern button, then it will be for the 3rd pattern(If you release the primary pattern button, it will become **Pattern chaining**). Assign the same pattern one more time to erase the assignment. Only normal parallel pattern ("R0") can be selected. 
+2 in SEQ CFG sub-mode | Long press for 2nd pattern 
+3 in SEQ CFG sub-mode | Long press for 3rd pattern 
+SEQ PLAY + B[1-8] (Primary pattern) + B[1-8] (2nd pattern) in any sub-mode | This is a shortcut to select parallel pattern select. If you press another button while you keep pressing the primary pattern button, then it will be for the 3rd pattern(If you release the primary pattern button, it will become **Pattern chaining**). Assign the same pattern one more time to erase the assignment. Only normal parallel pattern ("R0") can be selected. 
 
 The status is shown like this:
 
@@ -888,7 +892,7 @@ The synth features a Granular synthesis recorder.
 
 This is a simple setup to use the granular engine(You can skip those steps by initializing preset with "sample" or other template):
 
-1. Move to Granular sub mode
+1. Move to Granular sub-mode
 2. Change GRN mode from OFF to something else, for example "ONE" for oneshot. It overrides AUX L channel to Granular engine's output.
 3. Record (REC + LOOPER PLAY) or import audio (SHIFT + LOOPER PLAY) for SD card.
 4. Adjust parameters in Granular mode.
@@ -1101,7 +1105,7 @@ The following parameters are still available with Extra processing:
 - VCF Volume
 - 2 / 4 pole
 - 2nd Filter (When VCF is 2 pole)
-- All parameters in LFO submode
+- All parameters in LFO sub-mode
 -  Effector parameters (Type, Speed, Depth and Feedback)
 -  VCF ENV Src
 
@@ -1117,14 +1121,14 @@ Save Preset | Save preset
 System | Enter system sub-mode 
 System2 | Enter system2 sub-mode 
 
-### Load preset
+### Load Preset
 
-**If you are older than v4.52, please update to match this document.**
+**If your firmware is older than v4.52, please update to match this document.**
 
- Each folder can store up to 40 preset. There is no difference between factory preset and user preset.
+Each folder can store up to 40 presets. There is no difference between factory preset and user preset.
 
-Factory presets are stored under bank6,7,8(Legacy folder structure)  or under category names. 
-**SD card temlate is updated with firmware v4.52 and later, it has improved preset load/save UI. If you see category names like Bass or Drums but nothing inside, you need to download sd_template.zip and extract the folders and files. Copy folders and presets under /preset.**
+Factory presets are stored under bank6,7,8(Legacy folder structure) or under category names. 
+**SD card temlate is updated with firmware v4.52 and later, it has improved preset load/save UI. If you see category names like Bass or Drums but nothing inside, you need to download sd_template.zip (see under Links and Information) and extract the folders and files. Copy folders and presets under the `/preset` folder.**
 
 If you edit SD card, you can create your own folders. Only 1 depth folder is supported.
 
@@ -1332,7 +1336,7 @@ Setting is available in the System menu. Default is OFF. The setting will be sav
 ### MIDI clock
 When you set sync mode to "MIDI", the synth will be clock slave mode. Set your DAW to send MIDI clock. We tested Ableton Live, Logic Pro X and KeyStep Pro. It has some latency so please adjust latency setting in your DAW to match the timing.
 
-If you set sync mode to "MOUT" or "MOUT2", then the synth will be clock master. It sends MIDI clock as well as play/stop MIDI messages. Try "MOUT2" if you feel slight delay between devices. MOUT2 will send extra clock signal when start playing because some devices start sequencing from the second clock  (Roland MC-101 is the example). If you clock another Qun, use MOUT.
+If you set sync mode to "MOUT" or "MOUT2", then the synth will be clock master. It sends MIDI clock as well as play/stop MIDI messages. Try "MOUT2" if you feel slight delay between devices. MOUT2 will send extra clock signal when start playing because some devices start sequencing from the second clock (Roland MC-101 is the example). If you clock another Qun, use MOUT.
 
 ### Sync IN
 The synth can take 2PPQ, 4PPQ or 24 PPQ signals. Don't supply high voltage to the synth, it will break. The signal must be supplied to LEFT channel (tip of TRS connector). Using the tip as a sync signal is compatible with Teenage Engineering's Pocket Operator. Supply voltage needs to be more than 500mV. RIGHT channel (AUXR) still can be used as audio signal or CV in.
