@@ -2,11 +2,11 @@
 
 - Email: info@nunomo.net
 - Github: Open an issue if you have a GitHub account. It's the best place to submit bugs.
-- [Discord](https://discord.gg/kcvVTPkZVQ): Nunomo's Discord server to have a chat, read an announcement, and talk about events.
+- [Discord](https://discord.gg/kcvVTPkZVQ): Visit Nunomo's Discord server to have a chat, read announcements, and talk about events.
 - Social media links:
-  - Instagram: @nunomo1
-  - Twitter (Japanese): @nunomo1
-  - YouTube: https://youtube.com/@nunomollc
+  - Instagram: [@nunomo1](https://www.instagram.com/nunomo1)
+  - Twitter (Japanese): [@nunomo1](https://twitter.com/nunomo1)
+  - YouTube: [nunomollc](https://youtube.com/@nunomollc)
 
 
 # QUN mk2
@@ -23,7 +23,7 @@
 * [Firmware](./firmware): Firmware updates and instructions (see README.md).
 * [CheatSheet](./cheatsheet.pdf): A cheat sheet listing buttons, modes and sub-modes, shortcuts, and synth parameters.
 
-**We are looking for your feedback! For general impressions and feedback, please email them to info@nunomo.net, or join Discord server!**
+**We are looking for your feedback! For general impressions and feedback, please email them to info@nunomo.net or join Nunomo's Discord server!**
 
 ## Overview of the QUN mk2
 Qun mk2 has a two-oscillator virtual analog, FM, granular sound engine. 2 oscillators can be used separately.
@@ -138,7 +138,7 @@ Button | Function
 ------------ | -------------
 SHIFT + MODE PLAY | Dump current preset to MIDI OUT. This is useful to transfer the current preset to another Qun / Qun mk2 synthesizer.
 SHIFT + SYSTEM | All notes off
-SHIFT + PARAM | Initialize the preset. You can choose some templates: Blank, sampler, evenslice, scratch. Please see the "Initialize preset" section for detail. 
+SHIFT + PARAM | Initialize the preset. You can choose some templates: Blank, Sampler, EvenSlice, Scratch. Please see the "Initialize preset" section for detail. 
 SHIFT + SEQ PLAY + turn dial | Set BPM. Tap tempo by pressing SEQ PLAY 4 or more times while you keep pressing SHIFT. 
 MODE PLAY + turn dial | Record volume -- stay at -6.0dB or lower to avoid clipping.
 MODE PLAY + SYSTEM + turn dial | looper master volume 
@@ -152,7 +152,7 @@ PARAM + [1-3] | Mute track
 MODE PLAY + [1-8] | Recall preset bucket (see under Preset Bucket)
 SEQ PLAY + [1-8] | Select Sequencer pattern
 SHIFT + LOOPER PLAY + turn dial | Load session when you are not in System mode or Granular mode. 
-SHIFT + LOOPER PLAY + [1-3] button | Import wav file from import folder to selected track
+SHIFT + LOOPER PLAY + [1-3] button | Import WAV file from import folder to selected track
 SYSTEM + [1-8] | Temporary piano mode
 
 ## LED Indicators
@@ -164,7 +164,7 @@ A solid, illuminated LED shows the current sequencer pattern number.
 
 The LEDs may also show other information:
 
-When | LED shows
+When | LED will show
 ------------ | -------------
 When the sequencer is running | The current position of the sequencer
 When trying to switch Scene, while pressing LOOPER PLAY | The current selected Scene
@@ -195,7 +195,7 @@ To avoid confusion, this setting won't be saved.
 Session is the biggest data unit of the synth.
 Session includes 8 preset buckets. Each bucket contains one preset with 8 pattern sequencer data.
 
-There is no "new session" function. The synth always create a new session when booting. Reboot the device for new sesion.
+There is no "new session" function. The synth always create a new session when booting. Reboot the device to create a new sesion.
 
 Session button operations work in Parameter mode or Play mode
 
@@ -203,62 +203,61 @@ Button | Function
 ------------ | -------------
 SHIFT + LOOPER PLAY | Show current session number
 SHIFT + LOOPER PLAY + Turn Dial | Load session
-NO or OK button while you selecting session | Scroll session page when you have more than 32 sessions 
-SHIFT + REC | Save session (Looper stop will perform session save when autosave is on)
-SHIFT + REC (Long press) | Name session
-SHIFT + REC + B[1-3] | Load wav file to looper track A, B or C (See looper section for detail)
-Press B[1-8] while booting | Load previous LOOPER folder.  (Button1 means LOOPER00, Button 2 means LOOPER01, and so on) 
+NO or OK button while selecting a session | Scroll session page when you have more than 32 sessions 
+SHIFT + REC | Save current session (Looper stop will perform session save when autosave is on)
+SHIFT + REC (Long press) | Name current session
+SHIFT + REC + B[1-3] | Load WAV file to looper track A, B or C (See looper section for detail)
+Press B[1-8] while booting | Load a previous LOOPER folder. E.g. Button1 means LOOPER00, Button2 means LOOPER01, and so on.
 
-To load session, press SHIFT + LOOPER PLAY when you are not in System mode or Granular mode. Current session number "Looper00:0001" will be indicated. Turn dial to select the session you want to load.
+To load a session, press SHIFT + LOOPER PLAY when you are not in System mode or Granular mode. Current session number "Looper00:0001" will be indicated. Turn the dial to select the session you want to load.
 
 Saving session is semi-automated.
 Looper recording data will be saved immediately after the recording. 
-Mixer and Bucket data will be saved when LOOPER STOP button is pressed.
-This can be turned off in System2 menu.
+Mixer and Bucket data will be saved when the LOOPER STOP button is pressed.
+This can be turned off in the System2 menu.
 
 ## Initialize Preset
 
 You can initialize a preset by pressing SHIFT + PARAM.
-Blank,  Sampler, EvenSlice, Scratch are available for preset.
+Several preset templates are available when initializing: Blank, Sampler, EvenSlice, and Scratch. Blank is the base preset for all.
 
-Blank is the base preset for all.
 The following parameters will be set when you select other templates:
 
-Sampler : Sampler is for basic sampler setup.
+**Sampler** : Sampler is for basic sampler setup.
 - OSC1 type = AUX L
 - OSC Octave = +1
 - Granular mode = ONE
-- Env1 Release to 58 for gentle release
+- ENV1 Release to 58 for gentle release
 
-Slice: Slice is good for one-shot multiple slicing.
+**Slice**: Slice is good for one-shot multiple slicing.
 - OSC1 type = AUX L
 - OSC Octave = +1
 - Granular mode = ONE
-- Env1 Release to 58 for gentle release
+- ENV1 Release to 58 for gentle release
 - OSC1/2 Keysync is disabled (1N2N)
-- Slicespread is set to 1 (Each semitone from C4 will play different slices)
+- Slice Spread is set to 1 (Each semitone from C4 will play different slices)
 
-EvenSlice : Evenslice is for sampler with even sliced samples.
+**EvenSlice** : EvenSlice is for sampler with evenly slicing samples.
 - OSC1 type = AUX L
 - OSC Octave = +1
 - Granular mode = ONE
-- Env1 Release to 58 for gentle release
+- ENV1 Release to 58 for gentle release
 - OSC1 mod src = FREQ1 to modulate PWM by MIDI note
 - OSC2 mod src = FREQ2 to modulate PWM by MIDI note
 - Keysync = 1N2N to disable pitch control by MIDI note
 
 *EvenSlice expects to change OSC1 MOD WIDTH to control the size of slice.*
 
-Scratch : Scratch is for scratching mode. 
+**Scratch** : Scratch is for vinyl record scratching mode. 
 - OSC1 type = AUX L
 - OSC Octave = +1
 - Granular mode = ONE
-- Env1 Release to 58 for gentle release
-- Env1 Src = ON
+- ENV1 Release to 58 for gentle release
+- ENV1 Src = ON
 
 ## Preset Bucket
 
-The synth has 8 preset buckets to recall preset quickly. Each bucket contains one preset and 8 sequencer pattern.
+The synth has eight preset buckets to quickly recall presets. Each bucket contains one preset and eight sequencer patterns.
 
 ![data_structure](./manual_images/bucket_diagram.png)
 
@@ -299,16 +298,19 @@ Signal diagram helps to understand how Qun mk2 works.
 
 ![osc1](./manual_images/osc1.png)
 
-The parameter position in the display corresponds button assignment. 
-` 1  3  5  7`
-` 2  4  6  8`
+The parameter position in the display corresponds to the following button assignment: 
+```
+Button
+ 1  3  5  7
+ 2  4  6  8
+```
 
-The oscillator is a hybrid of classic analog synth, FM and granular.
+The oscillator is a hybrid of classic analog synth, FM, and granular.
 
 Buttons | Description
 -------|-------
-1 | SHAPE. `Saw, Sine, S&H, Square, Triangle, W Noise, P Noise, FM, AUX`. *AUX means audio input from LINE or MIC. *Granular synth engine is connected to AUX L channel when it's active. See Granular section for detail. 
-2 | PULSE WIDTH.  Triangle, Square and Granular can take PWM. In guranular mode, playing position will be changed by PWM.
+1 | SHAPE. `Saw, Sine, S&H, Square, Triangle, W Noise, P Noise, FM, AUX`.<br> * AUX means audio input from LINE or MIC. <br> * Granular synth engine is connected to AUX L channel when it's active. See Granular section for detail. 
+2 | PULSE WIDTH.  Triangle, Square and Granular can take PWM. In granular mode, playing position will be changed by PWM.
 3 | TUNE
 4 | OCTAVE
 5 | MOD TUNE. MOD modulation to tune. Default MOD source is EG1.
@@ -375,7 +377,7 @@ Button | Description
 1 | OSC1 Env(VCA) source
 2 | OSC1 Wide tune switch. When it's on, OSC1's tune reacts much more sensitive.
 3 | OSC1 Modulation source
-4 | Env1 invert switch. Modulation will be affected to the opposite way, and amp gain will be (1.0 - Envelope). 
+4 | ENV1 invert switch. Modulation will be affected to the opposite way, and amp gain will be (1.0 - Envelope). 
 5 | OSC2 Env(VCA) source
 6 | OSC2 Wide tune switch
 7 | OSC2 Modulation source
@@ -556,7 +558,7 @@ LOOPER REC + LOOPER PLAY | Start looper recording
 SHIFT + SEQ PLAY + turn dial | Set BPM. Tap tempo by pressing SEQ PLAY 4 or more times while you keep pressing SHIFT. 
 LOOPER PLAY + [1-5] | Select Scene
 REC + [1-3, 7,8] | Select recording track. A,B,C are mono tracks. Press 7, 8 for stereo recording. 7=A(Left)+B(Right), 8 = B+C. When you do stereo recording, you may want to set pan to left and right for the selected stereo tracks. 
-SHIFT + REC + B[1-3] | Load wav file to looper track A, B or C 
+SHIFT + REC + B[1-3] | Load WAV file to looper track A, B or C 
 PARAM + [1-3] | Mute track
 PARAM + NO | Toggle Extra processing
 MODE PLAY + [1-8] | Recall preset bucket
@@ -687,7 +689,7 @@ L | Loop length (steps)
 SC | Current Scene
 TR | Current Track
 
-### Importing wav file to the looper
+### Importing WAV file to the looper
 
 You can import WAV files to session. Put WAV files under "import" folder. Folder structure is supported so you can make subfolders to organize samples.
 WAV format has to be **16-bit, 48000Hz, Mono**. Otherwise "Format error" message is shown.
@@ -905,7 +907,7 @@ This is a simple setup to use the granular engine(You can skip those steps by in
 Button | Function
 ------------ | -------------
 1 | Process samples.  Analyze will give better result with Time stretch. See below list for processing  detail 
-2 | Slice spread, half-steps. Please see below section for detail. 
+2 | Slice Spread, half-steps. Please see below section for detail. 
 3 | File position (Starting point).
 4 | Length
 5 | Speed. It won't work with non-time stretch modes.
@@ -1012,7 +1014,7 @@ Button 1 | Rewind to slice 3
 - Record rotates while you are pressing Release. If you keep turning dial to clockwise while pressing the button, the position will be kept. 
 
 
-### Import wav file to granular engine from SD card
+### Import WAV file to granular engine from SD card
 
 You can import WAV file if you put WAV file under **/granular** folder in SD card. 
 
@@ -1127,7 +1129,7 @@ System2 | Enter system2 sub-mode
 
 Each folder can store up to 40 presets. There is no difference between factory preset and user preset.
 
-Factory presets are stored under bank6,7,8(Legacy folder structure) or under category names. 
+Factory presets are stored under under category names or a legacy folder structure, e.g. `bank1`, `bank2`, ... `bank8`.
 **SD card temlate is updated with firmware v4.52 and later, it has improved preset load/save UI. If you see category names like Bass or Drums but nothing inside, you need to download sd_template.zip (see under Links and Information) and extract the folders and files. Copy folders and presets under the `/preset` folder.**
 
 If you edit SD card, you can create your own folders. Only 1 depth folder is supported.
