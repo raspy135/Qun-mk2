@@ -196,6 +196,8 @@ To avoid confusion, this setting won't be saved.
 
 ## Session
 
+Qun automatically collects the current looper recordings, instrument and sequencer presets into a Session. Sessions can be saved and loaded. They are automatically numbered and can be manually named.
+
 ![session_diagram](./manual_images/session_diagram.png)
 
 Session is the biggest data unit of the synth.
