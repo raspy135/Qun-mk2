@@ -1361,7 +1361,7 @@ The synth can take 2PPQ, 4PPQ or 24 PPQ signals. Don't supply high voltage to th
 
 ## SD card folder structure
 
-WAV file can be used by other software. Format is mono, 48kHz, 16 bit.
+WAV files can be used by other software. Format is mono, 48kHz, 16 bit.
 
 ### LOOPER00
 Session data is stored here. It includes Looper recording data. 
@@ -1373,9 +1373,9 @@ Filename | Description
 [B000_00_***.dat] | B means Bucket data. This contains 8 preset and 64 sequencer pattern. The first 3 digit means Session number. The second 2 digit is always zero. When session has a name, *** indicates the name of the session. 
 [H000_00_0000.wav] | H is for undo history. 
 
-#### File number limit and accessing to the old folder
+#### File number limit and accessing older Looper folders
 
-When the directory has more than 500 files, then "LOOPER01" will be created to avoid performance issue. Once a new folder created, the new folder is always selected. Only one LOOPERXX folder is accessible, however, you can specify old folder by pressing Button 1 to 8 when booting. (Button1 means LOOPER00, Button 2 means LOOPER01, and so on)
+When the directory has more than 500 files, then "LOOPER01" will be created to avoid performance issue. Once a new folder created, the new folder is always selected. Only one LOOPERXX folder is accessible. However, you can specify old folder by pressing Button 1 to 8 when booting: Button1 means LOOPER00, Button 2 means LOOPER01, and so on.
 
 ### PRESET
 Preset is stored here.
