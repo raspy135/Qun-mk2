@@ -35,7 +35,7 @@ The sequencer is an 8-step based sequencer, and supports up to 32/64 steps per p
 
 It has a 3 track looper with 5 scenes, so you can swap 3 track x 5 scenes while playing. 
 
-Details:
+More:
 
 * **Analog Modeling Engine**
   * The analog modeling engine is **original and made from scratch**. It uses advanced algorithms for great organic sound. The engine is not a copy of a classic synth, it is designed to make modern sounds.
@@ -86,10 +86,12 @@ Details:
 
 ## CONNECTIONS
 
-* Power: Use a good quality USB power supply. Connect the USB cable to the `POWER` labeled USB port -- the top one.
-* MIDI: Use **TRS A** MIDI adapter to connect MIDI cables. TRS A type adapter is the same as KORG, AKAI, and Make Noise's adapter. This is the lowest latency option. The synth comes with MIDI TRS A cable.
-* Qun has microphones and stereo line input.
-* LINE IN and PHONE OUT are located on the right side. The level of PHONE OUT is not strong, so please connect a headphone amp or mixer. Looper mixer is stereo. **Please use a stereo cable for the sound input and output**. 
+* Power: Use a good quality USB power supply. Connect the USB cable to the `POWER` labeled USB port -- the top one, above `UART`.
+* MIDI: Use **TRS A** MIDI adapters to connect MIDI cables. The TRS A type adapter is the same as KORG, AKAI, and Make Noise's adapter. This is the lowest latency option. The synth comes with a MIDI TRS A cable.
+* Qun has microphones, a stereo line input, and a phone output.
+  * `LINE IN` and `PHONE OUT` are located on the right side.
+  * The level of PHONE OUT is not strong, so please connect a headphone amp or mixer.
+  * The looper's mixer is stereo. **Please use a stereo cable for sound input and output**. 
 * Qun comes with a micro SD card. Qun mk2 always needs an SD card. It is safe to remove the card when the disk access indicater is not lit (see the illustration under PLAY MODE). However, the SD is not hot swappable. Please reset the device when you remove the SD card. SDHC is supported, and the disk size is up to 32GB. SDXC is NOT supported. Class 10 card or higher is required to satisfy Qun's bandwidth needs. "Class 10" is indicated on SD cards as a circled 10 or "C10".
 
 ## MAJOR MODES
@@ -113,7 +115,7 @@ Each major mode has selectable sub-modes. For example, the Param major mode has 
 * Rotate the dial = Change the current parameter.
 * Long press the button to show the parameter full name and value.
 * Double click the button to enter relative mode. The value adjustment will be relative.
-* For initial training, referring to the [Qun cheatsheet](./cheatsheet.pdf) can be useful. Also useful for training is seeing the parameter name when changing its value: turn on Parameter Caption mode in System2 menu, button 3.
+* For initial training, referring to the [Qun cheatsheet](./cheatsheet.pdf) can be useful. Also seeing the parameter name when changing its value is useful for training: turn on Parameter Caption mode in System2 menu, button 3.
 * If you want to do fine value adjustment, you can use NO/OK buttons to change the value by 1. To do this, keep pressing one of 8 buttons and press NO or OK button.
 
 Button | Primary function
@@ -127,13 +129,13 @@ SEQ PLAY | Start / Stop sequencer
 REC + SEQ PLAY | Start sequencer live recording
 MODE PLAY | Select Play mode
 SYSTEM | Select System mode
-PARAM | Select Param mode
+PARAM | Select Parameter mode
 REC | Looper status page
 REC + LOOPER PLAY | Start looper recording
 LOOPER PLAY | Start looper playing
 LOOPER STOP | Stop looper playing
 RST button on the base board | Reset the device
-4 touch buttons at the bottom board | This can be used as a touch slider. See Touch slider section for detail. 
+4 touch buttons at the bottom board | This can be used as a touch slider. See Touch Slider section for detail. 
 SHIFT + NO + OK | Sleep (Shutdown) the device. It will turn off most of the power consuming components like the main CPU and the screen. Press the RST button to restart the device.
 
 ## BASIC SHORTCUTS
@@ -181,7 +183,7 @@ When trying to switch Bucket, while pressing MODE PLAY | The current selected Bu
 
 Assigning proper MIDI CC to your MIDI keyboard is recommended for frequently used parameters, however, you can override MIDI CC temporarily by the following operation:
 
-1. In parameter mode, press and hold the corresponding parameter button for a long time -- about 3 sec. For example, OSC1's Pulse Width which is button 2 in OSC1 sub-mode.
+1. In Parameter mode, press and hold the corresponding parameter button for a long time -- about 3 sec. For example, OSC1's Pulse Width which is button 2 in OSC1 sub-mode.
 2. Then the parameter name and value will be shown on the screen. Keep pressing the button another 3 sec.
 3. Send MIDI CC signal from your MIDI keyboard: Turn a knob or move a fader. The sent MIDI CC# will control the assigned parameter.
 
@@ -296,18 +298,19 @@ Signal diagram helps to understand how Qun mk2 works.
 
 ![‎qun2_diagram](./manual_images/‎qun2_diagram.png)
 
-## Parameter Mode
+## Parameter Mode (Param)
+
+The pattern position in the display corresponds to the following [1-8] button assigment, visually. E.g. button 1 selects an OSC SHAPE parameter for OSC1/OSC2 sub-modes.
+
+```
+ 1  3  5  7
+ 2  4  6  8
+```
 
 ### PRM:OSCILLATOR1,2
 
 ![osc1](./manual_images/osc1.png)
 
-The parameter position in the display corresponds to the following button assignment: 
-```
-Button
- 1  3  5  7
- 2  4  6  8
-```
 
 The oscillator is a hybrid of classic analog synth, FM, and granular.
 
@@ -993,7 +996,7 @@ To use record scratch mode, you need to set the following settings, or using "Sc
 1. Granular mode set to ONE
 2. Select OSC1's shape to AUX L
 3. Set OSC1's octave to +1
-4. OSC1 Env Sel to "ON" (Param mode, Switch menu, button 1) to disable envelope. Or you can set it to other sources to automate crossfade slider.
+4. OSC1 Env Sel to "ON" (Parameter mode, Switch menu, button 1) to disable envelope. Or you can set it to other sources to automate crossfade slider.
 
 
 
@@ -1242,7 +1245,7 @@ Note: Qun mk2's bottom board is generic development board. Touch buttons are not
 
 If you received Qun mk2 synth before firmware v4.02, you need to change DIP switch setting. DIP switch is located at the bottom board, you need to unscrew bottom board to access the DIP switch. If the current setting is `Up, Up, Down, Down, Down, Down, Down, Down`, then turn the first two switches to Down. 
 
-All switches should be Down to activate Touch slider.
+All switches should be Down to activate Touch Slider.
 
 [Instruction video](./manual-images/qunmk2dips.mp4)
 
