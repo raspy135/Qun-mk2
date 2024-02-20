@@ -21,7 +21,7 @@
 * [Presets](https://github.com/raspy135/Qun-mk2/blob/main/sd_template.zip): Download tone presets and install (see under Load Preset). We constantly update the tone presets.
 * [Issues](https://github.com/raspy135/Qun-synthesizer/issues): Report issues when you have problems or questions.
 * [Firmware](./firmware): Firmware updates and instructions (see README.md).
-* [CheatSheet](./cheatsheet.pdf): A printable cheat sheet listing buttons, modes and sub-modes, shortcuts, and synth parameters.
+* [CheatSheet](./cheatsheet.pdf): A printable cheat sheet listing buttons, device modes and sub-modes, shortcuts, and synth instrument parameters.
 
 **We are looking for your feedback! For general impressions and feedback, please email them to info@nunomo.net or join Nunomo's Discord server!**
 
@@ -29,11 +29,11 @@
 
 Highlights:
 
-Qun mk2 has a 2 oscillator virtual analog, FM, granular sound engine. 2 oscillators can be used separately.
+Qun mk2 has a 2 oscillator virtual analog, FM, granular sound engine. The 2 oscillators can be used separately.
 
-The sequencer is an 8-step based sequencer, supporting up to 32/64 steps. You can store 8 patterns for each preset. It has 8 preset and sequencer pattern buckets. You can quickly switch 8 presets and 64 patterns.
+The sequencer is an 8-step based sequencer, and supports up to 32/64 steps per pattern. You can store 8 patterns for each preset bucket. And it has 8 buckets of tone preset + sequencer patterns. So you can quickly switch between 8 presets and 64 (8 x 8 pattern) patterns.
 
-3 track looper with 5 scenes, you can swap 3 track x 5 scenes while playing. 
+It has a 3 track looper with 5 scenes, so you can swap 3 track x 5 scenes while playing. 
 
 Details:
 
@@ -1136,14 +1136,17 @@ System2 | Enter system2 sub-mode
 Each folder can store up to 40 presets. There is no difference between factory preset and user preset.
 
 Factory presets are stored under under category names or a legacy folder structure, e.g. `bank1`, `bank2`, ... `bank8`.
-**SD card temlate is updated with firmware v4.52 and later, it has improved preset load/save UI. If you see category names like Bass or Drums but nothing inside, you need to download sd_template.zip (see under Links and Information) and extract the folders and files. Copy folders and presets under the `/preset` folder.**
 
-If you edit SD card, you can create your own folders. Only one depth folder is supported.
+**Note: The SD card template is updated for firmware v4.52 and later - this offers an improved preset load/save UI. If you see category names like Bass or Drums but nothing inside, you need to download sd_template.zip (see under Links and Information) and extract the folders and files. Then copy folders and preset files under the `/preset` folder.**
 
-Sequencer data will be stored with preset.
-Granular record data will be saved when granular mode is not OFF.
+If you edit SD card, you can create your own folders. Only one depth of folder is supported.
 
-Here is the operation in preset select menu:
+Sequencer data will be stored with each preset.
+
+Granular recording data will be saved when granular mode is not OFF.
+
+Using the Preset Select menu:
+
 Button | Function
 -------- | --------
 Dial | Move cursor
