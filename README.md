@@ -300,12 +300,16 @@ Signal diagram helps to understand how Qun mk2 works.
 
 ## Parameter Mode (Param)
 
-The pattern position in the display corresponds to the following [1-8] button assigment, visually. E.g. button 1 selects an OSC SHAPE parameter for OSC1/OSC2 sub-modes.
+Usage: 
+
+The parameter position in the display corresponds visually to a [1-8] button assigment pattern. Clicking a [1-8] button will flash a parameter, selecting it, allowing you to change its value. The position corresponds to this button assignment:
 
 ```
  1  3  5  7
  2  4  6  8
 ```
+
+E.g. button 1 selects and flashes the OSC wave SHAPE parameter when in the OSC1/OSC2 sub-mode.
 
 ### PRM:OSCILLATOR1,2
 
