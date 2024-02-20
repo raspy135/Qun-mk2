@@ -2,7 +2,7 @@
 
 - Email: info@nunomo.net
 - Github: Open an issue if you have a GitHub account. It's the best place to submit bugs.
-- [Discord](https://discord.gg/kcvVTPkZVQ): Visit Nunomo's Discord server to have a chat, read announcements, and talk about events.
+- [Discord](https://discord.gg/kcvVTPkZVQ): Visit Nunomo's Discord server chat about Qun, read announcements, and talk about events.
 - Social media links:
   - Instagram: [@nunomo1](https://www.instagram.com/nunomo1)
   - Twitter (Japanese): [@nunomo1](https://twitter.com/nunomo1)
@@ -21,18 +21,21 @@
 * [Presets](https://github.com/raspy135/Qun-mk2/blob/main/sd_template.zip): Download tone presets and install (see under Load Preset). We constantly update the tone presets.
 * [Issues](https://github.com/raspy135/Qun-synthesizer/issues): Report issues when you have problems or questions.
 * [Firmware](./firmware): Firmware updates and instructions (see README.md).
-* [CheatSheet](./cheatsheet.pdf): A cheat sheet listing buttons, modes and sub-modes, shortcuts, and synth parameters.
+* [CheatSheet](./cheatsheet.pdf): A printable cheat sheet listing buttons, modes and sub-modes, shortcuts, and synth parameters.
 
 **We are looking for your feedback! For general impressions and feedback, please email them to info@nunomo.net or join Nunomo's Discord server!**
 
 ## Overview of the QUN mk2
-Qun mk2 has a two-oscillator virtual analog, FM, granular sound engine. 2 oscillators can be used separately.
+
+Highlights:
+
+Qun mk2 has a 2 oscillator virtual analog, FM, granular sound engine. 2 oscillators can be used separately.
 
 The sequencer is an 8-step based sequencer, supporting up to 32/64 steps. You can store 8 patterns for each preset. It has 8 preset and sequencer pattern buckets. You can quickly switch 8 presets and 64 patterns.
 
-Three track looper with 5 scenes, you can swap 3 track x 5 scenes while playing. 
+3 track looper with 5 scenes, you can swap 3 track x 5 scenes while playing. 
 
-Details
+Details:
 
 * **Analog Modeling Engine**
   * The analog modeling engine is **original and made from scratch**. It uses advanced algorithms for great organic sound. The engine is not a copy of a classic synth, it is designed to make modern sounds.
@@ -79,7 +82,7 @@ Details
   	* Mute by track
 * Micro SD card
   * Qun mk2 comes with a micro SD card.
-  * All looper recordings, preset and granular sample is stored to the SD card
+  * All looper recordings, presets, and granular samples are stored to the SD card
 
 ## CONNECTIONS
 
@@ -97,19 +100,20 @@ Mode | Description
 ------------ | -------------
 Play | Playing from the sequencer and looper. 
 System | Loading and saving data, and changing system settings.
-Param | Parameter Mode. Change synthesizer’s parameters.
+Param | Parameter mode: Changing the synthesizer’s instrument parameters.
 
 ## BASIC OPERATION
 
-Each major mode has selectable sub-modes. For example, `OSC1` is a sub-mode for Oscillator 1.
+Each major mode has selectable sub-modes. For example, the Param major mode has an `OSC1` sub-mode which configures Oscillator 1, and the Play major mode has a `PIANO` sub-mode which allow direct playing of notes using the [1-8] buttons.
 
 * To switch sub-mode, press SHIFT + [1-8] button or NO/OK buttons to change sub-mode.
-	After you enter the sub-mode you want, press [1-8] button to select a parameter.
+  * After you enter the sub-mode you want, press [1-8] button to select a parameter.
+  * See the names printed on the device for sub-modes of Param and Play major modes. For example, look underneath the [1-8] buttons and see `OSC1` and `PIANO`.
 * Press one of 8 buttons + rotate dial = Change parameter
 * Rotate the dial = Change the current parameter.
 * Long press the button to show the parameter full name and value.
 * Double click the button to enter relative mode. The value adjustment will be relative.
-* For initial training, cheatsheet(./cheatsheet.pdf) would be useful. Also you can turn on parameter caption mode in System2 menu, button 3.
+* For initial training, referring to the [Qun cheatsheet](./cheatsheet.pdf) can be useful. Also useful for training is seeing the parameter name when changing its value: turn on Parameter Caption mode in System2 menu, button 3.
 * If you want to do fine value adjustment, you can use NO/OK buttons to change the value by 1. To do this, keep pressing one of 8 buttons and press NO or OK button.
 
 Button | Primary function
