@@ -300,16 +300,14 @@ Signal diagram helps to understand how Qun mk2 works.
 
 ## Parameter Mode (Param)
 
-Usage: 
-
-The parameter position in the display corresponds visually to a [1-8] button assigment pattern. Clicking a [1-8] button will flash a parameter, selecting it, allowing you to change its value. The position corresponds to this button assignment:
+To operate, press B[1-8] to choose a parameter and rotate dial to change its value. The parameter display area will temporarily invert. A parameter's position in the display corresponds to the visual button assignment:
 
 ```
  1  3  5  7
  2  4  6  8
 ```
 
-E.g. button 1 selects and flashes the OSC wave SHAPE parameter when in the OSC1/OSC2 sub-mode.
+E.g. button 1 chooses the wave SHAPE parameter when in the OSCILLATOR1,2 sub-mode.
 
 ### PRM:OSCILLATOR1,2
 
@@ -682,7 +680,7 @@ One set of recordings is called Scene. Looper has 5 Scenes. LOOPER PLAY + [1-5] 
 
 Reduce record volume (-3.0dB or more) in Mixer to avoid clipping. MODE PLAY + turn dial to change the value.
 
-Cut / Paste can be used for a temporary saved area, or to delete the track. REC + NO to Cut, REC + OK to Paste.
+Cut / Paste can be used as a temporary saved area, or to delete the track. REC + NO to Cut, REC + OK to Paste.
 
 All recorded data, Preset bucket and Mixer data will be saved as a Session automatically. Recording data is saved immediately and other data will be saved when looper playing is stopped. Recording data is a standard WAV file so you can import them to DAW.
 
@@ -1410,7 +1408,7 @@ A set of MIDI CC signal can be used as preset save data. Press SHIFT + MODE PLAY
 
 If you want to control parameters by your MIDI keyboard, use the chart below to check the CC number.
 Or, you can see the CC# in the screen at the top of the parameter name.
-Assigned CC# can be override temporary.
+Assigned CC# can be overridden temporarily.
 
 When you change CC parameters through MIDI keyboard or any other devices, the changed parameter will be shown on the display in real-time, you will see what you are changing, the value and mode names just like when you change parameters directly on the QUN.
 
