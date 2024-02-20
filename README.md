@@ -25,6 +25,7 @@
 
 **We are looking for your feedback! For general impressions and feedback, please email them to info@nunomo.net or join Nunomo's Discord server!**
 
+
 ## Overview of the QUN mk2
 
 Highlights:
