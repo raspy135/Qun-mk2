@@ -2,7 +2,7 @@
 
 - Email: info@nunomo.net
 - Github: Open an issue if you have a GitHub account. It's the best place to submit bugs.
-- [Discord](https://discord.gg/kcvVTPkZVQ): Visit Nunomo's Discord server chat about Qun, read announcements, and talk about events.
+- [Discord](https://discord.gg/kcvVTPkZVQ): Visit Nunomo's Discord server to chat about Qun, read announcements, and talk about events.
 - Social media links:
   - Instagram: [@nunomo1](https://www.instagram.com/nunomo1)
   - Twitter (Japanese): [@nunomo1](https://twitter.com/nunomo1)
@@ -18,7 +18,7 @@
 ## Links and Information
 
 * [Online Shop](https://shop.nunomo.net/products/): Purchase your own from our website.
-* [Presets](https://github.com/raspy135/Qun-mk2/blob/main/sd_template.zip): Download tone presets and install (see under Load Preset). We constantly update the tone presets.
+* [Presets](https://github.com/raspy135/Qun-mk2/blob/main/sd_template.zip): Download and install tone presets  (see [Load Preset](#load-preset)). We constantly update the tone presets.
 * [Issues](https://github.com/raspy135/Qun-synthesizer/issues): Report issues when you have problems or questions.
 * [Firmware](./firmware): Firmware updates and instructions (see README.md).
 * [CheatSheet](./cheatsheet.pdf): A printable cheat sheet listing buttons, device modes and sub-modes, shortcuts, and synth instrument parameters.
@@ -34,7 +34,7 @@ Qun mk2 has a 2 oscillator virtual analog, FM, granular sound engine. The 2 osci
 
 The sequencer is an 8-step based sequencer, and supports up to 32/64 steps per pattern. You can store 8 patterns for each preset bucket. And it has 8 buckets of tone preset + sequencer patterns. So you can quickly switch between 8 presets and 64 (8 x 8 pattern) patterns.
 
-It has a 3 track looper with 5 scenes, so you can swap 3 track x 5 scenes while playing. 
+It has a 3 track looper with 5 scenes, so you can swap 3 tracks x 5 scenes while playing. 
 
 More:
 
@@ -136,7 +136,7 @@ REC + LOOPER PLAY | Start looper recording
 LOOPER PLAY | Start looper playing
 LOOPER STOP | Stop looper playing
 RST button on the base board | Reset the device
-4 touch buttons at the bottom board | This can be used as a touch slider. See Touch Slider section for detail. 
+4 touch buttons at the bottom board | This can be used as a touch slider. See [Touch Slider](#touch-slider) section for detail. 
 SHIFT + NO + OK | Sleep (Shutdown) the device. It will turn off most of the power consuming components like the main CPU and the screen. Press the RST button to restart the device.
 
 ## BASIC SHORTCUTS
@@ -145,7 +145,7 @@ Button | Function
 ------------ | -------------
 SHIFT + MODE PLAY | Dump current preset to MIDI OUT. This is useful to transfer the current preset to another Qun / Qun mk2 synthesizer.
 SHIFT + SYSTEM | All notes off
-SHIFT + PARAM | Initialize the preset. You can choose some templates: Blank, Sampler, EvenSlice, Scratch. Please see the "Initialize preset" section for detail. 
+SHIFT + PARAM | Initialize the preset. You can choose some templates: Blank, Sampler, EvenSlice, Scratch. Please see the [Initialize preset](#initialize-preset) section for detail. 
 SHIFT + SEQ PLAY + turn dial | Set BPM. Tap tempo by pressing SEQ PLAY 4 or more times while you keep pressing SHIFT. 
 MODE PLAY + turn dial | Record volume -- stay at -6.0dB or lower to avoid clipping.
 MODE PLAY + SYSTEM + turn dial | looper master volume 
@@ -156,7 +156,7 @@ LOOPER PLAY + [1-5] | Select Scene
 LOOPER PLAY + [1-5] + Dial | Copy Scene
 REC + [1-3, 7,8] | Select recording track. A,B,C are mono tracks. Press 7, 8 for stereo recording. 7=A(Left)+B(Right), 8 = B+C. When you do stereo recording, you may want to set pan to left and right for the selected stereo tracks. 
 PARAM + [1-3] | Mute track
-MODE PLAY + [1-8] | Recall preset bucket (see under Preset Bucket)
+MODE PLAY + [1-8] | Recall preset bucket (see under [Preset Bucket](#preset-bucket))
 SEQ PLAY + [1-8] | Select Sequencer pattern
 SHIFT + LOOPER PLAY + turn dial | Load session when you are not in System mode or Granular mode. 
 SHIFT + LOOPER PLAY + [1-3] button | Import WAV file from import folder to selected track
@@ -215,7 +215,7 @@ SHIFT + LOOPER PLAY + Turn Dial | Load session
 NO or OK button while selecting a session | Scroll session page when you have more than 32 sessions 
 SHIFT + REC | Save current session (Looper stop will perform session save when autosave is on)
 SHIFT + REC (Long press) | Name current session
-SHIFT + REC + B[1-3] | Load WAV file to looper track A, B or C (See looper section for detail)
+SHIFT + REC + B[1-3] | Load WAV file to looper track A, B or C (See [Looper Overview](#looper-overview) section for details)
 Press B[1-8] while booting | Load a previous LOOPER folder. E.g. Button1 means LOOPER00, Button2 means LOOPER01, and so on.
 
 To load a session, press SHIFT + LOOPER PLAY when you are not in System mode or Granular mode. Current session number "Looper00:0001" will be indicated. Turn the dial to select the session you want to load.
@@ -321,7 +321,7 @@ The oscillator is a hybrid of classic analog synth, FM, and granular.
 
 Buttons | Description
 -------|-------
-1 | SHAPE. `Saw, Sine, S&H, Square, Triangle, W Noise, P Noise, FM, AUX`.<br> * AUX means audio input from LINE or MIC. <br> * Granular synth engine is connected to the AUX L channel when it's active. See Granular section for detail. 
+1 | SHAPE. `Saw, Sine, S&H, Square, Triangle, W Noise, P Noise, FM, AUX`.<br> * AUX means audio input from LINE or MIC. <br> * Granular synth engine is connected to the AUX L channel when it's active. See [Granular](#granular) section for detail. 
 2 | PULSE WIDTH.  Triangle, Square and Granular can take PWM. In granular mode, the playing position will be changed by PWM.
 3 | TUNE
 4 | OCTAVE
@@ -437,7 +437,7 @@ Button | Description
 4 | BEND RANGE. Pitch bend range.
 5 | OSC1/2 Keysync. This is a switch to connect MIDI input notes and oscillators. Y = Follow MIDI note pitch. N = Ignore MIDI note. You can still use FREQ1 and FREQ2 for modulation to use MIDI note pitch.
 6 | VELOCITY SW. Envelope generators become velocity sensitive when it’s ON.
-7 | MONO/QUAD/POLY (Voice mode). Long press to sync Oscillator parameters. See the Voice Mode section for details. 
+7 | MONO/QUAD/POLY (Voice mode). Long press to sync Oscillator parameters. See the [Voice Mode](#voice-mode) section for details. 
 8 | LFO BPM sync. LFO rate will synchronize with Sequencer's BPM when it is ON.
 
 #### Voice Mode
@@ -513,7 +513,7 @@ Oscillator (ABC)’s frequency (multiple of frequency of D).
 
 Button | Description
 --------|--------
-1 | 2ND FILTER. See the 2nd Filter section for details.
+1 | 2ND FILTER. See the [2nd Filter](#2nd-filter) section for details.
 2 | FM FREQ SNAP SW. Frequency snapping for FM. When it's ON, FM frequency will be snapped to numbers. When it's OFF, FM has more character, the signature sound of the QUN synth.
 3 | Wavefolding. Wevefolding curve selection. This filter is located in VCF.
 4 | FM ENV3 CONN. Select FM operator(s) to connect ENV3/4. After the processing, it will be filtered by ENV1 or ENV2.
@@ -921,7 +921,7 @@ This is a simple setup to use the granular engine(You can skip those steps by in
 Button | Function
 ------------ | -------------
 1 | Process samples.  Analyze will give better result with Time stretch. See below list for processing  detail 
-2 | Slice Spread, half-steps. Please see below section for detail. 
+2 | Slice Spread, half-steps. Please see [Having Multiple Slices (Slice Spread)](#having-multiple-slices-slice-spread) section for detail. 
 3 | File position (Starting point).
 4 | Length
 5 | Speed. It won't work with non-time stretch modes.
