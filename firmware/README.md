@@ -13,20 +13,26 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v4.76
+  
+  - Behavior change: Looper master volume is applied when Wav file preview in file selection (SHIFT + OK) is played. Looper master volume can be changed by PLAY+SYSTEM+Dial, or SYSTEM+PARAM+Dial(For crossfading between the sound engine)
+  - Bug fix: Engine initialization issue on Granular engine.
+  - New feature: Double-clicking mode button(PLAY or PARAM) + B[1-8], No or OK to change sub mode
+  
 - v4.75
-  
+
   - Bug fix: Proper wav file reading in case there is extra data at the bottom
-  
+
   - Bug fix: Stereo Rec was broken, when it is a new recording to the Scene
-  
+
   - 8th swing is back (CFG, long press button 6). 16th and 8th swing can be combined, great for off-grid feeling.
-  
+
   - Performance improvement (A lot of internal changes)
-  
+
   - Behavior change: Coast action in scratch mode was removed for more precise scratching.
-  
+
   - Bug fix: Scratch mode was broken
-  
+
 - v4.74
 
   - Bug fix: Performance gliches with stereo recording to the looper

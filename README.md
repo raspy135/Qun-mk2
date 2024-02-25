@@ -112,6 +112,8 @@ Each major mode has selectable sub-modes. For example, the Param major mode has 
 * To switch sub-mode, press SHIFT + [1-8] button or NO/OK buttons to change sub-mode.
   * After you enter the sub-mode you want, press [1-8] button to select a parameter.
   * See the names printed on the device for sub-modes of Param and Play major modes. For example, look underneath the [1-8] buttons and see `OSC1` and `PIANO`.
+  * Alternatively, you can select sub-mode by press SHIFT + turn the dial.
+  * Alternatively, you can select sub-mode by Double-clicking MODE PLAY button or PARAM button then press [1-8] button.
 * Press one of 8 buttons + rotate dial = Change parameter
 * Rotate the dial = Change the current parameter.
 * Long press the button to show the parameter full name and value.
