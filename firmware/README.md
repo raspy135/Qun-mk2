@@ -13,12 +13,16 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
-- v4.76
+- v4.77
   
+  - Bug fix: Occasional system crashes by turning dial in Looper mode
+  
+- v4.76
+
   - Behavior change: Looper master volume is applied when Wav file preview in file selection (SHIFT + OK) is played. Looper master volume can be changed by PLAY+SYSTEM+Dial, or SYSTEM+PARAM+Dial(For crossfading between the sound engine)
   - Bug fix: Engine initialization issue on Granular engine.
   - New feature: Double-clicking mode button(PLAY or PARAM) + B[1-8], No or OK to change sub mode
-  
+
 - v4.75
 
   - Bug fix: Proper wav file reading in case there is extra data at the bottom
