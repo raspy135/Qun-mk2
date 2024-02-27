@@ -13,11 +13,15 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
-- v4.78
+- v4.79
   
+  - Bug fix: SHIFT + turn dial mode sub-mode change was broken.
+  
+- v4.78
+
   - Better bucket change behavior with Granular/sampler (Faster loading and better muting)
   - Bug fix: Incorrect wav file reading when metadata chunk appears before data chunk
-  
+
 - v4.77
 
   - Bug fix: Occasional system crashes by turning dial in Looper mode
