@@ -16,7 +16,7 @@ Here are the steps to update the firmware:
 - v4.78
   
   - Better bucket change behavior with Granular/sampler (Faster loading and better muting)
-  - Bug fix: Incorrect wav file reading when metadata chunk apeears before data chunk
+  - Bug fix: Incorrect wav file reading when metadata chunk appears before data chunk
   
 - v4.77
 
