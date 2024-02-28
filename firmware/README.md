@@ -13,10 +13,14 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v4.80
+  
+  - Bug fix: Sampler/Granular preset can be muted when loading from preset folder. (This introduced v4.78)
+  
 - v4.79
-  
+
   - Bug fix: SHIFT + turn dial mode sub-mode change was broken.
-  
+
 - v4.78
 
   - Better bucket change behavior with Granular/sampler (Faster loading and better muting)
