@@ -13,10 +13,14 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v4.82
+  
+  - Bug fix: Another bug fix about sampler muting
+  
 - v4.81
-  
+
   - Bug fix: Unnamed sample data was not read correctly
-  
+
 - v4.80
 
   - Bug fix: Sampler/Granular preset can be muted when loading from preset folder. (This introduced v4.78)
