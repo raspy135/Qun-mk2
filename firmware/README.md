@@ -17,15 +17,15 @@ Here are the steps to update the firmware:
   
   - Bug fix: Another bug fix about sampler muting
   
-- v4.81
+- v4.81(Deleted)
 
   - Bug fix: Unnamed sample data was not read correctly
 
-- v4.80
+- v4.80(Deleted)
 
   - Bug fix: Sampler/Granular preset can be muted when loading from preset folder. (This introduced v4.78)
 
-- v4.79
+- v4.79(Deleted)
 
   - Bug fix: SHIFT + turn dial mode sub-mode change was broken.
 
