@@ -677,6 +677,8 @@ Looper keeps playing the recorded sound. All recorded data will be saved to SD c
 
 When you press REC + LOOPER PLAY twice (or shift + REC + Looper play), the recording mode will be REC mode. In REC mode, it will overwrite the existing recording. It will change loop length when the new recording is longer than the existing one.
 
+When you press REC + LOOPER PLAY 3 times or 4 times, it enters Insert Recording mode. See "Insert Recording" section for detail.
+
 Looper has 3 mono tracks. REC + [1-3] button to select recording track. Each recording can go up to about 25 seconds. You can record a track as stereo by pressing REC + [7 or 8]. A(Left)+B(Right) or B+C will be selected. With stereo recording, you may want to set pan to Left and Right for the selected stereo tracks.
 
 One set of recordings is called Scene. Looper has 5 Scenes. LOOPER PLAY + [1-5] to select the scene.
@@ -697,12 +699,39 @@ You can check looper status such as playing position and Looper length by pressi
 
 Label | Description
 ------------ | -------------
-Small dot on left bottom | Ready to play, waiting for sequencer, or already playing
+Big letter top left(Not shown in the screenshot) | Indicator of Overdub, Rec or Insert 
+Small dot on bottom left | Ready to play, waiting for sequencer, or already playing
 Another circle line in the tape | Extra processing is on (PARAM + NO) 
 P | Position (steps) 
 L | Loop length (steps) 
 SC | Current Scene
 TR | Current Track
+
+### Insert recording
+
+When you press REC + LOOPER PLAY 3 times, it enters Insert recording mode, this allows to record external effector result back to the looper. For example, you can apply reverb if you have a reverb pedal.
+
+Setup is the following:
+
+![insert_recording](./manual_images/insert_recording.png)
+
+You need to separate effector's output, one goes out to mixer/monitor and the another one is connected to Qun's input. Or use mixer's one of output if your mixer has multiple outputs.
+
+AUX in gain (MIX sub-mode, button 4) to adjust the recording volume.
+
+Here are the steps to do insert recording
+
+1. Listen to the output with external effector ON, make sure effector is on, and the sound comes back to the input. Mute tracks or sound engine that you don't want to record.
+2. Select recording track. REC + B[1-3] or B[7-8] for stereo. 
+3. **REC + LOOPER PLAY 3 times or 4 times** to activate Insert recording mode. "InsertRec" or "InsertOvb" message will be shown, or You will see "IO" or "IR" indicator if you are in Looper status page.  "IR" mean Insert Recording,  it will overwrite existing recording which is normally you may want. "IO" means Insert Overdub, it will overdub to the existing recording.
+4. When you select "IR", remember the loop length if you don't want to change the loop length.
+5. Start recording by starting the sequencer.
+6. Stop recording at the desired record length.
+7. The audio with effector should be recorded to the selected track. Check the result by turning off the external effector(s).
+
+Tips:
+	- Playing track and recording track can be the same.
+	- You can enable Extra Processing for additional effects if you want.
 
 ### Importing WAV file to the looper
 
