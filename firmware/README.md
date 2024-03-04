@@ -13,14 +13,20 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
-- v4.83
+- v4.84
   
+  - Smoother VU meter indication for more practical readings.
+  
+  - New feature: Now VU meter has the second page to monitor Sound Engine and AUX input.
+  
+- v4.83
+
   - Bigger letter indication ("R" for rec, "O" for overdub) in looper status page.
   - Behavior change: Now aux in volume (Mix submenu, button 4) affects line in through volume
   - New feature: Insert recording is added. You can apply external effector to looper recording. Please check Insert cecording section in the manual.
   - Behavior change: Default VCF volume (58) is unity gain when Extra processing is on.
   - Very small "E" letter is shown at the left when Extra processing is on.
-  
+
 - v4.82
 
   - Bug fix: Another bug fix about sampler muting

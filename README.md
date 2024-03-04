@@ -721,7 +721,7 @@ AUX in gain (MIX sub-mode, button 4) to adjust the recording volume.
 
 Here are the steps to do insert recording
 
-1. Listen to the output with external effector ON, make sure effector is on, and the sound comes back to the input. Mute tracks or sound engine that you don't want to record.
+1. Listen to the output with external effector ON, make sure effector is on, and the sound comes back to the input. Mute tracks or sound engine that you don't want to record. **You can check AUX input level in Monitor mode, page 2.**
 2. Select recording track. REC + B[1-3] or B[7-8] for stereo. 
 3. **REC + LOOPER PLAY 3 times or 4 times** to activate Insert recording mode. "InsertRec" or "InsertOvb" message will be shown, or You will see "IO" or "IR" indicator if you are in Looper status page.  "IR" mean Insert Recording,  it will overwrite existing recording which is normally you may want. "IO" means Insert Overdub, it will overdub to the existing recording.
 4. When you select "IR", remember the loop length if you don't want to change the loop length.
@@ -1121,6 +1121,10 @@ Mixer setting will be saved when Session is saved.
 ![granular](./manual_images/monitor.png)
 
 You can monitor the output.
+
+Button | Function
+------------ | -------------
+B[1-8] | Toggle monitor page 
 
 When you are in mixer mode, press SHIFT + NO again, or shift + turn dial to the end, you can enter to the monitor mode.
 
