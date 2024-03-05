@@ -13,12 +13,18 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v4.85
+  
+  - Slight performance improvement with granular and effector.
+  
+  - Record pan (SHIFT + PLAY + Dial) was broken.
+  
 - v4.84
-  
+
   - Smoother VU meter indication for more practical readings.
-  
+
   - New feature: Now VU meter has the second page to monitor Sound Engine and AUX input.
-  
+
 - v4.83
 
   - Bigger letter indication ("R" for rec, "O" for overdub) in looper status page.
