@@ -72,7 +72,7 @@ More:
     * Sequencer synchronized, internal or externally clocked.
     * Looper can record the sound up to around 30 sec for each recording.
     * You can record the sound from the sound engine or external audio.
-    * **3 tracks**, **5 Scenes**, total 15 recordings in one Session
+    * **3 tracks**, **20 Scenes**, total 60 recordings in one Session
     * Scene change while playing -- something like Ableton Live's session view
     * Cut / Paste
     * Play / Rec / Overdub
@@ -155,7 +155,6 @@ SYSTEM + turn dial | VCF volume
 PARAM + turn dial | VCF cutoff
 REC + turn dial | LFO tune
 LOOPER PLAY + [1-5] | Select Scene
-LOOPER PLAY + [1-5] + Dial | Copy Scene
 REC + [1-3, 7,8] | Select recording track. A,B,C are mono tracks. Press 7, 8 for stereo recording. 7=A(Left)+B(Right), 8 = B+C. When you do stereo recording, you may want to set pan to left and right for the selected stereo tracks. 
 PARAM + [1-3] | Mute track
 MODE PLAY + [1-8] | Recall preset bucket (see under [Preset Bucket](#preset-bucket))
@@ -558,7 +557,7 @@ Looper status shows Looper position and status.
 
 Clipping indicator is active when signal is clipped at the end of signal chain, after compressor.
 
-### COMMON SEQUENCER / LOOPER OPERATIONS
+### COMMON SEQUENCER OPERATIONS
 
 Most actions work in any major mode, and are not limited to Play mode.
 
@@ -567,23 +566,30 @@ Button | function
 SEQ PLAY | Start / Stop Sequencer
 REC + SEQ PLAY | Start Sequencer live recording
 REC + SEQ PLAY + turn dial | Metronome volume
-LOOPER PLAY | Start Looper
-LOOPER STOP | Stop Looper
-LOOPER REC + LOOPER PLAY | Start looper recording
 SHIFT + SEQ PLAY + turn dial | Set BPM. Tap tempo by pressing SEQ PLAY 4 or more times while you keep pressing SHIFT. 
-LOOPER PLAY + [1-5] | Select Scene
-REC + [1-3, 7,8] | Select recording track. A,B,C are mono tracks. Press 7, 8 for stereo recording. 7=A(Left)+B(Right), 8 = B+C. When you do stereo recording, you may want to set pan to left and right for the selected stereo tracks. 
-SHIFT + REC + B[1-3] | Load WAV file to looper track A, B or C 
-PARAM + [1-3] | Mute track
-PARAM + NO | Toggle Extra processing
-MODE PLAY + [1-8] | Recall preset bucket
+NO | Previous sequencer pattern
+OK | Next sequencer pattern
 SEQ PLAY + [1-8] | Select Sequencer pattern
 SEQ PLAY + [1-8] , [1-8]...| Chain sequencer pattern(Pattern chaining). Keep pressing SEQ PLAY. 
 SEQ PLAY + NO / OK | Move to previous / next Sequencer page
 SHIFT + SEQ PLAY +  NO / OK | Copy Sequencer page to previous / next Sequencer page
 SEQ PLAY + [1-8] + turn dial | Copy sequencer pattern to other pattern. If you want to cancel the operation, turn to the end, then "CANCEL" will be indicated as the destination. To initialize the bank data, turn the dial to "CLEAR". 
-NO | Select previous pattern
-OK | Select next pattern
+
+### COMMON LOOPER OPERATIONS
+
+Button | function
+-------|-------
+REC | Go Looper status page
+LOOPER PLAY | Start Looper
+LOOPER STOP | Stop Looper
+LOOPER REC + LOOPER PLAY | Start looper recording
+LOOPER PLAY + [1-5] | Select Scene
+LOOPER PLAY + NO or OK | Change Scene page (5 Scenes per page)
+LOOPER PLAY + [1-5] + Dial | Copy Scene
+REC + [1-3, 7,8] | Select recording track. A,B,C are mono tracks. Press 7, 8 for stereo recording. 7=A(Left)+B(Right), 8 = B+C. When you do stereo recording, you may want to set pan to left and right for the selected stereo tracks. 
+SHIFT + REC + B[1-3] | Load WAV file to looper track A, B or C. Importing WAV file to the looper section for detail. 
+PARAM + [1-3] | Mute track
+PARAM + NO | Toggle Extra processing
 SHIFT + LOOPER STOP | Delete all track recordings in the current scene, reset recording length 
 REC + NO | CUT Looper track
 REC + OK | PASTE Looper track
@@ -681,7 +687,7 @@ When you press REC + LOOPER PLAY 3 times or 4 times, it enters Insert Recording 
 
 Looper has 3 mono tracks. REC + [1-3] button to select recording track. Each recording can go up to about 25 seconds. You can record a track as stereo by pressing REC + [7 or 8]. A(Left)+B(Right) or B+C will be selected. With stereo recording, you may want to set pan to Left and Right for the selected stereo tracks.
 
-One set of recordings is called Scene. Looper has 5 Scenes. LOOPER PLAY + [1-5] to select the scene.
+One set of recordings is called Scene. Looper has 20 Scenes. LOOPER PLAY + [1-5] to select the scene. LOOPER PLAY + NO or OK to change Scene page.
 
 ![looper_scene](./manual_images/looper_scene.png)
 
@@ -704,6 +710,7 @@ Small dot on bottom left | Ready to play, waiting for sequencer, or already play
 Another circle line in the tape | Extra processing is on (PARAM + NO) 
 P | Position (steps) 
 L | Loop length (steps) 
+Box and lines above SC label | Scene page
 SC | Current Scene
 TR | Current Track
 
