@@ -302,7 +302,7 @@ Signal diagram helps to understand how Qun mk2 works.
 
 ![‎qun2_diagram](./manual_images/‎qun2_diagram.png)
 
-## Parameter Mode (Param)
+# Parameter Mode (Param)
 
 To operate, press B[1-8] to choose a parameter and rotate dial to change its value. The parameter display area will temporarily invert. A parameter's position in the display corresponds to the visual button assignment:
 
@@ -313,7 +313,7 @@ To operate, press B[1-8] to choose a parameter and rotate dial to change its val
 
 E.g. button 1 chooses the wave SHAPE parameter when in the OSCILLATOR1,2 sub-mode.
 
-### PRM:OSCILLATOR1,2
+## PRM:OSCILLATOR1,2
 
 ![osc1](./manual_images/osc1.png)
 
@@ -331,7 +331,7 @@ Buttons | Description
 7 | LFO TUNE. LFO modulation to tune.
 8 | LFO WIDTH. LFO modulation to pulse width.
 
-#### Pulse Width Modulation (PWM)
+### Pulse Width Modulation (PWM)
 
 Qun supports PWM. It affects Square wave oscillations normally: changing the duration of the pulse of the wave. It affects other waveshapes in the following ways:
 
@@ -340,7 +340,7 @@ Qun supports PWM. It affects Square wave oscillations normally: changing the dur
 - Sine: Adds wavefolding for harmonics
 
 
-### PRM:MIX
+## PRM:MIX
 Mix controls mixer and effects.
 
 ![mix](./manual_images/mix.png)
@@ -356,7 +356,7 @@ Button | Description
 7 | Effect Depth
 8 | Effect Feedback
 
-#### Effector tips
+### Effector tips
 - The Delay speed can be set very short. Create an interesting simulation of flute or violin by using a very short delay. Mono Delay will work better for the use of delay as a resonator.
 - You can widen the stereo image by using a short delay. 
   - Effector Type: Delay
@@ -365,7 +365,7 @@ Button | Description
   - Feedback: 0
 - Digital delay is BPM synchronized. It also can be used as beat repeat by setting 100% of feedback, and 100% of depth.
 
-### PRM:ENV1/2
+## PRM:ENV1/2
 The synth has four Envelope generators. ENV1 and ENV2 are both independently and fully configurable. ENV3 and ENV4 share parameters. ENV3 / ENV4 is connected to FM operators when it's configured via FM ENV3 CONN.
 
 ![diagram_eg](manual_images/env12.png)
@@ -381,7 +381,7 @@ Button | Description
 7 | ENV2 Sustain
 8 | ENV2 Release
 
-### PRM:OSC Switches
+## PRM:OSC Switches
 Switches and modulation routing.
 
 ![switches](./manual_images/switches.png)
@@ -398,7 +398,7 @@ Button | Description
 8 | Env2 invert switch 
 
 
-### PRM:LFO
+## PRM:LFO
 ![diagram_lfo](manual_images/lfo.png)
 
 Button | Description
@@ -412,7 +412,7 @@ Button | Description
 7 | LFO MOD Source. `EG1, EG2, EG3, EG4, AUX, OSC2, OSC2EG, FRQ1, FRQ2`
 8 | LFO Retrig. LFO’s phase is reset by every note hit when it is ON.
 
-### PRM:VCF
+## PRM:VCF
 ![diagram_vcf](manual_images/vcf.png)
 Button | Description
 ------|-------
@@ -425,7 +425,7 @@ Button | Description
 7 | VCF MOD SRC. MOD modulation source : `EG1, EG2, EG3, EG4, AUX, OSC2, OSC2EG, FRQ1, FRQ2, ON`.
 8 | VCF LFO Volume. LFO modulation to VCF’s input volume. It can be used as a vibrato effect.
 
-### PRM:KEY/OTHER
+## PRM:KEY/OTHER
 Configures other parameters.
 
 ![other](./manual_images/other.png)
@@ -441,7 +441,7 @@ Button | Description
 7 | MONO/QUAD/POLY (Voice mode). Long press to sync Oscillator parameters. See the [Voice Mode](#voice-mode) section for details. 
 8 | LFO BPM sync. LFO rate will synchronize with Sequencer's BPM when it is ON.
 
-#### Voice Mode
+### Voice Mode
 One synthesizer can be used as Monophonic or Quadphonic.
 
 - Mono = 2 OSCs for 1 voice
@@ -467,7 +467,7 @@ Poly Quad is for multiple device stacked configuration. You can use multiple Qun
 	Please see “Polyphonic setup” for detail.
 
 
-### PRM:FM
+## PRM:FM
 ![diagram_fm](./manual_images/fm.png)
 
 The synth has 2 x 4 operator FM engine. OSC1 or OSC2 can be set to FM mode.
@@ -508,7 +508,7 @@ This means A modulates B, the result modulates C, the result modulates D.
 Oscillator (ABC)’s frequency (multiple of frequency of D).
 	When FM FREQ SNAP (In ENV3/4 Other sub-menu) is off, it can be adjusted to the exact frequency of harmonics (2,3,4,5..). If you want clean FM sound, turn FM FREQ SNAP on.
 
-### PRM:ENV3/4 / Other
+## PRM:ENV3/4 / Other
 
 ![fm2](./manual_images/fm2.png)
 
@@ -523,7 +523,7 @@ Button | Description
 7 | ENV3/4 SUSTAIN
 8 | ENV3/4 RELEASE
 
-#### 2nd Filter
+### 2nd Filter
   Second filter can be used when you use the 2 pole filter for VCF. It's disabled when 4 pole is selected.
 
 Mode | Description
@@ -545,7 +545,7 @@ PK800 | Peak filter at 800Hz.
 
 
 
-## PLAY MODE
+# PLAY MODE
 
 ![screen_play](./manual_images/screen_play.png)
 
@@ -557,7 +557,7 @@ Looper status shows Looper position and status.
 
 Clipping indicator is active when signal is clipped at the end of signal chain, after compressor.
 
-### COMMON SEQUENCER OPERATIONS
+## COMMON SEQUENCER OPERATIONS
 
 Most actions work in any major mode, and are not limited to Play mode.
 
@@ -575,7 +575,7 @@ SEQ PLAY + NO / OK | Move to previous / next Sequencer page
 SHIFT + SEQ PLAY +  NO / OK | Copy Sequencer page to previous / next Sequencer page
 SEQ PLAY + [1-8] + turn dial | Copy sequencer pattern to other pattern. If you want to cancel the operation, turn to the end, then "CANCEL" will be indicated as the destination. To initialize the bank data, turn the dial to "CLEAR". 
 
-### COMMON LOOPER OPERATIONS
+## COMMON LOOPER OPERATIONS
 
 Button | function
 -------|-------
@@ -596,7 +596,7 @@ REC + OK | PASTE Looper track
 REC + PARAM | Open UNDO list. Select the top item to undo the last recording for the track. Shift + OK to preview the sound. 
 MODE PLAY + PARAM + Turn Dial | Parameter Lock Morphing
 
-### Sequencer overview
+## Sequencer overview
 
 A [tutorial video for the sequencer](https://www.youtube.com/watch?v=vZqdzkTQ1Mg) is available.
 
@@ -608,7 +608,7 @@ Sequencer data will be saved when you save tone presets, and it is saved with th
 
 You can run multiple sequencer at the same time, up to three patterns, as normal parallel running or relative running. See PLY:SEQ CONFIG for detail.
 
-#### Sequencer live recording
+### Sequencer live recording
 
 You can record live playing to the sequencer. Rec + SEQ PLAY to start recording. Play on Piano mode or play with an external MIDI keyboard to record notes. It's always overdubbing.  Note, Width(length), and velocity will be recorded.
 Sequencer playing position indicator changes when live recording.
@@ -625,14 +625,14 @@ A metronome click sound plays when live recording is ongoing. The metronome volu
 
 When you are in sequencer live recording, changing sound engine parameters will be recorded as Parameter Locking.
 
-#### Edit the current step while Sequencer live recording
+### Edit the current step while Sequencer live recording
 
 When you are in Tune, Width, Velocity, or Prob mode, and you are also in sequencer live recording, pressing B7 + B8 will specify the current step. The "Current" message will be shown.
 
 While you are pressing B7+B8, the dial position will be recorded to the current playing position.
 
 
-### Parameter Locking
+## Parameter Locking
 
 Parameter locking is the term used in Elektron sequencers, which is a temporary parameter change available only in the specific sequencer step. The parameter change appears only when the sequencer is playing the step. 
 
@@ -656,7 +656,7 @@ Shift + turn dial is a useful way to sweep between sub-modes to find modified pa
 
 
 
-### Parameter Lock morphing
+## Parameter Lock morphing
 
 You can morph Parameter Locking between two patterns.
 
@@ -667,7 +667,7 @@ You can morph Parameter Locking between two patterns.
 5. Go back to pattern 1
 6. Morph can be done by pressing [MODE PLAY] + [PARAM] + Turn dial
 
-### Looper overview
+## Looper overview
 
 Tutorial video (https://www.youtube.com/watch?v=iD4WpX3tHUE)
 
@@ -697,7 +697,7 @@ Cut / Paste can be used as a temporary saved area, or to delete the track. REC +
 
 All recorded data, Preset bucket and Mixer data will be saved as a Session automatically. Recording data is saved immediately and other data will be saved when looper playing is stopped. Recording data is a standard WAV file so you can import them to DAW.
 
-### Looper status page
+## Looper status page
 
 ![looper](./manual_images/looper.png)
 
@@ -714,7 +714,7 @@ Box and lines above SC label | Scene page
 SC | Current Scene
 TR | Current Track
 
-### Insert recording
+## Insert recording
 
 When you press REC + LOOPER PLAY 3 times, it enters Insert recording mode, this allows to record external effector result back to the looper. For example, you can apply reverb if you have a reverb pedal.
 
@@ -740,7 +740,7 @@ Tips:
 	- Playing track and recording track can be the same.
 	- You can enable Extra Processing for additional effects if you want.
 
-### Importing WAV file to the looper
+## Importing WAV file to the looper
 
 You can import WAV files to the current session. Put WAV files under the **/import** folder. Folder structure is supported so you can make subfolders to organize samples.
 WAV format has to be **16-bit, 48000Hz, Mono**. Otherwise "Format error" message is shown.
@@ -766,7 +766,7 @@ BPM can be matched when BPM is detected from the filename. Here are some samples
 If you have existing recordings in the session, the WAV file will be cut to the current scene's looper length. You can use an empty recorded track just to cut the WAV file to match the loop length. Otherwise it's trimmed to the longest point of the end of the measure.
 
 
-### Looper live playing / Partial scene switch
+## Looper live playing / Partial scene switch
 
 Scene is powerful feature. You can play looper like Ableton Live's Session view. 
 Play sequencer and looper, then LOOPER PLAY + [1-5] to select scene. Scene will be switched at the end of the measure. Synchronized switching works only when sequencer is playing.
@@ -864,9 +864,9 @@ Left | Main value, it will be used for the first-half note and other notes when 
 Middle | 2nd half of the note (Used with 1/16th note)
 Right | 3rd of the note (Used with triplet)
 
-#### Playing note capturing from external MIDI keyboard
+### Playing note capturing from external MIDI keyboard
 
-Alternatevely, you can step record notes by external MIDI keyboard. Play note by MIDI keyboard while you are pressing one of the eight buttons, the note will be recorded as the tune for the step. Chord playing can be captured as well.
+Alternatively, you can step record notes by external MIDI keyboard. Play note by MIDI keyboard while you are pressing one of the eight buttons, the note will be recorded as the tune for the step. Chord playing can be captured as well.
 https://www.youtube.com/watch?v=aV2YL0idMHA
 
 ## PLY:SEQ CONFIG
@@ -1167,7 +1167,7 @@ The following parameters are still available with Extra processing:
 -  Effector parameters (Type, Speed, Depth and Feedback)
 -  VCF ENV Src
 
-## SYSTEM MODE
+# SYSTEM MODE
 
 (**UI changed since v4.52**) System mode will show the following menu. Turn dial or button 7/8 to move cursor, OK to select:
 
@@ -1179,7 +1179,7 @@ Save Preset | Save preset
 System | Enter system sub-mode 
 System2 | Enter system2 sub-mode 
 
-### Load Preset
+## Load Preset
 
 **If your firmware is older than v4.52, please update to match this document.**
 
@@ -1209,12 +1209,12 @@ SHIFT + Looper Stop | Delete the selected preset
 
 You can play sound by SYSTEM + B[1-8] (Temporary piano mode) or play note by external MIDI keyboard.
 
-### Save preset
+## Save preset
 
 Select folder to save, and use B[1-8] and dial to select letters, OK to save.
 
 
-### SYS:SYSTEM
+## SYS:SYSTEM
 System Setting is the setting that is not included in the patch setting. To change the parameter, press the one of 8 buttons and rotate the dial.
 
 
@@ -1256,7 +1256,7 @@ Button | Function
 **Sync Mode**: `STOP, MIDI, 2PPQ, 4PPQ, 24PPQ, MOUT, MOUT2`. Select clock source for sequencer and LFO. See `Clock synchronization` for detail. 
 
 
-### SYS:SYSTEM2
+## SYS:SYSTEM2
 
 System2 is page 2 of system menu.
 In System major mode, SHIFT + [OK] to go System2 menu.
@@ -1278,7 +1278,9 @@ When the **Parameter Caption** is On, the parameter name will be shown when you 
 
 **Master Volume** controls hardware volume of the audio chip. Normally MAX(Default) is recommended. This is useful when your effector or recorder doesn't expect line level input.
 
-### Touch Slider
+# Appendix
+
+## Touch Slider
 
 The four buttons located at the bottom board (Play, Set, Vol-, Vol+) can be used as a touch slider. Place your finger on the Bottons and slide.
 
