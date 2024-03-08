@@ -13,13 +13,21 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
-- v4.86
+- v4.87
   
+  - Asterisk (*) shown in looper status page, when partial scene change happens
+  
+  - Bug fix: Sometime pop-up message is not centered.
+  
+  - Bug fix: Sometime looper tracks were not loaded properly.
+  
+- v4.86
+
   - Better behavior with pan and mono/stereo recording.
   - Now the synth supports up to 20 scenes. LPLAY + NO or OK to change scene page (5 scenes * 4 pages = 20 scenes).
   - Preset: Thin preset is added to pluck section. (Not part of the firmware)
   - SliceSpread works with RPT and RPT_TS mode.
-  
+
 - v4.85
 
   - Slight performance improvement with granular and effector.
