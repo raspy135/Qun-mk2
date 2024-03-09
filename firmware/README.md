@@ -13,10 +13,16 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v4.89
+  
+  - Bug fix: Sometime sample reload is not performed with bucket switch
+  
+  - Bug fix: Envelope with Extra processing had occasional value jump, which might cause pop noise.
+  
 - v4.88
-  
+
   - v4.87 was broken
-  
+
 - v4.87(Deleted)
 
   - Asterisk (*) shown in looper status page, when partial scene change happens
