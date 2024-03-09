@@ -13,14 +13,18 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
-- v4.87
+- v4.88
   
+  - v4.87 was broken
+  
+- v4.87(Deleted)
+
   - Asterisk (*) shown in looper status page, when partial scene change happens
-  
+
   - Bug fix: Sometime pop-up message is not centered.
-  
+
   - Bug fix: Sometime looper tracks were not loaded properly.
-  
+
 - v4.86
 
   - Better behavior with pan and mono/stereo recording.
