@@ -1,7 +1,7 @@
 # Contact
 
 - Email: info@nunomo.net
-- Github: Open an issue if you have a GitHub account. It's the best place to submit bugs.
+- GitHub: Open an issue if you have a GitHub account. It's the best place to submit bugs.
 - [Discord](https://discord.gg/kcvVTPkZVQ): Visit Nunomo's Discord server to chat about Qun, read announcements, and talk about events.
 - Social media links:
   - Instagram: [@nunomo1](https://www.instagram.com/nunomo1)
@@ -42,7 +42,7 @@ More:
   * The analog modeling engine is **original and made from scratch**. It uses advanced algorithms for great organic sound. The engine is not a copy of a classic synth, it is designed to make modern sounds.
   * Low latency.
   * All analog modeling engine parameters can be configured through MIDI. 
-  * Clean 2 Oscillators. Cheap synthesizers compromise this part sometimes, but QUN has no-alias noise Oscillators. All of the internal calculation is done by floating point for sound quality.
+  * Clean 2 Oscillators. Cheap synthesizers compromise this part sometimes, but QUN has no-alias noise Oscillators. All the internal calculation is done by floating point for sound quality.
   * Oscillators can be used as 1 oscillator per voice, or 2 oscillators per voice.
   * Voice can be configured as 4 voices (Quad mode) or 2 voices (Dual mono).
   * The sound engine is compatible with Qun mk1. 
@@ -93,7 +93,7 @@ More:
   * `LINE IN` and `PHONE OUT` are located on the right side.
   * The level of PHONE OUT is not strong, so please connect a headphone amp or mixer.
   * The looper's mixer is stereo. **Please use a stereo cable for sound input and output**. 
-* Qun comes with a micro SD card. Qun mk2 always needs an SD card. It is safe to remove the card when the disk access indicater is not lit (see the illustration under PLAY MODE). However, the SD is not hot swappable. Please reset the device when you remove the SD card. SDHC is supported, and the disk size is up to 32GB. SDXC is NOT supported. Class 10 card or higher is required to satisfy Qun's bandwidth needs. "Class 10" is indicated on SD cards as a circled 10 or "C10".
+* Qun comes with a micro SD card. Qun mk2 always needs an SD card. It is safe to remove the card when the disk access indicator is not lit (see the illustration under PLAY MODE). However, the SD is not hot swappable. Please reset the device when you remove the SD card. SDHC is supported, and the disk size is up to 32GB. SDXC is NOT supported. Class 10 card or higher is required to satisfy Qun's bandwidth needs. "Class 10" is indicated on SD cards as a circled 10 or "C10".
 
 ## MAJOR MODES
 
@@ -205,7 +205,7 @@ Qun automatically collects the current looper recordings, instrument and sequenc
 Session is the biggest data unit of the synth.
 Session includes 8 preset buckets. Each bucket contains one preset with 8 pattern sequencer data.
 
-There is no "new session" function. The synth always create a new session when booting. Reboot the device to create a new sesion.
+There is no "new session" function. The synth always create a new session when booting. Reboot the device to create a new session.
 
 Session button operations work in Parameter mode or Play mode
 
@@ -406,7 +406,7 @@ Button | Description
 1 | LFO SHAPE.  `Saw, Sine, RevSaw, S&H, Square, Triangle, AUX, OSC2, OSC2EG`. OSC2EG is the signal from OSC after Envelope Generator processing.
 2 | LFO PULSE WIDTH. When it's applied to the SAW wave or SINE wave, it will affect phase offset. It is useful with BPM sync and retrigger. 
 3 | LFO TUNE
-4 | KEYSPLIT. This is a unique feature of the synth. When it is not zero, then thenote number above the parameter becomes the LFO rate controller. If you set 60, then C4 or higher notes control LFO: higher notes will generate higher LFO rates. If you press multiple notes, it doubles and triples the rate, which can be great for live performance.
+4 | KEYSPLIT. This is a unique feature of the synth. When it is not zero, then the note number above the parameter becomes the LFO rate controller. If you set 60, then C4 or higher notes control LFO: higher notes will generate higher LFO rates. If you press multiple notes, it doubles and triples the rate, which can be great for live performance.
 5 | LFO MOD TUNE. MOD modulation to tune.
 6 | LFO MOD WIDTH. MOD modulation to pulse width.
 7 | LFO MOD Source. `EG1, EG2, EG3, EG4, AUX, OSC2, OSC2EG, FRQ1, FRQ2`
@@ -506,7 +506,7 @@ This means A modulates B, the result modulates C, the result modulates D.
 
 
 Oscillator (ABC)’s frequency (multiple of frequency of D).
-	When FM FREQ SNAP (In ENV3/4 Other sub-menu) is off, it can be adjusted to the exact frequency of harmonics (2,3,4,5..). If you want clean FM sound, turn FM FREQ SNAP on.
+	When FM FREQ SNAP (In ENV3/4 Other sub-menu) is off, it can be adjusted to the exact frequency of harmonics (2,3,4,5, ...). If you want clean FM sound, turn FM FREQ SNAP on.
 
 ## PRM:ENV3/4 / Other
 
@@ -600,9 +600,9 @@ MODE PLAY + PARAM + Turn Dial | Parameter Lock Morphing
 
 A [tutorial video for the sequencer](https://www.youtube.com/watch?v=vZqdzkTQ1Mg) is available.
 
-The sequencer is an 8/16 step sequencer. One page has 8/16 steps and it can have up to 4 pages.
+The sequencer is an 8/16-step sequencer. One page has 8/16 steps, and it can have up to 4 pages.
 
-The sequencer UI is influenced by analog 8 step pattern based sequencers. You turn can on and off patterns, and change parameters for the steps. 
+The sequencer UI is influenced by analog 8-step pattern based sequencers. You turn can on and off patterns, and change parameters for the steps. 
 
 Sequencer data will be saved when you save tone presets, and it is saved with the Session. Each preset can have 8 sequencer patterns.
 
@@ -695,7 +695,7 @@ Reduce record volume (-3.0dB or more) in Mixer to avoid clipping. MODE PLAY + tu
 
 Cut / Paste can be used as a temporary saved area, or to delete the track. REC + NO to Cut, REC + OK to Paste.
 
-All recorded data, Preset bucket and Mixer data will be saved as a Session automatically. Recording data is saved immediately and other data will be saved when looper playing is stopped. Recording data is a standard WAV file so you can import them to DAW.
+All recorded data, Preset bucket and Mixer data will be saved as a Session automatically. Recording data is saved immediately and other data will be saved when looper playing is stopped. Recording data is a standard WAV file, so you can import them to DAW.
 
 ## Looper status page
 
@@ -726,7 +726,7 @@ You need to separate effector's output, one goes out to mixer/monitor and the an
 
 AUX in gain (MIX sub-mode, button 4) to adjust the recording volume.
 
-Here are the steps to do insert recording
+Here are the steps to perform insert recording
 
 1. Listen to the output with external effector ON, make sure effector is on, and the sound comes back to the input. Mute tracks or sound engine that you don't want to record. **You can check AUX input level in Monitor mode, page 2.**
 2. Select recording track. REC + B[1-3] or B[7-8] for stereo. 
@@ -763,7 +763,7 @@ BPM can be matched when BPM is detected from the filename. Here are some samples
 - `guitar_120_01.wav` (120BPM)
 - `01_vocal_loop_160BPM_e5.wav` (160BPM)
 
-If you have existing recordings in the session, the WAV file will be cut to the current scene's looper length. You can use an empty recorded track just to cut the WAV file to match the loop length. Otherwise it's trimmed to the longest point of the end of the measure.
+If you have existing recordings in the session, the WAV file will be cut to the current scene's looper length. You can use an empty recorded track just to cut the WAV file to match the loop length. Otherwise, it's trimmed to the longest point of the end of the measure.
 
 
 ## Looper live playing / Partial scene switch
@@ -805,7 +805,7 @@ Button | Function
 7 | Rewind Steps 
 8 | Apply modifiers to the current sequence page 
 
-The Modifier is powerful feature, it will give algorithmic effects to the pattern. Those effects will be applied to current pattern without breaking the pattern data.  Also you can apply modifiers to the pattern to make the effect as permanent.
+The Modifier is powerful feature, it will give algorithmic effects to the pattern. Those effects will be applied to current pattern without breaking the pattern data.  Also, you can apply modifiers to the pattern to make the effect as permanent.
 
 - Transpose will add offset to the pattern. Scale quantize (SEQ Config button 3) will help to keep the result musical.
 - Width Offset will change the note length.
@@ -836,7 +836,7 @@ Striped circle | 3 notes in the step (triplet).
 Striped square | 4 notes in the step (1/32th)
 
 ## PLY:SEQ VELOCITY / WIDTH / PROBABILITY
-Press one of the eight buttons and turn the dial, then it will modify velocity / width / probablity for each step.
+Press one of the eight buttons and turn the dial, then it will modify velocity / width / probability for each step.
 
 If you press NO or OK while pressing [1-8] button, you can edit sub-step parameter.
 
@@ -852,7 +852,7 @@ If you press NO or OK while pressing [1-8] button, you can edit sub-step's param
 
 ![tune1](./manual_images/tune1.png)
 
-While you are pressing B[1-8] button, three tiles indidates sub-step position you are editing. The number above tiles means the index of the voice.
+While you are pressing B[1-8] button, three tiles indicates sub-step position you are editing. The number above tiles means the index of the voice.
 2 and more voice index works with Quad voice mode. For example, the following picture means you are editing 2nd position of the sub-step, and 2nd voice.
 
 ![tune1](./manual_images/tune2_crop.png)
@@ -881,10 +881,10 @@ Button | Function
 4 | Sequencer loop count. Default is 8.  / Long press for Morph pattern.
 5 | BPM factor. Playing speed can be double, normal, 1/2, 1/4 or 1/8.  / Long press for note Lower Limit 
 6 | Velocity accent period (steps). / Long press for 8th swing 
-7 | Velocity for the non-accent notes. / Long presso for note Upper Limit 
+7 | Velocity for the non-accent notes. / Long press for note Upper Limit 
 8 | Velocity accent Period Offset 
 
-Velocity period settings (Button 6 - 8) provide a convenient way to make rythmic velocity.
+Velocity period settings (Button 6 - 8) provide a convenient way to make rhythmic velocity.
 
 Sequencer MIDI channel out is useful setting with external synthesizer. When you set it, the sequencer starts to emit MIDI out signal to external synthesizers. If you set Channel + "N" such as "1N", it won't trigger internal sound engine.
 
@@ -893,7 +893,7 @@ Morph pattern is used for Parameter Lock Morphing. Please refer "Parameter Lock 
 Note lower and upper limit will limit the range of note. When the sequencer received a note that is out of the range, it will shift octave to fit within the range. It is useful to prevent to go too high note with randomization. It's also will do automated chord inversion.
 
 ### Running multiple sequence patterns
-You can run multiple sequeence patterns at the same time, up to 3 patterns by setting "2nd pattern" (Long press button 2) or/and "3rd pattern" (Long press button 3), or using the shortcut shown below.
+You can run multiple sequence patterns at the same time, up to 3 patterns by setting "2nd pattern" (Long press button 2) or/and "3rd pattern" (Long press button 3), or using the shortcut shown below.
 
 Button | Function
 ------------ | -------------
@@ -965,7 +965,7 @@ Button | Function
 5 | Speed. It won't work with non-time stretch modes.
 6 | Number of Grain. It won't work with One-shot modes.
 7 | Detune. (Octave highs and lows)
-8 | GRN Mode. OFF, ONE(One shot), ONE_TS(One shot with time stretch), RPT(Repeat), RPT_TS(Repeat with time stretch). When the mode is not OFF, It will override AUX L signal to granular output when you use AUX L as Oscillator shape. With time stretch, playing speed will be preserved. Without it, pitch and speed are linked like an analog tape. Execute Analyze(Button 1) for time streching modes. 
+8 | GRN Mode. OFF, ONE(One shot), ONE_TS(One shot with time stretch), RPT(Repeat), RPT_TS(Repeat with time stretch). When the mode is not OFF, It will override AUX L signal to Granular output when you use AUX L as Oscillator shape. With time stretch, playing speed will be preserved. Without it, pitch and speed are linked like an analog tape. Execute Analyze(Button 1) for time stretching modes. 
 NO (<) | Previous slice
 OK (>) | Next slice
 LOOPER REC + LOOPER PLAY | Start recording granular sample
@@ -1020,10 +1020,11 @@ In Repeat modes, multiple slicing points are randomly selected when the length i
 
 ### Live slicing
 
-Live slicing (Making slices by pressing buttons while you are playing sample) can be done when you set GRN mode to ONE mode. Here is the steps to do live slicing:
-1. Initialize a preset with "Slice" template. (Shift + PARAM and select "Slice"). Or setup the parameters by yourself. Make sure GRN mode is ONE.
+Live slicing (Making slices by pressing buttons while you are playing sample) can be done when you set GRN mode to ONE mode. Here is the steps to perform live slicing:
+
+1. Initialize a preset with "Slice" template. (Shift + PARAM and select "Slice"). Or set up the parameters by yourself. Make sure GRN mode is ONE.
 2. Go Granular mode and load sample or record sample
-3. Set the first slicing point to the head of playing piont and set length to 127(max), which is the default values.(We want to play the entire sample)
+3. Set the first slicing point to the head of playing point and set length to 127(max), which is the default values.(We want to play the entire sample)
 4. Press play button and **keep pressing the play button**. Loaded sample will play.
 5. Press **B[1-8]** button to slice **while you keep pressing the play button**. B1 will set Slice 1, B2 will set Slice 2 and so on.
 6. Length is set to 90 when the length is short. Adjust length and fine tune starting points as needed.
@@ -1033,7 +1034,7 @@ Live slicing (Making slices by pressing buttons while you are playing sample) ca
 ![granular](./manual_images/scratch.png)
 
 Press SHIFT + Button 1 in piano mode one more time to enter record scratch mode.(Or SHIFT + turn dial in play mode)
-Record scratch mode is an emulation of analog record scratching by using granular's sample buffer.
+Record scratch mode is an emulation of analog record scratching by using Granular's sample buffer.
 
 To use record scratch mode, you need to set the following settings, or using "Scratch" template from preset initialize menu:
 1. Granular mode set to ONE
@@ -1070,7 +1071,7 @@ Button 1 | Rewind to slice 3
 
 You can import WAV file if you put WAV file under **/granular** folder in SD card. 
 
-**The looper record data can be imported** as well. This will be shown at the end of the list at the root folder, so you can load looper recorded data to granular as well.
+**The looper record data can be imported** as well. This will be shown at the end of the list at the root folder, so you can load looper recorded data to Granular as well.
 
 **Shift + Looper Play to import WAV file**, **Shift + Looper REC to export WAV file**.
 
@@ -1119,7 +1120,7 @@ This mixer has a compressor. Ratio, attack time and release time are fixed (1:3,
 
 To turn off compressor, set Compressor threshold to zero.
 
-See clipping incidator if you want to avoid clipping. The synth does soft clipping, so the clipped sound is preferrable sometimes.
+See clipping indicator if you want to avoid clipping. The synth does soft clipping, so the clipped sound is preferable sometimes.
 
 Mixer setting will be saved when Session is saved.
 
@@ -1231,7 +1232,7 @@ Button | Function
 
 **AUX**: Input source select. Select Mic (the board has two onboard microphones) or Line in. The setting will be stored in the flash memory. When you use LINE IN, set this setting to "LINE IN(2CH)". You can record the source to granular engine.
 
-**Sample Rate** : Select 48kHz for most of situation. 24kHz is to recreate Lo-Fi sampler feeling from 90's. A/D and D/A is configured 24kHz so everything is operated by 24kHz including synth engine. **You need to reboot the device to reflect the change.**
+**Sample Rate** : Select 48kHz for most situations. 24kHz is to recreate Lo-Fi sampler feeling from 90's. A/D and D/A is configured 24kHz so everything is operated by 24kHz including synth engine. **You need to reboot the device to reflect the change.**
 
 - Pros:
     - 90's low-fi digital sound, dark and punchy
@@ -1282,7 +1283,7 @@ When the **Parameter Caption** is On, the parameter name will be shown when you 
 
 ## Touch Slider
 
-The four buttons located at the bottom board (Play, Set, Vol-, Vol+) can be used as a touch slider. Place your finger on the Bottons and slide.
+The four buttons located at the bottom board (Play, Set, Vol-, Vol+) can be used as a touch slider. Place your finger on the Buttons and slide.
 
 Configure Slider assignment (System2, button 7) to activate the slider. 
 
@@ -1290,7 +1291,7 @@ If you want to assign the slider to other than pre-defined ones, assign it to Mo
 
 Note: Qun mk2's bottom board is generic development board. Touch buttons are not ideal for touch slider use, so the experience is not the best.
 
-### Touch Slider DIP switch configration
+### Touch Slider DIP switch configuration
 
 If you received Qun mk2 synth before firmware v4.02, you need to change DIP switch setting. DIP switch is located at the bottom board, you need to unscrew bottom board to access the DIP switch. If the current setting is `Up, Up, Down, Down, Down, Down, Down, Down`, then turn the first two switches to Down. 
 
@@ -1345,7 +1346,7 @@ Minimum setup to achieve PolyQuad (one Oscillator per voice) will be the followi
 
 ### Polyphonic tips
 
-Long press in Modo/Quad/Poly param (Long-press button 6 in Key/Other menu) to synchronize parameters between ocillators.
+Long press in Mono/Quad/Poly param (Long-press button 6 in Key/Other menu) to synchronize parameters between oscillators.
 
 To synchronize all parameters between multiple Qun synthesizers, press SHIFT + MODE PLAY to dump all parameters. It will be sent to slave devices. If you still see issues like out of tune in slave device, try MIDI RECV toggle switch (SHIFT + SYSTEM). It will reset pitch bend or other controller values.
 
@@ -1355,7 +1356,7 @@ To synchronize all parameters between multiple Qun synthesizers, press SHIFT + M
 * Unknown MIDI messages sent with device reset?
   * When booting some noise is sent (it's ESP32's boot message) . Please avoid to receive MIDI signals when you reset the device. Use initializing preset (SHIFT +PARAM), instead of hardware reset.
 * Trouble with Duo Mode: You need to set up properly to play duo mode properly.
-  * Go Key / Other sub-menu and long press button 7. It will sync the parameters OSC1 and OSC2, it will resolve most of issues.
+  * Go Key / Other sub-menu and long press button 7. It will sync the parameters OSC1 and OSC2, and resolve most issues with Duo Mode.
 * No sound suddenly
   * Reset the preset. SHIFT + PARAM to initialize the preset.
   * Probably it’s because of last parameter you changed, or some unexpected MIDI cc signal. See the 2nd line of the display, it indicates the parameter received at last.
@@ -1379,8 +1380,8 @@ To synchronize all parameters between multiple Qun synthesizers, press SHIFT + M
   * AUX is connected to a lot of modules for CV control, so you can use AUX to control tune/width/LFO and others. However, the LINE in has capacitor in the path, it means the signal is AC. Using it as LFO should work, probably down to 2 to 5Hz. But DC signal, e.g. holding the same voltage 5 seconds, might not work.
 * MIDI is flooding when I connect MIDI out to DAW.
   * MIDI forwarding is ON.
-* Glithes with looper playing
-	* One known issue is looper might get gliches when Granular's grain is high with scene loading. It's because of limitation of RAM bandwidth. 
+* Glitches with looper playing
+	* One known issue is looper might get glitches when Granular's grain is high with scene loading. It's because of limitation of RAM bandwidth. 
 
 ## External Audio processing
 
@@ -1388,7 +1389,7 @@ You can use LINE IN signal for various purposes. LINE IN is stereo input.
 
 * As CV input to control synth parameters
 * As oscillator source. Select "AUXL" or "AUXR" as oscillator source. VCF / effector / Clipping will be applied. If you want to process LINE IN signal as an audio signal, then set Oscillator(1/2)'s signal as "AUXR" or "AUXL", and set the ENV SEL as "ON" (in OSC Switches). Set the gain by changing "VCF Volume" and "AUX In Gain" in Mix sub-menu. 
-* Line In Through to Looper. Setting is in System -> Line In Through. It pass through the sound engine, then combined with the output of the sound engine. You can record the input to looper. Compressor will be applied.
+* Line In Through to Looper. Setting is in System -> Line In Through. It passes through the sound engine, then combined with the output of the sound engine. You can record the input to looper. Compressor will be applied.
 
 
 ## Clock synchronization
@@ -1397,7 +1398,7 @@ The synth can take external clock sources from other synthesizers. When the sync
 Setting is available in the System menu. Default is OFF. The setting will be saved to internal flash memory.
 
 ### MIDI clock
-When you set sync mode to "MIDI", the synth will be clock slave mode. Set your DAW to send MIDI clock. We tested Ableton Live, Logic Pro X and KeyStep Pro. It has some latency so please adjust latency setting in your DAW to match the timing.
+When you set sync mode to "MIDI", the synth will be set to clock slave mode. Set your DAW to send MIDI clock. We tested Ableton Live, Logic Pro X and KeyStep Pro. It has some latency so please adjust latency setting in your DAW to match the timing.
 
 If you set sync mode to "MOUT" or "MOUT2", then the synth will be clock master. It sends MIDI clock as well as play/stop MIDI messages. Try "MOUT2" if you feel slight delay between devices. MOUT2 will send extra clock signal when start playing because some devices start sequencing from the second clock (Roland MC-101 is the example). If you clock another Qun, use MOUT.
 
@@ -1413,7 +1414,7 @@ Session data is stored here. It includes Looper recording data.
 Filename | Description
 -------- | --------
 [T000_1A.wav] | T means track recording, and next 3 digit is Session number, and 1 is Scene number, and A is track number. "0Z" is clipboard data. 
-[G000_01.wav] | G is for Granular data. The last 2 digits incidates the bucket index.
+[G000_01.wav] | G is for Granular data. The last 2 digits indicates the bucket index.
 [M000_00.dat] | M means mixer data. The first 3 digit means Session number. The second 2 digit is always zero. 
 [B000_00_***.dat] | B means Bucket data. This contains 8 preset and 64 sequencer pattern. The first 3 digit means Session number. The second 2 digit is always zero. When session has a name, *** indicates the name of the session. 
 [H000_00_0000.wav] | H is for undo history. 
@@ -1439,7 +1440,7 @@ Filename | Description
 [G_AAAAAA.WAV] | G means Granular record data. This is saved when You perform save command in Granular mode. If you save in Bank1 to Bank8 mode, Granular recording data is stored under Preset folder. 
 
 ### SSHOTS
-Screnshots is stored here. To take screenshot, press LOOPER STOP + PARAM.
+Screenshots are stored here. To take screenshot, press LOOPER STOP + PARAM.
 
 ### IMPORT
 
@@ -1617,7 +1618,7 @@ Note ON messages:
 
 Note | Function
 -----|------
-C1 to G1 | Select sequener pattern
+C1 to G1 | Select sequencer pattern
 A1 | Sequencer live rec (Equivalent to REC + SEQ PLAY)
 A#1 | Sequencer Play
 B1 | Sequencer Stop
