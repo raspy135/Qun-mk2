@@ -589,7 +589,7 @@ LOOPER PLAY + [1-5] + Dial | Copy Scene
 REC + [1-3, 7,8] | Select recording track. A,B,C are mono tracks. Press 7, 8 for stereo recording. 7=A(Left)+B(Right), 8 = B+C. When you do stereo recording, you may want to set pan to left and right for the selected stereo tracks. 
 SHIFT + REC + B[1-3] | Load WAV file to looper track A, B or C. Importing WAV file to the looper section for detail. 
 PARAM + [1-3] | Mute track
-PARAM + NO | Toggle Extra processing
+PARAM + NO | Toggle Extra Processing
 SHIFT + LOOPER STOP | Delete all track recordings in the current scene, reset recording length 
 REC + NO | CUT Looper track
 REC + OK | PASTE Looper track
@@ -707,7 +707,7 @@ Label | Description
 ------------ | -------------
 Big letter top left(Not shown in the screenshot) | Indicator of Overdub, Rec or Insert 
 Small dot on bottom left | Ready to play, waiting for sequencer, or already playing
-Another circle line in the tape | Extra processing is on (PARAM + NO) 
+Another circle line in the tape | Extra Processing is on (PARAM + NO) 
 P | Position (steps) 
 L | Loop length (steps) 
 Box and lines above SC label | Scene page
@@ -715,6 +715,8 @@ SC | Current Scene
 TR | Current Track
 
 ## Insert recording
+
+An [introductory video](https://www.youtube.com/watch?v=N8N1X59RaVg) is available.
 
 When you press REC + LOOPER PLAY 3 times, it enters Insert recording mode, this allows to record external effector result back to the looper. For example, you can apply reverb if you have a reverb pedal.
 
@@ -1136,27 +1138,29 @@ B[1-8] | Toggle monitor page
 When you are in mixer mode, press SHIFT + NO again, or shift + turn dial to the end, you can enter to the monitor mode.
 
 
-### Extra processing
+### Extra Processing
 
-This is the mode to use the sound engine to use as an effector.
+A [demonstration video](https://www.youtube.com/watch?v=RmhoXS-IHoA) is available. 
 
-You can toggle Extra processing mode by **PARAM + NO** button. 
+This mode uses the sound engine as an effector to process external stereo input.
+
+You can toggle Extra Processing mode by **PARAM + NO** button. 
 
 When it's enabled, the Oscillators are turned off, but filter and effector becomes stereo, and connected to after Looper.
-You can apply filter, filter volume, and effects against Looper recording. **See the signal diagram to understand how it works.**
+You can apply filter, filter volume, and effects against Looper recording. See the [signal diagram](#signal-diagram) to understand how it works.
 
-LFO and Envelopes(EG1 to EG4) is still available for filter modulation.
+LFO and Envelopes(EG1 to EG4) are still available for filter modulation.
 
-Extra processing can be recorded back to looper and this is powerful feature, you can bounce back looper recording with effects.
+Extra Processing can be recorded back to looper and this is powerful feature, you can bounce back looper recording with effects.
 
-	1. Stop the sequencer.
-	1. Select the recording track.
-	1. Turn on Extra Processing (PARAM + NO)
-	1. Set OVERDUB (REC+Looper Play) or REC (Rec+ Looper Play twice) 
-	1. Start the sequencer, looper start recording
-	1. Hit looper stop button to stop recording
+  1. Stop the sequencer
+  2. Select the recording track
+  3. Turn on Extra Processing (PARAM + NO)
+  4. Set OVERDUB (REC + Looper Play once) or REC (REC + Looper Play twice) 
+  5. Start the sequencer, and the looper starts recording
+  6. Hit the looper STOP button to stop recording
 
-The following parameters are still available with Extra processing:
+The following parameters are still available with Extra Processing:
 
 - All parameters in VCF sub-mode
 - VCF Mod Sel
@@ -1636,7 +1640,7 @@ CC# | Function
 84 | Morph
 
 ## Quick Setup with Third-party Software & Hardware
-The QUN synth can be setup quickly for use with third-party software and hardware by downloading the appropriate configuration file from [Configurations](./configurations). The following configurations files are currently available:
+The QUN synth can be setup quickly for use with third-party software and hardware by downloading the appropriate configuration file from the [Qun Configurations](./configurations) website. The following configurations files are currently available:
 
 * Native Instruments Maschine
 * Native Instruments Komplete Kontrol
