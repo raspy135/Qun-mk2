@@ -177,7 +177,7 @@ When | LED will show
 When the sequencer is running | The current position of the sequencer
 When trying to switch Scene, while pressing LOOPER PLAY | The current selected Scene
 When trying to switch Track, while pressing LOOPER REC | The current selected Track
-When trying to mute Trace, while pressing PARAM | The current mute status of the Tracks
+When trying to mute Track, while pressing PARAM | The current mute status of the Tracks
 When trying to switch Bucket, while pressing MODE PLAY | The current selected Bucket
 
 
