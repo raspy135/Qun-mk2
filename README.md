@@ -1,11 +1,12 @@
 # Contact
 
-- Email: info@nunomo.net
+- Email: [info@nunomo.net](mailto:info@nunomo.net)
 - Github: Open an issue if you have a GitHub account. It's the best place to submit bugs.
 - [Discord](https://discord.gg/kcvVTPkZVQ): Visit Nunomo's Discord server to chat about Qun, read announcements, and talk about events.
 - Social media links:
   - Instagram: [@nunomo1](https://www.instagram.com/nunomo1)
   - Twitter (Japanese): [@nunomo1](https://twitter.com/nunomo1)
+  - SoundCloud: [nunomo](https://soundcloud.com/user-425164341)
   - YouTube: [nunomollc](https://youtube.com/@nunomollc)
 
 
@@ -22,11 +23,14 @@
 * [Issues](https://github.com/raspy135/Qun-synthesizer/issues): Report issues when you have problems or questions.
 * [Firmware](./firmware): Firmware updates and instructions (see README.md).
 * [CheatSheet](./cheatsheet.pdf): A printable cheat sheet listing buttons, device modes and sub-modes, shortcuts, and synth instrument parameters.
+* Discord
 
-**We are looking for your feedback! For general impressions and feedback, please email them to info@nunomo.net or join Nunomo's Discord server!**
+**We are looking for your feedback! For general impressions and feedback, please email them to [info@nunomo.net](mailto:info@nunomo.net) or join Nunomo's [Discord server](https://discord.gg/kcvVTPkZVQ)!**
 
 
 ## Overview of the QUN mk2
+
+_An explanatory [video segment](https://www.youtube.com/watch?v=7dNhxKBtwPo) is available._
 
 Highlights:
 
@@ -45,7 +49,7 @@ More:
   * Clean 2 Oscillators. Cheap synthesizers compromise this part sometimes, but QUN has no-alias noise Oscillators. All of the internal calculation is done by floating point for sound quality.
   * Oscillators can be used as 1 oscillator per voice, or 2 oscillators per voice.
   * Voice can be configured as 4 voices (Quad mode) or 2 voices (Dual mono).
-  * The sound engine is compatible with Qun mk1. 
+  * The sound engine is compatible with Qun mk1 pocket synthesizer
   * Multiple QUN synths can be stacked to achieve a **Polyphonic** setup. 
   * Flexible MOD routing. 
   * 2 inputs can be used for **external audio signal**, or **external CV inputs**
@@ -298,12 +302,15 @@ When you save the preset or load the preset from bank 1 to 8, its name is used t
 
 ## Signal diagram
 
+_A sequence of [video segments](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=230s) is available introducing several of the diagrammed stages._
+
 Signal diagram helps to understand how Qun mk2 works.
 
 ![‎qun2_diagram](./manual_images/‎qun2_diagram.png)
 
 # Parameter Mode (Param)
 
+## Adjust synthesis parameters
 To operate, press B[1-8] to choose a parameter and rotate dial to change its value. The parameter display area will temporarily invert. A parameter's position in the display corresponds to the visual button assignment:
 
 ```
@@ -312,6 +319,7 @@ To operate, press B[1-8] to choose a parameter and rotate dial to change its val
 ```
 
 E.g. button 1 chooses the wave SHAPE parameter when in the OSCILLATOR1,2 sub-mode.
+
 
 ## PRM:OSCILLATOR1,2
 
@@ -341,6 +349,9 @@ Qun supports PWM. It affects Square wave oscillations normally: changing the dur
 
 
 ## PRM:MIX
+
+_A sequence of introductory [video segments](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=400s) is available._
+
 Mix controls mixer and effects.
 
 ![mix](./manual_images/mix.png)
@@ -366,6 +377,9 @@ Button | Description
 - Digital delay is BPM synchronized. It also can be used as beat repeat by setting 100% of feedback, and 100% of depth.
 
 ## PRM:ENV1/2
+
+_An explanatory [video segment](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=290s) is available._
+
 The synth has four Envelope generators. ENV1 and ENV2 are both independently and fully configurable. ENV3 and ENV4 share parameters. ENV3 / ENV4 is connected to FM operators when it's configured via FM ENV3 CONN.
 
 ![diagram_eg](manual_images/env12.png)
@@ -413,7 +427,11 @@ Button | Description
 8 | LFO Retrig. LFO’s phase is reset by every note hit when it is ON.
 
 ## PRM:VCF
+
+_A sequence of [video segments](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=480s) is available demonstrating the VCF, including the important VCF Volume parameter._
+
 ![diagram_vcf](manual_images/vcf.png)
+
 Button | Description
 ------|-------
 1 | CUTOFF
@@ -426,14 +444,15 @@ Button | Description
 8 | VCF LFO Volume. LFO modulation to VCF’s input volume. It can be used as a vibrato effect.
 
 ## PRM:KEY/OTHER
+
 Configures other parameters.
 
 ![other](./manual_images/other.png)
 
 Button | Description
 ------ | ------
-1 | VCF 4/2 POLE / NoLinear. Select VCF number of poles and linear or no linear. 2P/4P/2PNL/4PNL. Ladder filter algorithm will be used only when 4NL with Lowpass or Highpass filter. 
-2 | VCF ENV Src. Applying Envelopes to the signal after VCF. You might want to set OSC1/2's Env sel to "ON" to utilize this parameter. This is useful only with Mono mode. 
+1 | VCF 4/2 POLE / NoLinear. Select VCF number of poles and linear or no linear. 2P/4P/2PNL/4PNL. Ladder filter algorithm will be used only when 4NL with Lowpass or Highpass filter.
+2 | VCF ENV Src. Applying Envelopes to the signal after VCF. You might want to set OSC1/2's Env sel to "ON" to utilize this parameter. This is useful only with Mono mode. _A tutorial [video segment](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=672s) is available._
 3 | GLIDE. Smooth transition between notes. Works with Mono.
 4 | BEND RANGE. Pitch bend range.
 5 | OSC1/2 Keysync. This is a switch to connect MIDI input notes and oscillators. Y = Follow MIDI note pitch. N = Ignore MIDI note. You can still use FREQ1 and FREQ2 for modulation to use MIDI note pitch.
@@ -442,6 +461,9 @@ Button | Description
 8 | LFO BPM sync. LFO rate will synchronize with Sequencer's BPM when it is ON.
 
 ### Voice Mode
+
+_An explanatory [video segment](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=110s) is available._
+
 One synthesizer can be used as Monophonic or Quadphonic.
 
 - Mono = 2 OSCs for 1 voice
@@ -510,6 +532,8 @@ Oscillator (ABC)’s frequency (multiple of frequency of D).
 
 ## PRM:ENV3/4 / Other
 
+_An explanatory [video segment](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=480s) is available demonstrating wavefolding with ENV3/4 in the context of the VCF Volume parameter of the Mixer._
+
 ![fm2](./manual_images/fm2.png)
 
 Button | Description
@@ -524,7 +548,10 @@ Button | Description
 8 | ENV3/4 RELEASE
 
 ### 2nd Filter
-  Second filter can be used when you use the 2 pole filter for VCF. It's disabled when 4 pole is selected.
+
+_A brief [video segment](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=650s) is available._
+
+Second filter can be used when you use the 2 POLE filter for VCF. It's disabled when 4 POLE is selected. It provides additional shaping of the sound. 
 
 Mode | Description
 ------------ | -------------
@@ -598,7 +625,7 @@ MODE PLAY + PARAM + Turn Dial | Parameter Lock Morphing
 
 ## Sequencer overview
 
-A [tutorial video for the sequencer](https://www.youtube.com/watch?v=vZqdzkTQ1Mg) is available.
+_A [tutorial video for the sequencer](https://www.youtube.com/watch?v=vZqdzkTQ1Mg) is available._
 
 The sequencer is an 8/16 step sequencer. One page has 8/16 steps and it can have up to 4 pages.
 
@@ -633,6 +660,8 @@ While you are pressing B7+B8, the dial position will be recorded to the current 
 
 
 ## Parameter Locking
+
+_An intermediate [tutorial video](https://www.youtube.com/watch?v=wyU148xfGao&t=275s) is available._
 
 Parameter locking is the term used in Elektron sequencers, which is a temporary parameter change available only in the specific sequencer step. The parameter change appears only when the sequencer is playing the step. 
 
@@ -669,7 +698,7 @@ You can morph Parameter Locking between two patterns.
 
 ## Looper overview
 
-Tutorial video (https://www.youtube.com/watch?v=iD4WpX3tHUE)
+_A [tutorial video](https://www.youtube.com/watch?v=iD4WpX3tHUE) is available._
 
 The looper is designed to work with the sequencer. The looper always tries to sync with sequencer play. Looper won't start playing when the sequencer is not running. Use a blank sequencer pattern when you don't want to make sound from the sequencer.
 
@@ -716,7 +745,7 @@ TR | Current Track
 
 ## Insert recording
 
-An [introductory video](https://www.youtube.com/watch?v=N8N1X59RaVg) is available.
+_An [introductory video](https://www.youtube.com/watch?v=N8N1X59RaVg) is available._
 
 When you press REC + LOOPER PLAY 3 times, it enters Insert recording mode, this allows to record external effector result back to the looper. For example, you can apply reverb if you have a reverb pedal.
 
@@ -868,8 +897,9 @@ Right | 3rd of the note (Used with triplet)
 
 ### Playing note capturing from external MIDI keyboard
 
+_A [demo video](https://www.youtube.com/watch?v=aV2YL0idMHA) capturing external MIDI notes using the legacy Qun mk1 pocket synthesizer is available._
+
 Alternatively, you can step record notes by external MIDI keyboard. Play note by MIDI keyboard while you are pressing one of the eight buttons, the note will be recorded as the tune for the step. Chord playing can be captured as well.
-https://www.youtube.com/watch?v=aV2YL0idMHA
 
 ## PLY:SEQ CONFIG
 
@@ -932,6 +962,7 @@ the second/third pattern's scale will be ignored, and primary pattern's scale qu
 
 ![granular](./manual_images/granular.png)
 
+_Several videos of the Granular Engine are available: a [tutorial](https://www.youtube.com/watch?v=wEkmEXk_wRk), an [overview](https://www.youtube.com/watch?v=VE9lq5rr_YE) using the legacy Qun mk1 pocket synthesizer, a [brief demo](https://www.youtube.com/watch?v=BPVdobysstY), and a [wavetable-mimicing demo](https://www.youtube.com/watch?v=ssNfJuYejUM)._
 
 ### Overview
 
@@ -1140,7 +1171,7 @@ When you are in mixer mode, press SHIFT + NO again, or shift + turn dial to the 
 
 ### Extra Processing
 
-A [demonstration video](https://www.youtube.com/watch?v=RmhoXS-IHoA) is available. 
+_An intermediate [tutorial video segment](https://www.youtube.com/watch?v=wyU148xfGao&t=725s) and [demo video](https://www.youtube.com/watch?v=RmhoXS-IHoA) are available._ 
 
 This mode uses the sound engine as an effector to process external stereo input.
 
@@ -1165,8 +1196,8 @@ The following parameters are still available with Extra Processing:
 - All parameters in VCF sub-mode
 - VCF Mod Sel
 - VCF Volume
-- 2 / 4 pole
-- 2nd Filter (When VCF is 2 pole)
+- 2 / 4 POLE
+- 2nd Filter (When VCF is 2 POLE)
 - All parameters in LFO sub-mode
 -  Effector parameters (Type, Speed, Depth and Feedback)
 -  VCF ENV Src
@@ -1640,7 +1671,7 @@ CC# | Function
 84 | Morph
 
 ## Quick Setup with Third-party Software & Hardware
-The QUN synth can be setup quickly for use with third-party software and hardware by downloading the appropriate configuration file from the [Qun Configurations](./configurations) website. The following configurations files are currently available:
+The QUN synth can be setup quickly for use with third-party software and hardware by downloading the appropriate configuration file from [Configurations](./configurations). The following configurations files are currently available:
 
 * Native Instruments Maschine
 * Native Instruments Komplete Kontrol
