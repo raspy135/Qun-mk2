@@ -153,7 +153,7 @@ SHIFT + MODE PLAY | Dump current preset to MIDI OUT. This is useful to transfer 
 SHIFT + SYSTEM | All notes off
 SHIFT + PARAM | Initialize the preset. You can choose some templates: Blank, Sampler, EvenSlice, Scratch. Please see the [Initialize preset](#initialize-preset) section for detail. 
 SHIFT + SEQ PLAY + turn dial | Set BPM. Tap tempo by pressing SEQ PLAY 4 or more times while you keep pressing SHIFT. 
-MODE PLAY + turn dial | Record volume -- stay at -6.0dB or lower to avoid clipping.
+MODE PLAY + turn dial | Record volume -- stay at -6.0dB or lower to avoid clipping. _Tutorial: [video](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=770s) is available._
 MODE PLAY + SYSTEM + turn dial | looper master volume 
 SYSTEM + turn dial | VCF volume
 PARAM + turn dial | VCF cutoff
@@ -302,7 +302,7 @@ When you save the preset or load the preset from bank 1 to 8, its name is used t
 
 ## Signal diagram
 
-_A sequence of [video segments](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=230s) is available introducing several of the diagrammed stages._
+_Tutorial: [video segments](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=230s) are available for several stages._
 
 Signal diagram helps to understand how Qun mk2 works.
 
@@ -341,6 +341,8 @@ Buttons | Description
 
 ### Pulse Width Modulation (PWM)
 
+_Tutorial: [video](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=830s) is available._
+
 Qun supports PWM. It affects Square wave oscillations normally: changing the duration of the pulse of the wave. It affects other waveshapes in the following ways:
 
 - Triangle: Adds harmonics as well as DC bias
@@ -350,9 +352,9 @@ Qun supports PWM. It affects Square wave oscillations normally: changing the dur
 
 ## PRM:MIX
 
-_A sequence of introductory [video segments](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=400s) is available._
+_Tutorial: [video](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=400s) is available._
 
-Mix controls mixer and effects.
+Mix controls mixer and effects. It mixes OSC1/2 and other voices together.
 
 ![mix](./manual_images/mix.png)
 
@@ -360,9 +362,9 @@ Button | Description
 -------|--------
 1 | OSC MIX. Balance between OSC1 and OSC2
 2 | FM modulation OSC2 to OSC1
-3 | VCF Volume.  Input gain to VCF 
+3 | VCF Volume.  Input gain to VCF. _Tutorial: [video](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=480s) is available, illustrating wavefolding._
 4 | Line In / Mic gain
-5 | Effect type . Off, Delay, Chorus1, Chorus2, Flanger1, Flanger2, Crusher (Bit crusher), MDelay(Mono delay), DDelay(BPM Synchronized digital delay), RSVD(Reserved for the future update) 
+5 | Effect type. Off, Delay, Chorus1, Chorus2, Flanger1, Flanger2, Crusher (Bit crusher), MDelay (Mono delay), DDelay (BPM Synchronized digital delay), RSVD (Reserved for the future update). _Tutorial: [video](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=745s) is available._
 6 | Effect Speed. Controls Effect LFO rate or delay time. 
 7 | Effect Depth
 8 | Effect Feedback
@@ -378,7 +380,7 @@ Button | Description
 
 ## PRM:ENV1/2
 
-_An explanatory [video segment](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=290s) is available._
+_Tutorial: [video](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=290s) is available._
 
 The synth has four Envelope generators. ENV1 and ENV2 are both independently and fully configurable. ENV3 and ENV4 share parameters. ENV3 / ENV4 is connected to FM operators when it's configured via FM ENV3 CONN.
 
@@ -428,8 +430,6 @@ Button | Description
 
 ## PRM:VCF
 
-_A sequence of [video segments](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=480s) is available demonstrating the VCF, including the important VCF Volume parameter._
-
 ![diagram_vcf](manual_images/vcf.png)
 
 Button | Description
@@ -449,20 +449,21 @@ Configures other parameters.
 
 ![other](./manual_images/other.png)
 
-Button | Description
------- | ------
-1 | VCF 4/2 POLE / NoLinear. Select VCF number of poles and linear or no linear. 2P/4P/2PNL/4PNL. Ladder filter algorithm will be used only when 4NL with Lowpass or Highpass filter.
-2 | VCF ENV Src. Applying Envelopes to the signal after VCF. You might want to set OSC1/2's Env sel to "ON" to utilize this parameter. This is useful only with Mono mode. _A tutorial [video segment](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=672s) is available._
-3 | GLIDE. Smooth transition between notes. Works with Mono.
-4 | BEND RANGE. Pitch bend range.
-5 | OSC1/2 Keysync. This is a switch to connect MIDI input notes and oscillators. Y = Follow MIDI note pitch. N = Ignore MIDI note. You can still use FREQ1 and FREQ2 for modulation to use MIDI note pitch.
-6 | VELOCITY SW. Envelope generators become velocity sensitive when it’s ON.
-7 | MONO/QUAD/POLY (Voice mode). Long press to sync Oscillator parameters. See the [Voice Mode](#voice-mode) section for details. 
-8 | LFO BPM sync. LFO rate will synchronize with Sequencer's BPM when it is ON.
+Button | Long press | Description
+------ |-----| ------
+1 | -   | VCF 4/2 POLE / NoLinear. Select VCF number of poles and linear or no linear. 2P/4P/2PNL/4PNL. Ladder filter algorithm will be used only when 4NL with Lowpass or Highpass filter.
+2 | -   | VCF ENV Src. Applying Envelopes to the signal after VCF. You might want to set OSC1/2's Env sel to "ON" to utilize this parameter. This is useful only with Mono mode. _Tutorial: [video](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=672s) is available._
+3 | -   | GLIDE. Smooth transition between notes. Works with Mono.
+4 | -   | BEND RANGE. Pitch bend range.
+5 | -   | OSC1/2 Keysync. This is a switch to connect MIDI input notes and oscillators. Y = Follow MIDI note pitch. N = Ignore MIDI note. You can still use FREQ1 and FREQ2 for modulation to use MIDI note pitch.
+6 | -   | VELOCITY SW. Envelope generators become velocity sensitive when it’s ON.
+7 | -   | MONO/QUAD/POLY (Voice mode).  See the [Voice Mode](#voice-mode) section for details. 
+7 | Yes | Sync Oscillator parameters.  See the [Voice Mode](#voice-mode) section for details. _Tutorial: [video](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=925s) is available._
+8 | -   | LFO BPM sync. LFO rate will synchronize with Sequencer's BPM when it is ON.
 
 ### Voice Mode
 
-_An explanatory [video segment](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=110s) is available._
+_Tutorial: [video](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=110s) is available._
 
 One synthesizer can be used as Monophonic or Quadphonic.
 
@@ -472,15 +473,16 @@ One synthesizer can be used as Monophonic or Quadphonic.
 - PolyQuad = 1 OSC per voice. It's for Polyphonic setup when you have multiple Qun synthesizers.
 
 When the mode is Quad or Poly Quad, MIX  and "OSC2 Env Src" are ignored. MIX is always set to middle, and OSC2 Env Src is always set to EG2. In most cases you may want to use the same parameters between OSC1 to OSC2 with Quad mode. 
+
 To copy the parameters from OSC1 to OSC2 (and EG1 and EG2), long press button 7. "OSCs synched" message will be shown. 
 	
-Here is an example to set up Quad mode:
+_Workflow: set up Quad mode._
 
-	1. Initialize tone.
-	2. Configure OSC1 as you like.
-	3. Set this parameter to "Quad" mode by pressing button 7.
-	4. If you want to copy OSC1 parameters to OSC2, in the same sub-mode, long press button 7 until the "OSCs synched" message is shown.
-	5. Play two notes by external MIDI keyboard. You will hear four voices.
+1. Initialize tone.
+2. Configure OSC1 as you like.
+3. Set this parameter to "Quad" mode by pressing button 7.
+4. If you want to copy OSC1 parameters to OSC2, in the same sub-mode, long press button 7 until the "OSCs synched" message is shown.
+5. Play two notes by external MIDI keyboard. You will hear four voices.
 
 
 Poly Mono can be used when you want 2 voices with 2 OSCs per voice configuration.
@@ -532,15 +534,13 @@ Oscillator (ABC)’s frequency (multiple of frequency of D).
 
 ## PRM:ENV3/4 / Other
 
-_An explanatory [video segment](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=480s) is available demonstrating wavefolding with ENV3/4 in the context of the VCF Volume parameter of the Mixer._
-
 ![fm2](./manual_images/fm2.png)
 
 Button | Description
 --------|--------
 1 | 2ND FILTER. See the [2nd Filter](#2nd-filter) section for details.
 2 | FM FREQ SNAP SW. Frequency snapping for FM. When it's ON, FM frequency will be snapped to numbers. When it's OFF, FM has more character, the signature sound of the QUN synth.
-3 | Wavefolding. Wevefolding curve selection. This filter is located in VCF.
+3 | Wavefolding. Wavefolding curve selection. This filter is located in VCF.
 4 | FM ENV3 CONN. Select FM operator(s) to connect ENV3/4. After the processing, it will be filtered by ENV1 or ENV2.
 5 | ENV3/4 ATTACK
 6 | ENV3/4 DECAY
@@ -905,16 +905,23 @@ Alternatively, you can step record notes by external MIDI keyboard. Play note by
 
 ![conf](./manual_images/conf.png)
 
-Button | Function
------------- | -------------
-1 | 16th Swing / Long press for Sequencer MIDI channel out. Long press button 6 for 8th swing. Combination of 16th and 8th swing is great for sloppy off-grid feeling. 
-2 | Key (for scale). / Long press for 2nd pattern 
-3 | Scale. Playing note will be quantized by this scale. / Long press for 3rd pattern 
-4 | Sequencer loop count. Default is 8.  / Long press for Morph pattern.
-5 | BPM factor. Playing speed can be double, normal, 1/2, 1/4 or 1/8.  / Long press for note Lower Limit 
-6 | Velocity accent period (steps). / Long press for 8th swing 
-7 | Velocity for the non-accent notes. / Long press for note Upper Limit 
-8 | Velocity accent Period Offset 
+Button | Long press |  Function
+- |-----| -------------
+1 | -   | 16th Swing  _Tip: Combination of 16th and 8th swing (see button 6) is great for sloppy off-grid feeling._ 
+1 | Yes | Sequencer MIDI channel out.
+2 | -   | Key (for scale). 
+2 | Yes | 2nd pattern 
+3 | -   | Scale. Playing note will be quantized by this scale. 
+3 | Yes | 3rd pattern 
+4 | -   | Sequencer loop count. Default is 8.
+4 | Yes | Morph pattern.
+5 | -   | BPM factor. Playing speed can be double, normal, 1/2, 1/4 or 1/8.  
+5 | Yes | Note Lower Limit 
+6 | -   | Velocity accent period (steps). 
+6 | Yes | 8th swing 
+7 | -   | Velocity for the non-accent notes. 
+7 | Yes | Note Upper Limit 
+8 | -   | Velocity accent Period Offset 
 
 Velocity period settings (Button 6 - 8) provide a convenient way to make rhythmic velocity.
 
@@ -927,11 +934,11 @@ Note lower and upper limit will limit the range of note. When the sequencer rece
 ### Running multiple sequence patterns
 You can run multiple sequence patterns at the same time, up to 3 patterns by setting "2nd pattern" (Long press button 2) or/and "3rd pattern" (Long press button 3), or using the shortcut shown below.
 
-Button | Function
------------- | -------------
-2 in SEQ CFG sub-mode | Long press for 2nd pattern 
-3 in SEQ CFG sub-mode | Long press for 3rd pattern 
-SEQ PLAY + B[1-8] (Primary pattern) + B[1-8] (2nd pattern) in any sub-mode | This is a shortcut to select parallel pattern select. If you press another button while you keep pressing the primary pattern button, then it will be for the 3rd pattern(If you release the primary pattern button, it will become **Pattern chaining**). Assign the same pattern one more time to erase the assignment. Only normal parallel pattern ("R0") can be selected. 
+Button | Long press | Function
+------------ |-----| -------------
+2 in SEQ CFG sub-mode | Yes | 2nd pattern 
+3 in SEQ CFG sub-mode | Yes | 3rd pattern 
+SEQ PLAY + B[1-8] (Primary pattern) + B[1-8] (2nd pattern) in any sub-mode | -   | This is a shortcut to select parallel pattern select. If you press another button while you keep pressing the primary pattern button, then it will be for the 3rd pattern(If you release the primary pattern button, it will become **Pattern chaining**). Assign the same pattern one more time to erase the assignment. Only normal parallel pattern ("R0") can be selected. 
 
 The status is shown like this:
 
