@@ -448,17 +448,17 @@ Configures other parameters.
 
 ![other](./manual_images/other.png)
 
-Button | Long press | Description
------- |-----| ------
-1 | -   | VCF 4/2 POLE / NoLinear. Select VCF number of poles and linear or no linear. 2P/4P/2PNL/4PNL. Ladder filter algorithm will be used only when 4NL with Lowpass or Highpass filter.
-2 | -   | VCF ENV Src. Applying Envelopes to the signal after VCF. You might want to set OSC1/2's Env sel to "ON" to utilize this parameter. This is useful only with Mono mode. _Tutorial: [video](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=672s) is available._
-3 | -   | GLIDE. Smooth transition between notes. Works with Mono.
-4 | -   | BEND RANGE. Pitch bend range.
-5 | -   | OSC1/2 Keysync. This is a switch to connect MIDI input notes and oscillators. Y = Follow MIDI note pitch. N = Ignore MIDI note. You can still use FREQ1 and FREQ2 for modulation to use MIDI note pitch.
-6 | -   | VELOCITY SW. Envelope generators become velocity sensitive when it’s ON.
-7 | -   | MONO/QUAD/POLY (Voice mode).  See the [Voice Mode](#voice-mode) section for details. 
-7 | Yes | Sync Oscillator parameters.  See the [Voice Mode](#voice-mode) section for details. _Tutorial: [video](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=925s) is available._
-8 | -   | LFO BPM sync. LFO rate will synchronize with Sequencer's BPM when it is ON.
+Button | Description
+|------ | ------|
+1 | VCF 4/2 POLE / NoLinear. Select VCF number of poles and linear or no linear. 2P/4P/2PNL/4PNL. Ladder filter algorithm will be used only when 4NL with Lowpass or Highpass filter.
+2 | VCF ENV Src. Applying Envelopes to the signal after VCF. You might want to set OSC1/2's Env sel to "ON" to utilize this parameter. This is useful only with Mono mode. _Tutorial: [video](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=672s) is available._
+3 | GLIDE. Smooth transition between notes. Works with Mono.
+4 | BEND RANGE. Pitch bend range.
+5 | OSC1/2 Keysync. This is a switch to connect MIDI input notes and oscillators. Y = Follow MIDI note pitch. N = Ignore MIDI note. You can still use FREQ1 and FREQ2 for modulation to use MIDI note pitch.
+6 | VELOCITY SW. Envelope generators become velocity sensitive when it’s ON.
+7 | MONO/QUAD/POLY (Voice mode).  See the [Voice Mode](#voice-mode) section for details. 
+7 (Long press) | Sync Oscillator parameters.  See the [Voice Mode](#voice-mode) section for details. _Tutorial: [video](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=925s) is available._
+8 | LFO BPM sync. LFO rate will synchronize with Sequencer's BPM when it is ON.
 
 ### Voice Mode
 
@@ -904,23 +904,23 @@ Alternatively, you can step record notes by external MIDI keyboard. Play note by
 
 ![conf](./manual_images/conf.png)
 
-Button | Long press |  Function
-- |-----| -------------
-1 | -   | 16th Swing  _Tip: Combination of 16th and 8th swing (see button 6) is great for sloppy off-grid feeling._ 
-1 | Yes | Sequencer MIDI channel out.
-2 | -   | Key (for scale). 
-2 | Yes | 2nd pattern 
-3 | -   | Scale. Playing note will be quantized by this scale. 
-3 | Yes | 3rd pattern 
-4 | -   | Sequencer loop count. Default is 8.
-4 | Yes | Morph pattern.
-5 | -   | BPM factor. Playing speed can be double, normal, 1/2, 1/4 or 1/8.  
-5 | Yes | Note Lower Limit 
-6 | -   | Velocity accent period (steps). 
-6 | Yes | 8th swing 
-7 | -   | Velocity for the non-accent notes. 
-7 | Yes | Note Upper Limit 
-8 | -   | Velocity accent Period Offset 
+Button |  Function
+|- | -------------|
+1 | 16th Swing  _Tip: Combination of 16th and 8th swing (see button 6) is great for sloppy off-grid feeling._ 
+1 (Long press) | Sequencer MIDI channel out.
+2 | Key (for scale). 
+2 (Long press) | 2nd pattern 
+3 | Scale. Playing note will be quantized by this scale. 
+3 (Long press) | 3rd pattern 
+4 | Sequencer loop count. Default is 8.
+4 (Long press) | Morph pattern.
+5 | BPM factor. Playing speed can be double, normal, 1/2, 1/4 or 1/8.  
+5 (Long press) | Note Lower Limit 
+6 | Velocity accent period (steps). 
+6 (Long press) | 8th swing 
+7 | Velocity for the non-accent notes. 
+7 (Long press) | Note Upper Limit 
+8 | Velocity accent Period Offset 
 
 Velocity period settings (Button 6 - 8) provide a convenient way to make rhythmic velocity.
 
@@ -933,11 +933,11 @@ Note lower and upper limit will limit the range of note. When the sequencer rece
 ### Running multiple sequence patterns
 You can run multiple sequence patterns at the same time, up to 3 patterns by setting "2nd pattern" (Long press button 2) or/and "3rd pattern" (Long press button 3), or using the shortcut shown below.
 
-Button | Long press | Function
------------- |-----| -------------
-2 in SEQ CFG sub-mode | Yes | 2nd pattern 
-3 in SEQ CFG sub-mode | Yes | 3rd pattern 
-SEQ PLAY + B[1-8] (Primary pattern) + B[1-8] (2nd pattern) in any sub-mode | -   | This is a shortcut to select parallel pattern select. If you press another button while you keep pressing the primary pattern button, then it will be for the 3rd pattern(If you release the primary pattern button, it will become **Pattern chaining**). Assign the same pattern one more time to erase the assignment. Only normal parallel pattern ("R0") can be selected. 
+Button | Function
+|------------ | -------------|
+2 in SEQ CFG sub-mode (Long press) | 2nd pattern 
+3 in SEQ CFG sub-mode (Long press) | 3rd pattern 
+SEQ PLAY + B[1-8] (Primary pattern) + B[1-8] (2nd pattern) in any sub-mode | This is a shortcut to select parallel pattern select. If you press another button while you keep pressing the primary pattern button, then it will be for the 3rd pattern(If you release the primary pattern button, it will become **Pattern chaining**). Assign the same pattern one more time to erase the assignment. Only normal parallel pattern ("R0") can be selected. 
 
 The status is shown like this:
 
