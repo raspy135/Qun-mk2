@@ -2,7 +2,7 @@
 
 - Email: [info@nunomo.net](mailto:info@nunomo.net)
 - GitHub: Open an issue if you have a GitHub account. It's the best place to submit bugs.
-- [Discord](https://discord.gg/kcvVTPkZVQ): Visit Nunomo's Discord server to chat about Qun, read announcements, and talk about events.
+- Discord: Visit [Nunomo's Discord server](https://discord.gg/kcvVTPkZVQ) to chat about Qun, read announcements, and talk about events.
 - Social media links:
   - Instagram: [@nunomo1](https://www.instagram.com/nunomo1)
   - Twitter (Japanese): [@nunomo1](https://twitter.com/nunomo1)
@@ -23,9 +23,8 @@
 * [Issues](https://github.com/raspy135/Qun-synthesizer/issues): Report issues when you have problems or questions.
 * [Firmware](./firmware): Firmware updates and instructions (see README.md).
 * [CheatSheet](./cheatsheet.pdf): A printable cheat sheet listing buttons, device modes and sub-modes, shortcuts, and synth instrument parameters.
-* Discord
 
-**We are looking for your feedback! For general impressions and feedback, please email them to [info@nunomo.net](mailto:info@nunomo.net) or join Nunomo's [Discord server](https://discord.gg/kcvVTPkZVQ)!**
+**We are looking for your feedback! For general impressions and feedback, please email them to [info@nunomo.net](mailto:info@nunomo.net) or join [Nunomo's Discord server](https://discord.gg/kcvVTPkZVQ)!**
 
 
 ## Overview of the QUN mk2
@@ -1059,6 +1058,8 @@ And so on. As you see C4 and F#4 has 5 half-tone distance. It can be used for me
 In Repeat modes, multiple slicing points are randomly selected when the length is not zero.
 
 ### Live slicing
+
+_Tutorial: [video](https://www.youtube.com/watch?v=YqOcnWoZYG8) is available._
 
 Live slicing (Making slices by pressing buttons while you are playing sample) can be done when you set GRN mode to ONE mode. Here is the steps to perform live slicing:
 
