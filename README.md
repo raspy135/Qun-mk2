@@ -1279,6 +1279,50 @@ When the **Parameter Caption** is On, the parameter name will be shown when you 
 
 **Master Volume** controls hardware volume of the audio chip. Normally MAX(Default) is recommended. This is useful when your effector or recorder doesn't expect line level input.
 
+# WiFi configuration
+(+4.90) WiFi can be enable and used to import/export samples.
+
+## WiFi setup
+
+Create `config.toml` in your SD card root folder.
+Here is the syntax of the config file.
+
+```
+[wifi]
+ssid = "your_ssid"
+password = "your_password"
+```
+You can download this template from GitHub.
+
+Copy the file to the root folder of SD card, and reboot the device to enable Wifi.
+
+ESP32 chip only supports 2.4GHz network.
+
+![wifi_screenshot](.\manual_images\wifi.png)
+
+When you connected to WiFi successfully, you will see small "i" at the right bottom corner.  The icon disappears when WiFi is disconnected.
+
+## Accessing to qun mk2 web page
+
+From the computer that connects to the same WiFi network, go the following URL (It's not https):
+```
+http://qunmk2.local/
+```
+
+Then you will see the following page:
+
+![webpage_screenshot](.\manual_images\web_console.png)
+
+## Web page operation
+
+- It will show the looper recording files on the left side. You can listen to it, or download it.
+- The right side is for uploading wav file. It has to be 48kHz, 16bit.
+- Importing / exporting files while sound is playing might cause performance issues.
+
+## Turn on/off WiFi
+
+You can turn on/off WiFi in system menu, it's located after system2 menu. It's on when booting.
+
 # Appendix
 
 ## Touch Slider

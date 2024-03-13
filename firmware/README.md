@@ -13,7 +13,7 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
-- v4.90
+- v4.90(Beta)
   
   - Behavior change: :Looper paste(REC+OK) will do overdub, and create a file for undo.
   
