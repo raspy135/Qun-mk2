@@ -13,12 +13,26 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v4.90
+  
+  - Behavior change: :Looper paste(REC+OK) will do overdub, and create a file for undo.
+  
+  - New feature: Looper Copy or Cut can choose when you cut track(REC + NO).
+  
+  - New feature: Copy, Cut, and Paste supports stereo pair track (A+B or B+C)
+  
+  - Undo is available when pasting.
+  
+  - New feature: Wifi support is added, you can load looper samples from the synth to PC, or PC to the synth. You can also load samples to Granular. See the manual for the detail.
+  
+  - Behavior change: Rec volume is set default to -9.0dB to make more room for looper overdub.
+  
 - v4.89
-  
+
   - Bug fix: Sometime sample reload is not performed with bucket switch
-  
+
   - Bug fix: Envelope with Extra processing had occasional value jump, which might cause pop noise.
-  
+
 - v4.88
 
   - v4.87 was broken
