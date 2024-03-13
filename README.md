@@ -29,7 +29,7 @@
 
 ## Overview of the QUN mk2
 
-_An explanatory [video segment](https://www.youtube.com/watch?v=7dNhxKBtwPo) is available._
+_[Video](https://www.youtube.com/watch?v=7dNhxKBtwPo) is available._
 
 Highlights:
 
@@ -301,7 +301,7 @@ When you save the preset or load the preset from bank 1 to 8, its name is used t
 
 ## Signal diagram
 
-_Tutorial: [video segments](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=230s) are available for several stages._
+_Tutorial: [video](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=230s) is available for several stages._
 
 Signal diagram helps to understand how Qun mk2 works.
 
@@ -548,7 +548,7 @@ Button | Description
 
 ### 2nd Filter
 
-_A brief [video segment](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=650s) is available._
+_Tutorial: [video](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=650s) is available._
 
 Second filter can be used when you use the 2 POLE filter for VCF. It's disabled when 4 POLE is selected. It provides additional shaping of the sound. 
 
@@ -624,7 +624,7 @@ MODE PLAY + PARAM + Turn Dial | Parameter Lock Morphing
 
 ## Sequencer overview
 
-_A [tutorial video for the sequencer](https://www.youtube.com/watch?v=vZqdzkTQ1Mg) is available._
+_Tutorial: [video](https://www.youtube.com/watch?v=vZqdzkTQ1Mg) is available._
 
 The sequencer is an 8/16-step sequencer. One page has 8/16 steps, and it can have up to 4 pages.
 
@@ -660,7 +660,7 @@ While you are pressing B7+B8, the dial position will be recorded to the current 
 
 ## Parameter Locking
 
-_An intermediate [tutorial video](https://www.youtube.com/watch?v=wyU148xfGao&t=275s) is available._
+_Tutorial: [video](https://www.youtube.com/watch?v=wyU148xfGao&t=275s) is available._
 
 Parameter locking is the term used in Elektron sequencers, which is a temporary parameter change available only in the specific sequencer step. The parameter change appears only when the sequencer is playing the step. 
 
@@ -697,7 +697,7 @@ You can morph Parameter Locking between two patterns.
 
 ## Looper overview
 
-_A [tutorial video](https://www.youtube.com/watch?v=iD4WpX3tHUE) is available._
+_Tutorial: [video](https://www.youtube.com/watch?v=iD4WpX3tHUE) is available._
 
 The looper is designed to work with the sequencer. The looper always tries to sync with sequencer play. Looper won't start playing when the sequencer is not running. Use a blank sequencer pattern when you don't want to make sound from the sequencer.
 
@@ -744,7 +744,7 @@ TR | Current Track
 
 ## Insert recording
 
-_An [introductory video](https://www.youtube.com/watch?v=N8N1X59RaVg) is available._
+_Tutorial: [video](https://www.youtube.com/watch?v=N8N1X59RaVg) is available._
 
 When you press REC + LOOPER PLAY 3 times, it enters Insert recording mode, this allows to record external effector result back to the looper. For example, you can apply reverb if you have a reverb pedal.
 
@@ -896,7 +896,7 @@ Right | 3rd of the note (Used with triplet)
 
 ### Playing note capturing from external MIDI keyboard
 
-_A [demo video](https://www.youtube.com/watch?v=aV2YL0idMHA) capturing external MIDI notes using the legacy Qun mk1 pocket synthesizer is available._
+_[Video](https://www.youtube.com/watch?v=aV2YL0idMHA) demo is available with the legacy Qun mk1 pocket synthesizer._
 
 Alternatively, you can step record notes by external MIDI keyboard. Play note by MIDI keyboard while you are pressing one of the eight buttons, the note will be recorded as the tune for the step. Chord playing can be captured as well.
 
