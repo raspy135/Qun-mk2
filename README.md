@@ -29,7 +29,7 @@
 
 ## Overview of the QUN mk2
 
-_Demo: [video](https://www.youtube.com/watch?v=We02ZQKIN9g&t=1s), in-depth tutorial [basics video](https://www.youtube.com/watch?v=sSR3ob0aQUM&t=1s), and in-depth tutorial [sound engine video](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=1s) are available._
+_Demo: [video](https://www.youtube.com/watch?v=We02ZQKIN9g&t=1s) is available. Tutorial: [playlist](https://www.youtube.com/playlist?list=PLXo02FgbP9F7cfGMUTblNiX6pUctUGqRD) is available. Find more videos throughout this document._
 
 Highlights:
 
@@ -109,6 +109,8 @@ System | Loading and saving data, and changing system settings.
 Param | Parameter mode: Changing the synthesizer’s instrument parameters.
 
 ## BASIC OPERATION
+
+Tutorial: in-depth [basics video](https://www.youtube.com/watch?v=sSR3ob0aQUM&t=1s) is available.
 
 Each major mode has selectable sub-modes. Many sub-modes have editable parameters.
 
@@ -949,7 +951,7 @@ Button |  Function
 
 Velocity period settings (Button 6 - 8) provide a convenient way to make rhythmic velocity.
 
-Sequencer MIDI channel out is useful setting with external synthesizer. When you set it, the sequencer starts to emit MIDI out signal to external synthesizers. If you set Channel + "N" such as "1N", it won't trigger internal sound engine.
+Sequencer MIDI channel out is useful setting with external synthesizer. When you set it, the sequencer starts to emit MIDI out signal to external synthesizers. If you set Channel + "N" such as "1N", it won't trigger internal sound engine. _Demo: [video](https://www.youtube.com/watch?v=5HG3B8LYQF4) is available._
 
 Morph pattern is used for Parameter Lock Morphing. Please refer "Parameter Lock Morphing" section in this manual.
 
