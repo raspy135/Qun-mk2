@@ -110,19 +110,22 @@ Param | Parameter mode: Changing the synthesizer’s instrument parameters.
 
 ## BASIC OPERATION
 
-Each major mode has selectable sub-modes. For example, the Param major mode has an `OSC1` sub-mode which configures Oscillator 1, and the Play major mode has a `PIANO` sub-mode which allow direct playing of notes using the [1-8] buttons.
+Each major mode has selectable sub-modes. Many sub-modes have editable parameters.
+
+For example, the Param major mode has an `OSC1` sub-mode which configures Oscillator 1, and the Play major mode has a `PIANO` sub-mode which allow direct playing of notes using the [1-8] buttons.
 
 * To switch sub-mode, press SHIFT + [1-8] button or NO/OK buttons to change sub-mode.
   * After you enter the sub-mode you want, press [1-8] button to select a parameter.
   * See the names printed on the device for sub-modes of Param and Play major modes. For example, look underneath the [1-8] buttons and see `OSC1` and `PIANO`.
   * Alternatively, you can select sub-mode by press SHIFT + turn the dial.
   * Alternatively, you can select sub-mode by Double-clicking MODE PLAY button or PARAM button then press [1-8] button.
-* Press one of 8 buttons + rotate dial = Change parameter
-* Rotate the dial = Change the current parameter.
-* Long press the button to show the parameter full name and value.
-* Double click the button to enter relative mode. The value adjustment will be relative.
+* To operate on parameter values, first press [1-8] button to pick the current parameter 
+  * Press one of 8 buttons + rotate dial = Change parameter value.
+  * Rotate the dial = Change the current parameter.
+  * Long press the button to show the parameter full name and value.
+  * Double click + hold the button to enter relative mode. The dial value adjustment will be relative. _Tutorial: [video](https://youtu.be/6uP1LoAZ9nE?t=11) is available._
+  * If you want to do fine value adjustment, you can use NO/OK buttons to change the value by 1. To do this, keep pressing one of 8 buttons and press NO or OK button.
 * For initial training, referring to the [Qun cheatsheet](./cheatsheet.pdf) can be useful. Also seeing the parameter name when changing its value is useful for training: turn on Parameter Caption mode in System2 menu, button 3.
-* If you want to do fine value adjustment, you can use NO/OK buttons to change the value by 1. To do this, keep pressing one of 8 buttons and press NO or OK button.
 
 Button | Primary function
 ------------ | -------------
@@ -811,9 +814,23 @@ Use Preset Bucket to keep preset settings. You can recall tone preset and patter
 
 ## PLY:PLAY PIANO
 
+_Demo [video](https://www.youtube.com/watch?v=WVT4ovd2yOc) is available._
+
 ![piano](./manual_images/piano.png)
 
-The mode is simple piano playing mode. Default is chromatic scale, but the scale and key can be changed by the scale setting in SEQ Config mode. Turn dial to transpose.
+The mode is simple piano playing mode. Default is chromatic scale, but the scale and key can be changed by the scale setting in SEQ Config mode. Turn dial to transpose. 
+
+_Workflow: Play notes quantized to a scale with one button and dial._
+
+1. Optional: set up the instrument for chording
+   1. Press MODE PARAM
+   2. Press SHIFT + B8 for OTHER
+   3. Hold B7 + dial to set QUAD voice
+2. Press MODE PLAY
+3. Press SHIFT + B7 for CFG
+4. Hold B3 + dial (or NO/OK) to desired scale. Default is Acoustic. Try Iwato scale.
+5. Press SHIFT + B1 for PIANO
+6. Play B[1-8] and turn dial. Play chords (several B[1-8]) if you set QUAD voice.
 
 ### Temporary piano mode
 You can activate Piano mode anytime by keep pressing SYSTEM + [1-8] button. You can change transpose by turning dial once piano mode is activated.
@@ -837,7 +854,7 @@ Button | Function
 
 The Modifier is powerful feature, it will give algorithmic effects to the pattern. Those effects will be applied to current pattern without breaking the pattern data.  Also, you can apply modifiers to the pattern to make the effect as permanent.
 
-- Transpose will add offset to the pattern. Scale quantize (SEQ Config button 3) will help to keep the result musical.
+- Transpose will add offset to the pattern. Scale quantize (SEQ Config button 3) will help to keep the result musical. _Demo [video](https://youtu.be/WVT4ovd2yOc) is available._
 - Width Offset will change the note length.
 - Randomness will add some randomness to playing notes.  Scale quantize (SEQ Config button 3) will help to keep the result musical.
 - Arpeggiator will add note offset. Scale quantize (SEQ Config button 3) is important to generate usable Arpeggiator result.
@@ -949,7 +966,12 @@ The second number after "R" means period length for relative pattern run.
 
 **You can edit the second/third pattern while playing.** To do this, just select second or third pattern while playing. The primary pattern won't be changed.
 
-If you select R1 to R8, the second (or third) pattern will run as relative pitch to the primary pattern.
+#### Relative pattern sequencing
+
+_Demo: [video](https://www.youtube.com/watch?v=SB8dgMBx_Ts&t=210s) is available._
+
+If you select R1 to R8, the second (or third) pattern will run as relative pitch to the primary pattern. 
+
 In this setting, C5 is the center (zero). The sequencer will update the transpose every configured period (R1 to R8) by looking at the current pitch in the primary pattern.
 
 ![relative_sequencing](./manual_images/relative_sequencing.png)
@@ -962,13 +984,13 @@ If you set "R2" for the pattern, the transpose for the pattern will be updated e
 
 **In relative run mode,  you need to specify tune for all steps, even for untriggered steps to tell the second/third pattern the transposing.**
 
-the second/third pattern's scale will be ignored, and primary pattern's scale quantize will be applied.
+The second/third pattern's scale will be ignored, and primary pattern's scale quantize will be applied.
 
-## PLY: Granular
-
-![granular](./manual_images/granular.png)
+## PLY:Granular
 
 _Several videos of the Granular Engine are available: a [tutorial](https://www.youtube.com/watch?v=wEkmEXk_wRk), an [overview](https://www.youtube.com/watch?v=VE9lq5rr_YE) using the legacy Qun mk1 pocket synthesizer, a [brief demo](https://www.youtube.com/watch?v=BPVdobysstY), and a [wavetable-mimicing demo](https://www.youtube.com/watch?v=ssNfJuYejUM)._
+
+![granular](./manual_images/granular.png)
 
 ### Overview
 
@@ -1015,7 +1037,7 @@ SHIFT + LOOPER PLAY | Load Recording data from SD card.   Dial or button 7 or bu
 
 LOOPER buttons acts as sample player in granular mode.
 
-#### sample processing
+#### Sample processing
 
 You can process samples.
 
@@ -1061,7 +1083,9 @@ In Repeat modes, multiple slicing points are randomly selected when the length i
 
 _Tutorial: [video](https://www.youtube.com/watch?v=YqOcnWoZYG8) is available._
 
-Live slicing (Making slices by pressing buttons while you are playing sample) can be done when you set GRN mode to ONE mode. Here is the steps to perform live slicing:
+Live slicing makes slices by pressing buttons while you are playing a sample. Live slicing can be done when you set GRN mode to ONE mode. 
+
+_Workflow: perform live slicing._
 
 1. Initialize a preset with "Slice" template. (Shift + PARAM and select "Slice"). Or set up the parameters by yourself. Make sure GRN mode is ONE.
 2. Go Granular mode and load sample or record sample
@@ -1072,18 +1096,19 @@ Live slicing (Making slices by pressing buttons while you are playing sample) ca
 
 ### Vinyl record scratch mode
 
+_Tutorial: [video](https://www.youtube.com/watch?v=6uP1LoAZ9nE) is available._
+
 ![granular](./manual_images/scratch.png)
 
-Press SHIFT + Button 1 in piano mode one more time to enter record scratch mode.(Or SHIFT + turn dial in play mode)
 Record scratch mode is an emulation of analog record scratching by using Granular's sample buffer.
+
+Press SHIFT + Button 1 in piano mode one more time to enter record scratch mode. Or, SHIFT + turn dial through the sub-modes when in play mode. Qun may show instructions on screen to set certain settings for Scratch mode.
 
 To use record scratch mode, you need to set the following settings, or using "Scratch" template from preset initialize menu:
 1. Granular mode set to ONE
 2. Select OSC1's shape to AUX L
 3. Set OSC1's octave to +1
 4. OSC1 Env Sel to "ON" (Parameter mode, Switch menu, button 1) to disable envelope. Or you can set it to other sources to automate crossfade slider.
-
-
 
 
 Button | Function
@@ -1370,11 +1395,13 @@ You can turn on/off WiFi in system menu, it's located after system2 menu. It's o
 
 ## Touch Slider
 
+_Tutorial: [video](https://www.youtube.com/watch?v=1edNSSLNFIo) is available._
+
 The four buttons located at the bottom board (Play, Set, Vol-, Vol+) can be used as a touch slider. Place your finger on the Buttons and slide.
 
 Configure Slider assignment (System2, button 7) to activate the slider. 
 
-If you want to assign the slider to other than pre-defined ones, assign it to Mod wheel (or other MIDI CC parameters), and you can use MIDI learning to assign Mod wheel to any available synth parameters. See MIDI learning section for detail.
+If you want to assign the slider to other than pre-defined ones, assign it to Mod wheel (or other MIDI CC parameters), and you can use MIDI learning to assign Mod wheel to any available synth parameters. See [MIDI learning](#midi-learning) section for details.
 
 Note: Qun mk2's bottom board is generic development board. Touch buttons are not ideal for touch slider use, so the experience is not the best.
 
@@ -1384,7 +1411,7 @@ If you received Qun mk2 synth before firmware v4.02, you need to change DIP swit
 
 All switches should be Down to activate Touch Slider.
 
-[Instruction video](./manual_images/qunmk2dips.mp4)
+_Instruction: [video](./manual_images/qunmk2dips.mp4) is available._
 
 ![dipswitch](./manual_images/dipswitch.jpg)
 
