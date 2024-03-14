@@ -630,7 +630,7 @@ MODE PLAY + PARAM + Turn Dial | Parameter Lock Morphing
 
 ## Sequencer overview
 
-_Tutorial: [video](https://www.youtube.com/watch?v=vZqdzkTQ1Mg) is available._
+_Tutorial: [video](https://www.youtube.com/watch?v=vZqdzkTQ1Mg&t=1s) is available._
 
 The sequencer is an 8/16-step sequencer. One page has 8/16 steps, and it can have up to 4 pages.
 
@@ -642,13 +642,17 @@ You can run multiple sequencer at the same time, up to three patterns, as normal
 
 ### Sequencer live recording
 
-You can record live playing to the sequencer. Rec + SEQ PLAY to start recording. Play on Piano mode or play with an external MIDI keyboard to record notes. It's always overdubbing.  Note, Width(length), and velocity will be recorded.
+You can record live playing to the sequencer. Rec + SEQ PLAY to start recording. Play on Piano mode or play with an external MIDI keyboard to record notes. It's always overdubbing.  Note, Width (length), and velocity will be recorded.
+
 Sequencer playing position indicator changes when live recording.
-	Normal:
-	![seq_normal](./manual_images/seq_normal.png)
-	Live recording:
-	![seq_live](./manual_images/seq_live.png)
+
+| Sequencer recording | Screen |
+|---------------------| ---- | 
+| Normal              | ![seq_normal](./manual_images/seq_normal.png) |
+| Live recording      | ![seq_live](./manual_images/seq_live.png) |
+
 Also, all LEDs are on for the even steps while live recording.
+
 Press SEQ PLAY to exit recording mode, and the sequencer will keep playing. Press SEQ PLAY again to stop the sequencer.
 
 You can (re)enter recording mode while playing. Press Rec + SEQ Play to enter recording mode.
@@ -666,7 +670,7 @@ While you are pressing B7+B8, the dial position will be recorded to the current 
 
 ## Parameter Locking
 
-_Tutorial: [longer video](https://www.youtube.com/watch?v=wyU148xfGao&t=275s) and [shorter video](https://www.youtube.com/watch?v=lnqzkueQrP8) are available._
+_Tutorial: [video](https://www.youtube.com/watch?v=wyU148xfGao&t=275s) and [demo video](https://www.youtube.com/watch?v=lnqzkueQrP8) are available._
 
 Parameter locking is the term used in Elektron sequencers, which is a temporary parameter change available only in the specific sequencer step. The parameter change appears only when the sequencer is playing the step. 
 
@@ -675,11 +679,11 @@ Here is the steps to set Parameter Lock:
 1. In Play mode, you should be one of the following modes: ON/OFF, Tune, Width, Velocity, or Probability, press [1-8] button to select the step that you want to set Parameter Lock
 2. Keep pressing the button, and press [PARAM]. Mode switches to Parameter Lock mode.  White frame indicates you are in Parameter Lock mode.
 3. Change the parameters that you want to change. Once the parameter is changed, the parameter area will be inverted, indicating the step is modified.
-    ![pl_mark](./manual_images/pl_2.png)
+   1. ![pl_mark](./manual_images/pl_2.png)
 4. You can set up to three parameters to modify.
 5. To finish the editing, press [PLAY] to go back to the sequencer page.
 6. You will see [""] mark at the top of the step when the step has Parameter Lock.
-    ![pl_mark](./manual_images/pl_1.png)
+   1. ![pl_mark](./manual_images/pl_1.png)
 7. To reset the modification, long press [1-8] button + [PARAM] when entering Parameter Lock mode, or long press [PARAM] when in Parameter Lock mode. If you press multiple buttons for the steps, multiple steps will be cleared.
 8. Once you change one parameter, you can change the last edited Locking parameter by pressing [1-8] + [PARAM] + Turning dial without re-selecting the parameter.
 9. When you are in sequencer live recording, changing sound engine parameters will be recorded as Parameter Locking.
@@ -707,7 +711,7 @@ _Workflow: morph pattern lock._
 
 ## Looper overview
 
-_Tutorial: [video](https://www.youtube.com/watch?v=iD4WpX3tHUE) is available._
+_Tutorial: [video](https://www.youtube.com/watch?v=iD4WpX3tHUE&t=1s) is available._
 
 The looper is designed to work with the sequencer. The looper always tries to sync with sequencer play. Looper won't start playing when the sequencer is not running. Use a blank sequencer pattern when you don't want to make sound from the sequencer.
 
@@ -754,7 +758,7 @@ TR | Current Track
 
 ## Insert recording
 
-_Tutorial: [video](https://www.youtube.com/watch?v=N8N1X59RaVg) is available._
+_Tutorial: [video](https://www.youtube.com/watch?v=N8N1X59RaVg&t=1s) is available._
 
 When you press REC + LOOPER PLAY 3 times, it enters Insert recording mode, this allows to record external effector result back to the looper. For example, you can apply reverb if you have a reverb pedal.
 
