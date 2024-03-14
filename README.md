@@ -630,7 +630,9 @@ You can (re)enter recording mode while playing. Press Rec + SEQ Play to enter re
 
 A metronome click sound plays when live recording is ongoing. The metronome volume can be adjusted with REC + SEQ PLAY + Turn dial. The chained sequencer pattern will be reset when you change to another pattern.
 
-When you are in sequencer live recording, changing sound engine parameters will be recorded as Parameter Locking.
+### Parameter Lock live recording
+
+When you are in sequencer live recording, changing sound engine parameters will be recorded as Parameter Locking. **The recording starts when you start changing the parameter, and it ends at the end of the pattern.**
 
 ### Edit the current step while Sequencer live recording
 
