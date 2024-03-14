@@ -110,7 +110,7 @@ Param | Parameter mode: Changing the synthesizer’s instrument parameters.
 
 ## BASIC OPERATION
 
-Tutorial: in-depth [basics video](https://www.youtube.com/watch?v=sSR3ob0aQUM&t=1s) is available.
+_Tutorial: in-depth [basics video](https://www.youtube.com/watch?v=sSR3ob0aQUM&t=1s) is available._
 
 Each major mode has selectable sub-modes. Many sub-modes have editable parameters.
 
@@ -327,7 +327,7 @@ E.g. button 1 chooses the wave SHAPE parameter when in the OSCILLATOR1,2 sub-mod
 
 ## PRM:OSCILLATOR1,2
 
-_Tutorial: [video](https://www.youtube.com/watch?v=7-3rrYf2dhs) shaping with Triangle and band-pass filter is available._
+_Tutorial: [video](https://www.youtube.com/watch?v=7-3rrYf2dhs) shaping sound with Triangle and band-pass filter is available using the legacy Qun mk1 pocket synthesizer._
 
 ![osc1](./manual_images/osc1.png)
 
@@ -335,7 +335,7 @@ The oscillator is a hybrid of classic analog synth, FM, and granular.
 
 Buttons | Description
 -------|-------
-1 | SHAPE. `Saw, Sine, S&H, Square, Triangle, W Noise, P Noise, FM, AUX`.<br> * AUX means audio input from LINE or MIC. <br> * Granular synth engine is connected to the AUX L channel when it's active. See [Granular](#granular) section for detail. 
+1 | SHAPE. `Saw, Sine, S&H, Square, Triangle, W Noise, P Noise, FM, AUX`.<br> * AUX means audio input from LINE or MIC. <br> * Granular synth engine is connected to the AUX L channel when it's active. See [Granular](#plygranular) section for detail. 
 2 | PULSE WIDTH.  Triangle, Square and Granular can take PWM. In granular mode, the playing position will be changed by PWM.
 3 | TUNE
 4 | OCTAVE
@@ -367,7 +367,7 @@ Button | Description
 -------|--------
 1 | OSC MIX. Balance between OSC1 and OSC2
 2 | FM modulation OSC2 to OSC1
-3 | VCF Volume.  Input gain to VCF. _Tutorial: [video](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=480s) is available, illustrating wavefolding._
+3 | VCF Volume.  Input gain to VCF. _Tutorial: [video](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=480s) illustrating wavefolding, is available._
 4 | Line In / Mic gain
 5 | Effect type. Off, Delay, Chorus1, Chorus2, Flanger1, Flanger2, Crusher (Bit crusher), MDelay (Mono delay), DDelay (BPM Synchronized digital delay), RSVD (Reserved for the future update). _Tutorial: [video](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=745s) is available._
 6 | Effect Speed. Controls Effect LFO rate or delay time. 
@@ -864,7 +864,7 @@ Button | Function
 
 The Modifier is powerful feature, it will give algorithmic effects to the pattern. Those effects will be applied to current pattern without breaking the pattern data.  Also, you can apply modifiers to the pattern to make the effect as permanent.
 
-- Transpose will add offset to the pattern. Scale quantize (SEQ Config button 3) will help to keep the result musical. _Demo [video](https://youtu.be/WVT4ovd2yOc) is available._
+- Transpose will add offset to the pattern. Scale quantize (SEQ Config button 3) will help to keep the result musical. _Demo: [video](https://youtu.be/WVT4ovd2yOc) is available._
 - Width Offset will change the note length.
 - Randomness will add some randomness to playing notes.  Scale quantize (SEQ Config button 3) will help to keep the result musical.
 - Arpeggiator will add note offset. Scale quantize (SEQ Config button 3) is important to generate usable Arpeggiator result.
@@ -923,7 +923,7 @@ Right | 3rd of the note (Used with triplet)
 
 ### Playing note capturing from external MIDI keyboard
 
-_[Video](https://www.youtube.com/watch?v=aV2YL0idMHA) demo is available with the legacy Qun mk1 pocket synthesizer._
+_Demo: [video](https://www.youtube.com/watch?v=aV2YL0idMHA) is available with the legacy Qun mk1 pocket synthesizer._
 
 Alternatively, you can step record notes by external MIDI keyboard. Play note by MIDI keyboard while you are pressing one of the eight buttons, the note will be recorded as the tune for the step. Chord playing can be captured as well.
 
@@ -1064,7 +1064,7 @@ Cut slice | Cut current slice (Cut the region). It's useful to trim sample
 
 ### Having multiple slices (Slice Spread)
 
-Tutorial: [video](https://youtu.be/T09kL4tfw4s?t=167) is available.
+_Tutorial: [video](https://youtu.be/T09kL4tfw4s?t=167) is available._
 
 You can have multiple slices. 
 
