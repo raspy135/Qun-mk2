@@ -29,7 +29,7 @@
 
 ## Overview of the QUN mk2
 
-_[Video](https://www.youtube.com/watch?v=7dNhxKBtwPo) is available._
+_Demo: [video](https://www.youtube.com/watch?v=We02ZQKIN9g&t=1s), in-depth tutorial [basics video](https://www.youtube.com/watch?v=sSR3ob0aQUM&t=1s), and in-depth tutorial [sound engine video](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=1s) are available._
 
 Highlights:
 
