@@ -327,7 +327,7 @@ E.g. button 1 chooses the wave SHAPE parameter when in the OSCILLATOR1,2 sub-mod
 
 ## PRM:OSCILLATOR1,2
 
-_Tutorial: [video](https://www.youtube.com/watch?v=7-3rrYf2dhs) shaping with Triangle and band-pass filter is available._s
+_Tutorial: [video](https://www.youtube.com/watch?v=7-3rrYf2dhs) shaping with Triangle and band-pass filter is available._
 
 ![osc1](./manual_images/osc1.png)
 
