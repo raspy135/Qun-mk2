@@ -325,8 +325,9 @@ E.g. button 1 chooses the wave SHAPE parameter when in the OSCILLATOR1,2 sub-mod
 
 ## PRM:OSCILLATOR1,2
 
-![osc1](./manual_images/osc1.png)
+_Tutorial: [video](https://www.youtube.com/watch?v=7-3rrYf2dhs) shaping with Triangle and band-pass filter is available._s
 
+![osc1](./manual_images/osc1.png)
 
 The oscillator is a hybrid of classic analog synth, FM, and granular.
 
@@ -663,7 +664,7 @@ While you are pressing B7+B8, the dial position will be recorded to the current 
 
 ## Parameter Locking
 
-_Tutorial: [video](https://www.youtube.com/watch?v=wyU148xfGao&t=275s) is available._
+_Tutorial: [longer video](https://www.youtube.com/watch?v=wyU148xfGao&t=275s) and [shorter video](https://www.youtube.com/watch?v=lnqzkueQrP8) are available._
 
 Parameter locking is the term used in Elektron sequencers, which is a temporary parameter change available only in the specific sequencer step. The parameter change appears only when the sequencer is playing the step. 
 
@@ -689,13 +690,17 @@ Shift + turn dial is a useful way to sweep between sub-modes to find modified pa
 
 ## Parameter Lock morphing
 
+_Demo: [video](https://www.youtube.com/watch?v=cqweekqYIu4) is available._
+
 You can morph Parameter Locking between two patterns.
 
-1. Let's say you are in pattern 1. Set Morph Pattern in Sequencer configuration menu. Set the Morph pattern to 2 by long pressing button 4.
-2. Copy pattern 1 to 2 with SEQ PLAY + [1-8] + Turn dial
-3. Move to pattern 2
-4. Modify the Parameter Locking in pattern 2
-5. Go back to pattern 1
+_Workflow: morph pattern lock._
+
+1. Let's say you are in pattern #1. Set Morph Pattern in Sequencer configuration menu. Set the Morph pattern to #2 by long pressing button 4.
+2. Copy pattern #1 to #2 with SEQ PLAY + [1-8] + Turn dial
+3. Move to pattern #2
+4. Modify the Parameter Locking in pattern #2
+5. Go back to pattern #1
 6. Morph can be done by pressing [MODE PLAY] + [PARAM] + Turn dial
 
 ## Looper overview
@@ -814,13 +819,13 @@ Use Preset Bucket to keep preset settings. You can recall tone preset and patter
 
 ## PLY:PLAY PIANO
 
-_Demo [video](https://www.youtube.com/watch?v=WVT4ovd2yOc) is available._
+_Tutorial: [video](https://youtu.be/T09kL4tfw4s?t=7) and demo [video](https://www.youtube.com/watch?v=WVT4ovd2yOc) are available._
 
 ![piano](./manual_images/piano.png)
 
 The mode is simple piano playing mode. Default is chromatic scale, but the scale and key can be changed by the scale setting in SEQ Config mode. Turn dial to transpose. 
 
-_Workflow: Play notes quantized to a scale with one button and dial._
+_Workflow: Play notes quantized to a scale with one (or more) buttons and dial._
 
 1. Optional: set up the instrument for chording
    1. Press MODE PARAM
@@ -837,6 +842,9 @@ You can activate Piano mode anytime by keep pressing SYSTEM + [1-8] button. You 
 
 
 ## PLY:SEQ MODIFY
+
+_Tutorial: [video](https://www.youtube.com/watch?v=vZqdzkTQ1Mg&t=687s) is available._
+
 ![mod](./manual_images/mod.png)
 
 This controls modifier of the sequencer pattern.
@@ -1054,9 +1062,11 @@ Cut slice | Cut current slice (Cut the region). It's useful to trim sample
 
 ### Having multiple slices (Slice Spread)
 
+Tutorial: [video](https://youtu.be/T09kL4tfw4s?t=167) is available.
+
 You can have multiple slices. 
 
- To edit current slice, button 3 (Start point) and button 4(Length). NO or OK to switch between slices. If the slice length is zero then the following numbers of slices will be ignored.
+ To edit current slice, button 3 (Start point) and button 4 (Length). NO or OK to switch between slices. If the slice length is zero then the following numbers of slices will be ignored.
 
 When Slice Spread (Button 2) is set to more than zero, each slice 1-8 will be applied from the C4(60) note. One spread means half step.
 
