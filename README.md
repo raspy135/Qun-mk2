@@ -1321,7 +1321,7 @@ Then you will see the following page:
 
 ## Turn on/off WiFi
 
-You can turn on/off WiFi in system menu, it's located after system2 menu. It's on when booting.
+You can turn on/off WiFi in system menu, it's located after system2 menu. The setting will be remembered in flash memory.
 
 # Appendix
 
