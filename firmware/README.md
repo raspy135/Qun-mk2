@@ -13,18 +13,24 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v4.92 (Beta, highly recommend to upgrade from all previous beta versions)
+  
+  - Bug fix: WiFi related turn on/turn off/failure issues.
+  - New feature: Stereo samples can be loaded to looper stereo tracks(AB, or BC). Web interface also supports it.
+  - New feature: +- 3dB adjustment for looper track. To enter the menu, press button 1 in looper status page.
+  
 - v4.91 (Still beta, but highly recommended to update from 4.90)
-  
+
   - Performance tuning
-  
+
   - Wifi connnection setting will be remembered
-  
+
   - "Wifi disconnectged" message deleted. Check the icon to see the status.
-  
+
   - Bug fix: Some race condition related to memory management, this was affected as a little pop noise in the looper.
-  
+
   - Some resource issues due to increased memory usage by web server.
-  
+
 - v4.90(Beta)
 
   - Behavior change: Looper paste(REC+OK) will do overdub, and create a file for undo.

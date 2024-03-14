@@ -34,7 +34,7 @@ Qun mk2 has a 2 oscillator virtual analog, FM, granular sound engine. The 2 osci
 
 The sequencer is an 8-step based sequencer, and supports up to 32/64 steps per pattern. You can store 8 patterns for each preset bucket. And it has 8 buckets of tone preset + sequencer patterns. So you can quickly switch between 8 presets and 64 (8 x 8 pattern) patterns.
 
-It has a 3 track looper with 5 scenes, so you can swap 3 tracks x 5 scenes while playing. 
+It has a 3 track looper with 20 scenes, so you can swap 3 tracks x 20 scenes while playing. 
 
 More:
 
@@ -59,6 +59,7 @@ More:
     * Key sync
   * 1 Effect -- Delay, Chorus, Flanger, BitCrusher
   * MIDI clock sync
+  
 * Player / Sequencer
   * Player -- piano mode
   * MIDI out to control external synths
@@ -81,9 +82,15 @@ More:
   	* Integrated compressor -- Fixed parameters: 30ms attack, 100ms release, 1:3
   	* Stereo output
   	* Mute by track
+  
 * Micro SD card
   * Qun mk2 comes with a micro SD card.
+  
   * All looper recordings, presets, and granular samples are stored to the SD card
+
+* WiFi
+  * Recordings can be imported or exported through WiFi web interface.
+    
 
 ## CONNECTIONS
 
@@ -713,6 +720,12 @@ L | Loop length (steps)
 Box and lines above SC label | Scene page
 SC | Current Scene
 TR | Current Track
+
+Looper status page also provides basic wave editing.
+
+Button | Description
+------------ | -------------
+1 | Looper track edit menu. You can adjust looper record volume (+-3dB)
 
 ## Insert recording
 
