@@ -1163,6 +1163,8 @@ When granular mode is not OFF, the recording data will be saved when you save pr
 
 ## PLY:MIXER
 
+![mixer](./manual_images/mixer_play.png) 
+
 Three track Mixer. At the last stage, signal can be **stereo** by panning tracks.
 
 Button | Function
@@ -1179,7 +1181,7 @@ MODE PLAY + turn dial | Record volume
 SHIFT + MODE PLAY + turn dial | Record pan
 MODE PLAY + SYSTEM + turn dial | Looper master volume 
 SYSTEM + PARAM + turn dial | Cross fade between Record volume and Looper volume
-SHIFT + NO | Toggle Monitor mode 
+SHIFT + NO | Toggle between Monitor mode and Mixer
 
 
 This mixer has a compressor. Ratio, attack time and release time are fixed (1:3, attack 30ms, release 100ms).
@@ -1192,13 +1194,17 @@ Mixer setting will be saved when Session is saved.
 
 ### Monitor mode
 
-![granular](./manual_images/monitor.png)
+_Demo: [video](https://www.youtube.com/watch?v=G79n2pruvMI) is available._
 
-You can monitor the output.
+![vu meter monitoring](./manual_images/monitor.png)
+
+You can monitor the output with a VU meter.
 
 Button | Function
 ------------ | -------------
 B[1-8] | Toggle monitor page 
+SHIFT + NO | Toggle between Monitor mode and Mixer
+
 
 When you are in mixer mode, press SHIFT + NO again, or shift + turn dial to the end, you can enter to the monitor mode.
 
