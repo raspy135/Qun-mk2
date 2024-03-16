@@ -1404,7 +1404,7 @@ Copy the file to the root folder of SD card, and reboot the device to enable Wif
 
 ESP32 chip only supports 2.4GHz network.
 
-![wifi_screenshot](.\manual_images\wifi.png)
+![wifi_screenshot](./manual_images/wifi.png)
 
 When you connected to WiFi successfully, you will see small "i" at the right bottom corner.  The icon disappears when WiFi is disconnected.
 
@@ -1417,7 +1417,7 @@ http://qunmk2.local/
 
 Then you will see the following page:
 
-![webpage_screenshot](.\manual_images\web_console.png)
+![webpage_screenshot](./manual_images/web_console.png)
 
 ## Web page operation
 
