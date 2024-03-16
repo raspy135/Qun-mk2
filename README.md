@@ -1306,8 +1306,9 @@ Here is the syntax of the config file.
 [wifi]
 ssid = "your_ssid"
 password = "your_password"
+hostname = "qunmk2"
 ```
-You can download this template from GitHub.
+You can download this template from GitHub. Hostname is optional.
 
 Copy the file to the root folder of SD card, and reboot the device to enable Wifi.
 
@@ -1319,7 +1320,7 @@ When you connected to WiFi successfully, you will see small "i" at the right bot
 
 ## Accessing to qun mk2 web page
 
-From the computer that connects to the same WiFi network, go the following URL (It's not https):
+From the computer that connects to the same WiFi network, go the following URL, or configured hostname (It's not https):
 ```
 http://qunmk2.local/
 ```
