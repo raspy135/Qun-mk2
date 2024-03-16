@@ -1,11 +1,12 @@
 # Contact
 
-- Email: info@nunomo.net
+- Email: [info@nunomo.net](mailto:info@nunomo.net)
 - GitHub: Open an issue if you have a GitHub account. It's the best place to submit bugs.
-- [Discord](https://discord.gg/kcvVTPkZVQ): Visit Nunomo's Discord server to chat about Qun, read announcements, and talk about events.
+- Discord: Visit [Nunomo's Discord server](https://discord.gg/kcvVTPkZVQ) to chat about Qun, read announcements, and talk about events.
 - Social media links:
   - Instagram: [@nunomo1](https://www.instagram.com/nunomo1)
   - Twitter (Japanese): [@nunomo1](https://twitter.com/nunomo1)
+  - SoundCloud: [nunomo](https://soundcloud.com/user-425164341)
   - YouTube: [nunomollc](https://youtube.com/@nunomollc)
 
 
@@ -23,10 +24,12 @@
 * [Firmware](./firmware): Firmware updates and instructions (see README.md).
 * [CheatSheet](./cheatsheet.pdf): A printable cheat sheet listing buttons, device modes and sub-modes, shortcuts, and synth instrument parameters.
 
-**We are looking for your feedback! For general impressions and feedback, please email them to info@nunomo.net or join Nunomo's Discord server!**
+**We are looking for your feedback! For general impressions and feedback, please email them to [info@nunomo.net](mailto:info@nunomo.net) or join [Nunomo's Discord server](https://discord.gg/kcvVTPkZVQ)!**
 
 
 ## Overview of the QUN mk2
+
+_Demo: [video](https://www.youtube.com/watch?v=We02ZQKIN9g&t=1s) is available. Tutorial: [playlist](https://www.youtube.com/playlist?list=PLXo02FgbP9F7cfGMUTblNiX6pUctUGqRD) is available. Find more videos throughout this document._
 
 Highlights:
 
@@ -45,7 +48,7 @@ More:
   * Clean 2 Oscillators. Cheap synthesizers compromise this part sometimes, but QUN has no-alias noise Oscillators. All the internal calculation is done by floating point for sound quality.
   * Oscillators can be used as 1 oscillator per voice, or 2 oscillators per voice.
   * Voice can be configured as 4 voices (Quad mode) or 2 voices (Dual mono).
-  * The sound engine is compatible with Qun mk1. 
+  * The sound engine is compatible with Qun mk1 pocket synthesizer
   * Multiple QUN synths can be stacked to achieve a **Polyphonic** setup. 
   * Flexible MOD routing. 
   * 2 inputs can be used for **external audio signal**, or **external CV inputs**
@@ -114,19 +117,24 @@ Param | Parameter mode: Changing the synthesizer’s instrument parameters.
 
 ## BASIC OPERATION
 
-Each major mode has selectable sub-modes. For example, the Param major mode has an `OSC1` sub-mode which configures Oscillator 1, and the Play major mode has a `PIANO` sub-mode which allow direct playing of notes using the [1-8] buttons.
+_Tutorial: in-depth [basics video](https://www.youtube.com/watch?v=sSR3ob0aQUM&t=1s) is available._
+
+Each major mode has selectable sub-modes. Many sub-modes have editable parameters.
+
+For example, the Param major mode has an `OSC1` sub-mode which configures Oscillator 1, and the Play major mode has a `PIANO` sub-mode which allow direct playing of notes using the [1-8] buttons.
 
 * To switch sub-mode, press SHIFT + [1-8] button or NO/OK buttons to change sub-mode.
   * After you enter the sub-mode you want, press [1-8] button to select a parameter.
   * See the names printed on the device for sub-modes of Param and Play major modes. For example, look underneath the [1-8] buttons and see `OSC1` and `PIANO`.
   * Alternatively, you can select sub-mode by press SHIFT + turn the dial.
   * Alternatively, you can select sub-mode by Double-clicking MODE PLAY button or PARAM button then press [1-8] button.
-* Press one of 8 buttons + rotate dial = Change parameter
-* Rotate the dial = Change the current parameter.
-* Long press the button to show the parameter full name and value.
-* Double click the button to enter relative mode. The value adjustment will be relative.
+* To operate on parameter values, first press [1-8] button to pick the current parameter 
+  * Press one of 8 buttons + rotate dial = Change parameter value.
+  * Rotate the dial = Change the current parameter.
+  * Long press the button to show the parameter full name and value.
+  * Double click + hold the button to enter relative mode. The dial value adjustment will be relative. _Tutorial: [video](https://youtu.be/6uP1LoAZ9nE?t=11) is available._
+  * If you want to do fine value adjustment, you can use NO/OK buttons to change the value by 1. To do this, keep pressing one of 8 buttons and press NO or OK button.
 * For initial training, referring to the [Qun cheatsheet](./cheatsheet.pdf) can be useful. Also seeing the parameter name when changing its value is useful for training: turn on Parameter Caption mode in System2 menu, button 3.
-* If you want to do fine value adjustment, you can use NO/OK buttons to change the value by 1. To do this, keep pressing one of 8 buttons and press NO or OK button.
 
 Button | Primary function
 ------------ | -------------
@@ -156,7 +164,7 @@ SHIFT + MODE PLAY | Dump current preset to MIDI OUT. This is useful to transfer 
 SHIFT + SYSTEM | All notes off
 SHIFT + PARAM | Initialize the preset. You can choose some templates: Blank, Sampler, EvenSlice, Scratch. Please see the [Initialize preset](#initialize-preset) section for detail. 
 SHIFT + SEQ PLAY + turn dial | Set BPM. Tap tempo by pressing SEQ PLAY 4 or more times while you keep pressing SHIFT. 
-MODE PLAY + turn dial | Record volume -- stay at -6.0dB or lower to avoid clipping.
+MODE PLAY + turn dial | Record volume -- stay at -6.0dB or lower to avoid clipping. _Tutorial: [video](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=770s) is available._
 MODE PLAY + SYSTEM + turn dial | looper master volume 
 SYSTEM + turn dial | VCF volume
 PARAM + turn dial | VCF cutoff
@@ -305,12 +313,15 @@ When you save the preset or load the preset from bank 1 to 8, its name is used t
 
 ## Signal diagram
 
+_Tutorial: [video](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=230s) is available for several stages._
+
 Signal diagram helps to understand how Qun mk2 works.
 
 ![‎qun2_diagram](./manual_images/‎qun2_diagram.png)
 
 # Parameter Mode (Param)
 
+## Adjust synthesis parameters
 To operate, press B[1-8] to choose a parameter and rotate dial to change its value. The parameter display area will temporarily invert. A parameter's position in the display corresponds to the visual button assignment:
 
 ```
@@ -320,16 +331,18 @@ To operate, press B[1-8] to choose a parameter and rotate dial to change its val
 
 E.g. button 1 chooses the wave SHAPE parameter when in the OSCILLATOR1,2 sub-mode.
 
+
 ## PRM:OSCILLATOR1,2
 
-![osc1](./manual_images/osc1.png)
+_Tutorial: [video](https://www.youtube.com/watch?v=7-3rrYf2dhs) shaping sound with Triangle and band-pass filter is available using the legacy Qun mk1 pocket synthesizer._
 
+![osc1](./manual_images/osc1.png)
 
 The oscillator is a hybrid of classic analog synth, FM, and granular.
 
 Buttons | Description
 -------|-------
-1 | SHAPE. `Saw, Sine, S&H, Square, Triangle, W Noise, P Noise, FM, AUX`.<br> * AUX means audio input from LINE or MIC. <br> * Granular synth engine is connected to the AUX L channel when it's active. See [Granular](#granular) section for detail. 
+1 | SHAPE. `Saw, Sine, S&H, Square, Triangle, W Noise, P Noise, FM, AUX`.<br> * AUX means audio input from LINE or MIC. <br> * Granular synth engine is connected to the AUX L channel when it's active. See [Granular](#plygranular) section for detail. 
 2 | PULSE WIDTH.  Triangle, Square and Granular can take PWM. In granular mode, the playing position will be changed by PWM.
 3 | TUNE
 4 | OCTAVE
@@ -340,6 +353,8 @@ Buttons | Description
 
 ### Pulse Width Modulation (PWM)
 
+_Tutorial: [video](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=830s) is available._
+
 Qun supports PWM. It affects Square wave oscillations normally: changing the duration of the pulse of the wave. It affects other waveshapes in the following ways:
 
 - Triangle: Adds harmonics as well as DC bias
@@ -348,7 +363,10 @@ Qun supports PWM. It affects Square wave oscillations normally: changing the dur
 
 
 ## PRM:MIX
-Mix controls mixer and effects.
+
+_Tutorial: [video](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=400s) is available._
+
+Mix controls mixer and effects. It mixes OSC1/2 and other voices together.
 
 ![mix](./manual_images/mix.png)
 
@@ -356,9 +374,9 @@ Button | Description
 -------|--------
 1 | OSC MIX. Balance between OSC1 and OSC2
 2 | FM modulation OSC2 to OSC1
-3 | VCF Volume.  Input gain to VCF 
+3 | VCF Volume.  Input gain to VCF. _Tutorial: [video](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=480s) illustrating wavefolding, is available._
 4 | Line In / Mic gain
-5 | Effect type . Off, Delay, Chorus1, Chorus2, Flanger1, Flanger2, Crusher (Bit crusher), MDelay(Mono delay), DDelay(BPM Synchronized digital delay), RSVD(Reserved for the future update) 
+5 | Effect type. Off, Delay, Chorus1, Chorus2, Flanger1, Flanger2, Crusher (Bit crusher), MDelay (Mono delay), DDelay (BPM Synchronized digital delay), RSVD (Reserved for the future update). _Tutorial: [video](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=745s) is available._
 6 | Effect Speed. Controls Effect LFO rate or delay time. 
 7 | Effect Depth
 8 | Effect Feedback
@@ -373,6 +391,9 @@ Button | Description
 - Digital delay is BPM synchronized. It also can be used as beat repeat by setting 100% of feedback, and 100% of depth.
 
 ## PRM:ENV1/2
+
+_Tutorial: [video](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=290s) is available._
+
 The synth has four Envelope generators. ENV1 and ENV2 are both independently and fully configurable. ENV3 and ENV4 share parameters. ENV3 / ENV4 is connected to FM operators when it's configured via FM ENV3 CONN.
 
 ![diagram_eg](manual_images/env12.png)
@@ -420,7 +441,9 @@ Button | Description
 8 | LFO Retrig. LFO’s phase is reset by every note hit when it is ON.
 
 ## PRM:VCF
+
 ![diagram_vcf](manual_images/vcf.png)
+
 Button | Description
 ------|-------
 1 | CUTOFF
@@ -433,22 +456,27 @@ Button | Description
 8 | VCF LFO Volume. LFO modulation to VCF’s input volume. It can be used as a vibrato effect.
 
 ## PRM:KEY/OTHER
+
 Configures other parameters.
 
 ![other](./manual_images/other.png)
 
 Button | Description
------- | ------
-1 | VCF 4/2 POLE / NoLinear. Select VCF number of poles and linear or no linear. 2P/4P/2PNL/4PNL. Ladder filter algorithm will be used only when 4NL with Lowpass or Highpass filter. 
-2 | VCF ENV Src. Applying Envelopes to the signal after VCF. You might want to set OSC1/2's Env sel to "ON" to utilize this parameter. This is useful only with Mono mode. 
+|------ | ------|
+1 | VCF 4/2 POLE / NoLinear. Select VCF number of poles and linear or no linear. 2P/4P/2PNL/4PNL. Ladder filter algorithm will be used only when 4NL with Lowpass or Highpass filter.
+2 | VCF ENV Src. Applying Envelopes to the signal after VCF. You might want to set OSC1/2's Env sel to "ON" to utilize this parameter. This is useful only with Mono mode. _Tutorial: [video](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=672s) is available._
 3 | GLIDE. Smooth transition between notes. Works with Mono.
 4 | BEND RANGE. Pitch bend range.
 5 | OSC1/2 Keysync. This is a switch to connect MIDI input notes and oscillators. Y = Follow MIDI note pitch. N = Ignore MIDI note. You can still use FREQ1 and FREQ2 for modulation to use MIDI note pitch.
 6 | VELOCITY SW. Envelope generators become velocity sensitive when it’s ON.
-7 | MONO/QUAD/POLY (Voice mode). Long press to sync Oscillator parameters. See the [Voice Mode](#voice-mode) section for details. 
+7 | MONO/QUAD/POLY (Voice mode).  See the [Voice Mode](#voice-mode) section for details. 
+7 (Long press) | Sync Oscillator parameters.  See the [Voice Mode](#voice-mode) section for details. _Tutorial: [video](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=925s) is available._
 8 | LFO BPM sync. LFO rate will synchronize with Sequencer's BPM when it is ON.
 
 ### Voice Mode
+
+_Tutorial: [video](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=110s) is available._
+
 One synthesizer can be used as Monophonic or Quadphonic.
 
 - Mono = 2 OSCs for 1 voice
@@ -457,15 +485,16 @@ One synthesizer can be used as Monophonic or Quadphonic.
 - PolyQuad = 1 OSC per voice. It's for Polyphonic setup when you have multiple Qun synthesizers.
 
 When the mode is Quad or Poly Quad, MIX  and "OSC2 Env Src" are ignored. MIX is always set to middle, and OSC2 Env Src is always set to EG2. In most cases you may want to use the same parameters between OSC1 to OSC2 with Quad mode. 
+
 To copy the parameters from OSC1 to OSC2 (and EG1 and EG2), long press button 7. "OSCs synched" message will be shown. 
 	
-Here is an example to set up Quad mode:
+_Workflow: set up Quad mode._
 
-	1. Initialize tone.
-	2. Configure OSC1 as you like.
-	3. Set this parameter to "Quad" mode by pressing button 7.
-	4. If you want to copy OSC1 parameters to OSC2, in the same sub-mode, long press button 7 until the "OSCs synched" message is shown.
-	5. Play two notes by external MIDI keyboard. You will hear four voices.
+1. Initialize tone.
+2. Configure OSC1 as you like.
+3. Set this parameter to "Quad" mode by pressing button 7.
+4. If you want to copy OSC1 parameters to OSC2, in the same sub-mode, long press button 7 until the "OSCs synched" message is shown.
+5. Play two notes by external MIDI keyboard. You will hear four voices.
 
 
 Poly Mono can be used when you want 2 voices with 2 OSCs per voice configuration.
@@ -523,7 +552,7 @@ Button | Description
 --------|--------
 1 | 2ND FILTER. See the [2nd Filter](#2nd-filter) section for details.
 2 | FM FREQ SNAP SW. Frequency snapping for FM. When it's ON, FM frequency will be snapped to numbers. When it's OFF, FM has more character, the signature sound of the QUN synth.
-3 | Wavefolding. Wevefolding curve selection. This filter is located in VCF.
+3 | Wavefolding. Wavefolding curve selection. This filter is located in VCF.
 4 | FM ENV3 CONN. Select FM operator(s) to connect ENV3/4. After the processing, it will be filtered by ENV1 or ENV2.
 5 | ENV3/4 ATTACK
 6 | ENV3/4 DECAY
@@ -531,7 +560,10 @@ Button | Description
 8 | ENV3/4 RELEASE
 
 ### 2nd Filter
-  Second filter can be used when you use the 2 pole filter for VCF. It's disabled when 4 pole is selected.
+
+_Tutorial: [video](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=650s) is available._
+
+Second filter can be used when you use the 2 POLE filter for VCF. It's disabled when 4 POLE is selected. It provides additional shaping of the sound. 
 
 Mode | Description
 ------------ | -------------
@@ -596,7 +628,7 @@ LOOPER PLAY + [1-5] + Dial | Copy Scene
 REC + [1-3, 7,8] | Select recording track. A,B,C are mono tracks. Press 7, 8 for stereo recording. 7=A(Left)+B(Right), 8 = B+C. When you do stereo recording, you may want to set pan to left and right for the selected stereo tracks. 
 SHIFT + REC + B[1-3] | Load WAV file to looper track A, B or C. Importing WAV file to the looper section for detail. 
 PARAM + [1-3] | Mute track
-PARAM + NO | Toggle Extra processing
+PARAM + NO | Toggle Extra Processing
 SHIFT + LOOPER STOP | Delete all track recordings in the current scene, reset recording length 
 REC + NO | Cut or Copy Looper track 
 REC + OK | Paste Looper track 
@@ -605,7 +637,7 @@ MODE PLAY + PARAM + Turn Dial | Parameter Lock Morphing
 
 ## Sequencer overview
 
-A [tutorial video for the sequencer](https://www.youtube.com/watch?v=vZqdzkTQ1Mg) is available.
+_Tutorial: [video](https://www.youtube.com/watch?v=vZqdzkTQ1Mg&t=1s) is available._
 
 The sequencer is an 8/16-step sequencer. One page has 8/16 steps, and it can have up to 4 pages.
 
@@ -617,13 +649,17 @@ You can run multiple sequencer at the same time, up to three patterns, as normal
 
 ### Sequencer live recording
 
-You can record live playing to the sequencer. Rec + SEQ PLAY to start recording. Play on Piano mode or play with an external MIDI keyboard to record notes. It's always overdubbing.  Note, Width(length), and velocity will be recorded.
+You can record live playing to the sequencer. Rec + SEQ PLAY to start recording. Play on Piano mode or play with an external MIDI keyboard to record notes. It's always overdubbing.  Note, Width (length), and velocity will be recorded.
+
 Sequencer playing position indicator changes when live recording.
-	Normal:
-	![seq_normal](./manual_images/seq_normal.png)
-	Live recording:
-	![seq_live](./manual_images/seq_live.png)
+
+| Sequencer recording | Screen |
+|---------------------| ---- | 
+| Normal              | ![seq_normal](./manual_images/seq_normal.png) |
+| Live recording      | ![seq_live](./manual_images/seq_live.png) |
+
 Also, all LEDs are on for the even steps while live recording.
+
 Press SEQ PLAY to exit recording mode, and the sequencer will keep playing. Press SEQ PLAY again to stop the sequencer.
 
 You can (re)enter recording mode while playing. Press Rec + SEQ Play to enter recording mode.
@@ -643,6 +679,8 @@ While you are pressing B7+B8, the dial position will be recorded to the current 
 
 ## Parameter Locking
 
+_Tutorial: [video](https://www.youtube.com/watch?v=wyU148xfGao&t=275s) and [demo video](https://www.youtube.com/watch?v=lnqzkueQrP8) are available._
+
 Parameter locking is the term used in Elektron sequencers, which is a temporary parameter change available only in the specific sequencer step. The parameter change appears only when the sequencer is playing the step. 
 
 Here is the steps to set Parameter Lock:
@@ -650,11 +688,11 @@ Here is the steps to set Parameter Lock:
 1. In Play mode, you should be one of the following modes: ON/OFF, Tune, Width, Velocity, or Probability, press [1-8] button to select the step that you want to set Parameter Lock
 2. Keep pressing the button, and press [PARAM]. Mode switches to Parameter Lock mode.  White frame indicates you are in Parameter Lock mode.
 3. Change the parameters that you want to change. Once the parameter is changed, the parameter area will be inverted, indicating the step is modified.
-    ![pl_mark](./manual_images/pl_2.png)
+   1. ![pl_mark](./manual_images/pl_2.png)
 4. You can set up to three parameters to modify.
 5. To finish the editing, press [PLAY] to go back to the sequencer page.
 6. You will see [""] mark at the top of the step when the step has Parameter Lock.
-    ![pl_mark](./manual_images/pl_1.png)
+   1. ![pl_mark](./manual_images/pl_1.png)
 7. To reset the modification, long press [1-8] button + [PARAM] when entering Parameter Lock mode, or long press [PARAM] when in Parameter Lock mode. If you press multiple buttons for the steps, multiple steps will be cleared.
 8. Once you change one parameter, you can change the last edited Locking parameter by pressing [1-8] + [PARAM] + Turning dial without re-selecting the parameter.
 9. When you are in sequencer live recording, changing sound engine parameters will be recorded as Parameter Locking.
@@ -667,18 +705,22 @@ Shift + turn dial is a useful way to sweep between sub-modes to find modified pa
 
 ## Parameter Lock morphing
 
+_Demo: [video](https://www.youtube.com/watch?v=cqweekqYIu4) is available._
+
 You can morph Parameter Locking between two patterns.
 
-1. Let's say you are in pattern 1. Set Morph Pattern in Sequencer configuration menu. Set the Morph pattern to 2 by long pressing button 4.
-2. Copy pattern 1 to 2 with SEQ PLAY + [1-8] + Turn dial
-3. Move to pattern 2
-4. Modify the Parameter Locking in pattern 2
-5. Go back to pattern 1
+_Workflow: morph pattern lock._
+
+1. Let's say you are in pattern #1. Set Morph Pattern in Sequencer configuration menu. Set the Morph pattern to #2 by long pressing button 4.
+2. Copy pattern #1 to #2 with SEQ PLAY + [1-8] + Turn dial
+3. Move to pattern #2
+4. Modify the Parameter Locking in pattern #2
+5. Go back to pattern #1
 6. Morph can be done by pressing [MODE PLAY] + [PARAM] + Turn dial
 
 ## Looper overview
 
-Tutorial video (https://www.youtube.com/watch?v=iD4WpX3tHUE)
+_Tutorial: [video](https://www.youtube.com/watch?v=iD4WpX3tHUE&t=1s) is available._
 
 The looper is designed to work with the sequencer. The looper always tries to sync with sequencer play. Looper won't start playing when the sequencer is not running. Use a blank sequencer pattern when you don't want to make sound from the sequencer.
 
@@ -716,7 +758,7 @@ Label | Description
 ------------ | -------------
 Big letter top left(Not shown in the screenshot) | Indicator of Overdub, Rec or Insert 
 Small dot on bottom left | Ready to play, waiting for sequencer, or already playing
-Another circle line in the tape | Extra processing is on (PARAM + NO) 
+Another circle line in the tape | Extra Processing is on (PARAM + NO) 
 P | Position (steps) 
 L | Loop length (steps) 
 Box and lines above SC label | Scene page
@@ -730,6 +772,8 @@ Button | Description
 1 | Looper track edit menu. You can adjust looper record volume (+-3dB)
 
 ## Insert recording
+
+_Tutorial: [video](https://www.youtube.com/watch?v=N8N1X59RaVg&t=1s) is available._
 
 When you press REC + LOOPER PLAY 3 times, it enters Insert recording mode, this allows to record external effector result back to the looper. For example, you can apply reverb if you have a reverb pedal.
 
@@ -796,15 +840,32 @@ Use Preset Bucket to keep preset settings. You can recall tone preset and patter
 
 ## PLY:PLAY PIANO
 
+_Tutorial: [video](https://youtu.be/T09kL4tfw4s?t=7) and demo [video](https://www.youtube.com/watch?v=WVT4ovd2yOc) are available._
+
 ![piano](./manual_images/piano.png)
 
-The mode is simple piano playing mode. Default is chromatic scale, but the scale and key can be changed by the scale setting in SEQ Config mode. Turn dial to transpose.
+The mode is simple piano playing mode. Default is chromatic scale, but the scale and key can be changed by the scale setting in SEQ Config mode. Turn dial to transpose. 
+
+_Workflow: Play notes quantized to a scale with one (or more) buttons and dial._
+
+1. Optional: set up the instrument for chording
+   1. Press MODE PARAM
+   2. Press SHIFT + B8 for OTHER
+   3. Hold B7 + dial to set QUAD voice
+2. Press MODE PLAY
+3. Press SHIFT + B7 for CFG
+4. Hold B3 + dial (or NO/OK) to desired scale. Default is Acoustic. Try Iwato scale.
+5. Press SHIFT + B1 for PIANO
+6. Play B[1-8] and turn dial. Play chords (several B[1-8]) if you set QUAD voice.
 
 ### Temporary piano mode
 You can activate Piano mode anytime by keep pressing SYSTEM + [1-8] button. You can change transpose by turning dial once piano mode is activated.
 
 
 ## PLY:SEQ MODIFY
+
+_Tutorial: [video](https://www.youtube.com/watch?v=vZqdzkTQ1Mg&t=687s) is available._
+
 ![mod](./manual_images/mod.png)
 
 This controls modifier of the sequencer pattern.
@@ -822,7 +883,7 @@ Button | Function
 
 The Modifier is powerful feature, it will give algorithmic effects to the pattern. Those effects will be applied to current pattern without breaking the pattern data.  Also, you can apply modifiers to the pattern to make the effect as permanent.
 
-- Transpose will add offset to the pattern. Scale quantize (SEQ Config button 3) will help to keep the result musical.
+- Transpose will add offset to the pattern. Scale quantize (SEQ Config button 3) will help to keep the result musical. _Demo: [video](https://youtu.be/WVT4ovd2yOc) is available._
 - Width Offset will change the note length.
 - Randomness will add some randomness to playing notes.  Scale quantize (SEQ Config button 3) will help to keep the result musical.
 - Arpeggiator will add note offset. Scale quantize (SEQ Config button 3) is important to generate usable Arpeggiator result.
@@ -881,27 +942,35 @@ Right | 3rd of the note (Used with triplet)
 
 ### Playing note capturing from external MIDI keyboard
 
+_Demo: [video](https://www.youtube.com/watch?v=aV2YL0idMHA) is available with the legacy Qun mk1 pocket synthesizer._
+
 Alternatively, you can step record notes by external MIDI keyboard. Play note by MIDI keyboard while you are pressing one of the eight buttons, the note will be recorded as the tune for the step. Chord playing can be captured as well.
-https://www.youtube.com/watch?v=aV2YL0idMHA
 
 ## PLY:SEQ CONFIG
 
 ![conf](./manual_images/conf.png)
 
-Button | Function
------------- | -------------
-1 | 16th Swing / Long press for Sequencer MIDI channel out. Long press button 6 for 8th swing. Combination of 16th and 8th swing is great for sloppy off-grid feeling. 
-2 | Key (for scale). / Long press for 2nd pattern 
-3 | Scale. Playing note will be quantized by this scale. / Long press for 3rd pattern 
-4 | Sequencer loop count. Default is 8.  / Long press for Morph pattern.
-5 | BPM factor. Playing speed can be double, normal, 1/2, 1/4 or 1/8.  / Long press for note Lower Limit 
-6 | Velocity accent period (steps). / Long press for 8th swing 
-7 | Velocity for the non-accent notes. / Long press for note Upper Limit 
+Button |  Function
+|- | -------------|
+1 | 16th Swing  _Tip: Combination of 16th and 8th swing (see button 6) is great for sloppy off-grid feeling._ 
+1 (Long press) | Sequencer MIDI channel out.
+2 | Key (for scale). 
+2 (Long press) | 2nd pattern 
+3 | Scale. Playing note will be quantized by this scale. 
+3 (Long press) | 3rd pattern 
+4 | Sequencer loop count. Default is 8.
+4 (Long press) | Morph pattern.
+5 | BPM factor. Playing speed can be double, normal, 1/2, 1/4 or 1/8.  
+5 (Long press) | Note Lower Limit 
+6 | Velocity accent period (steps). 
+6 (Long press) | 8th swing 
+7 | Velocity for the non-accent notes. 
+7 (Long press) | Note Upper Limit 
 8 | Velocity accent Period Offset 
 
 Velocity period settings (Button 6 - 8) provide a convenient way to make rhythmic velocity.
 
-Sequencer MIDI channel out is useful setting with external synthesizer. When you set it, the sequencer starts to emit MIDI out signal to external synthesizers. If you set Channel + "N" such as "1N", it won't trigger internal sound engine.
+Sequencer MIDI channel out is useful setting with external synthesizer. When you set it, the sequencer starts to emit MIDI out signal to external synthesizers. If you set Channel + "N" such as "1N", it won't trigger internal sound engine. _Demo: [video](https://www.youtube.com/watch?v=5HG3B8LYQF4) is available._
 
 Morph pattern is used for Parameter Lock Morphing. Please refer "Parameter Lock Morphing" section in this manual.
 
@@ -911,9 +980,9 @@ Note lower and upper limit will limit the range of note. When the sequencer rece
 You can run multiple sequence patterns at the same time, up to 3 patterns by setting "2nd pattern" (Long press button 2) or/and "3rd pattern" (Long press button 3), or using the shortcut shown below.
 
 Button | Function
------------- | -------------
-2 in SEQ CFG sub-mode | Long press for 2nd pattern 
-3 in SEQ CFG sub-mode | Long press for 3rd pattern 
+|------------ | -------------|
+2 in SEQ CFG sub-mode (Long press) | 2nd pattern 
+3 in SEQ CFG sub-mode (Long press) | 3rd pattern 
 SEQ PLAY + B[1-8] (Primary pattern) + B[1-8] (2nd pattern) in any sub-mode | This is a shortcut to select parallel pattern select. If you press another button while you keep pressing the primary pattern button, then it will be for the 3rd pattern(If you release the primary pattern button, it will become **Pattern chaining**). Assign the same pattern one more time to erase the assignment. Only normal parallel pattern ("R0") can be selected. 
 
 The status is shown like this:
@@ -926,7 +995,12 @@ The second number after "R" means period length for relative pattern run.
 
 **You can edit the second/third pattern while playing.** To do this, just select second or third pattern while playing. The primary pattern won't be changed.
 
-If you select R1 to R8, the second (or third) pattern will run as relative pitch to the primary pattern.
+#### Relative pattern sequencing
+
+_Demo: [video](https://www.youtube.com/watch?v=SB8dgMBx_Ts&t=210s) is available._
+
+If you select R1 to R8, the second (or third) pattern will run as relative pitch to the primary pattern. 
+
 In this setting, C5 is the center (zero). The sequencer will update the transpose every configured period (R1 to R8) by looking at the current pitch in the primary pattern.
 
 ![relative_sequencing](./manual_images/relative_sequencing.png)
@@ -939,12 +1013,13 @@ If you set "R2" for the pattern, the transpose for the pattern will be updated e
 
 **In relative run mode,  you need to specify tune for all steps, even for untriggered steps to tell the second/third pattern the transposing.**
 
-the second/third pattern's scale will be ignored, and primary pattern's scale quantize will be applied.
+The second/third pattern's scale will be ignored, and primary pattern's scale quantize will be applied.
 
-## PLY: Granular
+## PLY:Granular
+
+_Several videos of the Granular Engine are available: a [tutorial](https://www.youtube.com/watch?v=wEkmEXk_wRk), an [overview](https://www.youtube.com/watch?v=VE9lq5rr_YE) using the legacy Qun mk1 pocket synthesizer, a [brief demo](https://www.youtube.com/watch?v=BPVdobysstY), and a [wavetable-mimicing demo](https://www.youtube.com/watch?v=ssNfJuYejUM)._
 
 ![granular](./manual_images/granular.png)
-
 
 ### Overview
 
@@ -991,7 +1066,7 @@ SHIFT + LOOPER PLAY | Load Recording data from SD card.   Dial or button 7 or bu
 
 LOOPER buttons acts as sample player in granular mode.
 
-#### sample processing
+#### Sample processing
 
 You can process samples.
 
@@ -1008,9 +1083,11 @@ Cut slice | Cut current slice (Cut the region). It's useful to trim sample
 
 ### Having multiple slices (Slice Spread)
 
+_Tutorial: [video](https://youtu.be/T09kL4tfw4s?t=167) is available._
+
 You can have multiple slices. 
 
- To edit current slice, button 3 (Start point) and button 4(Length). NO or OK to switch between slices. If the slice length is zero then the following numbers of slices will be ignored.
+ To edit current slice, button 3 (Start point) and button 4 (Length). NO or OK to switch between slices. If the slice length is zero then the following numbers of slices will be ignored.
 
 When Slice Spread (Button 2) is set to more than zero, each slice 1-8 will be applied from the C4(60) note. One spread means half step.
 
@@ -1035,7 +1112,11 @@ In Repeat modes, multiple slicing points are randomly selected when the length i
 
 ### Live slicing
 
-Live slicing (Making slices by pressing buttons while you are playing sample) can be done when you set GRN mode to ONE mode. Here is the steps to perform live slicing:
+_Tutorial: [video](https://www.youtube.com/watch?v=YqOcnWoZYG8) is available._
+
+Live slicing makes slices by pressing buttons while you are playing a sample. Live slicing can be done when you set GRN mode to ONE mode. 
+
+_Workflow: perform live slicing._
 
 1. Initialize a preset with "Slice" template. (Shift + PARAM and select "Slice"). Or set up the parameters by yourself. Make sure GRN mode is ONE.
 2. Go Granular mode and load sample or record sample
@@ -1046,18 +1127,19 @@ Live slicing (Making slices by pressing buttons while you are playing sample) ca
 
 ### Vinyl record scratch mode
 
+_Tutorial: [video](https://www.youtube.com/watch?v=6uP1LoAZ9nE) is available._
+
 ![granular](./manual_images/scratch.png)
 
-Press SHIFT + Button 1 in piano mode one more time to enter record scratch mode.(Or SHIFT + turn dial in play mode)
 Record scratch mode is an emulation of analog record scratching by using Granular's sample buffer.
+
+Press SHIFT + Button 1 in piano mode one more time to enter record scratch mode. Or, SHIFT + turn dial through the sub-modes when in play mode. Qun may show instructions on screen to set certain settings for Scratch mode.
 
 To use record scratch mode, you need to set the following settings, or using "Scratch" template from preset initialize menu:
 1. Granular mode set to ONE
 2. Select OSC1's shape to AUX L
 3. Set OSC1's octave to +1
 4. OSC1 Env Sel to "ON" (Parameter mode, Switch menu, button 1) to disable envelope. Or you can set it to other sources to automate crossfade slider.
-
-
 
 
 Button | Function
@@ -1112,6 +1194,8 @@ When granular mode is not OFF, the recording data will be saved when you save pr
 
 ## PLY:MIXER
 
+![mixer](./manual_images/mixer_play.png) 
+
 Three track Mixer. At the last stage, signal can be **stereo** by panning tracks.
 
 Button | Function
@@ -1128,7 +1212,7 @@ MODE PLAY + turn dial | Record volume
 SHIFT + MODE PLAY + turn dial | Record pan
 MODE PLAY + SYSTEM + turn dial | Looper master volume 
 SYSTEM + PARAM + turn dial | Cross fade between Record volume and Looper volume
-SHIFT + NO | Toggle Monitor mode 
+SHIFT + NO | Toggle between Monitor mode and Mixer
 
 
 This mixer has a compressor. Ratio, attack time and release time are fixed (1:3, attack 30ms, release 100ms).
@@ -1141,44 +1225,50 @@ Mixer setting will be saved when Session is saved.
 
 ### Monitor mode
 
-![granular](./manual_images/monitor.png)
+_Demo: [video](https://www.youtube.com/watch?v=G79n2pruvMI) is available._
 
-You can monitor the output.
+![vu meter monitoring](./manual_images/monitor.png)
+
+You can monitor the output with a VU meter.
 
 Button | Function
 ------------ | -------------
 B[1-8] | Toggle monitor page 
+SHIFT + NO | Toggle between Monitor mode and Mixer
+
 
 When you are in mixer mode, press SHIFT + NO again, or shift + turn dial to the end, you can enter to the monitor mode.
 
 
-### Extra processing
+### Extra Processing
 
-This is the mode to use the sound engine to use as an effector.
+_An intermediate [tutorial video segment](https://www.youtube.com/watch?v=wyU148xfGao&t=725s) and [demo video](https://www.youtube.com/watch?v=RmhoXS-IHoA) are available._ 
 
-You can toggle Extra processing mode by **PARAM + NO** button. 
+This mode uses the sound engine as an effector to process external stereo input.
+
+You can toggle Extra Processing mode by **PARAM + NO** button. 
 
 When it's enabled, the Oscillators are turned off, but filter and effector becomes stereo, and connected to after Looper.
-You can apply filter, filter volume, and effects against Looper recording. **See the signal diagram to understand how it works.**
+You can apply filter, filter volume, and effects against Looper recording. See the [signal diagram](#signal-diagram) to understand how it works.
 
-LFO and Envelopes(EG1 to EG4) is still available for filter modulation.
+LFO and Envelopes(EG1 to EG4) are still available for filter modulation.
 
-Extra processing can be recorded back to looper and this is powerful feature, you can bounce back looper recording with effects.
+Extra Processing can be recorded back to looper and this is powerful feature, you can bounce back looper recording with effects.
 
-	1. Stop the sequencer.
-	1. Select the recording track.
-	1. Turn on Extra Processing (PARAM + NO)
-	1. Set OVERDUB (REC+Looper Play) or REC (Rec+ Looper Play twice) 
-	1. Start the sequencer, looper start recording
-	1. Hit looper stop button to stop recording
+  1. Stop the sequencer
+  2. Select the recording track
+  3. Turn on Extra Processing (PARAM + NO)
+  4. Set OVERDUB (REC + Looper Play once) or REC (REC + Looper Play twice) 
+  5. Start the sequencer, and the looper starts recording
+  6. Hit the looper STOP button to stop recording
 
-The following parameters are still available with Extra processing:
+The following parameters are still available with Extra Processing:
 
 - All parameters in VCF sub-mode
 - VCF Mod Sel
 - VCF Volume
-- 2 / 4 pole
-- 2nd Filter (When VCF is 2 pole)
+- 2 / 4 POLE
+- 2nd Filter (When VCF is 2 POLE)
 - All parameters in LFO sub-mode
 -  Effector parameters (Type, Speed, Depth and Feedback)
 -  VCF ENV Src
@@ -1343,11 +1433,13 @@ You can turn on/off WiFi in system menu, it's located after system2 menu. The se
 
 ## Touch Slider
 
+_Tutorial: [video](https://www.youtube.com/watch?v=1edNSSLNFIo) is available._
+
 The four buttons located at the bottom board (Play, Set, Vol-, Vol+) can be used as a touch slider. Place your finger on the Buttons and slide.
 
 Configure Slider assignment (System2, button 7) to activate the slider. 
 
-If you want to assign the slider to other than pre-defined ones, assign it to Mod wheel (or other MIDI CC parameters), and you can use MIDI learning to assign Mod wheel to any available synth parameters. See MIDI learning section for detail.
+If you want to assign the slider to other than pre-defined ones, assign it to Mod wheel (or other MIDI CC parameters), and you can use MIDI learning to assign Mod wheel to any available synth parameters. See [MIDI learning](#midi-learning) section for details.
 
 Note: Qun mk2's bottom board is generic development board. Touch buttons are not ideal for touch slider use, so the experience is not the best.
 
@@ -1357,7 +1449,7 @@ If you received Qun mk2 synth before firmware v4.02, you need to change DIP swit
 
 All switches should be Down to activate Touch Slider.
 
-[Instruction video](./manual_images/qunmk2dips.mp4)
+_Instruction: [video](./manual_images/qunmk2dips.mp4) is available._
 
 ![dipswitch](./manual_images/dipswitch.jpg)
 
