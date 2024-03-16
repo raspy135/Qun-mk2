@@ -807,7 +807,7 @@ WAV format has to be **16-bit, 48000Hz, Mono**. Otherwise "Format error" message
 Steps to import file:
 
 1. Set BPM that you want
-2. **SHIFT + LOOPER PLAY + B[1-3]**. [1-3] buttons correspond to the destination track.
+2. **SHIFT + LOOPER PLAY + B[1-3] or B[7-8]**. [1-3] buttons correspond to the destination track. B7 and B8 is for stereo track. B7 is AB, B8 is BC.
 3. Dial or button 7 or button 8 to select file.
 4. Button 5/6 for horizontal scroll for long filename
 5. Select file, **OK** to import. **SHIFT + OK** to preview the sound.
