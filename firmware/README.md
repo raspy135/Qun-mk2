@@ -13,15 +13,23 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
-- v4.92 (Highly recommend to upgrade from all previous beta versions)
+- v4.93
   
+  - New feature: Firmware can be uploaded via web interface
+  
+  - Bug fix: Some scene loading related bugs
+  
+  - Bug fix: Previous "Looper00" folder selection was broken. (Keep pressing B1-8 when booting)
+  
+- v4.92 (Highly recommend to upgrade from all previous beta versions)
+
   - Bug fix: WiFi related turn on/turn off/failure issues.
   - New feature: Stereo samples can be loaded to looper stereo tracks(AB, or BC). Web interface also supports it.
   - New feature: +- 3dB adjustment for looper track. To enter the menu, press button 1 in looper status page.
   - New feature: Hostname parameter was added for WiFi configuration.
   - Looper scene change tuning, memory caching error improvement. Expected much less unwanted pop noises.
   - Digital delay BPM sync was not accurate.
-  
+
 - v4.91 (Still beta, but highly recommended to update from 4.90)
 
   - Performance tuning
