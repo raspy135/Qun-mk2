@@ -13,14 +13,23 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v4.94
+  
+  - Behavior change (New feature?): Glide works on any voice modes. Previously it works only on mono mode.
+  - Bug fix: Bucket name related issue
+  - Bug fix: Stereo import was not working properly.
+  - New feature: Scale-aware chord mode is added to piano mode. Please see the manual for detail.
+  - New feature: Note hold mode is added to piano mode. See the manual for detail.
+  - New feature: Mix and piano velocity are added to slider configuration. (System2, button 7)
+  
 - v4.93
-  
+
   - New feature: Firmware can be uploaded via web interface
-  
+
   - Bug fix: Some scene loading related bugs
-  
+
   - Bug fix: Previous "Looper00" folder selection was broken. (Keep pressing B1-8 when booting)
-  
+
 - v4.92 (Highly recommend to upgrade from all previous beta versions)
 
   - Bug fix: WiFi related turn on/turn off/failure issues.

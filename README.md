@@ -465,7 +465,7 @@ Button | Description
 |------ | ------|
 1 | VCF 4/2 POLE / NoLinear. Select VCF number of poles and linear or no linear. 2P/4P/2PNL/4PNL. Ladder filter algorithm will be used only when 4NL with Lowpass or Highpass filter.
 2 | VCF ENV Src. Applying Envelopes to the signal after VCF. You might want to set OSC1/2's Env sel to "ON" to utilize this parameter. This is useful only with Mono mode. _Tutorial: [video](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=672s) is available._
-3 | GLIDE. Smooth transition between notes. Works with Mono.
+3 | GLIDE. Smooth transition between notes. 
 4 | BEND RANGE. Pitch bend range.
 5 | OSC1/2 Keysync. This is a switch to connect MIDI input notes and oscillators. Y = Follow MIDI note pitch. N = Ignore MIDI note. You can still use FREQ1 and FREQ2 for modulation to use MIDI note pitch.
 6 | VELOCITY SW. Envelope generators become velocity sensitive when it’s ON.
@@ -844,7 +844,7 @@ _Tutorial: [video](https://youtu.be/T09kL4tfw4s?t=7) and demo [video](https://ww
 
 ![piano](./manual_images/piano.png)
 
-The mode is simple piano playing mode. Default is chromatic scale, but the scale and key can be changed by the scale setting in SEQ Config mode. Turn dial to transpose. 
+The mode is simple piano playing mode. Default is chromatic scale. The scale and key can be changed by the scale setting in SEQ Config mode. Turn dial to transpose. 
 
 _Workflow: Play notes quantized to a scale with one (or more) buttons and dial._
 
@@ -857,6 +857,21 @@ _Workflow: Play notes quantized to a scale with one (or more) buttons and dial._
 4. Hold B3 + dial (or NO/OK) to desired scale. Default is Acoustic. Try Iwato scale.
 5. Press SHIFT + B1 for PIANO
 6. Play B[1-8] and turn dial. Play chords (several B[1-8]) if you set QUAD voice.
+
+### Scale-aware chord mode
+
+Piano mode has a unique feature called scale-aware chord mode.
+To enable this, press multiple keys at the same time to make a chord, and press OK. **Chord on** message will be shown. To turn it off, press any of B[1-8] keys and press OK.
+
+As piano mode is aware of the current scale, the chord interval is not based on chromatic interval. It is the interval of the scale note.
+For example, 1-3-5 chord is not always C-E-G if you play C note. If the scale is minor, it will be 1-m3-5.
+
+You can press multiple keys in chord mode, so even the simple interval combination can make complicated chord.
+
+### Note hold
+
+When you press NO while pressing key, then the note will be held. To release the note, press the note one more time.
+
 
 ### Temporary piano mode
 You can activate Piano mode anytime by keep pressing SYSTEM + [1-8] button. You can change transpose by turning dial once piano mode is activated.
