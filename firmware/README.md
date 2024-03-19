@@ -13,15 +13,19 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
-- v4.94
+- v4.95
   
+  - Mono voice mode was broken (Introduced at v4.94)
+  
+- v4.94
+
   - Behavior change (New feature?): Glide works on any voice modes. Previously it works only on mono mode.
   - Bug fix: Bucket name related issue
   - Bug fix: Stereo import was not working properly.
   - New feature: Scale-aware chord mode is added to piano mode. Please see the manual for detail.
   - New feature: Note hold mode is added to piano mode. See the manual for detail.
   - New feature: Mix and piano velocity are added to slider configuration. (System2, button 7)
-  
+
 - v4.93
 
   - New feature: Firmware can be uploaded via web interface
