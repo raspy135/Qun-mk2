@@ -632,7 +632,7 @@ PARAM + NO | Toggle Extra Processing
 SHIFT + LOOPER STOP | Delete all track recordings in the current scene, reset recording length 
 REC + NO | Cut or Copy Looper track 
 REC + OK | Paste Looper track 
-REC + PARAM | Open UNDO list. Select the top item to undo the last recording for the track. Shift + OK to preview the sound. 
+REC + PARAM | Open UNDO list. Select the top item to undo the last recording for the track. Select the second item to undo the last sequcener recording. Shift + OK to preview the sound. 
 MODE PLAY + PARAM + Turn Dial | Parameter Lock Morphing
 
 ## Sequencer overview
@@ -665,6 +665,8 @@ Press SEQ PLAY to exit recording mode, and the sequencer will keep playing. Pres
 You can (re)enter recording mode while playing. Press Rec + SEQ Play to enter recording mode.
 
 A metronome click sound plays when live recording is ongoing. The metronome volume can be adjusted with REC + SEQ PLAY + Turn dial. The chained sequencer pattern will be reset when you change to another pattern.
+
+You can undo the last recording. Press REC+PARAM to open Undo list, then select the second item.
 
 ### Parameter Lock live recording
 

@@ -13,10 +13,19 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v4.96
+  
+  - Bug fix: Offset and octave indicator had a collision.
+  - Bug fix: Sometimes live sequencer recording misses the first step.
+  - New feature: Sequencer live recording supports undo. It's the second item in the undo list.
+  - Performance tunings
+  - Better looking web page on mobile devices.
+  - Bug fix: With Upper limit/Lower limit, it didn't send note off properly to MIDI out.
+  
 - v4.95
-  
+
   - Mono voice mode was broken (Introduced at v4.94)
-  
+
 - v4.94
 
   - Behavior change (New feature?): Glide works on any voice modes. Previously it works only on mono mode.
