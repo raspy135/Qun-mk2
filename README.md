@@ -824,9 +824,9 @@ Check Looper status, such as playing position and loop length, by pressing the R
 
 Label | Description
 ------------ | -------------
-![o](./manual_images/looper-o.png) / ![r](./manual_images/looper-r.png) / ![io](./manual_images/looper-io.png) / ![ir](./manual_images/looper-ir.png) Letter in corner  | Indicator of Overdub, Record, Insert Overdub, and Insert Record 
+![o](./manual_images/looper-o.png) / ![r](./manual_images/looper-r.png) / ![io](./manual_images/looper-io.png) / ![ir](./manual_images/looper-ir.png): Letter in corner  | Indicator of Overdub, Record, Insert Overdub, and Insert Record 
 Small dot on bottom left | Ready to play, waiting for sequencer, or already playing
-![e](./manual_images/looper-e.png) Extra tape-circle | Extra Processing is on (PARAM + NO) 
+![e](./manual_images/looper-e.png): Extra tape-circle | **Extra Processing** is on (PARAM + NO) 
 `P` | Position, in steps 
 `L` | Loop length, in steps 
 Box and lines above `SC` label | Scene page
@@ -859,15 +859,16 @@ _Workflow: perform insert recording._
    1. **You can check AUX input level in [Monitor mode](#monitor-mode), page 2.**
 2. Mute tracks or sound engine that you don't want to record. 
 3. Select recording track. REC + B[1-3] or B[7-8] for stereo. 
-4. **REC + LOOPER PLAY 3 times or 4 times** to activate Insert recording mode. "InsertRec" or "InsertOvb" message will be shown, or You will see "`IO`" or "`IR`" indicator if you are in Looper status page.  
+4. **REC + LOOPER PLAY 3 times or 4 times** to activate Insert recording mode. The "InsertRec" or "InsertOvb" indicators will be shown if you are outside of the Looper status page, and "`IR`" or "`IO`" if inside.
    1. "`IR`" mean Insert Recording,  it will overwrite existing recording which is normally you may want. 
    2. "`IO`" means Insert Overdub, it will overdub to the existing recording.
 5. When you select "`IR`", remember the loop length if you don't want to change the loop length.
-6. Start recording by starting the sequencer.
+6. Start recording by starting the sequencer with SEQ PLAY.
 7. Stop recording at the desired record length.
 8. The audio with effector should be recorded to the selected track. Check the result by turning off the external effector(s).
 
-Tips:
+_Tips: for advanced insert recording._
+
 - Playing track and recording track can be the same.
 - You can enable Extra Processing for additional effects if you want.
 
