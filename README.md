@@ -19,9 +19,9 @@
 ## Links and Information
 
 * [Online Shop](https://shop.nunomo.net/products/): Purchase your own from our website.
-* [Presets template](https://github.com/raspy135/Qun-mk2/blob/main/sd_template.zip): Download and install tone presets  (see [Load Preset](#load-preset)). We constantly update the tone presets.
+* [Presets template](https://github.com/raspy135/Qun-mk2/blob/main/sd_template.zip): Download and install tone presets. See the [Load Preset](#load-preset) section for details. We constantly update tone presets.
 * [Issues](https://github.com/raspy135/Qun-synthesizer/issues): Report issues when you have problems or questions.
-* [Firmware](./firmware): Firmware updates and instructions (see README.md).
+* [Firmware](./firmware): Firmware updates and instructions. See [firmware/README.md](./firmware/README.md) for instructions.
 * [CheatSheet](./cheatsheet.pdf): A printable cheat sheet listing buttons, device modes and sub-modes, shortcuts, and synth instrument parameters.
 
 **We are looking for your feedback! For general impressions and feedback, please email them to [info@nunomo.net](mailto:info@nunomo.net) or join [Nunomo's Discord server](https://discord.gg/kcvVTPkZVQ)!**
@@ -35,7 +35,7 @@ Highlights:
 
 Qun mk2 has a 2 oscillator virtual analog, FM, granular sound engine. The 2 oscillators can be used separately.
 
-The sequencer is an 8-step based sequencer, and supports up to 32/64 steps per pattern. You can store 8 patterns for each preset bucket. And it has 8 buckets of tone preset + sequencer patterns. So you can quickly switch between 8 presets and 64 (8 x 8 pattern) patterns.
+The sequencer is an 8-step based sequencer, and supports up to 32/64 steps per pattern. You can store 8 patterns for each preset bucket. And it has 8 buckets of tone preset and sequencer patterns. So you can quickly switch between 8 presets and 64 (8 x 8 pattern) patterns.
 
 It has a 3 track looper with 20 scenes, so you can swap 3 tracks x 20 scenes while playing. 
 
@@ -92,7 +92,11 @@ More:
 
 * WiFi
   * Sample recordings can be imported or exported through WiFi web interface.
-    
+
+* Control surface
+  * Bank of 8 LED-backlit buttons -- for note playing, sequencing, parameter selection, and more
+  * Finite dial encoder with a **relative editing mode** -- either jump to a value, or adjust from the last value 
+
 
 ## CONNECTIONS
 
@@ -106,38 +110,67 @@ More:
 
 ## MAJOR MODES
 
-Qun mk2 has three major modes.
+Qun mk2 offers three major modes to use all of its features.
 
 Mode | Description
 ------------ | -------------
-Play | Playing from the sequencer and looper. 
+Play | Playing from the Sequencer and Looper. 
 System | Loading and saving data, and changing system settings.
-Param | Parameter mode: Changing the synthesizer’s instrument parameters.
+Param | Parameter mode: Changing the synthesizer’s tone parameters.
 
 ## BASIC OPERATION
 
 _Tutorial: in-depth [basics video](https://www.youtube.com/watch?v=sSR3ob0aQUM&t=1s) is available._
 
-Each major mode has selectable sub-modes. Many sub-modes have editable parameters.
+_Reading note: You may see the plus ("+") used in this document for button combinations. To be clear, it symbolizes holding down and using several buttons or controls all at once, in sequence._
+
+* For example, "SHIFT + SEQ PLAY + turn dial" means to press and hold the SHIFT button, and while continuing to hold it also press and hold SEQ PLAY, and finally simultaneously to turn the dial. This will show the beats per minute (BPM) setting on the display, then change it.
+
+Each major mode has selectable **sub-modes**. Many sub-modes have editable **parameters**.
 
 For example, the Param major mode has an `OSC1` sub-mode which configures Oscillator 1, and the Play major mode has a `PIANO` sub-mode which allow direct playing of notes using the [1-8] buttons.
 
-* To switch sub-mode, press SHIFT + [1-8] button or NO/OK buttons to change sub-mode.
-  * After you enter the sub-mode you want, press [1-8] button to select a parameter.
-  * See the names printed on the device for sub-modes of Param and Play major modes. For example, look underneath the [1-8] buttons and see `OSC1` and `PIANO`.
-  * Alternatively, you can select sub-mode by press SHIFT + turn the dial.
-  * Alternatively, you can select sub-mode by Double-clicking MODE PLAY button or PARAM button then press [1-8] button.
-* To operate on parameter values, first press [1-8] button to pick the current parameter 
-  * Press one of 8 buttons + rotate dial = Change parameter value.
-  * Rotate the dial = Change the current parameter.
-  * Long press the button to show the parameter full name and value.
-  * Double click + hold the button to enter relative mode. The dial value adjustment will be relative. _Tutorial: [video](https://youtu.be/6uP1LoAZ9nE?t=11) is available._
-  * If you want to do fine value adjustment, you can use NO/OK buttons to change the value by 1. To do this, keep pressing one of 8 buttons and press NO or OK button.
-* For initial training, referring to the [Qun cheatsheet](./cheatsheet.pdf) can be useful. Also seeing the parameter name when changing its value is useful for training: turn on Parameter Caption mode in System2 menu, button 3.
+_Workflow: select a sub-mode and parameter, and change a parameter value._
+
+1. Press PARAM to enter Param mode.
+2. Switch **sub-mode** by pressing SHIFT + [1-8] button.
+3. Select a **parameter** by pressing [1-8] button.
+4. Press one of 8 buttons + turn dial to change the parameter value.
+
+Sub-mode names are printed on the device for the Param and Play major modes. For example, look underneath the [1-8] buttons and find `OSC1` and `PIANO` Param and Play sub-modes, respectively.
+
+_Tip: for initial training, help is available._
+
+* Refer to the [Qun cheatsheet](./cheatsheet.pdf) for a useful summary of controls, modes, sub-modes, parameters, and quick feature guides.
+* Also seeing a parameter's name when changing its value is useful for initial training. Use **Parameter Caption** for this: press SYSTEM, turn the dial to the System2 menu, press OK to enter it, and finally press button 3 until Parameter Caption is "On".
+
+### Advanced operation
+
+Try all the ways to change **sub-mode**:
+
+* Press SHIFT + [1-8] to change sub-mode
+* Press SHIFT + NO / OK buttons to browse and change sub-mode 
+* Press SHIFT + turn the dial to browse and change sub-mode
+* Double-click the MODE PLAY button, then press [1-8] button to change sub-mode
+* Double-click the PARAM button, then press [1-8] button to change sub-mode
+
+And try all the ways to _select_ and _edit_ **parameters**:
+
+* Press [1-8] button to pick a parameter. This selects a parameter as the "current" parameter.
+* Press one of the 8 buttons + turn dial to quickly change a specific parameter's value, and select this parameter as "current".
+* Simply turn the dial to change the _current_ parameter.
+* Long press the [1-8] button of a parameter to show its full name and value, and to set it as "current".
+* Double click + hold the [1-8] button to enter **relative editing mode**. Turning the dial will change a value relative to the last value. Otherwise, normal turning of the dial will jump to a value starting from the top of the dial. _Tutorial: [video](https://youtu.be/6uP1LoAZ9nE?t=11) is available._
+* If you want to do fine value adjustment, you can use NO / OK buttons to change the value by 1. To do this, keep pressing one of 8 buttons and press NO or OK button.
+
+_Tip: menus can be scrolled through, one by one, with buttons 7 and 8._
+
+* Scrolling in menus by turning the dial will sweep through many menu items quickly.
+* Try using button 7 and 8 to scroll one at a time: press SYSTEM, then press button 8 twice to reach the "System" item, and finally press OK.
 
 Button | Primary function
 ------------ | -------------
-SHIFT | Shift + [1-8] button or NO/OK button to select sub-mode 
+SHIFT | SHIFT + [1-8] button or NO / OK button to select sub-mode 
 [1-8] button | Select a parameter in the current sub-mode. Also show information with LEDs (see under LED Indicators).
 NO | Select previous sequencer pattern
 OK | Select next sequencer pattern
@@ -152,7 +185,7 @@ REC + LOOPER PLAY | Start looper recording sound
 LOOPER PLAY | Start looper playing
 LOOPER STOP | Stop looper playing
 RST button on the base board | Reset the device
-4 touch buttons at the bottom board | This can be used as a touch slider. See [Touch Slider](#touch-slider) section for detail. 
+4 touch buttons at the bottom board | This can be used as a touch slider. See the [Touch Slider](#touch-slider) section for detail. 
 SHIFT + NO + OK | Sleep (Shutdown) the device. It will turn off most of the power consuming components like the main CPU and the screen. Press the RST button to restart the device.
 
 ## BASIC SHORTCUTS
@@ -164,14 +197,14 @@ SHIFT + SYSTEM | All notes off
 SHIFT + PARAM | Initialize the preset. Choose from a default: Blank, Sampler, EvenSlice, or Scratch. Please see the [Initialize preset](#initialize-preset) section for details. 
 SHIFT + SEQ PLAY + turn dial | Set BPM. Tap tempo by pressing SEQ PLAY 4 or more times while you keep pressing SHIFT. 
 MODE PLAY + turn dial | Record volume -- stay at -6.0dB or lower to avoid clipping. _Tutorial: [video](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=770s) is available._
-MODE PLAY + SYSTEM + turn dial | looper master volume 
+MODE PLAY + SYSTEM + turn dial | Looper master volume 
 SYSTEM + turn dial | VCF volume
 PARAM + turn dial | VCF cutoff
 REC + turn dial | LFO tune
 LOOPER PLAY + [1-5] | Select Scene
 REC + [1-3, 7,8] | Select looper sample recording track. A,B,C are mono tracks. Press 7, 8 for stereo recording. 7=A(Left)+B(Right), 8 = B+C. When you do stereo recording, you may want to set pan to left and right for the selected stereo tracks. 
 PARAM + [1-3] | Mute track
-MODE PLAY + [1-8] | Recall preset bucket (see under [Preset Bucket](#preset-bucket))
+MODE PLAY (RECALL) + [1-8] | Recall preset bucket. See the [Preset Bucket](#preset-bucket) section for details.
 SEQ PLAY + [1-8] | Select Sequencer pattern
 SHIFT + LOOPER PLAY + turn dial | Load session when you are not in System mode or Granular mode. 
 SHIFT + LOOPER PLAY + [1-3] button | Import WAV file from import folder to selected track
@@ -212,7 +245,7 @@ To avoid confusion, this setting won't be saved.
 
 ## Session
 
-Qun automatically collects the current looper sample recordings, instrument and sequencer presets into a Session. Sessions can be saved and loaded. They are automatically numbered and can be manually named.
+Qun automatically collects the current looper sample recordings, tone and sequencer presets into a Session. Sessions can be saved and loaded. They are automatically numbered and can be manually named.
 
 ![session_diagram](./manual_images/session_diagram.png)
 
@@ -231,10 +264,10 @@ SHIFT + LOOPER PLAY + turn dial | Load session
 NO or OK button while selecting a session | Scroll session page when you have more than 32 sessions 
 SHIFT + REC | Save current session (Looper stop will perform session save when autosave is on)
 SHIFT + REC (Long press) | Name current session
-SHIFT + REC + B[1-3] | Load WAV file to looper track A, B or C. See [Looper Overview](#looper-overview) section for details.
+SHIFT + REC + B[1-3] | Load WAV file to looper track A, B or C. See the [Looper Overview](#looper-overview) section for details.
 Press B[1-8] while booting | Load a previous LOOPER folder. E.g. Button1 means LOOPER00, Button2 means LOOPER01, and so on.
 
-_Workflow: load a session._
+_Workflow: load a different session._
 
 1. Press SHIFT + LOOPER PLAY when you are not in System mode or Granular mode. 
    1. Current session number will be indicated, for example "Looper00:0001". 
@@ -248,6 +281,7 @@ This can be turned off in the System2 menu.
 ## Initialize Preset
 
 You can initialize a preset by pressing SHIFT + PARAM.
+
 Several preset templates are available when initializing: Blank, Sampler, EvenSlice, and Scratch. Blank is the base preset for all.
 
 The following parameters will be set when you select other templates:
@@ -292,25 +326,24 @@ The synth has 8 preset buckets to quickly recall presets. Each bucket contains o
 
 Buttons | Description
 -------|-------
-MODE PLAY + B[1-8] | Switch Bucket
-MODE PLAY + B[1-8] + turn dial | Copy Bucket
+MODE PLAY (RECALL) + B[1-8] | Switch Bucket
+MODE PLAY (RECALL) + B[1-8] + turn dial | Copy Bucket
 
 Solid LED indicates current bucket you are in when pressing MODE PLAY button.
 
 Bucket information is automatically saved with Session. 
 
+_Tutorial: understand how Buckets work with tones using the RECALL button._
 
-To understand how bucket works, try the following steps:
-
-1. Reset the board
-2. Change some parameter to configure the sound, let's set it to Sine wave.
-3. Press Recall(Mode/Play) + Button 2 to switch Bucket 2
-4. Then the sound should be changed to the default SAW wave.
-5. Change some parameters to program, let's set it to White noise.
-5. Press Recall + Button 1 to switch back to Bucket 1
-6. The first sound you configured should be recalled.
-7. Press Recall + Button 2 to switch to Bucket 2 again
-8. White noise should be recalled.
+1. Reset the Qun by pressing the RST button on the base board. 
+2. Change a parameter to configure the sound. Let's set its shape to a **Sine wave**. Hold B1 + turn dial to Sine. This tone preset is currently in Bucket 1.
+3. Press RECALL (the MODE PLAY button) + button 2 to switch Bucket 2. "Bucket 2" will be shown on the display.
+4. See the sound's shape is changed back to the default **Saw wave** from your previously chosen Sine wave.
+5. Change a parameter to program Bucket 2's sound. Let's set its shape to **White noise**. Hold B1 + turn dial to "W" for White noise.
+6. Press RECALL + button 1 to switch back to Bucket 1. "Bucket 1" will be shown on the display.
+7. See the first sound you configured is now recalled.
+8. Press RECALL + button 2 to switch to Bucket 2 again
+9. See the White noise should be recalled.
 
 When you save the preset or load the preset from bank 1 to 8, its name is used to indicate the bucket, so it is always recommended to set a name by saving or loading the preset.
 
@@ -326,7 +359,7 @@ Signal diagram helps to understand how Qun mk2 works.
 # Parameter Mode (Param)
 
 ## Adjust synthesis parameters
-To operate, press B[1-8] to choose a parameter and rotate dial to change its value. The parameter display area will temporarily invert. A parameter's position in the display corresponds to the visual button assignment:
+To operate, press B[1-8] to choose a parameter and turn dial to change its value. The parameter display area will temporarily invert. A parameter's position in the display corresponds to the visual button assignment:
 
 ```
  1  3  5  7
@@ -637,7 +670,7 @@ PARAM + NO | Toggle Extra Processing
 SHIFT + LOOPER STOP | Delete all track recordings in the current scene, reset recording length 
 REC + NO | Cut or Copy Looper track 
 REC + OK | Paste Looper track 
-REC + PARAM | Open UNDO list. Select the top item to undo the last sample recording for the track. Select the second item to undo the last sequcener recording. Shift + OK to preview the sound. 
+REC + PARAM | Open UNDO list. Select the top item to undo the last sample recording for the track. Select the second item to undo the last sequcener recording. SHIFT + OK to preview the sound. 
 MODE PLAY + PARAM + turn dial | Parameter Lock Morphing
 
 ## Sequencer overview
@@ -681,7 +714,7 @@ When you are in sequencer live recording, changing sound engine parameters will 
 
 When you are in Tune, Width, Velocity, or Prob mode, and you are also in sequencer live recording, pressing B7 + B8 will specify the current step. The "Current" message will be shown.
 
-While you are pressing B7+B8, the dial position will be recorded to the current playing position.
+While you are pressing B7 + B8, the dial position will be recorded to the current playing position.
 
 
 ## Parameter Locking
@@ -899,7 +932,7 @@ _Workflow: play notes quantized to a scale with one (or more) buttons and dial._
    3. Hold B7 + turn dial to set QUAD voice
 2. Press MODE PLAY
 3. Press SHIFT + B7 for CFG
-4. Hold B3 + turn dial (or NO/OK) to desired scale. Default is Acoustic. Try Iwato scale.
+4. Hold B3 + turn dial (or NO / OK) to desired scale. Default is Acoustic. Try Iwato scale.
 5. Press SHIFT + B1 for PIANO
 6. Play B[1-8] and turn dial. Play chords (several B[1-8]) if you set QUAD voice.
 
@@ -1178,7 +1211,7 @@ Live slicing makes slices by pressing buttons while you are playing a sample. Li
 
 _Workflow: perform live slicing._
 
-1. Initialize a preset with "Slice" template. (Shift + PARAM and select "Slice"). Or set up the parameters by yourself. Make sure GRN mode is ONE.
+1. Initialize a preset with "Slice" template. (SHIFT + PARAM and select "Slice"). Or set up the parameters by yourself. Make sure GRN mode is ONE.
 2. Go Granular mode and load sample or record sample
 3. Set the first slicing point to the head of playing point and set length to 127(max), which is the default values.(We want to play the entire sample)
 4. Press play button and **keep pressing the play button**. Loaded sample will play.
@@ -1224,13 +1257,13 @@ Button 1 | Rewind to slice 3
 - Record rotates while you are pressing Release. If you keep turning dial to clockwise while pressing the button, the position will be kept. 
 
 
-### Import WAV file to granular engine from SD card
+### Import WAV file to Granular engine from SD card
 
 You can import WAV file if you put WAV file under **/granular** folder in SD card. 
 
 **The looper record data can be imported** as well. This will be shown at the end of the list at the root folder, so you can load looper recorded data to Granular as well.
 
-**Shift + Looper Play to import WAV file**, **Shift + Looper REC to export WAV file**.
+**SHIFT + LOOPER PLAY to import WAV file**. **SHIFT + LOOPER REC to export WAV file**.
 
 1. Dial or button 7 or button 8 to select file.
 2. Button 5/6 for horizontal scroll for long filename.
@@ -1297,7 +1330,7 @@ B[1-8] | Toggle monitor page
 SHIFT + NO | Toggle between Monitor mode and Mixer
 
 
-When you are in mixer mode, press SHIFT + NO again, or shift + turn dial to the end, you can enter to the monitor mode.
+When you are in mixer mode, press SHIFT + NO again, or SHIFT + turn dial to the end, you can enter to the monitor mode.
 
 
 ### Extra Processing
@@ -1381,7 +1414,7 @@ Select folder to save, and use B[1-8] and dial to select letters, OK to save.
 
 
 ## SYS:SYSTEM
-System Setting is the setting that is not included in the patch setting. To change the parameter, press the one of 8 buttons and rotate the dial.
+System Setting is the setting that is not included in the patch setting. To change the parameter, press the one of 8 buttons and turn the dial.
 
 
 Button | Function
