@@ -19,9 +19,9 @@
 ## Links and Information
 
 * [Online Shop](https://shop.nunomo.net/products/): Purchase your own from our website.
-* [Presets](https://github.com/raspy135/Qun-mk2/blob/main/sd_template.zip): Download and install tone presets  (see [Load Preset](#load-preset)). We constantly update the tone presets.
+* [Presets template](https://github.com/raspy135/Qun-mk2/blob/main/sd_template.zip): Download and install tone presets. See the [Load Preset](#load-preset) section for details. We constantly update tone presets.
 * [Issues](https://github.com/raspy135/Qun-synthesizer/issues): Report issues when you have problems or questions.
-* [Firmware](./firmware): Firmware updates and instructions (see README.md).
+* [Firmware](./firmware): Firmware updates and instructions. See [firmware/README.md](./firmware/README.md) for instructions.
 * [CheatSheet](./cheatsheet.pdf): A printable cheat sheet listing buttons, device modes and sub-modes, shortcuts, and synth instrument parameters.
 
 **We are looking for your feedback! For general impressions and feedback, please email them to [info@nunomo.net](mailto:info@nunomo.net) or join [Nunomo's Discord server](https://discord.gg/kcvVTPkZVQ)!**
@@ -35,7 +35,7 @@ Highlights:
 
 Qun mk2 has a 2 oscillator virtual analog, FM, granular sound engine. The 2 oscillators can be used separately.
 
-The sequencer is an 8-step based sequencer, and supports up to 32/64 steps per pattern. You can store 8 patterns for each preset bucket. And it has 8 buckets of tone preset + sequencer patterns. So you can quickly switch between 8 presets and 64 (8 x 8 pattern) patterns.
+The sequencer is an 8-step based sequencer, and supports up to 32/64 steps per pattern. You can store 8 patterns for each preset bucket. And it has 8 buckets of tone preset and sequencer patterns. So you can quickly switch between 8 presets and 64 (8 x 8 pattern) patterns.
 
 It has a 3 track looper with 20 scenes, so you can swap 3 tracks x 20 scenes while playing. 
 
@@ -74,9 +74,9 @@ More:
     * Live recording
   * Looper
     * Sequencer synchronized, internal or externally clocked.
-    * Looper can record the sound up to around 30 sec for each recording.
+    * Looper can record a sample of sound up to around 30 sec for each recording.
     * You can record the sound from the sound engine or external audio.
-    * **3 tracks**, **20 Scenes**, total 60 recordings in one Session
+    * **3 tracks**, **20 Scenes**, total 60 sample recordings in one Session
     * Scene change while playing -- something like Ableton Live's session view
     * Copy / Cut / Paste
     * Play / Rec / Overdub
@@ -88,12 +88,15 @@ More:
   
 * Micro SD card
   * Qun mk2 comes with a micro SD card.
-  
-  * All looper recordings, presets, and granular samples are stored to the SD card
+  * All looper recordings of samples, presets, and granular samples are stored to the SD card
 
 * WiFi
-  * Recordings can be imported or exported through WiFi web interface.
-    
+  * Sample recordings can be imported or exported through WiFi web interface.
+
+* Control surface
+  * Bank of 8 LED-backlit buttons -- for note playing, sequencing, parameter selection, and more
+  * Finite dial encoder with a **relative editing mode** -- either jump to a value, or adjust from the last value 
+
 
 ## CONNECTIONS
 
@@ -107,38 +110,67 @@ More:
 
 ## MAJOR MODES
 
-Qun mk2 has three major modes.
+Qun mk2 offers three major modes to use all of its features.
 
 Mode | Description
 ------------ | -------------
-Play | Playing from the sequencer and looper. 
+Play | Playing from the Sequencer and Looper. 
 System | Loading and saving data, and changing system settings.
-Param | Parameter mode: Changing the synthesizer’s instrument parameters.
+Param | Parameter mode: Changing the synthesizer’s tone parameters.
 
 ## BASIC OPERATION
 
 _Tutorial: in-depth [basics video](https://www.youtube.com/watch?v=sSR3ob0aQUM&t=1s) is available._
 
-Each major mode has selectable sub-modes. Many sub-modes have editable parameters.
+_Reading note: You may see the plus ("+") used in this document for button combinations. To be clear, it symbolizes holding down and using several buttons or controls all at once, in sequence._
+
+* For example, "SHIFT + SEQ PLAY + turn dial" means to press and hold the SHIFT button, and while continuing to hold it also press and hold SEQ PLAY, and finally simultaneously to turn the dial. This will show the beats per minute (BPM) setting on the display, then change it.
+
+Each major mode has selectable **sub-modes**. Many sub-modes have editable **parameters**.
 
 For example, the Param major mode has an `OSC1` sub-mode which configures Oscillator 1, and the Play major mode has a `PIANO` sub-mode which allow direct playing of notes using the [1-8] buttons.
 
-* To switch sub-mode, press SHIFT + [1-8] button or NO/OK buttons to change sub-mode.
-  * After you enter the sub-mode you want, press [1-8] button to select a parameter.
-  * See the names printed on the device for sub-modes of Param and Play major modes. For example, look underneath the [1-8] buttons and see `OSC1` and `PIANO`.
-  * Alternatively, you can select sub-mode by press SHIFT + turn the dial.
-  * Alternatively, you can select sub-mode by Double-clicking MODE PLAY button or PARAM button then press [1-8] button.
-* To operate on parameter values, first press [1-8] button to pick the current parameter 
-  * Press one of 8 buttons + rotate dial = Change parameter value.
-  * Rotate the dial = Change the current parameter.
-  * Long press the button to show the parameter full name and value.
-  * Double click + hold the button to enter relative mode. The dial value adjustment will be relative. _Tutorial: [video](https://youtu.be/6uP1LoAZ9nE?t=11) is available._
-  * If you want to do fine value adjustment, you can use NO/OK buttons to change the value by 1. To do this, keep pressing one of 8 buttons and press NO or OK button.
-* For initial training, referring to the [Qun cheatsheet](./cheatsheet.pdf) can be useful. Also seeing the parameter name when changing its value is useful for training: turn on Parameter Caption mode in System2 menu, button 3.
+_Workflow: select a sub-mode and parameter, and change a parameter value._
+
+1. Press PARAM to enter Param mode.
+2. Switch **sub-mode** by pressing SHIFT + [1-8] button.
+3. Select a **parameter** by pressing [1-8] button.
+4. Press one of 8 buttons + turn dial to change the parameter value.
+
+Sub-mode names are printed on the device for the Param and Play major modes. For example, look underneath the [1-8] buttons and find `OSC1` and `PIANO` Param and Play sub-modes, respectively.
+
+_Tip: for initial training, help is available._
+
+* Refer to the [Qun cheatsheet](./cheatsheet.pdf) for a useful summary of controls, modes, sub-modes, parameters, and quick feature guides.
+* Also seeing a parameter's name when changing its value is useful for initial training. Use **Parameter Caption** for this: press SYSTEM, turn the dial to the System2 menu, press OK to enter it, and finally press button 3 until Parameter Caption is "On".
+
+### Advanced operation
+
+Try all the ways to change **sub-mode**:
+
+* Press SHIFT + [1-8] to change sub-mode
+* Press SHIFT + NO / OK buttons to browse and change sub-mode 
+* Press SHIFT + turn the dial to browse and change sub-mode
+* Double-click the MODE PLAY button, then press [1-8] button to change sub-mode
+* Double-click the PARAM button, then press [1-8] button to change sub-mode
+
+And try all the ways to _select_ and _edit_ **parameters**:
+
+* Press [1-8] button to pick a parameter. This selects a parameter as the "current" parameter.
+* Press one of the 8 buttons + turn dial to quickly change a specific parameter's value, and select this parameter as "current".
+* Simply turn the dial to change the _current_ parameter.
+* Long press the [1-8] button of a parameter to show its full name and value, and to set it as "current".
+* Double click + hold the [1-8] button to enter **relative editing mode**. Turning the dial will change a value relative to the last value. Otherwise, normal turning of the dial will jump to a value starting from the top of the dial. _Tutorial: [video](https://youtu.be/6uP1LoAZ9nE?t=11) is available._
+* If you want to do fine value adjustment, you can use NO / OK buttons to change the value by 1. To do this, keep pressing one of 8 buttons and press NO or OK button.
+
+_Tip: menus can be scrolled through, one by one, with buttons 7 and 8._
+
+* Scrolling in menus by turning the dial will sweep through many menu items quickly.
+* Try using button 7 and 8 to scroll one at a time: press SYSTEM, then press button 8 twice to reach the "System" item, and finally press OK.
 
 Button | Primary function
 ------------ | -------------
-SHIFT | Shift + [1-8] button or NO/OK button to select sub-mode 
+SHIFT | SHIFT + [1-8] button or NO / OK button to select sub-mode 
 [1-8] button | Select a parameter in the current sub-mode. Also show information with LEDs (see under LED Indicators).
 NO | Select previous sequencer pattern
 OK | Select next sequencer pattern
@@ -149,11 +181,11 @@ MODE PLAY | Select Play mode
 SYSTEM | Select System mode
 PARAM | Select Parameter mode
 REC | Looper status page
-REC + LOOPER PLAY | Start looper recording
+REC + LOOPER PLAY | Start looper recording sound
 LOOPER PLAY | Start looper playing
 LOOPER STOP | Stop looper playing
 RST button on the base board | Reset the device
-4 touch buttons at the bottom board | This can be used as a touch slider. See [Touch Slider](#touch-slider) section for detail. 
+4 touch buttons at the bottom board | This can be used as a touch slider. See the [Touch Slider](#touch-slider) section for detail. 
 SHIFT + NO + OK | Sleep (Shutdown) the device. It will turn off most of the power consuming components like the main CPU and the screen. Press the RST button to restart the device.
 
 ## BASIC SHORTCUTS
@@ -162,17 +194,17 @@ Button | Function
 ------------ | -------------
 SHIFT + MODE PLAY | Dump current preset to MIDI OUT. This is useful to transfer the current preset to another Qun / Qun mk2 synthesizer.
 SHIFT + SYSTEM | All notes off
-SHIFT + PARAM | Initialize the preset. You can choose some templates: Blank, Sampler, EvenSlice, Scratch. Please see the [Initialize preset](#initialize-preset) section for detail. 
+SHIFT + PARAM | Initialize the preset. Choose from a default: Blank, Sampler, EvenSlice, or Scratch. Please see the [Initialize preset](#initialize-preset) section for details. 
 SHIFT + SEQ PLAY + turn dial | Set BPM. Tap tempo by pressing SEQ PLAY 4 or more times while you keep pressing SHIFT. 
 MODE PLAY + turn dial | Record volume -- stay at -6.0dB or lower to avoid clipping. _Tutorial: [video](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=770s) is available._
-MODE PLAY + SYSTEM + turn dial | looper master volume 
+MODE PLAY + SYSTEM + turn dial | Looper master volume 
 SYSTEM + turn dial | VCF volume
 PARAM + turn dial | VCF cutoff
 REC + turn dial | LFO tune
 LOOPER PLAY + [1-5] | Select Scene
-REC + [1-3, 7,8] | Select recording track. A,B,C are mono tracks. Press 7, 8 for stereo recording. 7=A(Left)+B(Right), 8 = B+C. When you do stereo recording, you may want to set pan to left and right for the selected stereo tracks. 
+REC + [1-3, 7,8] | Select looper sample recording track. A,B,C are mono tracks. Press 7, 8 for stereo recording. 7=A(Left)+B(Right), 8 = B+C. When you do stereo recording, you may want to set pan to left and right for the selected stereo tracks. 
 PARAM + [1-3] | Mute track
-MODE PLAY + [1-8] | Recall preset bucket (see under [Preset Bucket](#preset-bucket))
+MODE PLAY (RECALL) + [1-8] | Recall preset bucket. See the [Preset Bucket](#preset-bucket) section for details.
 SEQ PLAY + [1-8] | Select Sequencer pattern
 SHIFT + LOOPER PLAY + turn dial | Load session when you are not in System mode or Granular mode. 
 SHIFT + LOOPER PLAY + [1-3] button | Import WAV file from import folder to selected track
@@ -213,42 +245,48 @@ To avoid confusion, this setting won't be saved.
 
 ## Session
 
-Qun automatically collects the current looper recordings, instrument and sequencer presets into a Session. Sessions can be saved and loaded. They are automatically numbered and can be manually named.
+Qun automatically collects the current looper sample recordings, tone and sequencer presets into a Session. Sessions can be saved and loaded. They are automatically numbered and can be manually named.
 
 ![session_diagram](./manual_images/session_diagram.png)
 
 Session is the biggest data unit of the synth.
+
 Session includes 8 preset buckets. Each bucket contains one preset with 8 pattern sequencer data.
 
 There is no "new session" function. The synth always create a new session when booting. Reboot the device to create a new session.
 
-Session button operations work in Parameter mode or Play mode
+Session button operations work in both **Parameter** and **Play modes**:
 
 Button | Function
 ------------ | -------------
 SHIFT + LOOPER PLAY | Show current session number
-SHIFT + LOOPER PLAY + Turn Dial | Load session
+SHIFT + LOOPER PLAY + turn dial | Load session
 NO or OK button while selecting a session | Scroll session page when you have more than 32 sessions 
 SHIFT + REC | Save current session (Looper stop will perform session save when autosave is on)
 SHIFT + REC (Long press) | Name current session
-SHIFT + REC + B[1-3] | Load WAV file to looper track A, B or C (See [Looper Overview](#looper-overview) section for details)
+SHIFT + REC + B[1-3] | Load WAV file to looper track A, B or C. See the [Looper Overview](#looper-overview) section for details.
 Press B[1-8] while booting | Load a previous LOOPER folder. E.g. Button1 means LOOPER00, Button2 means LOOPER01, and so on.
 
-To load a session, press SHIFT + LOOPER PLAY when you are not in System mode or Granular mode. Current session number "Looper00:0001" will be indicated. Turn the dial to select the session you want to load.
+_Workflow: load a different session._
+
+1. Press SHIFT + LOOPER PLAY when you are not in System mode or Granular mode. 
+   1. Current session number will be indicated, for example "Looper00:0001". 
+2. Turn the dial to select the session you want to load.
 
 Saving session is semi-automated.
-Looper recording data will be saved immediately after the recording. 
+Looper sample recording data will be saved immediately after the recording. 
 Mixer and Bucket data will be saved when the LOOPER STOP button is pressed.
 This can be turned off in the System2 menu.
 
 ## Initialize Preset
 
 You can initialize a preset by pressing SHIFT + PARAM.
+
 Several preset templates are available when initializing: Blank, Sampler, EvenSlice, and Scratch. Blank is the base preset for all.
 
 The following parameters will be set when you select other templates:
 
-**Sampler** : Sampler is for basic sampler setup.
+**Sampler**: Sampler is for basic sampler setup.
 - OSC1 type = AUX L
 - OSC Octave = +1
 - Granular mode = ONE
@@ -262,7 +300,7 @@ The following parameters will be set when you select other templates:
 - OSC1/2 Keysync is disabled (1N2N)
 - Slice Spread is set to 1 (Each semitone from C4 will play different slices)
 
-**EvenSlice** : EvenSlice is for sampler with evenly slicing samples.
+**EvenSlice**: EvenSlice is for sampler with evenly slicing samples.
 - OSC1 type = AUX L
 - OSC Octave = +1
 - Granular mode = ONE
@@ -273,7 +311,7 @@ The following parameters will be set when you select other templates:
 
 *EvenSlice expects to change OSC1 MOD WIDTH to control the size of the slice.*
 
-**Scratch** : Scratch is for vinyl record scratching mode. 
+**Scratch**: Scratch is for vinyl record scratching mode. 
 - OSC1 type = AUX L
 - OSC Octave = +1
 - Granular mode = ONE
@@ -288,25 +326,24 @@ The synth has 8 preset buckets to quickly recall presets. Each bucket contains o
 
 Buttons | Description
 -------|-------
-MODE PLAY + B[1-8] | Switch Bucket
-MODE PLAY + B[1-8] + turn dial | Copy Bucket
+MODE PLAY (RECALL) + B[1-8] | Switch Bucket
+MODE PLAY (RECALL) + B[1-8] + turn dial | Copy Bucket
 
 Solid LED indicates current bucket you are in when pressing MODE PLAY button.
 
 Bucket information is automatically saved with Session. 
 
+_Tutorial: understand how Buckets work with tones using the RECALL button._
 
-To understand how bucket works, try the following steps:
-
-1. Reset the board
-2. Change some parameter to configure the sound, let's set it to Sine wave.
-3. Press Recall(Mode/Play) + Button 2 to switch Bucket 2
-4. Then the sound should be changed to the default SAW wave.
-5. Change some parameters to program, let's set it to White noise.
-5. Press Recall + Button 1 to switch back to Bucket 1
-6. The first sound you configured should be recalled.
-7. Press Recall + Button 2 to switch to Bucket 2 again
-8. White noise should be recalled.
+1. Reset the Qun by pressing the RST button on the base board. 
+2. Change a parameter to configure the sound. Let's set its shape to a **Sine wave**. Hold B1 + turn dial to Sine. This tone preset is currently in Bucket 1.
+3. Press RECALL (the MODE PLAY button) + button 2 to switch Bucket 2. "Bucket 2" will be shown on the display.
+4. See the sound's shape is changed back to the default **Saw wave** from your previously chosen Sine wave.
+5. Change a parameter to program Bucket 2's sound. Let's set its shape to **White noise**. Hold B1 + turn dial to "W" for White noise.
+6. Press RECALL + button 1 to switch back to Bucket 1. "Bucket 1" will be shown on the display.
+7. See the first sound you configured is now recalled.
+8. Press RECALL + button 2 to switch to Bucket 2 again
+9. See the White noise should be recalled.
 
 When you save the preset or load the preset from bank 1 to 8, its name is used to indicate the bucket, so it is always recommended to set a name by saving or loading the preset.
 
@@ -322,7 +359,7 @@ Signal diagram helps to understand how Qun mk2 works.
 # Parameter Mode (Param)
 
 ## Adjust synthesis parameters
-To operate, press B[1-8] to choose a parameter and rotate dial to change its value. The parameter display area will temporarily invert. A parameter's position in the display corresponds to the visual button assignment:
+To operate, press B[1-8] to choose a parameter and turn dial to change its value. The parameter display area will temporarily invert. A parameter's position in the display corresponds to the visual button assignment:
 
 ```
  1  3  5  7
@@ -488,7 +525,7 @@ When the mode is Quad or Poly Quad, MIX  and "OSC2 Env Src" are ignored. MIX is 
 
 To copy the parameters from OSC1 to OSC2 (and EG1 and EG2), long press button 7. "OSCs synched" message will be shown. 
 	
-_Workflow: set up Quad mode._
+_Workflow: set up Quad tone mode._
 
 1. Initialize tone.
 2. Configure OSC1 as you like.
@@ -500,7 +537,7 @@ _Workflow: set up Quad mode._
 Poly Mono can be used when you want 2 voices with 2 OSCs per voice configuration.
 	
 Poly Quad is for multiple device stacked configuration. You can use multiple Qun Synthesizers to build a polyphonic synth.
-	Please see “Polyphonic setup” for detail.
+	Please see “[Polyphonic setup](#polyphonic-setup)” for detail.
 
 
 ## PRM:FM
@@ -542,7 +579,8 @@ This means A modulates B, the result modulates C, the result modulates D.
 
 
 Oscillator (ABC)’s frequency (multiple of frequency of D).
-	When FM FREQ SNAP (In ENV3/4 Other sub-menu) is off, it can be adjusted to the exact frequency of harmonics (2,3,4,5, ...). If you want clean FM sound, turn FM FREQ SNAP on.
+
+When FM FREQ SNAP (In ENV3/4 Other sub-menu) is off, it can be adjusted to the exact frequency of harmonics (2,3,4,5, ...). If you want clean FM sound, turn FM FREQ SNAP on.
 
 ## PRM:ENV3/4 / Other
 
@@ -621,19 +659,19 @@ Button | function
 REC | Go Looper status page
 LOOPER PLAY | Start Looper
 LOOPER STOP | Stop Looper
-LOOPER REC + LOOPER PLAY | Start looper recording
+LOOPER REC + LOOPER PLAY | Start looper sample recording
 LOOPER PLAY + [1-5] | Select Scene
 LOOPER PLAY + NO or OK | Change Scene page (5 Scenes per page)
-LOOPER PLAY + [1-5] + Dial | Copy Scene
-REC + [1-3, 7,8] | Select recording track. A,B,C are mono tracks. Press 7, 8 for stereo recording. 7=A(Left)+B(Right), 8 = B+C. When you do stereo recording, you may want to set pan to left and right for the selected stereo tracks. 
+LOOPER PLAY + [1-5] + turn dial | Copy Scene
+REC + [1-3, 7,8] | Select sample recording track. A,B,C are mono tracks. Press 7, 8 for stereo recording. 7=A(Left)+B(Right), 8 = B+C. When you do stereo recording, you may want to set pan to left and right for the selected stereo tracks. 
 SHIFT + REC + B[1-3] | Load WAV file to looper track A, B or C. Importing WAV file to the looper section for detail. 
 PARAM + [1-3] | Mute track
 PARAM + NO | Toggle Extra Processing
 SHIFT + LOOPER STOP | Delete all track recordings in the current scene, reset recording length 
 REC + NO | Cut or Copy Looper track 
 REC + OK | Paste Looper track 
-REC + PARAM | Open UNDO list. Select the top item to undo the last recording for the track. Select the second item to undo the last sequcener recording. Shift + OK to preview the sound. 
-MODE PLAY + PARAM + Turn Dial | Parameter Lock Morphing
+REC + PARAM | Open UNDO list. Select the top item to undo the last sample recording for the track. Select the second item to undo the last sequcener recording. SHIFT + OK to preview the sound. 
+MODE PLAY + PARAM + turn dial | Parameter Lock Morphing
 
 ## Sequencer overview
 
@@ -645,11 +683,11 @@ The sequencer UI is influenced by analog 8-step pattern based sequencers. You tu
 
 Sequencer data will be saved when you save tone presets, and it is saved with the Session. Each preset can have 8 sequencer patterns.
 
-You can run multiple sequencer at the same time, up to three patterns, as normal parallel running or relative running. See PLY:SEQ CONFIG for detail.
+You can run multiple sequencer at the same time, up to three patterns, as normal parallel running or relative running. See the [PLY:SEQ CONFIG](#plyseq-config) section for detail.
 
 ### Sequencer live recording
 
-You can record live playing to the sequencer. Rec + SEQ PLAY to start recording. Play on Piano mode or play with an external MIDI keyboard to record notes. It's always overdubbing.  Note, Width (length), and velocity will be recorded.
+You can record live playing to the sequencer. Rec + SEQ PLAY to start recording notes. Play on Piano mode or play with an external MIDI keyboard to record notes. It's always overdubbing.  Note, Width (length), and velocity will be recorded.
 
 Sequencer playing position indicator changes when live recording.
 
@@ -664,7 +702,7 @@ Press SEQ PLAY to exit recording mode, and the sequencer will keep playing. Pres
 
 You can (re)enter recording mode while playing. Press Rec + SEQ Play to enter recording mode.
 
-A metronome click sound plays when live recording is ongoing. The metronome volume can be adjusted with REC + SEQ PLAY + Turn dial. The chained sequencer pattern will be reset when you change to another pattern.
+A metronome click sound plays when live recording is ongoing. The metronome volume can be adjusted with REC + SEQ PLAY + turn dial. The chained sequencer pattern will be reset when you change to another pattern.
 
 You can undo the last recording. Press REC+PARAM to open Undo list, then select the second item.
 
@@ -676,7 +714,7 @@ When you are in sequencer live recording, changing sound engine parameters will 
 
 When you are in Tune, Width, Velocity, or Prob mode, and you are also in sequencer live recording, pressing B7 + B8 will specify the current step. The "Current" message will be shown.
 
-While you are pressing B7+B8, the dial position will be recorded to the current playing position.
+While you are pressing B7 + B8, the dial position will be recorded to the current playing position.
 
 
 ## Parameter Locking
@@ -701,7 +739,7 @@ Here is the steps to set Parameter Lock:
 
 Parameter lock will be triggered only when the step is turned on.
 
-Shift + turn dial is a useful way to sweep between sub-modes to find modified parameters.
+SHIFT + turn dial is a useful way to sweep between sub-modes to find modified parameters.
 
 
 
@@ -714,19 +752,29 @@ You can morph Parameter Locking between two patterns.
 _Workflow: morph pattern lock._
 
 1. Let's say you are in pattern #1. Set Morph Pattern in Sequencer configuration menu. Set the Morph pattern to #2 by long pressing button 4.
-2. Copy pattern #1 to #2 with SEQ PLAY + [1-8] + Turn dial
+2. Copy pattern #1 to #2 with SEQ PLAY + [1-8] + turn dial
 3. Move to pattern #2
 4. Modify the Parameter Locking in pattern #2
 5. Go back to pattern #1
-6. Morph can be done by pressing [MODE PLAY] + [PARAM] + Turn dial
+6. Morph can be done by pressing [MODE PLAY] + [PARAM] + turn dial
 
 ## Looper overview
 
 _Tutorial: [video](https://www.youtube.com/watch?v=iD4WpX3tHUE&t=1s) is available._
 
-The looper is designed to work with the sequencer. The looper always tries to sync with sequencer play. Looper won't start playing when the sequencer is not running. Use a blank sequencer pattern when you don't want to make sound from the sequencer.
+The Looper is designed to work with the Sequencer. The Looper always tries to sync with sequencer play. The Looper won't start playing when the Sequencer is not running. The Looper can stop separately from the Sequencer.
 
-To start looper recording, hit LOOPER REC + LOOPER PLAY. If the sequencer is not running, it will not start recording, but it is standing by for recording. In this case, press SEQ PLAY to start recording. When the sequencer is playing, the recording will be started at the beginning of the next measure.
+Use a blank sequencer pattern when you don't want to record sound from the Sequencer. For example, use a blank pattern to record sounds only from LINE IN or MIC.
+
+To start the Looper recording sound, hit LOOPER REC + LOOPER PLAY. If the Sequencer is not running, it will not start recording, but it is standing by for recording. In this case, press SEQ PLAY to start recording. When the Sequencer is playing, the recording will be started at the beginning of the next measure.
+
+**Looper recording:**
+
+Sequencer | Looper    | Button                   | Result
+--- |-----------|--------------------------| -- 
+Stop | Stop      | LOOPER REC + LOOPER PLAY | Looper stand-by
+Playing / Stop | Stand-by  | SEQ PLAY                 | Play Sequencer to next measure. Then, start Looper recording and continue Sequencer playing.
+Playing | Recording | LOOPER STOP | Stop Looper recording. Continue Looper and Sequencer playing.
 
 The first recorded track will define the length of the loop.
 
@@ -734,46 +782,64 @@ Press LOOPER STOP to finish the recording. You don't need to press the stop butt
 
 Looper keeps playing the recorded sound. All recorded data will be saved to SD card immediately.
 
-When you press REC + LOOPER PLAY twice (or shift + REC + Looper play), the recording mode will be REC mode. In REC mode, it will overwrite the existing recording. It will change loop length when the new recording is longer than the existing one.
+**Looper playing:** 
 
-When you press REC + LOOPER PLAY 3 times or 4 times, it enters Insert Recording mode. See "Insert Recording" section for detail.
+Sequencer | Looper    | Button                   | Result
+--- |-----------|--------------------------| -- 
+Playing / Stop | Stop      | LOOPER PLAY | Start Looper playing.
+Playing / Stop | Playing   | LOOPER STOP | Stop Looper.
+Playing | Playing   | SEQ PLAY | Stop Sequencer playing. Continue Looper playing.
+
+
+When you press REC + LOOPER PLAY twice (or SHIFT + REC + LOOPER PLAY), the recording mode will be REC mode. 
+
+In REC mode, it will overwrite the existing recording. It will change loop length when the new recording is longer than the existing one.
+
+When you press REC + LOOPER PLAY 3 times or 4 times, it enters Insert Recording mode. See the [Insert Recording](#insert-recording) section for detail.
 
 Looper has 3 mono tracks. REC + [1-3] button to select recording track. Each recording can go up to about 25 seconds. You can record a track as stereo by pressing REC + [7 or 8]. A(Left)+B(Right) or B+C will be selected. With stereo recording, you may want to set pan to Left and Right for the selected stereo tracks.
 
 One set of recordings is called Scene. Looper has 20 Scenes. LOOPER PLAY + [1-5] to select the scene. LOOPER PLAY + NO or OK to change Scene page.
 
+**One Scene page:**
+
 ![looper_scene](./manual_images/looper_scene.png)
 
 Reduce record volume (-3.0dB or more) in Mixer to avoid clipping. MODE PLAY + turn dial to change the value.
 
-Copy, Cut or Paste can be used as a temporary saved area, or to delete the track. REC + NO to Cut/Copy, REC + OK to Paste.
+Copy, Cut or Paste can be used as a temporary saved area, or to delete the track.
 
-All recorded data, Preset bucket and Mixer data will be saved as a Session automatically. Recording data is saved immediately and other data will be saved when looper playing is stopped. Recording data is a standard WAV file, so you can import them to DAW.
+Button | Description
+-- | --
+REC + NO | Cut / Copy
+REC + OK | Paste
 
-## Looper status page
+All recorded data, Preset bucket, and Mixer data will be saved as a Session automatically. Recording data is saved immediately and other data will be saved when looper playing is stopped. Recording data is a standard WAV file, so you can import them to DAW.
+
+### Looper status page
 
 ![looper](./manual_images/looper.png)
 
-You can check looper status such as playing position and Looper length by pressing the REC button.
+Check Looper status, such as playing position and loop length, by pressing the REC button.
 
 Label | Description
 ------------ | -------------
-Big letter top left(Not shown in the screenshot) | Indicator of Overdub, Rec or Insert 
+![o](./manual_images/looper-o.png) / ![r](./manual_images/looper-r.png) / ![io](./manual_images/looper-io.png) / ![ir](./manual_images/looper-ir.png): Letter in corner  | Indicator of Overdub, Record, Insert Overdub, and Insert Record 
 Small dot on bottom left | Ready to play, waiting for sequencer, or already playing
-Another circle line in the tape | Extra Processing is on (PARAM + NO) 
-P | Position (steps) 
-L | Loop length (steps) 
-Box and lines above SC label | Scene page
-SC | Current Scene
-TR | Current Track
+![e](./manual_images/looper-e.png): Extra tape-circle | **Extra Processing** is on (PARAM + NO) 
+`P` | Position, in steps 
+`L` | Loop length, in steps 
+Box and lines above `SC` label | Scene page
+`SC` | Current Scene
+`TR` | Current Track: `A`, `B`, or `C`
 
-Looper status page also provides basic wave editing.
+Looper status page also provides basic wave editing with a button.
 
 Button | Description
 ------------ | -------------
-1 | Looper track edit menu. You can adjust looper record volume (+-3dB)
+1 + turn dial | Looper track edit menu: adjust looper record volume (+/- 3dB). Use to avoid clipping. NO / OK to choose.
 
-## Insert recording
+### Insert recording
 
 _Tutorial: [video](https://www.youtube.com/watch?v=N8N1X59RaVg&t=1s) is available._
 
@@ -787,23 +853,31 @@ You need to separate effector's output, one goes out to mixer/monitor and the an
 
 AUX in gain (MIX sub-mode, button 4) to adjust the recording volume.
 
-Here are the steps to perform insert recording
+_Workflow: perform insert recording._
 
-1. Listen to the output with external effector ON, make sure effector is on, and the sound comes back to the input. Mute tracks or sound engine that you don't want to record. **You can check AUX input level in Monitor mode, page 2.**
-2. Select recording track. REC + B[1-3] or B[7-8] for stereo. 
-3. **REC + LOOPER PLAY 3 times or 4 times** to activate Insert recording mode. "InsertRec" or "InsertOvb" message will be shown, or You will see "IO" or "IR" indicator if you are in Looper status page.  "IR" mean Insert Recording,  it will overwrite existing recording which is normally you may want. "IO" means Insert Overdub, it will overdub to the existing recording.
-4. When you select "IR", remember the loop length if you don't want to change the loop length.
-5. Start recording by starting the sequencer.
-6. Stop recording at the desired record length.
-7. The audio with effector should be recorded to the selected track. Check the result by turning off the external effector(s).
+1. Listen to the output with external effector ON, make sure effector is on, and the sound comes back to the input. 
+   1. **You can check AUX input level in [Monitor mode](#monitor-mode), page 2.**
+2. Mute tracks or sound engine that you don't want to record. 
+3. Select recording track. REC + B[1-3] or B[7-8] for stereo. 
+4. **REC + LOOPER PLAY 3 times or 4 times** to activate Insert recording mode. The "InsertRec" or "InsertOvb" indicators will be shown if you are outside of the Looper status page, and "`IR`" or "`IO`" if inside.
+   1. "`IR`" mean Insert Recording,  it will overwrite existing recording which is normally you may want. 
+   2. "`IO`" means Insert Overdub, it will overdub to the existing recording.
+5. When you select "`IR`", remember the loop length if you don't want to change the loop length.
+6. Start recording by starting the sequencer with SEQ PLAY.
+7. Stop recording at the desired record length.
+8. The audio with effector should be recorded to the selected track. Check the result by turning off the external effector(s).
 
-Tips:
-	- Playing track and recording track can be the same.
-	- You can enable Extra Processing for additional effects if you want.
+_Tips: for advanced insert recording._
 
-## Importing WAV file to the looper
+- Playing track and recording track can be the same.
+- You can enable Extra Processing for additional effects if you want.
 
-You can import WAV files to the current session. Put WAV files under the **/import** folder. Folder structure is supported so you can make subfolders to organize samples.
+### Importing WAV file to the Looper
+
+You can import WAV files to the current Session. 
+
+Put WAV files under the **/import** folder. Folder structure is supported so you can make subfolders to organize samples.
+
 WAV format has to be **16-bit, 48000Hz, Mono**. Otherwise "Format error" message is shown.
 
 Steps to import file:
@@ -827,16 +901,19 @@ BPM can be matched when BPM is detected from the filename. Here are some samples
 If you have existing recordings in the session, the WAV file will be cut to the current scene's looper length. You can use an empty recorded track just to cut the WAV file to match the loop length. Otherwise, it's trimmed to the longest point of the end of the measure.
 
 
-## Looper live playing / Partial scene switch
+### Looper live playing / Partial Scene switch
 
-Scene is powerful feature. You can play looper like Ableton Live's Session view. 
+Scene is powerful feature. You can play the Looper like Ableton Live's Session view. 
+
 Play sequencer and looper, then LOOPER PLAY + [1-5] to select scene. Scene will be switched at the end of the measure. Synchronized switching works only when sequencer is playing.
+
 You can switch Scene even if it's not the end of the recording. Changing point is the end of sequencer's measure.
-Normally all tracks moves to new Scene, however, you can partially switch scene as well. Press LOOPER PLAY + [6-8] + [1-5]. [6-8] buttons tells which tracks you want to switch, and [1-5] is the scene number. Looper length can be different.
+
+Normally all tracks move to new Scene, however, you can partially switch scene as well. Press LOOPER PLAY + [6-8] + [1-5]. [6-8] buttons tells which tracks you want to switch, and [1-5] is the scene number. Looper length can be different.
+
 PARAM + [1-3] to mute tracks. 
 
 Use Preset Bucket to keep preset settings. You can recall tone preset and patterns in a sec by using Preset Bucket.
-
 
 
 
@@ -848,15 +925,15 @@ _Tutorial: [video](https://youtu.be/T09kL4tfw4s?t=7) and demo [video](https://ww
 
 The mode is simple piano playing mode. Default is chromatic scale. The scale and key can be changed by the scale setting in SEQ Config mode. Turn dial to transpose. 
 
-_Workflow: Play notes quantized to a scale with one (or more) buttons and dial._
+_Workflow: play notes quantized to a scale with one (or more) buttons and dial._
 
 1. Optional: set up the instrument for chording
    1. Press MODE PARAM
    2. Press SHIFT + B8 for OTHER
-   3. Hold B7 + dial to set QUAD voice
+   3. Hold B7 + turn dial to set QUAD voice
 2. Press MODE PLAY
 3. Press SHIFT + B7 for CFG
-4. Hold B3 + dial (or NO/OK) to desired scale. Default is Acoustic. Try Iwato scale.
+4. Hold B3 + turn dial (or NO / OK) to desired scale. Default is Acoustic. Try Iwato scale.
 5. Press SHIFT + B1 for PIANO
 6. Play B[1-8] and turn dial. Play chords (several B[1-8]) if you set QUAD voice.
 
@@ -969,7 +1046,7 @@ Alternatively, you can step record notes by external MIDI keyboard. Play note by
 
 Button |  Function
 |- | -------------|
-1 | 16th Swing  _Tip: Combination of 16th and 8th swing (see button 6) is great for sloppy off-grid feeling._ 
+1 | 16th Swing.  _Tip: Combination of 16th and 8th swing (see button 6) is great for sloppy off-grid feeling._ 
 1 (Long press) | Sequencer MIDI channel out.
 2 | Key (for scale). 
 2 (Long press) | 2nd pattern 
@@ -1046,7 +1123,7 @@ The synth features a Granular synthesis recorder.
 - You can record audio from LINE IN or MIC. Input sensitivity can be modified by "AUX In Gain" parameter in PARAM Mix menu.
 - Pulse Width modulation will change File position (starting position) of the audio. That means the File position can be modulated by LFO and others.
 - 4 Modes are available. **One shot, One shot with time stretch, Repeat, Repeat with time stretch**. 
-- Time stretch result will be improved when you process "Analyze" on the sample (Button 1 and select "Analyze"). "A" mark will be indicated when it's done.
+- Time stretch result will be improved when you process "Analyze" on the sample (Button 1 and select "Analyze"). "`A`" mark will be indicated when it's done.
 - With One shot mode, you can route the signal to OSC1 AUX L and OSC2 AUX L. 
 - With initialized state of oscillator, +1 octave then C4 is the original pitch of the audio.
 - The number of voice is limited in some Granular modes.
@@ -1066,7 +1143,7 @@ This is a simple setup to use the granular engine(You can skip those steps by in
 Button | Function
 ------------ | -------------
 1 | Process samples.  Analyze will give better result with Time stretch. See below list for processing  detail 
-2 | Slice Spread, half-steps. Please see [Having Multiple Slices (Slice Spread)](#having-multiple-slices-slice-spread) section for detail. 
+2 | Slice Spread, half-steps. Please see the [Having Multiple Slices (Slice Spread)](#having-multiple-slices-slice-spread) section for detail. 
 3 | File position (Starting point).
 4 | Length
 5 | Speed. It won't work with non-time stretch modes.
@@ -1135,7 +1212,7 @@ Live slicing makes slices by pressing buttons while you are playing a sample. Li
 
 _Workflow: perform live slicing._
 
-1. Initialize a preset with "Slice" template. (Shift + PARAM and select "Slice"). Or set up the parameters by yourself. Make sure GRN mode is ONE.
+1. Initialize a preset with "Slice" template. (SHIFT + PARAM and select "Slice"). Or set up the parameters by yourself. Make sure GRN mode is ONE.
 2. Go Granular mode and load sample or record sample
 3. Set the first slicing point to the head of playing point and set length to 127(max), which is the default values.(We want to play the entire sample)
 4. Press play button and **keep pressing the play button**. Loaded sample will play.
@@ -1181,13 +1258,13 @@ Button 1 | Rewind to slice 3
 - Record rotates while you are pressing Release. If you keep turning dial to clockwise while pressing the button, the position will be kept. 
 
 
-### Import WAV file to granular engine from SD card
+### Import WAV file to Granular engine from SD card
 
 You can import WAV file if you put WAV file under **/granular** folder in SD card. 
 
 **The looper record data can be imported** as well. This will be shown at the end of the list at the root folder, so you can load looper recorded data to Granular as well.
 
-**Shift + Looper Play to import WAV file**, **Shift + Looper REC to export WAV file**.
+**SHIFT + LOOPER PLAY to import WAV file**. **SHIFT + LOOPER REC to export WAV file**.
 
 1. Dial or button 7 or button 8 to select file.
 2. Button 5/6 for horizontal scroll for long filename.
@@ -1254,7 +1331,7 @@ B[1-8] | Toggle monitor page
 SHIFT + NO | Toggle between Monitor mode and Mixer
 
 
-When you are in mixer mode, press SHIFT + NO again, or shift + turn dial to the end, you can enter to the monitor mode.
+When you are in mixer mode, press SHIFT + NO again, or SHIFT + turn dial to the end, you can enter to the monitor mode.
 
 
 ### Extra Processing
@@ -1310,7 +1387,7 @@ Each folder can store up to 40 presets. There is no difference between factory p
 
 Factory presets are stored under under category names or a legacy folder structure, e.g. `bank1`, `bank2`, ... `bank8`.
 
-**Note: The SD card template is updated for firmware v4.52 and later - this offers an improved preset load/save UI. If you see category names like Bass or Drums but nothing inside, you need to download sd_template.zip (see under Links and Information) and extract the folders and files. Then copy folders and preset files under the `/preset` folder.**
+**Note: The SD card template is updated for firmware v4.52 and later - this offers an improved preset load/save UI. If you see category names like Bass or Drums but nothing inside, you need to download sd_template.zip and extract the folders and files. Then copy folders and preset files under the `/preset` folder. Download the template file through [Links and Information](#links-and-information).**
 
 If you edit SD card, you can create your own folders. Only one depth of folder is supported.
 
@@ -1338,7 +1415,7 @@ Select folder to save, and use B[1-8] and dial to select letters, OK to save.
 
 
 ## SYS:SYSTEM
-System Setting is the setting that is not included in the patch setting. To change the parameter, press the one of 8 buttons and rotate the dial.
+System Setting is the setting that is not included in the patch setting. To change the parameter, press the one of 8 buttons and turn the dial.
 
 
 Button | Function
@@ -1374,9 +1451,9 @@ Button | Function
 
 **LINE in THRU**: If it is AUTO, it is automatically turn on or off LINE IN pass through by mono / poly setting. If it is on, the synth always passes the signal to looper. If it is off, then line in through is always off. The gain is fixed to 1.
 
-**Seq Ctl MIDI**: Assign Sequencer/Looper control MIDI channel. Default is off. See "Sequencer/Looper Control MIDI specification" for detail.
+**Seq Ctl MIDI**: Assign Sequencer/Looper control MIDI channel. Default is off. See the [Sequencer/Looper Control MIDI specification](#sequencer--looper-control-midi-specification) for detail.
 
-**Sync Mode**: `STOP, MIDI, 2PPQ, 4PPQ, 24PPQ, MOUT, MOUT2`. Select clock source for sequencer and LFO. See `Clock synchronization` for detail. 
+**Sync Mode**: `STOP, MIDI, 2PPQ, 4PPQ, 24PPQ, MOUT, MOUT2`. Select clock source for sequencer and LFO. See the [Clock synchronization](#clock-synchronization) section for detail. 
 
 
 ## SYS:SYSTEM2
@@ -1392,12 +1469,12 @@ Button | Function
 4 | Session Autosave On/Off
 5 | Preroll for Click(Metronome)
 6 | Master volume
-7 | Slider assignment. See Touch Slider section for detail. 
+7 | Slider assignment. See the [Touch Slider](#touch-slider) section for detail. 
 8 | Screen Contrast
 
-**Ext MIDI Scale Quantize** : When it's on, sequencer's scale and key will be applied to external MIDI keyboard input. Default is off.
+**Ext MIDI Scale Quantize** applies the Sequencer's scale and key to external MIDI keyboard input. Default is OFF.
 
-When the **Parameter Caption** is On, the parameter name will be shown when you press the button. It's a good option for initial training.
+When the **Parameter Caption** is ON, a parameter's name will be shown when you press its button. It's a good option for initial training.
 
 **Master Volume** controls hardware volume of the audio chip. Normally MAX(Default) is recommended. This is useful when your effector or recorder doesn't expect line level input.
 
@@ -1456,7 +1533,7 @@ The four buttons located at the bottom board (Play, Set, Vol-, Vol+) can be used
 
 Configure Slider assignment (System2, button 7) to activate the slider. 
 
-If you want to assign the slider to other than pre-defined ones, assign it to Mod wheel (or other MIDI CC parameters), and you can use MIDI learning to assign Mod wheel to any available synth parameters. See [MIDI learning](#midi-learning) section for details.
+If you want to assign the slider to other than pre-defined ones, assign it to Mod wheel (or other MIDI CC parameters), and you can use MIDI learning to assign Mod wheel to any available synth parameters. See the [MIDI learning](#midi-learning) section for details.
 
 Note: Qun mk2's bottom board is generic development board. Touch buttons are not ideal for touch slider use, so the experience is not the best.
 
@@ -1472,7 +1549,7 @@ _Instruction: [video](./manual_images/qunmk2dips.mp4) is available._
 
 
 ## POLYPHONIC SETUP
-The synth can be used as Mono, dual Mono or Quad(4) voice if you have one device.  Please see "MONO/QUAD/POLY (Voice mode)" section for detail.
+The synth can be used as Mono, dual Mono or Quad(4) voice if you have one device.  Please see "[MONO/QUAD/POLY (Voice mode)](#voice-mode)" section for detail.
 
 The number of the voice can be increased if you have more than one device. The voice number can be increased up to 16 (with Quad mode), by stacking up the synths.
 
@@ -1532,7 +1609,7 @@ To synchronize all parameters between multiple Qun synthesizers, press SHIFT + M
   * Level overflow may cause the silent, e.g. giving massive delay feedback.
   * Check "Device Index" and "Number of Devices" in system menu. If the Device Index is 2 or more, and you are using it as a primary device, then it may produce no sound. Set the index to 1.
   * Receiving MIDI channel is wrong. Check system setting.
-  * Check MIDI Receiving status (Small Square dot in the screen. See PLAY MODE section for detail)
+  * Check MIDI Receiving status (Small Square dot in the screen. See the [PLAY MODE](#play-mode) section for detail.)
 * A noise when you connect multiple devices (chained audio)
 
   * It is likely because of a ground loop. Use separated power supply. 
@@ -1580,12 +1657,13 @@ WAV files can be used by other software. Format is mono, 48kHz, 16 bit.
 
 ### LOOPER00
 Session data is stored here. It includes Looper recording data. 
+
 Filename | Description
 -------- | --------
 [T000_1A.wav] | T means track recording, and next 3 digit is Session number, and 1 is Scene number, and A is track number. "0Z" is clipboard data. 
 [G000_01.wav] | G is for Granular data. The last 2 digits indicates the bucket index.
 [M000_00.dat] | M means mixer data. The first 3 digit means Session number. The second 2 digit is always zero. 
-[B000_00_***.dat] | B means Bucket data. This contains 8 preset and 64 sequencer pattern. The first 3 digit means Session number. The second 2 digit is always zero. When session has a name, *** indicates the name of the session. 
+[B000_00_***.dat] | B means Bucket data. This contains 8 preset and 64 sequencer pattern. The first 3 digit means Session number. The second 2 digit is always zero. When session has a name, `***` indicates the name of the session. 
 [H000_00_0000.wav] | H is for undo history. 
 
 #### File number limit and accessing older Looper folders
@@ -1594,6 +1672,7 @@ When the directory has more than 500 files, then "LOOPER01" will be created to a
 
 ### PRESET
 Preset is stored here.
+
 Filename | Description
 -------- | --------
 [G_AAAAAA.WAV] | G means Granular record data. This is saved when Granular mode is not OFF.
@@ -1614,7 +1693,7 @@ Screenshots are stored here. To take screenshot, press LOOPER STOP + PARAM.
 ### IMPORT
 
 Import is the folder to import loops to session.
-Format has to be mono, 48kHz, 16 bit. See "Session" section for detail.
+Format has to be mono, 48kHz, 16 bit. See the [Session](#session) section for detail.
 
 
 ## Supported MIDI Control numbers
