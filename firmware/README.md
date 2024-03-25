@@ -13,14 +13,19 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
-- v4.98
+- v4.99
   
+  - Bug fix: Preset save didn't work when the operation was canceled once.
+  - AUX volume compensation can be disabled. This should be only performed when  C62, C64, C65 and C66 capacitors were removed from Lyrat board. #mod channel on Discord for detail.
+  
+- v4.98
+
   - The longer track length will be used when looper track is pasted. 
   - The synth will try to obtain date/time from the Internet when WiFi is on. It's used for timestamp on SD card file. (Timezone is GMT)
   - Bug fix: Caption fix(VCF Env src)
   - Lowering brownout voltage to increase stability with Lipo battery operation
   - Bug fix: Sometime envelope generator returns invalid value when changing params
-  
+
 - v4.97
 
   - Bug fix: Stereo paste was not working.
