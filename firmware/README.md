@@ -13,11 +13,15 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
-- v4.99
+- v5.00
   
+  - Performance tuning
+  
+- v4.99
+
   - Bug fix: Preset save didn't work when the operation was canceled once.
   - AUX volume compensation can be disabled. This should be only performed when  C62, C64, C65 and C66 capacitors were removed from Lyrat board. #mod channel on Discord for detail.
-  
+
 - v4.98
 
   - The longer track length will be used when looper track is pasted. 
