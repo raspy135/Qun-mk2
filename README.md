@@ -843,6 +843,7 @@ Looper status page also provides basic wave editing with a button.
 Button | Description
 ------------ | -------------
 1 + turn dial | Looper track edit menu: adjust looper record volume (+/- 3dB). Use to avoid clipping. NO / OK to choose.
+2 | Toggle recording auto stop. When it's on, recording will be stopped at the end of loop. Default is off.
 
 ### Insert recording
 
