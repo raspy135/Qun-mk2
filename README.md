@@ -413,7 +413,7 @@ Button | Description
 2 | FM modulation OSC2 to OSC1
 3 | VCF Volume.  Input gain to VCF. _Tutorial: [video](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=480s) illustrating wavefolding, is available._
 4 | Line In / Mic gain
-5 | Effect type. Off, Delay, Chorus1, Chorus2, Flanger1, Flanger2, Crusher (Bit crusher), MDelay (Mono delay), DDelay (BPM Synchronized digital delay), RSVD (Reserved for the future update). _Tutorial: [video](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=745s) is available._
+5 | Effect type. Off, Delay, Chorus1, Chorus2, Flanger1, Flanger2, Crusher (Bit crusher), MDelay (Mono delay), DDelay (BPM Synchronized digital delay), Tape, RSVD (Reserved for the future update). _Tutorial: [video](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=745s) is available._ 
 6 | Effect Speed. Controls Effect LFO rate or delay time. 
 7 | Effect Depth
 8 | Effect Feedback
@@ -426,6 +426,11 @@ Button | Description
   - Depth: Around 30
   - Feedback: 0
 - Digital delay is BPM synchronized. It also can be used as beat repeat by setting 100% of feedback, and 100% of depth.
+- Tape emulates tape/vinyl audio degrade,  useful for master effect (Extra Processing is ON)
+  - Depth controls recording to playing audio degrade. It's subtle but follows real behavior of recording/playing compression.
+  - Speed and Feedback controls tape wobble effect.
+  - When it's used as master effect, it's recommended to use filters and clipping curve to complete vintage analog feeling.
+
 
 ## PRM:ENV1/2
 
