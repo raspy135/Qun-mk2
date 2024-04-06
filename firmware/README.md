@@ -13,14 +13,18 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v5.02
+  
+  - Bug fix: Tape effect bug fixes
+  
 - v5.01
-  
+
   - Performance tuning
-  
+
   - Rec auto-stop mode is added. When the mode is on, looper recording will be stopped automatically at the end of the loop. To toggle the mode, press B2 in looper status page.
-  
+
   - Experimental: Analog/Tape effect is added. It's serious simulation of analog recording/playing back degrade + tape wobble. Really interesting result with filters.
-  
+
 - v5.00
 
   - Performance tuning
