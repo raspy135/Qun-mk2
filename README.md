@@ -659,24 +659,24 @@ SEQ PLAY + [1-8] + turn dial | ![](./manual_images/but/splay_1..8_d.png) | Copy 
 
 ## COMMON LOOPER OPERATIONS
 
-Button | Function
--------|-------
-REC | Go Looper status page
-LOOPER PLAY | Start Looper
-LOOPER STOP | Stop Looper
-LOOPER REC + LOOPER PLAY | Start looper sample recording
-LOOPER PLAY + [1-5] | Select Scene
-LOOPER PLAY + NO or OK | Change Scene page (5 Scenes per page)
-LOOPER PLAY + [1-5] + turn dial | Copy Scene
-REC + [1-3, 7,8] | Select sample recording track. A,B,C are mono tracks. Press 7, 8 for stereo recording. 7=A(Left)+B(Right), 8 = B+C. When you do stereo recording, you may want to set pan to left and right for the selected stereo tracks. 
-SHIFT + REC + B[1-3] | Load WAV file to looper track A, B or C. Importing WAV file to the looper section for detail. 
-PARAM + [1-3] | Mute track
-PARAM + NO | Toggle Extra Processing
-SHIFT + LOOPER STOP | Delete all track recordings in the current scene, reset recording length 
-REC + NO | Cut or Copy Looper track 
-REC + OK | Paste Looper track 
-REC + PARAM | Open UNDO list. Select the top item to undo the last sample recording for the track. Select the second item to undo the last sequcener recording. SHIFT + OK to preview the sound. 
-MODE PLAY + PARAM + turn dial | Parameter Lock Morphing
+Button | Overview | Function
+-------|--|-------
+REC | ![](./manual_images/but/lr.png) |  Go Looper status page
+LOOPER PLAY | ![](./manual_images/but/lplay.png) |  Start Looper
+LOOPER STOP | ![](./manual_images/but/ls.png) |  Stop Looper
+LOOPER REC + LOOPER PLAY | ![](./manual_images/but/lr_lplay.png) |  Start looper sample recording
+LOOPER PLAY + [1-5] | ![](./manual_images/but/lplay_1..5.png) |  Select Scene
+LOOPER PLAY + NO or OK | ![](./manual_images/but/lplay_n_o.png) |  Change Scene page (5 Scenes per page)
+LOOPER PLAY + [1-5] + turn dial | ![](./manual_images/but/lplay_1..5_d.png) |  Copy Scene
+REC + [1-3, 7,8] | ![](./manual_images/but/lr_1..378.png) |  Select sample recording track. A,B,C are mono tracks. Press 7, 8 for stereo recording. 7=A(Left)+B(Right), 8 = B+C. When you do stereo recording, you may want to set pan to left and right for the selected stereo tracks. 
+SHIFT + REC + B[1-3] | ![](./manual_images/but/s_lr_1..3.png) |  Load WAV file to looper track A, B or C. Importing WAV file to the looper section for detail. 
+PARAM + [1-3] | ![](./manual_images/but/param_1..3.png) |  Mute track
+PARAM + NO | ![](./manual_images/but/param_n.png) |  Toggle Extra Processing
+SHIFT + LOOPER STOP | ![](./manual_images/but/s_ls.png) |  Delete all track recordings in the current scene, reset recording length 
+REC + NO | ![](./manual_images/but/lr_n.png) |  Cut or Copy Looper track 
+REC + OK | ![](./manual_images/but/lr_o.png) |  Paste Looper track 
+REC + PARAM | ![](./manual_images/but/lr_param.png) |  Open UNDO list. Select the top item to undo the last sample recording for the track. Select the second item to undo the last sequcener recording. SHIFT + OK to preview the sound. 
+MODE PLAY + PARAM + turn dial | ![](./manual_images/but/mplay_param_d.png) |  Parameter Lock Morphing
 
 ## Sequencer overview
 
@@ -1050,23 +1050,23 @@ Alternatively, you can step record notes by external MIDI keyboard. Play note by
 
 ![conf](./manual_images/conf.png)
 
-Button |  Function
-|- | -------------|
-1 | 16th Swing.  _Tip: Combination of 16th and 8th swing (see button 6) is great for sloppy off-grid feeling._ 
-1 (Long press) | Sequencer MIDI channel out.
-2 | Key (for scale). 
-2 (Long press) | 2nd pattern 
-3 | Scale. Playing note will be quantized by this scale. 
-3 (Long press) | 3rd pattern 
-4 | Sequencer loop count. Default is 8.
-4 (Long press) | Morph pattern.
-5 | BPM factor. Playing speed can be double, normal, 1/2, 1/4 or 1/8.  
-5 (Long press) | Note Lower Limit 
-6 | Velocity accent period (steps). 
-6 (Long press) | 8th swing 
-7 | Velocity for the non-accent notes. 
-7 (Long press) | Note Upper Limit 
-8 | Velocity accent Period Offset 
+Button | Overview | Function
+|- | - | -------------|
+1 |  | 16th Swing.  _Tip: Combination of 16th and 8th swing (see button 6) is great for sloppy off-grid feeling._ 
+1 (Long press) | ![](./manual_images/but/1.png) | Sequencer MIDI channel out.
+2 | | Key (for scale). 
+2 (Long press) | ![](./manual_images/but/2.png) | 2nd pattern 
+3 | | Scale. Playing note will be quantized by this scale. 
+3 (Long press) | ![](./manual_images/but/3.png) | 3rd pattern 
+4 | | Sequencer loop count. Default is 8.
+4 (Long press) | ![](./manual_images/but/4.png) | Morph pattern.
+5 |  | BPM factor. Playing speed can be double, normal, 1/2, 1/4 or 1/8.  
+5 (Long press) | ![](./manual_images/but/5.png) | Note Lower Limit 
+6 |  | Velocity accent period (steps). 
+6 (Long press) | ![](./manual_images/but/6.png) | 8th swing 
+7 |  | Velocity for the non-accent notes. 
+7 (Long press) | ![](./manual_images/but/7.png) | Note Upper Limit 
+8 |  | Velocity accent Period Offset 
 
 Velocity period settings (Button 6 - 8) provide a convenient way to make rhythmic velocity.
 
@@ -1079,11 +1079,11 @@ Note lower and upper limit will limit the range of note. When the sequencer rece
 ### Running multiple sequence patterns
 You can run multiple sequence patterns at the same time, up to 3 patterns by setting "2nd pattern" (Long press button 2) or/and "3rd pattern" (Long press button 3), or using the shortcut shown below.
 
-Button | Function
-|------------ | -------------|
-2 in SEQ CFG sub-mode (Long press) | 2nd pattern 
-3 in SEQ CFG sub-mode (Long press) | 3rd pattern 
-SEQ PLAY + B[1-8] (Primary pattern) + B[1-8] (2nd pattern) in any sub-mode | This is a shortcut to select parallel pattern select. If you press another button while you keep pressing the primary pattern button, then it will be for the 3rd pattern(If you release the primary pattern button, it will become **Pattern chaining**). Assign the same pattern one more time to erase the assignment. Only normal parallel pattern ("R0") can be selected. 
+Button | Overview | Function
+|------------ | -- |-------------|
+2 in SEQ CFG sub-mode (Long press) | ![](./manual_images/but/2.png) | 2nd pattern 
+3 in SEQ CFG sub-mode (Long press) | ![](./manual_images/but/3.png) | 3rd pattern 
+SEQ PLAY + B[1-8] (Primary pattern) + B[1-8] (2nd pattern) in any sub-mode | ![](./manual_images/but/splay_1..8.png) | This is a shortcut to select parallel pattern select. <br> * If you press another button while you keep pressing the primary pattern button, then it will be for the 3rd pattern.<br> * If you release the primary pattern button, it will become **Pattern chaining**. <br> * Assign the same pattern one more time to erase the assignment. <br> * Only normal parallel pattern ("R0") can be selected. 
 
 The status is shown like this:
 
@@ -1146,23 +1146,24 @@ This is a simple setup to use the granular engine(You can skip those steps by in
 ### Operation
 
 
-Button | Function
------------- | -------------
-1 | Process samples.  Analyze will give better result with Time stretch. See below list for processing  detail 
-2 | Slice Spread, half-steps. Please see the [Having Multiple Slices (Slice Spread)](#having-multiple-slices-slice-spread) section for detail. 
-3 | File position (Starting point).
-4 | Length
-5 | Speed. It won't work with non-time stretch modes.
-6 | Number of Grain. It won't work with One-shot modes.
-7 | Detune. (Octave highs and lows)
-8 | GRN Mode. OFF, ONE(One shot), ONE_TS(One shot with time stretch), RPT(Repeat), RPT_TS(Repeat with time stretch). When the mode is not OFF, It will override AUX L signal to Granular output when you use AUX L as Oscillator shape. With time stretch, playing speed will be preserved. Without it, pitch and speed are linked like an analog tape. Execute Analyze(Button 1) for time stretching modes. 
-NO (<) | Previous slice
-OK (>) | Next slice
-LOOPER REC + LOOPER PLAY | Start recording granular sample
-LOOPER PLAY | Start playing (Preview) 
-LOOPER STOP | Stop playing
-SHIFT + LOOPER REC | Save Recording data
-SHIFT + LOOPER PLAY | Load Recording data from SD card.   Dial or button 7 or button 8 to select file.  **SHIFT + OK** to preview the sound. 
+Button | Overview | Function
+------------ | -- | -------------
+1 | ![](./manual_images/but/1.png) | Process samples. <br>*Tip:* Use the Analyze process for better results with Time stretch. <br>See all the [Sample processing](#sample-processing) techniques below. 
+2 | ![](./manual_images/but/2.png) | Slice Spread: half-steps. <br>Please see the [Having Multiple Slices (Slice Spread)](#having-multiple-slices-slice-spread) section for details. 
+3 | ![](./manual_images/but/3.png) | File position (Starting point).
+4 | ![](./manual_images/but/4.png) | Length
+5 | ![](./manual_images/but/5.png) | Speed. It won't work with non-time stretch modes.
+6 | ![](./manual_images/but/6.png) | Number of Grain. It won't work with One-shot modes.
+7 | ![](./manual_images/but/7.png) | Detune. (Octave highs and lows)
+8 | ![](./manual_images/but/8.png) | GRN Mode: <br> * OFF <br> * ONE(One shot) <br> * ONE_TS(One shot with time stretch) <br> * RPT(Repeat) <br> * RPT_TS(Repeat with time stretch). <br> <br> * When the mode is not OFF, It will override AUX L signal to Granular output when you use AUX L as Oscillator shape. <br> * With time stretch, playing speed will be preserved. <br> * Without time stretch, pitch and speed are linked like an analog tape. <br> * Execute Analyze(Button 1) for time stretching modes. 
+NO (<) | ![](./manual_images/but/n.png) | Previous slice
+OK (>) | ![](./manual_images/but/o.png) | Next slice
+LOOPER REC + LOOPER PLAY | ![](./manual_images/but/lr_lplay.png) | Start recording granular sample
+LOOPER PLAY | ![](./manual_images/but/lplay.png) | Start playing (Preview) 
+LOOPER STOP | ![](./manual_images/but/ls.png) | Stop playing
+SHIFT + LOOPER REC | ![](./manual_images/but/s_lr.png) | Save Recording data
+SHIFT + LOOPER PLAY | ![](./manual_images/but/s_lplay.png) | Load Recording data from SD card.   Dial or button 7 or button 8 to select file.  **SHIFT + OK** to preview the sound. 
+SHIFT + OK (Before loading) | ![](./manual_images/but/s_o.png) | Preview selected file when loading Recording data from SD card
 
 LOOPER buttons acts as sample player in granular mode.
 
@@ -1298,21 +1299,21 @@ When granular mode is not OFF, the recording data will be saved when you save pr
 
 Three track Mixer. At the last stage, signal can be **stereo** by panning tracks.
 
-Button | Function
------------- | -------------
-1 | Track A volume 
-2 | Track A Pan
-3 | Track B volume
-4 | Track B Pan
-5 | Track C volume
-6 | Track C Pan
-7 | Compressor threshold 
-8 | Compressor makeup 
-MODE PLAY + turn dial | Record volume 
-SHIFT + MODE PLAY + turn dial | Record pan
-MODE PLAY + SYSTEM + turn dial | Looper master volume 
-SYSTEM + PARAM + turn dial | Cross fade between Record volume and Looper volume
-SHIFT + NO | Toggle between Monitor mode and Mixer
+Button | Overview | Function
+------------ | -- | -------------
+1 | | Track A volume 
+2 | | Track A Pan
+3 | | Track B volume
+4 | | Track B Pan
+5 | | Track C volume
+6 | | Track C Pan
+7 | | Compressor threshold 
+8 | | Compressor makeup 
+MODE PLAY + turn dial | ![](./manual_images/but/mplay_d.png) |Record volume 
+SHIFT + MODE PLAY + turn dial | ![](./manual_images/but/s_mplay_d.png) |Record pan
+MODE PLAY + SYSTEM + turn dial | ![](./manual_images/but/mplay_sys_d.png) |Looper master volume 
+SYSTEM + PARAM + turn dial | ![](./manual_images/but/sys_param_d.png) |Cross fade between Record volume and Looper volume
+SHIFT + NO | ![](./manual_images/but/s_n.png) |Toggle between Monitor mode and Mixer
 
 
 This mixer has a compressor. Ratio, attack time and release time are fixed (1:3, attack 30ms, release 100ms).
@@ -1331,11 +1332,11 @@ _Demo: [video](https://www.youtube.com/watch?v=G79n2pruvMI) is available._
 
 You can monitor the output with a VU meter.
 
-Button | Function
------------- | -------------
-B[1-8] | Toggle monitor page 
-SHIFT + NO | Toggle between Monitor mode and Mixer
-
+Button | Overview | Function
+------------ | -- | -------------
+B[1-8] | ![](./manual_images/but/1..8.png) | Toggle monitor page 
+SHIFT + NO | ![](./manual_images/but/s_n.png) | Toggle between Monitor mode and Mixer
+SHIFT + turn dial <br> clockwise almost to end | ![](./manual_images/but/s_d.png) | Enter the monitor mode. <br>*Tip:* SHIFT + turn dial changes sub-mode.
 
 When you are in mixer mode, press SHIFT + NO again, or SHIFT + turn dial to the end, you can enter to the monitor mode.
 
@@ -1403,17 +1404,19 @@ Granular recording data will be saved when granular mode is not OFF.
 
 Using the Preset Select menu:
 
-Button | Function
--------- | --------
-Dial | Move cursor
-Button 7 | Move up cursor, SHIFT + button 7 for page scroll
-Button 8 | Move down cursor, SHIFT + button 8 for page scroll
-OK | Load preset
-SHIFT + OK | Load preset without asking about sequence data(It won't load sequencer data). It's convenient for quick preset sound checking. 
-NO | Cancel loading
-SHIFT + Looper Stop | Delete the selected preset
+Button | Overview | Function
+-------- | -- | --------
+Dial | ![](./manual_images/but/d.png) | Move cursor
+Button 7 | ![](./manual_images/but/7.png) | Move cursor up
+SHIFT + Button 7 | ![](./manual_images/but/s_7.png) | Move cursor up a page
+Button 8 | ![](./manual_images/but/8.png) | Move cursor down
+SHIFT + Button 8 | ![](./manual_images/but/s_8.png) | Move cursor down a page
+OK | ![](./manual_images/but/o.png) | Load preset
+SHIFT + OK | ![](./manual_images/but/s_o.png) | Load preset without asking about sequence data(It won't load sequencer data). <br> *Tip:* It's convenient for quick preset sound checking. 
+NO | ![](./manual_images/but/n.png) | Cancel loading
+SHIFT + Looper Stop | ![](./manual_images/but/s_ls.png) | Delete the selected preset
 
-You can play sound by SYSTEM + B[1-8] (Temporary piano mode) or play note by external MIDI keyboard.
+*Tip:* You can play sound by SYSTEM + B[1-8] (Temporary piano mode) or play note by external MIDI keyboard.
 
 ## Save preset
 
