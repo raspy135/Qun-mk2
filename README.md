@@ -1027,7 +1027,7 @@ Striped square | 4 notes in the step (1/32th)
 
 Button | Overview | Function
 -- | -- | --
-B[1-8] | ![](./manual_images/but/1..8_d.png) | Modify velocity / width / probability for each step
+B[1-8] + turn dial | ![](./manual_images/but/1..8_d.png) | Modify velocity / width / probability for each step
 B[1-8] + NO / OK | ![](./manual_images/but/1..8_n_o.png) | Change sub-step parameter
 
 Press one of the eight buttons and turn the dial, then it will modify velocity / width / probability for each step.
@@ -1042,7 +1042,7 @@ Only tune has 3rd and 4th voice index. Other parameters will share the parameter
 ## PLY:SEQ TUNE
 Button | Overview | Function
 -- | -- | --
-B[1-8] | ![](./manual_images/but/1..8_d.png) | Modify tune offset for each step
+B[1-8] + turn dial | ![](./manual_images/but/1..8_d.png) | Modify tune offset for each step
 B[1-8] + NO / OK | ![](./manual_images/but/1..8_n_o.png) | Change sub-step parameter
 
 Press one of the eight buttons and turn the dial, then it will modify tune offset for each step.
