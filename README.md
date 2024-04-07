@@ -787,11 +787,11 @@ To start the Looper recording sound, hit LOOPER REC + LOOPER PLAY. If the Sequen
 
 **Looper recording:**
 
-Sequencer | Looper    | Button                   | Result
---- |-----------|--------------------------| -- 
-Stop | Stop      | LOOPER REC + LOOPER PLAY | Looper stand-by
-Playing / Stop | Stand-by  | SEQ PLAY                 | Play Sequencer to next measure. Then, start Looper recording and continue Sequencer playing.
-Playing | Recording | LOOPER STOP | Stop Looper recording. Continue Looper and Sequencer playing.
+Sequencer | Looper    | Button                   | Overview | Result
+--- |-----------|--------------------------| -- | -- 
+Stop | Stop      | LOOPER REC + LOOPER PLAY | ![](./manual_images/but/lr_lplay.png) | Looper stand-by
+Playing / Stop | Stand-by  | SEQ PLAY                 | ![](./manual_images/but/splay.png)| Play Sequencer to next measure. Then, start Looper recording and continue Sequencer playing.
+Playing | Recording | LOOPER STOP | ![](./manual_images/but/ls.png) | Stop Looper recording. Continue Looper and Sequencer playing.
 
 The first recorded track will define the length of the loop.
 
@@ -801,11 +801,11 @@ Looper keeps playing the recorded sound. All recorded data will be saved to SD c
 
 **Looper playing:** 
 
-Sequencer | Looper    | Button                   | Result
---- |-----------|--------------------------| -- 
-Playing / Stop | Stop      | LOOPER PLAY | Start Looper playing.
-Playing / Stop | Playing   | LOOPER STOP | Stop Looper.
-Playing | Playing   | SEQ PLAY | Stop Sequencer playing. Continue Looper playing.
+Sequencer | Looper    | Button                   | Overview | Result
+--- |-----------|--------------------------| -- | --
+Playing / Stop | Stop      | LOOPER PLAY | ![](./manual_images/but/lplay.png) | Start Looper playing.
+Playing / Stop | Playing   | LOOPER STOP | ![](./manual_images/but/ls.png) | Stop Looper.
+Playing | Playing   | SEQ PLAY | ![](./manual_images/but/splay.png) | Stop Sequencer playing. Continue Looper playing.
 
 
 When you press REC + LOOPER PLAY twice (or SHIFT + REC + LOOPER PLAY), the recording mode will be REC mode. 
@@ -826,10 +826,10 @@ Reduce record volume (-3.0dB or more) in Mixer to avoid clipping. MODE PLAY + tu
 
 Copy, Cut or Paste can be used as a temporary saved area, or to delete the track.
 
-Button | Description
--- | --
-REC + NO | Cut / Copy
-REC + OK | Paste
+Button | Overview | Description
+-- | -- | -- 
+REC + NO | ![](./manual_images/but/lr_n.png) | Cut / Copy
+REC + OK | ![](./manual_images/but/lr_o.png) | Paste
 
 All recorded data, Preset bucket, and Mixer data will be saved as a Session automatically. Recording data is saved immediately and other data will be saved when looper playing is stopped. Recording data is a standard WAV file, so you can import them to DAW.
 
@@ -839,16 +839,16 @@ All recorded data, Preset bucket, and Mixer data will be saved as a Session auto
 
 Check Looper status, such as playing position and loop length, by pressing the REC button.
 
-Label | Description
------------- | -------------
-![o](./manual_images/looper-o.png) / ![r](./manual_images/looper-r.png) / ![io](./manual_images/looper-io.png) / ![ir](./manual_images/looper-ir.png): Letter in corner  | Indicator of Overdub, Record, Insert Overdub, and Insert Record 
-Small dot on bottom left | Ready to play, waiting for sequencer, or already playing
-![e](./manual_images/looper-e.png): Extra tape-circle | **Extra Processing** is on (PARAM + NO) 
-`P` | Position, in steps 
-`L` | Loop length, in steps 
-Box and lines above `SC` label | Scene page
-`SC` | Current Scene
-`TR` | Current Track: `A`, `B`, or `C`
+Label | Screen | Description
+------------ | -- | -------------
+Letter in corner | ![o](./manual_images/looper-o.png) / ![r](./manual_images/looper-r.png) / ![io](./manual_images/looper-io.png) / ![ir](./manual_images/looper-ir.png)  | Indicator of Overdub, Record, Insert Overdub, and Insert Record 
+Small dot on bottom left | |  Ready to play, waiting for sequencer, or already playing
+Extra tape-circle | ![e](./manual_images/looper-e.png) | **Extra Processing** is on (PARAM + NO) 
+`P` | | Position, in steps 
+`L` | | Loop length, in steps 
+Box and lines above `SC` label | | Scene page
+`SC` | | Current Scene
+`TR` | | Current Track: `A`, `B`, or `C`
 
 Looper status page also provides basic wave editing with a button.
 
