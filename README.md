@@ -1368,12 +1368,17 @@ When you are in mixer mode, press SHIFT + NO again, or SHIFT + turn dial to the 
 
 _An intermediate [tutorial video segment](https://www.youtube.com/watch?v=wyU148xfGao&t=725s) and [demo video](https://www.youtube.com/watch?v=RmhoXS-IHoA) are available._ 
 
+Button | Overview | Function
+------------ | -- | -------------
+PARAM + NO | ![](./manual_images/but/param_n.png) | Toggle Extra Processing
+
 This mode uses the sound engine as an effector to process external stereo input.
 
 You can toggle Extra Processing mode by **PARAM + NO** button. 
 
 When it's enabled, the Oscillators are turned off, but filter and effector becomes stereo, and connected to after Looper.
-You can apply filter, filter volume, and effects against Looper recording. See the [signal diagram](#signal-diagram) to understand how it works.
+
+You can apply filter, filter volume, and effects against Looper recording. See the [signal diagram](#signal-diagram) to understand how it works. _Tip: to explore filter, filter volume, and effects, enable [Line In Through](#syssystem) with Extra Processing._
 
 LFO and Envelopes(EG1 to EG4) are still available for filter modulation.
 
@@ -1632,7 +1637,7 @@ To synchronize all parameters between multiple Qun synthesizers, press SHIFT + M
 ## TIPS/TROUBLESHOOTING
 
 * Unknown MIDI messages sent with device reset?
-  * When booting some noise is sent (it's ESP32's boot message) . Please avoid to receive MIDI signals when you reset the device. Use initializing preset (SHIFT +PARAM), instead of hardware reset.
+  * When booting some noise is sent (it's ESP32's boot message) . Please avoid to receive MIDI signals when you reset the device. Use initializing preset (SHIFT + PARAM), instead of hardware reset.
 * Trouble with Duo Mode: You need to set up properly to play duo mode properly.
   * Go Key / Other sub-menu and long press button 7. It will sync the parameters OSC1 and OSC2, and resolve most issues with Duo Mode.
 * No sound suddenly
@@ -1666,8 +1671,11 @@ To synchronize all parameters between multiple Qun synthesizers, press SHIFT + M
 You can use LINE IN signal for various purposes. LINE IN is stereo input.
 
 * As CV input to control synth parameters
-* As oscillator source. Select "AUXL" or "AUXR" as oscillator source. VCF / effector / Clipping will be applied. If you want to process LINE IN signal as an audio signal, then set Oscillator(1/2)'s signal as "AUXR" or "AUXL", and set the ENV SEL as "ON" (in OSC Switches). Set the gain by changing "VCF Volume" and "AUX In Gain" in Mix sub-menu. 
-* Line In Through to Looper. Setting is in System -> Line In Through. It passes through the sound engine, then combined with the output of the sound engine. You can record the input to looper. Compressor will be applied.
+* As oscillator source
+  * Select "AUXL" or "AUXR" as oscillator source. VCF / effector / Clipping will be applied. 
+  * If you want to process LINE IN signal as an audio signal, then set Oscillator(1/2)'s signal as "AUXR" or "AUXL", and set the ENV SEL as "ON" (in OSC Switches). Set the gain by changing "VCF Volume" and "AUX In Gain" in Mix sub-menu. 
+* Line In Through to Looper. Setting is in [System -> Line In Through](#syssystem). It passes through the sound engine, then combined with the output of the sound engine.
+  * You can record the input to looper. Compressor will be applied. 
 
 
 ## Clock synchronization
@@ -1903,7 +1911,7 @@ A1 | Sequencer live rec (Equivalent to REC + SEQ PLAY)
 A#1 | Sequencer Play
 B1 | Sequencer Stop
 C2 to E2 | Select looper scene
-A2 | Looper Rec (Equivalent to REC+ LOOPER PLAY)
+A2 | Looper Rec (Equivalent to REC + LOOPER PLAY)
 A#2 | Looper Play
 B2 | Looper Stop
 C3 to G3 | Select Bucket
