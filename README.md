@@ -257,15 +257,15 @@ There is no "new session" function. The synth always create a new session when b
 
 Session button operations work in both **Parameter** and **Play modes**:
 
-Button | Function
------------- | -------------
-SHIFT + LOOPER PLAY | Show current session number
-SHIFT + LOOPER PLAY + turn dial | Load session
-NO or OK button while selecting a session | Scroll session page when you have more than 32 sessions 
-SHIFT + REC | Save current session (Looper stop will perform session save when autosave is on)
-SHIFT + REC (Long press) | Name current session
-SHIFT + REC + B[1-3] | Load WAV file to looper track A, B or C. See the [Looper Overview](#looper-overview) section for details.
-Press B[1-8] while booting | Load a previous LOOPER folder. E.g. Button1 means LOOPER00, Button2 means LOOPER01, and so on.
+Button | Overview | Function
+------------ | -- | -------------
+SHIFT + LOOPER PLAY | ![](./manual_images/but/s_lplay.png) | Show current session number
+SHIFT + LOOPER PLAY + turn dial | ![](./manual_images/but/s_lplay_d.png) | Load session
+NO or OK button while selecting a session |   | Scroll session page when you have more than 32 sessions 
+SHIFT + REC | ![](./manual_images/but/s_lr.png) | Save current session (Looper stop will perform session save when autosave is on)
+SHIFT + REC (Long press) | ![](./manual_images/but/s_lr.png) | Name current session
+SHIFT + REC + B[1-3] | ![](./manual_images/but/s_lr_1..3.png) | Load WAV file to looper track A, B or C. See the [Looper Overview](#looper-overview) section for details.
+Press B[1-8] while booting | ![](./manual_images/but/1..8.png) | Load a previous LOOPER folder. E.g. Button1 means LOOPER00, Button2 means LOOPER01, and so on.
 
 _Workflow: load a different session._
 
@@ -324,7 +324,7 @@ The synth has 8 preset buckets to quickly recall presets. Each bucket contains o
 
 ![data_structure](./manual_images/bucket_diagram.png)
 
-Buttons | Map | Description
+Button | Overview | Description
 -------|--|-------
 MODE PLAY (RECALL) + B[1-8] | ![](./manual_images/but/mplay_1..8.png) | Switch Bucket
 MODE PLAY (RECALL) + B[1-8] + turn dial | ![](./manual_images/but/mplay_1..8_d.png) | Copy Bucket
@@ -503,17 +503,17 @@ Configures other parameters.
 
 ![other](./manual_images/other.png)
 
-Button | Description
-|------ | ------|
-1 | VCF 4/2 POLE / NoLinear. Select VCF number of poles and linear or no linear. 2P/4P/2PNL/4PNL. Ladder filter algorithm will be used only when 4NL with Lowpass or Highpass filter.
-2 | VCF ENV Src. Applying Envelopes to the signal after VCF. You might want to set OSC1/2's Env sel to "ON" to utilize this parameter. This is useful only with Mono mode. _Tutorial: [video](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=672s) is available._
-3 | GLIDE. Smooth transition between notes. 
-4 | BEND RANGE. Pitch bend range.
-5 | OSC1/2 Keysync. This is a switch to connect MIDI input notes and oscillators. Y = Follow MIDI note pitch. N = Ignore MIDI note. You can still use FREQ1 and FREQ2 for modulation to use MIDI note pitch.
-6 | VELOCITY SW. Envelope generators become velocity sensitive when it’s ON.
-7 | MONO/QUAD/POLY (Voice mode).  See the [Voice Mode](#voice-mode) section for details. 
-7 (Long press) | Sync Oscillator parameters.  See the [Voice Mode](#voice-mode) section for details. _Tutorial: [video](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=925s) is available._
-8 | LFO BPM sync. LFO rate will synchronize with Sequencer's BPM when it is ON.
+Button | Overview | Description
+|------ | -- | ------|
+1 | | VCF 4/2 POLE / NoLinear. Select VCF number of poles and linear or no linear. 2P/4P/2PNL/4PNL. Ladder filter algorithm will be used only when 4NL with Lowpass or Highpass filter.
+2 | | VCF ENV Src. Applying Envelopes to the signal after VCF. You might want to set OSC1/2's Env sel to "ON" to utilize this parameter. This is useful only with Mono mode. _Tutorial: [video](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=672s) is available._
+3 | | GLIDE. Smooth transition between notes. 
+4 | | BEND RANGE. Pitch bend range.
+5 | | OSC1/2 Keysync. This is a switch to connect MIDI input notes and oscillators. Y = Follow MIDI note pitch. N = Ignore MIDI note. You can still use FREQ1 and FREQ2 for modulation to use MIDI note pitch.
+6 | | VELOCITY SW. Envelope generators become velocity sensitive when it’s ON.
+7 | | MONO/QUAD/POLY (Voice mode).  See the [Voice Mode](#voice-mode) section for details. 
+7 (Long press) | ![](./manual_images/but/7.png) | Sync Oscillator parameters.  See the [Voice Mode](#voice-mode) section for details. _Tutorial: [video](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=925s) is available._
+8 | | LFO BPM sync. LFO rate will synchronize with Sequencer's BPM when it is ON.
 
 ### Voice Mode
 
@@ -643,23 +643,23 @@ Clipping indicator is active when signal is clipped at the end of signal chain, 
 
 Most actions work in any major mode, and are not limited to Play mode.
 
-Button | function
--------|-------
-SEQ PLAY | Start / Stop Sequencer
-REC + SEQ PLAY | Start Sequencer live recording
-REC + SEQ PLAY + turn dial | Metronome volume
-SHIFT + SEQ PLAY + turn dial | Set BPM. Tap tempo by pressing SEQ PLAY 4 or more times while you keep pressing SHIFT. 
-NO | Previous sequencer pattern
-OK | Next sequencer pattern
-SEQ PLAY + [1-8] | Select Sequencer pattern
-SEQ PLAY + [1-8] , [1-8]...| Chain sequencer pattern(Pattern chaining). Keep pressing SEQ PLAY. 
-SEQ PLAY + NO / OK | Move to previous / next Sequencer page
-SHIFT + SEQ PLAY +  NO / OK | Copy Sequencer page to previous / next Sequencer page
-SEQ PLAY + [1-8] + turn dial | Copy sequencer pattern to other pattern. If you want to cancel the operation, turn to the end, then "CANCEL" will be indicated as the destination. To initialize the bank data, turn the dial to "CLEAR". 
+Button | Overview | Function
+-------|--|-------
+SEQ PLAY | ![](./manual_images/but/splay.png) | Start / Stop Sequencer
+REC + SEQ PLAY | ![](./manual_images/but/lr_splay.png) | Start Sequencer live recording
+REC + SEQ PLAY + turn dial | ![](./manual_images/but/lr_splay_d.png) | Metronome volume
+SHIFT + SEQ PLAY + turn dial | ![](./manual_images/but/s_splay_d.png) | Set BPM. Tap tempo by pressing SEQ PLAY 4 or more times while you keep pressing SHIFT. 
+NO | ![](./manual_images/but/n.png) | Previous sequencer pattern
+OK | ![](./manual_images/but/o.png) | Next sequencer pattern
+SEQ PLAY + [1-8] | ![](./manual_images/but/splay_1..8.png) | Select Sequencer pattern
+SEQ PLAY + [1-8] , [1-8]...| ![](./manual_images/but/splay_1..8.png) | Chain sequencer pattern(Pattern chaining). Keep pressing SEQ PLAY. 
+SEQ PLAY + NO / OK | ![](./manual_images/but/splay_n_o.png) | Move to previous / next Sequencer page
+SHIFT + SEQ PLAY +  NO / OK | ![](./manual_images/but/s_splay_n_o.png) | Copy Sequencer page to previous / next Sequencer page
+SEQ PLAY + [1-8] + turn dial | ![](./manual_images/but/splay_1..8_d.png) | Copy sequencer pattern to other pattern. If you want to cancel the operation, turn to the end, then "CANCEL" will be indicated as the destination. To initialize the bank data, turn the dial to "CLEAR". 
 
 ## COMMON LOOPER OPERATIONS
 
-Button | function
+Button | Function
 -------|-------
 REC | Go Looper status page
 LOOPER PLAY | Start Looper
