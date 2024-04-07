@@ -1242,17 +1242,17 @@ To use record scratch mode, you need to set the following settings, or using "Sc
 4. OSC1 Env Sel to "ON" (Parameter mode, Switch menu, button 1) to disable envelope. Or you can set it to other sources to automate crossfade slider.
 
 
-Button | Function
------------- | -------------
-Turn dial | Scratch record
-Button 8 | Mute while pressing and unmute when released 
-Button 7 | The same as button 8 
-Button 6 | Release. Record start playing at the configured tune. 
-Button 5 | Unmute while pressing and mute when released 
-Button 4 | The same as button 5 
-Button 3 | Rewind to slice 1 
-Button 2 | Rewind to slice 2 
-Button 1 | Rewind to slice 3 
+Button | Overview | Function
+------------ | -- | -------------
+Turn dial | ![](./manual_images/but/d.png) | Scratch record
+Button 8 | ![](./manual_images/but/8.png) | Mute while pressing and unmute when released 
+Button 7 | ![](./manual_images/but/7.png) | The same as button 8 
+Button 6 | ![](./manual_images/but/6.png) | Release. Record start playing at the configured tune. 
+Button 5 | ![](./manual_images/but/5.png) | Unmute while pressing and mute when released 
+Button 4 | ![](./manual_images/but/4.png) | The same as button 5 
+Button 3 | ![](./manual_images/but/3.png) | Rewind to slice 1 
+Button 2 | ![](./manual_images/but/2.png) | Rewind to slice 2 
+Button 1 | ![](./manual_images/but/1.png) | Rewind to slice 3 
 
 #### Tips for record scratching
 
