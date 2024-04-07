@@ -168,47 +168,47 @@ _Tip: menus can be scrolled through, one by one, with buttons 7 and 8._
 * Scrolling in menus by turning the dial will sweep through many menu items quickly.
 * Try using button 7 and 8 to scroll one at a time: press SYSTEM, then press button 8 twice to reach the "System" item, and finally press OK.
 
-Button | Primary function
------------- | -------------
-SHIFT | SHIFT + [1-8] button or NO / OK button to select sub-mode 
-[1-8] button | Select a parameter in the current sub-mode. Also show information with LEDs (see under LED Indicators).
-NO | Select previous sequencer pattern
-OK | Select next sequencer pattern
-Dial | change parameters
-SEQ PLAY | Start / Stop sequencer
-REC + SEQ PLAY | Start sequencer live recording
-MODE PLAY | Select Play mode
-SYSTEM | Select System mode
-PARAM | Select Parameter mode
-REC | Looper status page
-REC + LOOPER PLAY | Start looper recording sound
-LOOPER PLAY | Start looper playing
-LOOPER STOP | Stop looper playing
-RST button on the base board | Reset the device
-4 touch buttons at the bottom board | This can be used as a touch slider. See the [Touch Slider](#touch-slider) section for detail. 
-SHIFT + NO + OK | Sleep (Shutdown) the device. It will turn off most of the power consuming components like the main CPU and the screen. Press the RST button to restart the device.
+Button | Map | Primary function 
+------------ | -- | -------------
+SHIFT | ![](./manual_images/but/s.png) | SHIFT + [1-8] button or NO / OK button to select sub-mode | 
+[1-8] button | ![](./manual_images/but/1..8.png) | Select a parameter in the current sub-mode. Also show information with LEDs (see under LED Indicators).
+NO | ![](./manual_images/but/n.png) | Select previous sequencer pattern
+OK | ![](./manual_images/but/o.png) | Select next sequencer pattern
+Dial | ![](./manual_images/but/d.png) | change parameters
+SEQ PLAY | ![](./manual_images/but/splay.png) | Start / Stop sequencer
+REC + SEQ PLAY | ![](./manual_images/but/lr_splay.png) | Start sequencer live recording 
+MODE PLAY | ![](./manual_images/but/mplay.png) | Select Play mode
+SYSTEM | ![](./manual_images/but/sys.png) | Select System mode
+PARAM | ![](./manual_images/but/param.png) | Select Parameter mode
+REC | ![](./manual_images/but/lr.png) | Looper status page
+REC + LOOPER PLAY | ![](./manual_images/but/lr_lplay.png) | Start looper recording sound
+LOOPER PLAY | ![](./manual_images/but/lplay.png) | Start looper playing
+LOOPER STOP | ![](./manual_images/but/ls.png) | Stop looper playing
+RST button on the base board | | Reset the device
+4 touch buttons at the bottom board | | This can be used as a touch slider. See the [Touch Slider](#touch-slider) section for detail. 
+SHIFT + NO + OK | ![](./manual_images/but/s_n_o.png) | Sleep (Shutdown) the device. It will turn off most of the power consuming components like the main CPU and the screen. Press the RST button to restart the device.
 
 ## BASIC SHORTCUTS
 
-Button | Function
------------- | -------------
-SHIFT + MODE PLAY | Dump current preset to MIDI OUT. This is useful to transfer the current preset to another Qun / Qun mk2 synthesizer.
-SHIFT + SYSTEM | All notes off
-SHIFT + PARAM | Initialize the preset. Choose from a default: Blank, Sampler, EvenSlice, or Scratch. Please see the [Initialize preset](#initialize-preset) section for details. 
-SHIFT + SEQ PLAY + turn dial | Set BPM. Tap tempo by pressing SEQ PLAY 4 or more times while you keep pressing SHIFT. 
-MODE PLAY + turn dial | Record volume -- stay at -6.0dB or lower to avoid clipping. _Tutorial: [video](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=770s) is available._
-MODE PLAY + SYSTEM + turn dial | Looper master volume 
-SYSTEM + turn dial | VCF volume
-PARAM + turn dial | VCF cutoff
-REC + turn dial | LFO tune
-LOOPER PLAY + [1-5] | Select Scene
-REC + [1-3, 7,8] | Select looper sample recording track. A,B,C are mono tracks. Press 7, 8 for stereo recording. 7=A(Left)+B(Right), 8 = B+C. When you do stereo recording, you may want to set pan to left and right for the selected stereo tracks. 
-PARAM + [1-3] | Mute track
-MODE PLAY (RECALL) + [1-8] | Recall preset bucket. See the [Preset Bucket](#preset-bucket) section for details.
-SEQ PLAY + [1-8] | Select Sequencer pattern
-SHIFT + LOOPER PLAY + turn dial | Load session when you are not in System mode or Granular mode. 
-SHIFT + LOOPER PLAY + [1-3] button | Import WAV file from import folder to selected track
-SYSTEM + [1-8] | Temporary piano mode
+Button | Map | Function
+------------ | -- | -------------
+SHIFT + MODE PLAY | | Dump current preset to MIDI OUT. This is useful to transfer the current preset to another Qun / Qun mk2 synthesizer.
+SHIFT + SYSTEM | | All notes off
+SHIFT + PARAM | | Initialize the preset. Choose from a default: Blank, Sampler, EvenSlice, or Scratch. Please see the [Initialize preset](#initialize-preset) section for details. 
+SHIFT + SEQ PLAY + turn dial | | Set BPM. Tap tempo by pressing SEQ PLAY 4 or more times while you keep pressing SHIFT. 
+MODE PLAY + turn dial | | Record volume -- stay at -6.0dB or lower to avoid clipping. _Tutorial: [video](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=770s) is available._
+MODE PLAY + SYSTEM + turn dial | | Looper master volume 
+SYSTEM + turn dial | | VCF volume
+PARAM + turn dial | | VCF cutoff
+REC + turn dial | | LFO tune
+LOOPER PLAY + [1-5] | | Select Scene
+REC + [1-3, 7,8] | | Select looper sample recording track. A,B,C are mono tracks. Press 7, 8 for stereo recording. 7=A(Left)+B(Right), 8 = B+C. When you do stereo recording, you may want to set pan to left and right for the selected stereo tracks. 
+PARAM + [1-3] | | Mute track
+MODE PLAY (RECALL) + [1-8] | | Recall preset bucket. See the [Preset Bucket](#preset-bucket) section for details.
+SEQ PLAY + [1-8] | | Select Sequencer pattern
+SHIFT + LOOPER PLAY + turn dial | | Load session when you are not in System mode or Granular mode. 
+SHIFT + LOOPER PLAY + [1-3] button | | Import WAV file from import folder to selected track
+SYSTEM + [1-8] | | Temporary piano mode
 
 ## LED Indicators
 
@@ -324,10 +324,10 @@ The synth has 8 preset buckets to quickly recall presets. Each bucket contains o
 
 ![data_structure](./manual_images/bucket_diagram.png)
 
-Buttons | Description
--------|-------
-MODE PLAY (RECALL) + B[1-8] | Switch Bucket
-MODE PLAY (RECALL) + B[1-8] + turn dial | Copy Bucket
+Buttons | Map | Description
+-------|--|-------
+MODE PLAY (RECALL) + B[1-8] | ![](./manual_images/but/mplay_1..8.png) | Switch Bucket
+MODE PLAY (RECALL) + B[1-8] + turn dial | ![](./manual_images/but/mplay_1..8_d.png) | Copy Bucket
 
 Solid LED indicates current bucket you are in when pressing MODE PLAY button.
 
@@ -377,7 +377,7 @@ _Tutorial: [video](https://www.youtube.com/watch?v=7-3rrYf2dhs) shaping sound wi
 
 The oscillator is a hybrid of classic analog synth, FM, and granular.
 
-Buttons | Description
+Button | Description
 -------|-------
 1 | SHAPE. `Saw, Sine, S&H, Square, Triangle, W Noise, P Noise, FM, AUX`.<br> * AUX means audio input from LINE or MIC. <br> * Granular synth engine is connected to the AUX L channel when it's active. See [Granular](#plygranular) section for detail. 
 2 | PULSE WIDTH.  Triangle, Square and Granular can take PWM. In granular mode, the playing position will be changed by PWM.
