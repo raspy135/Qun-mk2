@@ -168,7 +168,7 @@ _Tip: menus can be scrolled through, one by one, with buttons 7 and 8._
 * Scrolling in menus by turning the dial will sweep through many menu items quickly.
 * Try using button 7 and 8 to scroll one at a time: press SYSTEM, then press button 8 twice to reach the "System" item, and finally press OK.
 
-Button | Map | Primary function 
+Button | Overview | Primary function 
 ------------ | -- | -------------
 SHIFT | ![](./manual_images/but/s.png) | SHIFT + [1-8] button or NO / OK button to select sub-mode | 
 [1-8] button | ![](./manual_images/but/1..8.png) | Select a parameter in the current sub-mode. Also show information with LEDs (see under LED Indicators).
@@ -190,7 +190,7 @@ SHIFT + NO + OK | ![](./manual_images/but/s_n_o.png) | Sleep (Shutdown) the devi
 
 ## BASIC SHORTCUTS
 
-Button | Map | Function
+Button | Overview | Function
 ------------ | -- | -------------
 SHIFT + MODE PLAY | ![](./manual_images/but/s_mplay.png) | Dump current preset to MIDI OUT. This is useful to transfer the current preset to another Qun / Qun mk2 synthesizer.
 SHIFT + SYSTEM | ![](./manual_images/but/s_sys.png) | All notes off
