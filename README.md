@@ -705,17 +705,22 @@ Also, all LEDs are on for the even steps while live recording.
 
 Press SEQ PLAY to exit recording mode, and the sequencer will keep playing. Press SEQ PLAY again to stop the sequencer.
 
-You can (re)enter recording mode while playing. Press Rec + SEQ Play to enter recording mode.
+You can (re)enter recording mode while playing. Press REC + SEQ PLAY to enter recording mode.
 
 A metronome click sound plays when live recording is ongoing. The metronome volume can be adjusted with REC + SEQ PLAY + turn dial. The chained sequencer pattern will be reset when you change to another pattern.
 
-You can undo the last recording. Press REC+PARAM to open Undo list, then select the second item.
+You can undo the last recording. Press REC + PARAM to open Undo list, then select the second item.
 
 ### Parameter Lock live recording
 
 When you are in sequencer live recording, changing sound engine parameters will be recorded as Parameter Locking. **The recording starts when you start changing the parameter, and it ends at the end of the pattern.**
 
 ### Edit the current step while Sequencer live recording
+
+Button | Overview | Function
+-- | -- | --
+B 7 or 8 | ![](./manual_images/but/78.png) | Specify the current step when in Tune, Width, Velocity, or Prob mode
+B 7 or 8 + turn dial | ![](./manual_images/but/78_d.png) | Record sub-step parameter when in the Tune, Width, Velocity, or Prob mode
 
 When you are in Tune, Width, Velocity, or Prob mode, and you are also in sequencer live recording, pressing B7 + B8 will specify the current step. The "Current" message will be shown.
 
@@ -728,7 +733,14 @@ _Tutorial: [video](https://www.youtube.com/watch?v=wyU148xfGao&t=275s) and [demo
 
 Parameter locking is the term used in Elektron sequencers, which is a temporary parameter change available only in the specific sequencer step. The parameter change appears only when the sequencer is playing the step. 
 
-Here is the steps to set Parameter Lock:
+Button | Overview | Description
+-- | -- | --
+B[1-8] (Long press), then PARAM| ![](./manual_images/but/1..8_param.png) | Selects a step to lock a parameter for, when in a supported Sequencer sub-mode. See below for more detail.<br><br>(Long press PARAM, also) Clear lock for selected step, or multiple selected steps, if already set.
+SEQ PLAY | ![](./manual_images/but/splay.png) | Navigate back to sequencer, and finish setting up locks
+PARAM (Long press) | ![](./manual_images/but/param.png) | Clear active parameter lock
+B[1-8] + PARAM + turn dial | ![](./manual_images/but/1..8_param_d.png) | Change the last edited locked parameter 
+
+Here are the steps to set Parameter Lock:
 
 1. In Play mode, you should be one of the following modes: ON/OFF, Tune, Width, Velocity, or Probability, press [1-8] button to select the step that you want to set Parameter Lock
 2. Keep pressing the button, and press [PARAM]. Mode switches to Parameter Lock mode.  White frame indicates you are in Parameter Lock mode.
@@ -744,7 +756,7 @@ Here is the steps to set Parameter Lock:
 
 Parameter lock will be triggered only when the step is turned on.
 
-SHIFT + turn dial is a useful way to sweep between sub-modes to find modified parameters.
+_Tip: SHIFT + turn dial is a useful way to sweep between sub-modes to find modified parameters._
 
 
 
@@ -1012,16 +1024,27 @@ Striped circle | 3 notes in the step (triplet).
 Striped square | 4 notes in the step (1/32th)
 
 ## PLY:SEQ VELOCITY / WIDTH / PROBABILITY
+
+Button | Overview | Function
+-- | -- | --
+B[1-8] | ![](./manual_images/but/1..8_d.png) | Modify velocity / width / probability for each step
+B[1-8] + NO / OK | ![](./manual_images/but/1..8_n_o.png) | Change sub-step parameter
+
 Press one of the eight buttons and turn the dial, then it will modify velocity / width / probability for each step.
 
 If you press NO or OK while pressing [1-8] button, you can edit sub-step parameter.
 
-Please check Seq Tune section about sub-step. 
+Please see the [Seq Tune](#plyseq-tune) section about sub-step. 
 
 Only tune has 3rd and 4th voice index. Other parameters will share the parameter for 3rd and 4th voices.
 
 
 ## PLY:SEQ TUNE
+Button | Overview | Function
+-- | -- | --
+B[1-8] | ![](./manual_images/but/1..8_d.png) | Modify tune offset for each step
+B[1-8] + NO / OK | ![](./manual_images/but/1..8_n_o.png) | Change sub-step parameter
+
 Press one of the eight buttons and turn the dial, then it will modify tune offset for each step.
 
 If you press NO or OK while pressing [1-8] button, you can edit sub-step's parameter.
@@ -1034,7 +1057,7 @@ While you are pressing B[1-8] button, three tiles indicates sub-step position yo
 ![tune1](./manual_images/tune2_crop.png)
 
 
-sub-step position | Meaning 
+Sub-step position | Meaning 
 -------- | --------
 Left | Main value, it will be used for the first-half note and other notes when other Index number is off
 Middle | 2nd half of the note (Used with 1/16th note)
@@ -1148,7 +1171,7 @@ This is a simple setup to use the granular engine(You can skip those steps by in
 
 Button | Overview | Function
 ------------ | -- | -------------
-1 | ![](./manual_images/but/1.png) | Process samples. <br>*Tip:* Use the Analyze process for better results with Time stretch. <br>See all the [Sample processing](#sample-processing) techniques below. 
+1 | ![](./manual_images/but/1.png) | Process samples. <br>_Tip: Use the Analyze process for better results with Time stretch._ <br>See all the [Sample processing](#sample-processing) techniques below. 
 2 | ![](./manual_images/but/2.png) | Slice Spread: half-steps. <br>Please see the [Having Multiple Slices (Slice Spread)](#having-multiple-slices-slice-spread) section for details. 
 3 | ![](./manual_images/but/3.png) | File position (Starting point).
 4 | ![](./manual_images/but/4.png) | Length
@@ -1246,7 +1269,7 @@ To use record scratch mode, you need to set the following settings, or using "Sc
 Button | Overview | Function
 ------------ | -- | -------------
 Turn dial | ![](./manual_images/but/d.png) | Scratch record
-Button 8 | ![](./manual_images/but/8.png) | Mute while pressing and unmute when released 
+Button 8 | ![](./manual_images/but/8.png) | Mute while pressing, and unmute when released 
 Button 7 | ![](./manual_images/but/7.png) | The same as button 8 
 Button 6 | ![](./manual_images/but/6.png) | Release. Record start playing at the configured tune. 
 Button 5 | ![](./manual_images/but/5.png) | Unmute while pressing and mute when released 
@@ -1336,7 +1359,7 @@ Button | Overview | Function
 ------------ | -- | -------------
 B[1-8] | ![](./manual_images/but/1..8.png) | Toggle monitor page 
 SHIFT + NO | ![](./manual_images/but/s_n.png) | Toggle between Monitor mode and Mixer
-SHIFT + turn dial <br> clockwise almost to end | ![](./manual_images/but/s_d.png) | Enter the monitor mode. <br>*Tip:* SHIFT + turn dial changes sub-mode.
+SHIFT + turn dial <br> clockwise almost to end | ![](./manual_images/but/s_d.png) | Enter the monitor mode. <br>_Tip: SHIFT + turn dial changes sub-mode._
 
 When you are in mixer mode, press SHIFT + NO again, or SHIFT + turn dial to the end, you can enter to the monitor mode.
 
@@ -1412,11 +1435,11 @@ SHIFT + Button 7 | ![](./manual_images/but/s_7.png) | Move cursor up a page
 Button 8 | ![](./manual_images/but/8.png) | Move cursor down
 SHIFT + Button 8 | ![](./manual_images/but/s_8.png) | Move cursor down a page
 OK | ![](./manual_images/but/o.png) | Load preset
-SHIFT + OK | ![](./manual_images/but/s_o.png) | Load preset without asking about sequence data(It won't load sequencer data). <br> *Tip:* It's convenient for quick preset sound checking. 
+SHIFT + OK | ![](./manual_images/but/s_o.png) | Load preset without asking about sequence data(It won't load sequencer data). <br> _Tip: It's convenient for quick preset sound checking._
 NO | ![](./manual_images/but/n.png) | Cancel loading
 SHIFT + Looper Stop | ![](./manual_images/but/s_ls.png) | Delete the selected preset
 
-*Tip:* You can play sound by SYSTEM + B[1-8] (Temporary piano mode) or play note by external MIDI keyboard.
+_Tip: You can play sound by SYSTEM + B[1-8] (Temporary piano mode) or play note by external MIDI keyboard._
 
 ## Save preset
 
