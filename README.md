@@ -168,6 +168,10 @@ _Tip: menus can be scrolled through, one by one, with buttons 7 and 8._
 * Scrolling in menus by turning the dial will sweep through many menu items quickly.
 * Try using button 7 and 8 to scroll one at a time: press SYSTEM, then press button 8 twice to reach the "System" item, and finally press OK.
 
+_Reading note: to help teach the buttons (and dial) needed to use a given feature, see "Overview" images. They visually depict which parts of the Qun need to be touched for a command. They can be an aide when building visual-memory for learning to use the Qun._
+
+* As an example, consider the "SHIFT + SEQ PLAY + turn dial" command to set BPM. It involves three controls: ![](./manual_images/but/s_splay_d.png) Observe in the image that the required controls are spread across the Qun, and how a two-handed operation may therefore be needed.
+
 Button | Overview | Primary function 
 ------------ | -- | -------------
 SHIFT | ![](./manual_images/but/s.png) | SHIFT + [1-8] button or NO / OK button to select sub-mode | 
