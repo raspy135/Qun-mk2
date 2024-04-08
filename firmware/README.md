@@ -13,10 +13,14 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v5.04
+  
+  - Performance tuning: Less glitch under heavy Looper load
+  
 - v5.03
-  
+
   - Performance tuning (hopefully it fixes freezing when the load is very high)
-  
+
 - v5.02
 
   - Bug fix: Tape effect bug fixes
