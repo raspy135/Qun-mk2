@@ -791,11 +791,11 @@ To start the Looper recording sound, hit LOOPER REC + LOOPER PLAY. If the Sequen
 
 **Looper recording:**
 
-Sequencer | Looper    | Button                   | Overview | Result
---- |-----------|--------------------------| -- | -- 
-Stop | Stop      | LOOPER REC + LOOPER PLAY | ![](./manual_images/but/lr_lplay.png) | Looper stand-by
-Playing / Stop | Stand-by  | SEQ PLAY                 | ![](./manual_images/but/splay.png)| Play Sequencer to next measure. Then, start Looper recording and continue Sequencer playing.
-Playing | Recording | LOOPER STOP | ![](./manual_images/but/ls.png) | Stop Looper recording. Continue Looper and Sequencer playing.
+Button | Overview | Result | If Sequencer in state ... | ... and Looper in state 
+|--------| -- | --|---------------------------|-----------|
+LOOPER REC + LOOPER PLAY | ![](./manual_images/but/lr_lplay.png) | Looper stand-by| Stop                      | Stop      
+SEQ PLAY | ![](./manual_images/but/splay.png)| Play Sequencer to next measure. Then, start Looper recording and continue Sequencer playing.| Playing / Stop            | Stand-by  
+LOOPER STOP | ![](./manual_images/but/ls.png) | Stop Looper recording. Continue Looper and Sequencer playing.| Playing                   | Recording 
 
 The first recorded track will define the length of the loop.
 
@@ -805,11 +805,11 @@ Looper keeps playing the recorded sound. All recorded data will be saved to SD c
 
 **Looper playing:** 
 
-Sequencer | Looper    | Button                   | Overview | Result
---- |-----------|--------------------------| -- | --
-Playing / Stop | Stop      | LOOPER PLAY | ![](./manual_images/but/lplay.png) | Start Looper playing.
-Playing / Stop | Playing   | LOOPER STOP | ![](./manual_images/but/ls.png) | Stop Looper.
-Playing | Playing   | SEQ PLAY | ![](./manual_images/but/splay.png) | Stop Sequencer playing. Continue Looper playing.
+Button | Overview | Result | If Sequencer in state ... | ... and Looper in state    
+|--------| -- | --|---------------------------|-----------|
+LOOPER PLAY | ![](./manual_images/but/lplay.png) | Start Looper playing.|Playing / Stop | Stop      
+LOOPER STOP | ![](./manual_images/but/ls.png) | Stop Looper.|Playing / Stop | Playing   
+SEQ PLAY | ![](./manual_images/but/splay.png) | Stop Sequencer playing. Continue Looper playing.|Playing | Playing   
 
 
 When you press REC + LOOPER PLAY twice (or SHIFT + REC + LOOPER PLAY), the recording mode will be REC mode. 
