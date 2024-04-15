@@ -13,10 +13,21 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v5.06
+  
+  - Insert recording improvements:
+    - Buffer adjustment for insert recording
+  
+    - Latency compensation
+  
+  - Compressor will be turned off when insert recording or extra processing recording is ongoing.
+  
+  - Performance tuning, less glitches
+  
 - v5.05
-  
+
   - Bug fix: Granular sample data was not loaded sometimes
-  
+
 - v5.04
 
   - Performance tuning: Less glitch under heavy Looper load
