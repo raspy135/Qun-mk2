@@ -1363,7 +1363,7 @@ Button | Function
 :------------: | -------------
 B[1-8] <br> ![](manual_images/but/12345678.png) | Toggle monitor page 
 SHIFT + NO <br> ![](manual_images/but/s_n.png) | Toggle between Monitor mode and Mixer
-SHIFT + turn dial <br> clockwise almost to end <br> ![](manual_images/but/s_d.png) | Enter the monitor mode. <br>_Tip: SHIFT + turn dial changes sub-mode._
+SHIFT + turn dial clockwise almost to end <br> ![](manual_images/but/s_d.png) | Enter the monitor mode. <br>_Tip: SHIFT + turn dial changes sub-mode._
 
 When you are in mixer mode, press SHIFT + NO again, or SHIFT + turn dial to the end, you can enter to the monitor mode.
 
