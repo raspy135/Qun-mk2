@@ -1236,8 +1236,6 @@ Let's have another example. If you have piano sample of C4 and F#4, then you wan
 
 And so on. As you see C4 and F#4 has 5 half-tone distance. It can be used for melodic instrument with multiple sampling points.
 
-In Repeat modes, multiple slicing points are randomly selected when the length is not zero.
-
 ### Live slicing
 
 _Tutorial: [video](https://www.youtube.com/watch?v=YqOcnWoZYG8) is available._

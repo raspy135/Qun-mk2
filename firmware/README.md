@@ -13,10 +13,47 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v5.08
+  
+  - Display refresh rate increased
+  
+  - Some animations are added for better UI experience
+  
+  - When looper is running in Play mode, the number of playing step is shown instead of tiny graph. 
+  
+  - Message improvement ("Looper ready" when LPLAY pressed)
+  
+- v5.07
+
+  - Faster session loading
+
+- v5.06
+
+  - Insert recording improvements:
+    - Buffer adjustment for insert recording
+
+    - Latency compensation
+
+  - Compressor will be turned off when insert recording or extra processing recording is ongoing.
+
+  - Performance tuning, less glitches
+
+- v5.05
+
+  - Bug fix: Granular sample data was not loaded sometimes
+
+- v5.04
+
+  - Performance tuning: Less glitch under heavy Looper load
+
+- v5.03
+
+  - Performance tuning (hopefully it fixes freezing when the load is very high)
+
 - v5.02
-  
+
   - Bug fix: Tape effect bug fixes
-  
+
 - v5.01
 
   - Performance tuning
