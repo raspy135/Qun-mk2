@@ -13,10 +13,20 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v5.08
+  
+  - Display refresh rate increased
+  
+  - Some animations are added for better UI experience
+  
+  - When looper is running in Play mode, the number of playing step is shown instead of tiny graph. 
+  
+  - Message improvement ("Looper ready" when LPLAY pressed)
+  
 - v5.07
-  
+
   - Faster session loading
-  
+
 - v5.06
 
   - Insert recording improvements:
