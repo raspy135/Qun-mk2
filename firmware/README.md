@@ -13,10 +13,16 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v5.10
+  
+  - Performance improvement
+  
+  - Proper fix for the occasional freeze issue (v5.09 was kind of workaround)
+  
 - v5.09
-  
+
   - Bug fix: Occasional freeze issue
-  
+
 - v5.08
 
   - Display refresh rate increased
