@@ -13,10 +13,14 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v5.13
+  
+  - Performance tuning
+  
 - v5.12
-  
+
   - Disable brownout detector to prevent rebooting on boot with battery.
-  
+
 - v5.11
 
   - Bug fix: Pop noise when new effect is selected
