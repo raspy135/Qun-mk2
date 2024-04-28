@@ -13,10 +13,14 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
-- v5.13
+- v5.14
   
+  - Bug fix: Crashing on boot happens only with specific units
+  
+- v5.13(deleted)
+
   - Performance tuning
-  
+
 - v5.12
 
   - Disable brownout detector to prevent rebooting on boot with battery.
