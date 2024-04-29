@@ -656,7 +656,7 @@ SHIFT + SEQ PLAY + turn dial <br> ![](manual_images/but/s_splay_d.png) | Set BPM
 NO <br> ![](manual_images/but/n.png) | Previous sequencer pattern
 OK <br> ![](manual_images/but/o.png) | Next sequencer pattern
 SEQ PLAY + [1-8] <br> ![](manual_images/but/splay_12345678.png) | Select Sequencer pattern
-SEQ PLAY + [1-8] , then [1-8]...<br> ![](manual_images/but/splay_12345678.png) | Chain sequencer pattern(Pattern chaining). Keep pressing SEQ PLAY. 
+SEQ PLAY + [1-8] , [1-8]...<br> ![](manual_images/but/splay_12345678.png) | Chain sequencer pattern(Pattern chaining). Keep pressing SEQ PLAY. 
 SEQ PLAY + NO / OK <br> ![](manual_images/but/splay_n_o.png) | Move to previous / next Sequencer page
 SHIFT + SEQ PLAY +  NO / OK <br> ![](manual_images/but/s_splay_n_o.png) | Copy Sequencer page to previous / next Sequencer page
 SEQ PLAY + [1-8] + turn dial <br> ![](manual_images/but/splay_12345678_d.png) | Copy sequencer pattern to other pattern. If you want to cancel the operation, turn to the end, then "CANCEL" will be indicated as the destination. To initialize the bank data, turn the dial to "CLEAR". 
@@ -739,7 +739,7 @@ Parameter locking is the term used in Elektron sequencers, which is a temporary 
 
 Button | Description
 :--: |  --
-B[1-8] (Long press), then PARAM<br> ![](manual_images/but/12345678_param.png) | Selects a step to lock a parameter for, when in a supported Sequencer sub-mode. See below for more detail.<br><br>(Long press PARAM, also) Clear lock for selected step, or multiple selected steps, if already set.
+B[1-8] (Long press), then PARAM<br> ![](manual_images/but/12345678.png) | Selects a step to lock a parameter for, when in a supported Sequencer sub-mode. See below for more detail.<br><br>(Long press PARAM, also) Clear lock for selected step, or multiple selected steps, if already set.
 SEQ PLAY <br> ![](manual_images/but/splay.png) | Navigate back to sequencer, and finish setting up locks
 PARAM (Long press) <br> ![](manual_images/but/param.png) | Clear active parameter lock
 B[1-8] + PARAM + turn dial <br> ![](manual_images/but/12345678_param_d.png) | Change the last edited locked parameter 
@@ -1236,6 +1236,8 @@ Let's have another example. If you have piano sample of C4 and F#4, then you wan
 
 And so on. As you see C4 and F#4 has 5 half-tone distance. It can be used for melodic instrument with multiple sampling points.
 
+In Repeat modes, multiple slicing points are randomly selected when the length is not zero.
+
 ### Live slicing
 
 _Tutorial: [video](https://www.youtube.com/watch?v=YqOcnWoZYG8) is available._
@@ -1361,7 +1363,7 @@ Button | Function
 :------------: | -------------
 B[1-8] <br> ![](manual_images/but/12345678.png) | Toggle monitor page 
 SHIFT + NO <br> ![](manual_images/but/s_n.png) | Toggle between Monitor mode and Mixer
-SHIFT + turn dial clockwise almost to end <br> ![](manual_images/but/s_d.png) | Enter the monitor mode. <br>_Tip: SHIFT + turn dial changes sub-mode._
+SHIFT + turn dial <br> clockwise almost to end <br> ![](manual_images/but/s_d.png) | Enter the monitor mode. <br>_Tip: SHIFT + turn dial changes sub-mode._
 
 When you are in mixer mode, press SHIFT + NO again, or SHIFT + turn dial to the end, you can enter to the monitor mode.
 

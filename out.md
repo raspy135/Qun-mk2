@@ -656,7 +656,7 @@ SHIFT + SEQ PLAY + turn dial <br> ![](manual_images/but/s_splay_d.png) | Set BPM
 NO <br> ![](manual_images/but/n.png) | Previous sequencer pattern
 OK <br> ![](manual_images/but/o.png) | Next sequencer pattern
 SEQ PLAY + [1-8] <br> ![](manual_images/but/splay_12345678.png) | Select Sequencer pattern
-SEQ PLAY + [1-8] , then [1-8]...<br> ![](manual_images/but/splay_12345678.png) | Chain sequencer pattern(Pattern chaining). Keep pressing SEQ PLAY. 
+SEQ PLAY + [1-8] , [1-8]...<br> ![](manual_images/but/splay_12345678.png) | Chain sequencer pattern(Pattern chaining). Keep pressing SEQ PLAY. 
 SEQ PLAY + NO / OK <br> ![](manual_images/but/splay_n_o.png) | Move to previous / next Sequencer page
 SHIFT + SEQ PLAY +  NO / OK <br> ![](manual_images/but/s_splay_n_o.png) | Copy Sequencer page to previous / next Sequencer page
 SEQ PLAY + [1-8] + turn dial <br> ![](manual_images/but/splay_12345678_d.png) | Copy sequencer pattern to other pattern. If you want to cancel the operation, turn to the end, then "CANCEL" will be indicated as the destination. To initialize the bank data, turn the dial to "CLEAR". 
