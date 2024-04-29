@@ -696,6 +696,13 @@ You can run multiple sequencer at the same time, up to three patterns, as normal
 
 ### Sequencer live recording
 
+Button | Live recording tip
+:--: | --
+REC + SEQ PLAY <br> ![](manual_images/but/lr_splay.gif)   | Enter, or re-enter recording mode, while playing.
+SEQ PLAY + SEQ PLAY <br> ![](manual_images/but/splay_splay.gif)   | Exit recording mode, then stop the sequencer.
+REC + SEQ PLAY + turn dial <br> ![](manual_images/but/lr_splay_d.gif)   | Adjust metronome volume.
+REC + PARAM <br> ![](manual_images/but/lr_param.gif)   | Open "undo" list.
+
 You can record live playing to the sequencer. Rec + SEQ PLAY to start recording notes. Play on Piano mode or play with an external MIDI keyboard to record notes. It's always overdubbing.  Note, Width (length), and velocity will be recorded.
 
 Sequencer playing position indicator changes when live recording.
@@ -711,7 +718,9 @@ Press SEQ PLAY to exit recording mode, and the sequencer will keep playing. Pres
 
 You can (re)enter recording mode while playing. Press REC + SEQ PLAY to enter recording mode.
 
-A metronome click sound plays when live recording is ongoing. The metronome volume can be adjusted with REC + SEQ PLAY + turn dial. The chained sequencer pattern will be reset when you change to another pattern.
+A metronome click sound plays when live recording is ongoing. The metronome volume can be adjusted with REC + SEQ PLAY + turn dial. 
+
+The chained sequencer pattern will be reset when you change to another pattern.
 
 You can undo the last recording. Press REC + PARAM to open Undo list, then select the second item.
 
