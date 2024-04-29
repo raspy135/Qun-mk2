@@ -656,7 +656,7 @@ SHIFT + SEQ PLAY + turn dial <br> ![](manual_images/but/s_splay_d.png) | Set BPM
 NO <br> ![](manual_images/but/n.png) | Previous sequencer pattern
 OK <br> ![](manual_images/but/o.png) | Next sequencer pattern
 SEQ PLAY + [1-8] <br> ![](manual_images/but/splay_12345678.png) | Select Sequencer pattern
-SEQ PLAY + [1-8] , then [1-8]...<br> ![](manual_images/but/splay_12345678.png) | Chain sequencer pattern(Pattern chaining). Keep pressing SEQ PLAY. 
+SEQ PLAY + [1-8] , then [1-8]...<br> ![](manual_images/but/splay_12345678_12345678.png) | Chain sequencer pattern(Pattern chaining). Keep pressing SEQ PLAY. 
 SEQ PLAY + NO / OK <br> ![](manual_images/but/splay_n_o.png) | Move to previous / next Sequencer page
 SHIFT + SEQ PLAY +  NO / OK <br> ![](manual_images/but/s_splay_n_o.png) | Copy Sequencer page to previous / next Sequencer page
 SEQ PLAY + [1-8] + turn dial <br> ![](manual_images/but/splay_12345678_d.png) | Copy sequencer pattern to other pattern. If you want to cancel the operation, turn to the end, then "CANCEL" will be indicated as the destination. To initialize the bank data, turn the dial to "CLEAR". 
@@ -723,8 +723,8 @@ When you are in sequencer live recording, changing sound engine parameters will 
 
 Button | Function
 :--: | --
-B 7 or 8 <br> ![](manual_images/but/78.png) | Specify the current step when in Tune, Width, Velocity, or Prob mode
-B 7 or 8 + turn dial <br> ![](manual_images/but/78_d.png) | Record sub-step parameter when in the Tune, Width, Velocity, or Prob mode
+B 7 or 8 <br> ![](manual_images/but/7_8.png) | Specify the current step when in Tune, Width, Velocity, or Prob mode
+B 7 or 8 + turn dial <br> ![](manual_images/but/7_8_d.png) | Record sub-step parameter when in the Tune, Width, Velocity, or Prob mode
 
 When you are in Tune, Width, Velocity, or Prob mode, and you are also in sequencer live recording, pressing B7 + B8 will specify the current step. The "Current" message will be shown.
 
@@ -1110,7 +1110,7 @@ Button | Function
 |:------------: | -------------|
 2 in SEQ CFG sub-mode (Long press) <br> ![](manual_images/but/2.png) | 2nd pattern 
 3 in SEQ CFG sub-mode (Long press) <br> ![](manual_images/but/3.png) | 3rd pattern 
-SEQ PLAY + B[1-8] (Primary pattern) + B[1-8] (2nd pattern) in any sub-mode <br> ![](manual_images/but/splay_1234567812345678.png) | This is a shortcut to select parallel pattern select. <br> * If you press another button while you keep pressing the primary pattern button, then it will be for the 3rd pattern.<br> * If you release the primary pattern button, it will become **Pattern chaining**. <br> * Assign the same pattern one more time to erase the assignment. <br> * Only normal parallel pattern ("R0") can be selected. 
+SEQ PLAY + B[1-8] (Primary pattern) + B[1-8] (2nd pattern) in any sub-mode <br> ![](manual_images/but/splay_12345678_12345678.png) | This is a shortcut to select parallel pattern select. <br> * If you press another button while you keep pressing the primary pattern button, then it will be for the 3rd pattern.<br> * If you release the primary pattern button, it will become **Pattern chaining**. <br> * Assign the same pattern one more time to erase the assignment. <br> * Only normal parallel pattern ("R0") can be selected. 
 
 The status is shown like this:
 
