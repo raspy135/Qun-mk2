@@ -1382,6 +1382,8 @@ Load Preset | Load preset
 Save Preset | Save preset
 System | Enter system sub-mode 
 System2 | Enter system2 sub-mode 
+System3 | Enter system3 sub-mode 
+
 
 ## Load Preset
 
@@ -1481,6 +1483,15 @@ Button | Function
 When the **Parameter Caption** is ON, a parameter's name will be shown when you press its button. It's a good option for initial training.
 
 **Master Volume** controls hardware volume of the audio chip. Normally MAX(Default) is recommended. This is useful when your effector or recorder doesn't expect line level input.
+
+## SYS:SYSTEM3
+
+System3 is page 3 of system menu.
+
+Button | Function
+------------ | -------------
+1 | Latency adjustment for resampling (insert recording). Default is 768 samples, and this should be fine for most of cases. Stay with the default value unless you have timing issue.
+
 
 # WiFi configuration
 (+4.90) WiFi can be enable and used to import/export samples.
