@@ -18,8 +18,9 @@ Here are the steps to update the firmware:
   - System3 is added to adjust resampling latency for insert recording.
   - Better behavior of "wait for signal" in granular mode. More chance to catch the first part of the signal.
   - WiFi won't turn on at all when WiFi setting is off.
+  - Bug fix: Square/Saw Audio degrade introduced on 5.13
   
-- v5.14
+- v5.14(deleted)
 
   - Bug fix: Crashing on boot happens only with specific units
 
