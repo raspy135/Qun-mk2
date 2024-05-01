@@ -174,11 +174,12 @@ _Reading note: to help teach the buttons (and dial) needed to use a given featur
 
 Button | Primary function 
 :------------: | -------------
-SHIFT <br> ![](manual_images/but/s.gif) | SHIFT + [1-8] button or NO / OK button to select sub-mode | 
+SHIFT + B[1-8] <br> ![](manual_images/but/s_12345678.gif) | Select sub-mode | 
+SHIFT + NO / OK<br> ![](manual_images/but/s_n_o.gif) | Select sub-mode, alternative | 
 [1-8] button <br> ![](manual_images/but/12345678.gif) | Select a parameter in the current sub-mode. Also show information with LEDs (see under LED Indicators).
 NO <br> ![](manual_images/but/n.gif) | Select previous sequencer pattern
 OK <br> ![](manual_images/but/o.gif) | Select next sequencer pattern
-Dial <br> ![](manual_images/but/d.gif) | change parameters
+Dial <br> ![](manual_images/but/d.gif) | Change parameters
 SEQ PLAY <br> ![](manual_images/but/splay.gif) | Start / Stop sequencer
 REC + SEQ PLAY <br> ![](manual_images/but/lr_splay.gif) | Start sequencer live recording 
 MODE PLAY <br> ![](manual_images/but/mplay.gif) | Select Play mode
@@ -199,7 +200,8 @@ Button | Function
 SHIFT + MODE PLAY <br> ![](manual_images/but/s_mplay.gif) | Dump current preset to MIDI OUT. This is useful to transfer the current preset to another Qun / Qun mk2 synthesizer.
 SHIFT + SYSTEM <br> ![](manual_images/but/s_sys.gif) | All notes off
 SHIFT + PARAM <br> ![](manual_images/but/s_param.gif) | Initialize the preset. Choose from a default: Blank, Sampler, EvenSlice, or Scratch. Please see the [Initialize preset](#initialize-preset) section for details. 
-SHIFT + SEQ PLAY + turn dial <br> ![](manual_images/but/s_splay_d.gif) | Set BPM. Tap tempo by pressing SEQ PLAY 4 or more times while you keep pressing SHIFT. 
+SHIFT + SEQ PLAY + turn dial <br> ![](manual_images/but/s_splay_d.gif) | Set BPM
+SHIFT + SEQ PLAY + SEQ PLAY + SEQ PLAY + SEQ PLAY ... <br> ![](manual_images/but/s_splay_splay_splay_splay.gif) | Set BPM, alternative. Tap tempo by pressing SEQ PLAY 4 or more times while you keep pressing SHIFT. 
 MODE PLAY + turn dial <br> ![](manual_images/but/mplay_d.gif) | Record volume -- stay at -6.0dB or lower to avoid clipping. _Tutorial: [video](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=770s) is available._
 MODE PLAY + SYSTEM + turn dial <br> ![](manual_images/but/mplay_sys_d.gif) | Looper master volume 
 SYSTEM + turn dial <br> ![](manual_images/but/sys_d.gif) | VCF volume
@@ -652,7 +654,8 @@ Button | Function
 SEQ PLAY <br> ![](manual_images/but/splay.gif) | Start / Stop Sequencer
 REC + SEQ PLAY <br> ![](manual_images/but/lr_splay.gif) | Start Sequencer live recording
 REC + SEQ PLAY + turn dial <br> ![](manual_images/but/lr_splay_d.gif) | Metronome volume
-SHIFT + SEQ PLAY + turn dial <br> ![](manual_images/but/s_splay_d.gif) | Set BPM. Tap tempo by pressing SEQ PLAY 4 or more times while you keep pressing SHIFT. 
+SHIFT + SEQ PLAY + turn dial <br> ![](manual_images/but/s_splay_d.gif) | Set BPM, alternative 
+SHIFT + SEQ PLAY + SEQ PLAY + SEQ PLAY + SEQ PLAY ... <br> ![](manual_images/but/s_splay_splay_splay_splay.gif) | Set BPM. Tap tempo by pressing SEQ PLAY 4 or more times while you keep pressing SHIFT. 
 NO <br> ![](manual_images/but/n.gif) | Previous sequencer pattern
 OK <br> ![](manual_images/but/o.gif) | Next sequencer pattern
 SEQ PLAY + [1-8] <br> ![](manual_images/but/splay_12345678.gif) | Select Sequencer pattern
