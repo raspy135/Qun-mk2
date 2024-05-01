@@ -682,7 +682,7 @@ PARAM + NO <br> ![](manual_images/but/param_n.gif) |  Toggle Extra Processing
 SHIFT + LOOPER STOP <br> ![](manual_images/but/s_ls.gif) |  Delete all track recordings in the current scene, reset recording length 
 REC + NO <br> ![](manual_images/but/lr_n.gif) |  Cut or Copy Looper track 
 REC + OK <br> ![](manual_images/but/lr_o.gif) |  Paste Looper track 
-REC + PARAM <br> ![](manual_images/but/lr_param.gif) |  Open UNDO list. Select the top item to undo the last sample recording for the track. Select the second item to undo the last sequcener recording. SHIFT + OK to preview the sound. 
+REC + PARAM <br> ![](manual_images/but/lr_param.gif) |  Open UNDO list. Select the top item to undo the last sample recording for the track. Select the second item to undo the last sequencer recording. SHIFT + OK to preview the sound. 
 MODE PLAY + PARAM + turn dial <br> ![](manual_images/but/mplay_param_d.gif) |  Parameter Lock Morphing
 
 ## Sequencer overview
@@ -1285,7 +1285,7 @@ Button | Function
 Turn dial <br> ![](manual_images/but/d.gif) | Scratch record
 Button 8 <br> ![](manual_images/but/8.gif) | Mute while pressing, and unmute when released 
 Button 7 <br> ![](manual_images/but/7.gif) | The same as button 8 
-Button 6 <br> ![](manual_images/but/6.gif) | Release. Record start playing at the configured tune. 
+Button 6 <br> ![](manual_images/but/6.gif) | Release. Record starts playing at the configured tune. 
 Button 5 <br> ![](manual_images/but/5.gif) | Unmute while pressing and mute when released 
 Button 4 <br> ![](manual_images/but/4.gif) | The same as button 5 
 Button 3 <br> ![](manual_images/but/3.gif) | Rewind to slice 1 
