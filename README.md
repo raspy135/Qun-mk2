@@ -195,7 +195,7 @@ Button | Function
 SHIFT + MODE PLAY | Dump current preset to MIDI OUT. This is useful to transfer the current preset to another Qun / Qun mk2 synthesizer.
 SHIFT + SYSTEM | All notes off
 SHIFT + PARAM | Initialize the preset. Choose from a default: Blank, Sampler, EvenSlice, or Scratch. Please see the [Initialize preset](#initialize-preset) section for details. 
-SHIFT + SEQ PLAY + turn dial | Set BPM. Tap tempo by pressing SEQ PLAY 4 or more times while you keep pressing SHIFT. 
+SHIFT + SEQ PLAY + turn dial | Set BPM. Tap tempo by pressing SEQ PLAY 4 or more times while you keep pressing SHIFT. NO or OK to fine adjustment while you keep pressing SHIFT + SEQ PLAY. 
 MODE PLAY + turn dial | Record volume -- stay at -6.0dB or lower to avoid clipping. _Tutorial: [video](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=770s) is available._
 MODE PLAY + SYSTEM + turn dial | Looper master volume 
 SYSTEM + turn dial | VCF volume
@@ -648,7 +648,7 @@ Button | function
 SEQ PLAY | Start / Stop Sequencer
 REC + SEQ PLAY | Start Sequencer live recording
 REC + SEQ PLAY + turn dial | Metronome volume
-SHIFT + SEQ PLAY + turn dial | Set BPM. Tap tempo by pressing SEQ PLAY 4 or more times while you keep pressing SHIFT. 
+SHIFT + SEQ PLAY + turn dial | Set BPM. Tap tempo by pressing SEQ PLAY 4 or more times while you keep pressing SHIFT. NO or OK to fine adjustment while you keep pressing SHIFT + SEQ PLAY. 
 NO | Previous sequencer pattern
 OK | Next sequencer pattern
 SEQ PLAY + [1-8] | Select Sequencer pattern
@@ -1060,7 +1060,7 @@ Button |  Function
 3 (Long press) | 3rd pattern 
 4 | Sequencer loop count. Default is 8.
 4 (Long press) | Morph pattern.
-5 | BPM factor. Playing speed can be double, normal, 1/2, 1/4 or 1/8.  
+5 | BPM factor. Playing speed can be double, normal, 4/5, 2/3, 1/2, 1/4 or 1/8.  
 5 (Long press) | Note Lower Limit 
 6 | Velocity accent period (steps). 
 6 (Long press) | 8th swing 
