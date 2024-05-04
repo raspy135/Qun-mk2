@@ -13,16 +13,56 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v5.16
+  
+  - Better MIDI clock sync logic(More stable BPM under MIDI clock jitter)
+  - Little tweaks
+  - BPM can be adjusted by pressing NO or OK when you are changing BPM by dial, while you still keep pressing SHIFT+SPLAY.
+  - 2/3 and 4/5 are added to BPM factor for swingy sound.
+  
+- v5.15
+
+  - System3 is added to adjust resampling latency for insert recording.
+  - Better behavior of "wait for signal" in granular mode. More chance to catch the first part of the signal.
+  - WiFi won't turn on at all when WiFi setting is off.
+  - Bug fix: Square/Saw Audio degrade introduced on 5.13
+
+- v5.14(deleted)
+
+  - Bug fix: Crashing on boot happens only with specific units
+
+- v5.13(deleted)
+
+  - Performance tuning
+
+- v5.12
+
+  - Disable brownout detector to prevent rebooting on boot with battery.
+
+- v5.11
+
+  - Bug fix: Pop noise when new effect is selected
+
+- v5.10
+
+  - Performance improvement
+
+  - Proper fix for the occasional freeze issue (v5.09 was kind of workaround)
+
+- v5.09
+
+  - Bug fix: Occasional freeze issue
+
 - v5.08
-  
+
   - Display refresh rate increased
-  
+
   - Some animations are added for better UI experience
-  
+
   - When looper is running in Play mode, the number of playing step is shown instead of tiny graph. 
-  
+
   - Message improvement ("Looper ready" when LPLAY pressed)
-  
+
 - v5.07
 
   - Faster session loading

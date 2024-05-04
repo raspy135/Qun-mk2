@@ -1101,7 +1101,7 @@ Button | Function
 3 (Long press) <br> ![](manual_images/but/3.gif) | 3rd pattern 
 4 | Sequencer loop count. Default is 8.
 4 (Long press) <br> ![](manual_images/but/4.gif) | Morph pattern.
-5 |  BPM factor. Playing speed can be double, normal, 1/2, 1/4 or 1/8.  
+5 |  BPM factor. Playing speed can be double, normal, 4/5, 2/3, 1/2, 1/4 or 1/8.  
 5 (Long press) <br> ![](manual_images/but/5.gif) | Note Lower Limit 
 6 |  Velocity accent period (steps). 
 6 (Long press) <br> ![](manual_images/but/6.gif) | 8th swing 
@@ -1429,6 +1429,8 @@ Load Preset | Load preset
 Save Preset | Save preset
 System | Enter system sub-mode 
 System2 | Enter system2 sub-mode 
+System3 | Enter system3 sub-mode 
+
 
 ## Load Preset
 
@@ -1530,6 +1532,15 @@ Button | Function
 When the **Parameter Caption** is ON, a parameter's name will be shown when you press its button. It's a good option for initial training.
 
 **Master Volume** controls hardware volume of the audio chip. Normally MAX(Default) is recommended. This is useful when your effector or recorder doesn't expect line level input.
+
+## SYS:SYSTEM3
+
+System3 is page 3 of system menu.
+
+Button | Function
+------------ | -------------
+1 | Latency adjustment for resampling (insert recording). Default is 768 samples, and this should be fine for most of cases. Stay with the default value unless you have timing issue.
+
 
 # WiFi configuration
 (+4.90) WiFi can be enable and used to import/export samples.
