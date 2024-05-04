@@ -202,7 +202,7 @@ SHIFT + SYSTEM <br> ![](manual_images/but/s_sys.gif) | All notes off
 SHIFT + PARAM <br> ![](manual_images/but/s_param.gif) | Initialize the preset. Choose from a default: Blank, Sampler, EvenSlice, or Scratch. Please see the [Initialize preset](#initialize-preset) section for details. 
 SHIFT + SEQ PLAY + turn dial <br> ![](manual_images/but/s_splay_d.gif) | Set BPM
 SHIFT + SEQ PLAY + SEQ PLAY + SEQ PLAY + SEQ PLAY ... <br> ![](manual_images/but/s_splay_splay_splay_splay.gif) | Set BPM by tapping. Tap tempo by pressing SEQ PLAY 4 or more times while you keep pressing SHIFT. 
-SHIFT + SEQ PLAY + turn dial + NO or OK <br> ![](manual_images/but/s_splay_d_n_o.gif)  | Set BPM by one. Fine adjustment while you keep pressing SHIFT + SEQ PLAY. 
+SHIFT + SEQ PLAY + turn dial + NO or OK <br> ![](manual_images/but/s_splay_d_n_o.gif)  | Set BPM by one. Fine adjustment with NO / OK while you keep pressing SHIFT + SEQ PLAY after turning dial. 
 MODE PLAY + turn dial <br> ![](manual_images/but/mplay_d.gif) | Record volume -- stay at -6.0dB or lower to avoid clipping. _Tutorial: [video](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=770s) is available._
 MODE PLAY + SYSTEM + turn dial <br> ![](manual_images/but/mplay_sys_d.gif) | Looper master volume 
 SYSTEM + turn dial <br> ![](manual_images/but/sys_d.gif) | VCF volume
@@ -657,7 +657,7 @@ REC + SEQ PLAY <br> ![](manual_images/but/lr_splay.gif) | Start Sequencer live r
 REC + SEQ PLAY + turn dial <br> ![](manual_images/but/lr_splay_d.gif) | Metronome volume
 SHIFT + SEQ PLAY + turn dial <br> ![](manual_images/but/s_splay_d.gif) | Set BPM
 SHIFT + SEQ PLAY + SEQ PLAY + SEQ PLAY + SEQ PLAY ... <br> ![](manual_images/but/s_splay_splay_splay_splay.gif) | Set BPM by tapping. Tap tempo by pressing SEQ PLAY 4 or more times while you keep pressing SHIFT. 
-SHIFT + SEQ PLAY + turn dial + NO or OK <br> ![](manual_images/but/s_splay_d_n_o.gif)  | Set BPM by one. Fine adjustment while you keep pressing SHIFT + SEQ PLAY. 
+SHIFT + SEQ PLAY + turn dial + NO or OK <br> ![](manual_images/but/s_splay_d_n_o.gif)  | Set BPM by one. Fine adjustment with NO / OK while you keep pressing SHIFT + SEQ PLAY after turning dial. 
 NO <br> ![](manual_images/but/n.gif) | Previous sequencer pattern
 OK <br> ![](manual_images/but/o.gif) | Next sequencer pattern
 SEQ PLAY + [1-8] <br> ![](manual_images/but/splay_12345678.gif) | Select Sequencer pattern
