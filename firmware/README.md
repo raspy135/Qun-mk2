@@ -15,7 +15,7 @@ Here are the steps to update the firmware:
 # History
 - v5.18
   
-  - Bug fix: Looper glitch improved (This mostly introduced at 5.13)
+  - Bug fix: Looper glitch improved (This was mostly introduced at 5.13)
   
 - v5.17
 
