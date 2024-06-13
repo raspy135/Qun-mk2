@@ -13,7 +13,7 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
-- v5.18
+- v5.19
   
   - Bug fix: Looper glitch improved (This was mostly introduced at 5.13)
   
