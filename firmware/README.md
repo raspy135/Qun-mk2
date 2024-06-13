@@ -13,10 +13,14 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v5.18
+  
+  - Bug fix: Looper glitch improved (This mostly introduced at 5.13)
+  
 - v5.17
-  
+
   - Bug fix: Sometimes looper doesn't load proper data
-  
+
 - v5.16
 
   - Better MIDI clock sync logic(More stable BPM under MIDI clock jitter)
