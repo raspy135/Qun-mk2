@@ -13,10 +13,16 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v5.21
+  
+  - Slight looper parameter tuning to improve stability
+  
+  - MIDI note capturing (See "Playing note capturing from external MIDI keyboard" section in the manual) works in On/off, Tune, Width, Vel, and Prob mode. It used to work only in Tune mode.
+  
 - v5.19
-  
+
   - Bug fix: Looper glitch improved (This was mostly introduced at 5.13)
-  
+
 - v5.17
 
   - Bug fix: Sometimes looper doesn't load proper data
