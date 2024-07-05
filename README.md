@@ -476,7 +476,7 @@ Button | Description
 1 | LFO SHAPE.  `Saw, Sine, RevSaw, S&H, Square, Triangle, AUX, OSC2, OSC2EG`. OSC2EG is the signal from OSC after Envelope Generator processing.
 2 | LFO PULSE WIDTH. When it's applied to the SAW wave or SINE wave, it will affect phase offset. It is useful with BPM sync and retrigger. 
 3 | LFO TUNE
-4 | KEYSPLIT. This is a unique feature of the synth. When it is not zero, then the note number above the parameter becomes the LFO rate controller. If you set 60, then C4 or higher notes control LFO: higher notes will generate higher LFO rates. If you press multiple notes, it doubles and triples the rate, which can be great for live performance.
+4 | LFO Slew rate.
 5 | LFO MOD TUNE. MOD modulation to tune.
 6 | LFO MOD WIDTH. MOD modulation to pulse width.
 7 | LFO MOD Source. `EG1, EG2, EG3, EG4, AUX, OSC2, OSC2EG, FRQ1, FRQ2`
@@ -1491,7 +1491,7 @@ System3 is page 3 of system menu.
 Button | Function
 ------------ | -------------
 1 | Latency adjustment for resampling (insert recording). Default is 768 samples, and this should be fine for most of cases. Stay with the default value unless you have timing issue.
-
+2 | External MIDI CC indication. When it's OFF, there is no popup when Qun receives external MIDI CC. Default is ON.
 
 # WiFi configuration
 (+4.90) WiFi can be enable and used to import/export samples.
