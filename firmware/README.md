@@ -13,18 +13,24 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v5.23
+  
+  - Bug fix: Sometime scene didn't change properly
+  
+  - Bug fix: Incorrect captions.
+  
 - v5.22
-  
+
   - (Probably) sometimes Extra Processing loopback recording was not working.
-  
+
   - New feature: You can toggle an indication when Qun receives external MIDI CC signal. (System3, button2)
-  
+
   - Behavior change: LFO Keysplit (LFO sub mode, button4) was obsoleted. 
-  
+
   - New feature: LFO Slew rate is added (LFO sub mode, button4).
-  
+
   - MIDI learning triggered for internal CC change, when it receives all midi channel. (There was almost no side effect other than you see asterisk)
-  
+
 - v5.21
 
   - Slight looper parameter tuning to improve stability
