@@ -174,12 +174,11 @@ _Reading note: to help teach the buttons (and dial) needed to use a given featur
 
 Button | Primary function 
 :------------: | -------------
-SHIFT + B[1-8] <br> ![](manual_images/but/s_12345678.gif) | Select sub-mode | 
-SHIFT + NO / OK<br> ![](manual_images/but/s_n_o.gif) | Select sub-mode, alternative | 
+SHIFT <br> ![](manual_images/but/s.gif) | SHIFT + [1-8] button or NO / OK button to select sub-mode | 
 [1-8] button <br> ![](manual_images/but/12345678.gif) | Select a parameter in the current sub-mode. Also show information with LEDs (see under LED Indicators).
 NO <br> ![](manual_images/but/n.gif) | Select previous sequencer pattern
 OK <br> ![](manual_images/but/o.gif) | Select next sequencer pattern
-Dial <br> ![](manual_images/but/d.gif) | Change parameters
+Dial <br> ![](manual_images/but/d.gif) | change parameters
 SEQ PLAY <br> ![](manual_images/but/splay.gif) | Start / Stop sequencer
 REC + SEQ PLAY <br> ![](manual_images/but/lr_splay.gif) | Start sequencer live recording 
 MODE PLAY <br> ![](manual_images/but/mplay.gif) | Select Play mode
@@ -200,9 +199,7 @@ Button | Function
 SHIFT + MODE PLAY <br> ![](manual_images/but/s_mplay.gif) | Dump current preset to MIDI OUT. This is useful to transfer the current preset to another Qun / Qun mk2 synthesizer.
 SHIFT + SYSTEM <br> ![](manual_images/but/s_sys.gif) | All notes off
 SHIFT + PARAM <br> ![](manual_images/but/s_param.gif) | Initialize the preset. Choose from a default: Blank, Sampler, EvenSlice, or Scratch. Please see the [Initialize preset](#initialize-preset) section for details. 
-SHIFT + SEQ PLAY + turn dial <br> ![](manual_images/but/s_splay_d.gif) | Set BPM
-SHIFT + SEQ PLAY + SEQ PLAY + SEQ PLAY + SEQ PLAY ... <br> ![](manual_images/but/s_splay_splay_splay_splay.gif) | Set BPM by tapping. Tap tempo by pressing SEQ PLAY 4 or more times while you keep pressing SHIFT. 
-SHIFT + SEQ PLAY + turn dial + NO or OK <br> ![](manual_images/but/s_splay_d_n_o.gif)  | Set BPM by one. Fine adjustment with NO / OK while you keep pressing SHIFT + SEQ PLAY after turning dial. 
+SHIFT + SEQ PLAY + turn dial <br> ![](manual_images/but/s_splay_d.gif) | Set BPM. Tap tempo by pressing SEQ PLAY 4 or more times while you keep pressing SHIFT. 
 MODE PLAY + turn dial <br> ![](manual_images/but/mplay_d.gif) | Record volume -- stay at -6.0dB or lower to avoid clipping. _Tutorial: [video](https://www.youtube.com/watch?v=7dNhxKBtwPo&t=770s) is available._
 MODE PLAY + SYSTEM + turn dial <br> ![](manual_images/but/mplay_sys_d.gif) | Looper master volume 
 SYSTEM + turn dial <br> ![](manual_images/but/sys_d.gif) | VCF volume
@@ -483,7 +480,7 @@ Button | Description
 1 | LFO SHAPE.  `Saw, Sine, RevSaw, S&H, Square, Triangle, AUX, OSC2, OSC2EG`. OSC2EG is the signal from OSC after Envelope Generator processing.
 2 | LFO PULSE WIDTH. When it's applied to the SAW wave or SINE wave, it will affect phase offset. It is useful with BPM sync and retrigger. 
 3 | LFO TUNE
-4 | LFO Slew rate.
+4 | KEYSPLIT. This is a unique feature of the synth. When it is not zero, then the note number above the parameter becomes the LFO rate controller. If you set 60, then C4 or higher notes control LFO: higher notes will generate higher LFO rates. If you press multiple notes, it doubles and triples the rate, which can be great for live performance.
 5 | LFO MOD TUNE. MOD modulation to tune.
 6 | LFO MOD WIDTH. MOD modulation to pulse width.
 7 | LFO MOD Source. `EG1, EG2, EG3, EG4, AUX, OSC2, OSC2EG, FRQ1, FRQ2`
@@ -655,13 +652,11 @@ Button | Function
 SEQ PLAY <br> ![](manual_images/but/splay.gif) | Start / Stop Sequencer
 REC + SEQ PLAY <br> ![](manual_images/but/lr_splay.gif) | Start Sequencer live recording
 REC + SEQ PLAY + turn dial <br> ![](manual_images/but/lr_splay_d.gif) | Metronome volume
-SHIFT + SEQ PLAY + turn dial <br> ![](manual_images/but/s_splay_d.gif) | Set BPM
-SHIFT + SEQ PLAY + SEQ PLAY + SEQ PLAY + SEQ PLAY ... <br> ![](manual_images/but/s_splay_splay_splay_splay.gif) | Set BPM by tapping. Tap tempo by pressing SEQ PLAY 4 or more times while you keep pressing SHIFT. 
-SHIFT + SEQ PLAY + turn dial + NO or OK <br> ![](manual_images/but/s_splay_d_n_o.gif)  | Set BPM by one. Fine adjustment with NO / OK while you keep pressing SHIFT + SEQ PLAY after turning dial. 
+SHIFT + SEQ PLAY + turn dial <br> ![](manual_images/but/s_splay_d.gif) | Set BPM. Tap tempo by pressing SEQ PLAY 4 or more times while you keep pressing SHIFT. 
 NO <br> ![](manual_images/but/n.gif) | Previous sequencer pattern
 OK <br> ![](manual_images/but/o.gif) | Next sequencer pattern
 SEQ PLAY + [1-8] <br> ![](manual_images/but/splay_12345678.gif) | Select Sequencer pattern
-SEQ PLAY + [1-8] , then [1-8]...<br> ![](manual_images/but/splay_12345678_12345678.gif) | Chain sequencer pattern(Pattern chaining). Keep pressing SEQ PLAY. 
+SEQ PLAY + [1-8] , then [1-8]...<br> ![](manual_images/but/splay_12345678.gif) | Chain sequencer pattern(Pattern chaining). Keep pressing SEQ PLAY. 
 SEQ PLAY + NO / OK <br> ![](manual_images/but/splay_n_o.gif) | Move to previous / next Sequencer page
 SHIFT + SEQ PLAY +  NO / OK <br> ![](manual_images/but/s_splay_n_o.gif) | Copy Sequencer page to previous / next Sequencer page
 SEQ PLAY + [1-8] + turn dial <br> ![](manual_images/but/splay_12345678_d.gif) | Copy sequencer pattern to other pattern. If you want to cancel the operation, turn to the end, then "CANCEL" will be indicated as the destination. To initialize the bank data, turn the dial to "CLEAR". 
@@ -684,7 +679,7 @@ PARAM + NO <br> ![](manual_images/but/param_n.gif) |  Toggle Extra Processing
 SHIFT + LOOPER STOP <br> ![](manual_images/but/s_ls.gif) |  Delete all track recordings in the current scene, reset recording length 
 REC + NO <br> ![](manual_images/but/lr_n.gif) |  Cut or Copy Looper track 
 REC + OK <br> ![](manual_images/but/lr_o.gif) |  Paste Looper track 
-REC + PARAM <br> ![](manual_images/but/lr_param.gif) |  Open UNDO list. Select the top item to undo the last sample recording for the track. Select the second item to undo the last sequencer recording. SHIFT + OK to preview the sound. 
+REC + PARAM <br> ![](manual_images/but/lr_param.gif) |  Open UNDO list. Select the top item to undo the last sample recording for the track. Select the second item to undo the last sequcener recording. SHIFT + OK to preview the sound. 
 MODE PLAY + PARAM + turn dial <br> ![](manual_images/but/mplay_param_d.gif) |  Parameter Lock Morphing
 
 ## Sequencer overview
@@ -701,13 +696,6 @@ You can run multiple sequencer at the same time, up to three patterns, as normal
 
 ### Sequencer live recording
 
-Button | Live recording tip
-:--: | --
-REC + SEQ PLAY <br> ![](manual_images/but/lr_splay.gif)   | Enter, or re-enter recording mode, while playing.
-SEQ PLAY + SEQ PLAY <br> ![](manual_images/but/splay_splay.gif)   | Exit recording mode, then stop the sequencer.
-REC + SEQ PLAY + turn dial <br> ![](manual_images/but/lr_splay_d.gif)   | Adjust metronome volume.
-REC + PARAM <br> ![](manual_images/but/lr_param.gif)   | Open "undo" list.
-
 You can record live playing to the sequencer. Rec + SEQ PLAY to start recording notes. Play on Piano mode or play with an external MIDI keyboard to record notes. It's always overdubbing.  Note, Width (length), and velocity will be recorded.
 
 Sequencer playing position indicator changes when live recording.
@@ -723,9 +711,7 @@ Press SEQ PLAY to exit recording mode, and the sequencer will keep playing. Pres
 
 You can (re)enter recording mode while playing. Press REC + SEQ PLAY to enter recording mode.
 
-A metronome click sound plays when live recording is ongoing. The metronome volume can be adjusted with REC + SEQ PLAY + turn dial. 
-
-The chained sequencer pattern will be reset when you change to another pattern.
+A metronome click sound plays when live recording is ongoing. The metronome volume can be adjusted with REC + SEQ PLAY + turn dial. The chained sequencer pattern will be reset when you change to another pattern.
 
 You can undo the last recording. Press REC + PARAM to open Undo list, then select the second item.
 
@@ -737,8 +723,8 @@ When you are in sequencer live recording, changing sound engine parameters will 
 
 Button | Function
 :--: | --
-B 7 or 8 <br> ![](manual_images/but/7_8.gif) | Specify the current step when in Tune, Width, Velocity, or Prob mode
-B 7 or 8 + turn dial <br> ![](manual_images/but/7_8_d.gif) | Record sub-step parameter when in the Tune, Width, Velocity, or Prob mode
+B 7 or 8 <br> ![](manual_images/but/78.gif) | Specify the current step when in Tune, Width, Velocity, or Prob mode
+B 7 or 8 + turn dial <br> ![](manual_images/but/78_d.gif) | Record sub-step parameter when in the Tune, Width, Velocity, or Prob mode
 
 When you are in Tune, Width, Velocity, or Prob mode, and you are also in sequencer live recording, pressing B7 + B8 will specify the current step. The "Current" message will be shown.
 
@@ -1101,7 +1087,7 @@ Button | Function
 3 (Long press) <br> ![](manual_images/but/3.gif) | 3rd pattern 
 4 | Sequencer loop count. Default is 8.
 4 (Long press) <br> ![](manual_images/but/4.gif) | Morph pattern.
-5 |  BPM factor. Playing speed can be double, normal, 4/5, 2/3, 1/2, 1/4 or 1/8.  
+5 |  BPM factor. Playing speed can be double, normal, 1/2, 1/4 or 1/8.  
 5 (Long press) <br> ![](manual_images/but/5.gif) | Note Lower Limit 
 6 |  Velocity accent period (steps). 
 6 (Long press) <br> ![](manual_images/but/6.gif) | 8th swing 
@@ -1124,7 +1110,7 @@ Button | Function
 |:------------: | -------------|
 2 in SEQ CFG sub-mode (Long press) <br> ![](manual_images/but/2.gif) | 2nd pattern 
 3 in SEQ CFG sub-mode (Long press) <br> ![](manual_images/but/3.gif) | 3rd pattern 
-SEQ PLAY + B[1-8] (Primary pattern) + B[1-8] (2nd pattern) in any sub-mode <br> ![](manual_images/but/splay_12345678_12345678.gif) | This is a shortcut to select parallel pattern select. <br> * If you press another button while you keep pressing the primary pattern button, then it will be for the 3rd pattern.<br> * If you release the primary pattern button, it will become **Pattern chaining**. <br> * Assign the same pattern one more time to erase the assignment. <br> * Only normal parallel pattern ("R0") can be selected. 
+SEQ PLAY + B[1-8] (Primary pattern) + B[1-8] (2nd pattern) in any sub-mode <br> ![](manual_images/but/splay_1234567812345678.gif) | This is a shortcut to select parallel pattern select. <br> * If you press another button while you keep pressing the primary pattern button, then it will be for the 3rd pattern.<br> * If you release the primary pattern button, it will become **Pattern chaining**. <br> * Assign the same pattern one more time to erase the assignment. <br> * Only normal parallel pattern ("R0") can be selected. 
 
 The status is shown like this:
 
@@ -1287,7 +1273,7 @@ Button | Function
 Turn dial <br> ![](manual_images/but/d.gif) | Scratch record
 Button 8 <br> ![](manual_images/but/8.gif) | Mute while pressing, and unmute when released 
 Button 7 <br> ![](manual_images/but/7.gif) | The same as button 8 
-Button 6 <br> ![](manual_images/but/6.gif) | Release. Record starts playing at the configured tune. 
+Button 6 <br> ![](manual_images/but/6.gif) | Release. Record start playing at the configured tune. 
 Button 5 <br> ![](manual_images/but/5.gif) | Unmute while pressing and mute when released 
 Button 4 <br> ![](manual_images/but/4.gif) | The same as button 5 
 Button 3 <br> ![](manual_images/but/3.gif) | Rewind to slice 1 
@@ -1429,8 +1415,6 @@ Load Preset | Load preset
 Save Preset | Save preset
 System | Enter system sub-mode 
 System2 | Enter system2 sub-mode 
-System3 | Enter system3 sub-mode 
-
 
 ## Load Preset
 
@@ -1532,15 +1516,6 @@ Button | Function
 When the **Parameter Caption** is ON, a parameter's name will be shown when you press its button. It's a good option for initial training.
 
 **Master Volume** controls hardware volume of the audio chip. Normally MAX(Default) is recommended. This is useful when your effector or recorder doesn't expect line level input.
-
-## SYS:SYSTEM3
-
-System3 is page 3 of system menu.
-
-Button | Function
------------- | -------------
-1 | Latency adjustment for resampling (insert recording). Default is 768 samples, and this should be fine for most of cases. Stay with the default value unless you have timing issue.
-2 | External MIDI CC indication. When it's OFF, there is no popup when Qun receives external MIDI CC. Default is ON.
 
 # WiFi configuration
 (+4.90) WiFi can be enable and used to import/export samples.
