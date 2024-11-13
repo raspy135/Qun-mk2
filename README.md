@@ -261,7 +261,6 @@ Button | Function
 ------------ | -------------
 SHIFT + LOOPER PLAY | Show current session number
 SHIFT + LOOPER PLAY + turn dial | Load session
-NO or OK button while selecting a session | Scroll session page when you have more than 32 sessions 
 SHIFT + REC | Save current session (Looper stop will perform session save when autosave is on)
 SHIFT + REC (Long press) | Name current session
 SHIFT + REC + B[1-3] | Load WAV file to looper track A, B or C. See the [Looper Overview](#looper-overview) section for details.

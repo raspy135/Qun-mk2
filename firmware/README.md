@@ -13,12 +13,22 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+- v5.24
+  
+  - Record volume and record pan are changed to one of bucket parameter. Each bucket will have different record volume. They are used to be global mixer parameter.
+  
+  - Record volume can be checked by long pressing MPLAY key.
+  
+  - Record pan can be checked by long pressing Shift + MPLAY key.
+  
+  - Session loading uses menu UI. (No more tricky page scrolling) 
+  
 - v5.23
-  
+
   - Bug fix: Sometime scene didn't change properly
-  
+
   - Bug fix: Incorrect captions.
-  
+
 - v5.22
 
   - (Probably) sometimes Extra Processing loopback recording was not working.
