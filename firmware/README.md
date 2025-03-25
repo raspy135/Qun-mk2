@@ -13,6 +13,11 @@ Here are the steps to update the firmware:
 9. Reset the board.
 
 # History
+
+- v5.26
+  - Performance improvement and fix (introduced at v5.25)
+  - Possible crash fix when loading
+
 - v5.25
   
   - Performance improvement with heavy load, less looper glitchies
