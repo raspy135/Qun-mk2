@@ -14,6 +14,11 @@ Here are the steps to update the firmware:
 
 # History
 
+- v5.27
+  - Performance improvement
+  - Improved Wifi stability
+  - MIDI CC is sent when slider is configured for modwheel or pitchbend.
+
 - v5.26
   - Performance improvement and fix (introduced at v5.25)
   - Possible crash fix when loading
